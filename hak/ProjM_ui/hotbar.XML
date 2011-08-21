@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8">
+
+<!-- OnLeftClick=UIButton_Input_ScreenClose() -->
+
+<UIScene name="SCREEN_HOTBAR" 
+	OnAdd=UIScene_OnAdd_SetupHotbar("HOTBAR_GRID") 
+	x="95" y="ALIGN_BOTTOM" width="692" height="100" scriptloadable="true"
+	draggable="true" priority="SCENE_INGAME" idleexpiretime="1.0"
+	update=true OnUpdate=UIScene_OnUpdate_UpdatePlayMode() 
+	/>
+
+	<UIText name="CurrentHotBar" align=center valign=middle 
+		x=0 y=37 width=28 height=20 fontfamily="Default"
+		update=true 
+		OnUpdate=UIText_OnUpdate_UpdateHotbarPage("HOTBAR_GRID")
+	/>
+
+	<!-- Grid Scroll Up -->
+	<UIButton name="GridUp1" x=3 y=7 width=25 height=25 OnLeftClick=UIButton_Input_HotbarIncrement("HOTBAR_GRID") >
+		<UIFrame state=up		fill="b_scrlu_normal.tga" />
+		<UIFrame state=down		fill="b_scrlu_pressed.tga" />
+		<UIFrame state=focused	fill="b_scrlu_hover.tga" />
+		<UIFrame state=hilited	fill="b_scrlu_hover.tga" />
+		<UIFrame state=hifocus	fill="b_scrlu_hover_pressed.tga" />
+		<UIFrame state=disabled	fill="b_scrlu_normal.tga" />
+	</UIButton>
+	
+	<UIButton name="GridDown1" x=3 y=64 width=25 height=25 OnLeftClick=UIButton_Input_HotbarDecrement("HOTBAR_GRID") >
+		<UIFrame state=up		fill="b_scrld_normal.tga" />
+		<UIFrame state=down		fill="b_scrld_pressed.tga" />
+		<UIFrame state=focused	fill="b_scrld_hover.tga" />
+		<UIFrame state=hilited	fill="b_scrld_hover.tga" />
+		<UIFrame state=hifocus	fill="b_scrld_hover_pressed.tga" />
+		<UIFrame state=disabled	fill="b_scrld_normal.tga" />
+	</UIButton>
+
+	<!-- Hotbar Grid -->
+	<UIGrid name="HOTBAR_GRID" rows=2 columns=15 x=28 y=8 xPadding=3 yPadding=3 update=true OnUpdate=UIGrid_OnUpdate_UpdateHotbarGrid() >
+		<UIHotbarButton name="HOTBAR_BUTTON" height=37 width=37 draggable=true prototype=true 
+			
+			hotbartype="HOTBAR_BUTTON"
+			MouseDragSFX="gui_drag" MouseDropSFX="gui_drop"
+			OnRadialRequest=UIObject_OnRadial_DisplayInventoryRadial()
+			OnLeftClick=UIObject_Misc_ExtractData("self:","int",0,local:0) 
+			OnLeftClick0=UIObject_Misc_ExecuteServerScript("gui_elu_onhotbarbuttonclick_e",local:0)
+			OnLeftClick1=UIButton_Input_HotbarLeftClick() 
+			OnRightClick=UIButton_Input_HotbarRightClick() 
+			OnMouseDrop0=UIObject_Misc_ExtractData("self:","int",0,local:0) 
+			OnMouseDrop1=UIObject_Misc_ExecuteServerScript("gui_elu_hotbarbuttonmove",local:0) 			
+			OnMouseDropReceived=UIButton_OnDropReceived_SetHotbarButton() 
+			OnMouseDropReceived0=UIObject_Misc_ExtractData("self:","int",0,local:0) 					
+			OnMouseDropReceived1=UIObject_Misc_ExecuteServerScript("gui_elu_droponhotbar",local:0) 
+			OnMouseDropFailed=UIObject_Misc_ExtractData("self:","int",0,local:0) 
+			OnMouseDropFailed0=UIObject_Misc_ExecuteServerScript("gui_elu_dropoffhotbar",local:0) 
+			OnMouseDropFailed1=UIButton_OnDropFailed_ClearHotbarButton()
+			update=true OnUpdate=UIButton_OnUpdate_UpdateHotbarButton()
+			OnToolTip=UIObject_Tooltip_DisplayHotbar(OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT) >
+			<UIText name="HOTBAR_TEXT" width=PARENT_WIDTH color="HotbarText" height=PARENT_HEIGHT align=center valign=middle fontfamily="Body_Font" style="1"/>
+			<UIFrame state=base		fill="b_hb_normal.tga" />
+			<UIFrame state=up		fill="b_empty.tga" />
+			<UIFrame state=down		fill="b_overlay.tga" />
+			<UIFrame state=focused	fill="b_empty.tga" />
+			<UIFrame state=hilited	fill="b_overlay.tga" />
+			<UIFrame state=hifocus	fill="b_overlay.tga" />
+			<UIFrame state=disabled fill="b_empty.tga" />
+		</UIHotbarButton>
+	</UIGrid>
+
+    <UIButton name="EXPLORATION" x="632" y="11" width="23" height="23" buttontype="radio" MouseUpSFX="gui_button" groupid="1" groupmemberid="3"
+        OnSelected=UIButton_Input_ChangePlayMode(3)
+		OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_exp_tutorial")
+		OnToolTip=UIObject_Tooltip_DisplayTooltipStringRef(233960,"OBJECT_X","OBJECT_Y","SCREEN_TOOLTIP_2") >
+		<UIFrame state=up		fill="exploration.tga" />
+		<UIFrame state=down		fill="exploration_down.tga" />
+		<UIFrame state=focused	fill="exploration_hover.tga" />
+		<UIFrame state=hilited	fill="exploration_hover.tga" />
+		<UIFrame state=hifocus	fill="exploration_down.tga" />
+		<UIFrame state=disabled	fill="exploration.tga" />
+    </UIButton>
+    
+	<UIButton name="STRATEGY" x="632" y="37" width="23" height="23" buttontype="radio" MouseUpSFX="gui_button" groupid="1" groupmemberid="2"
+        OnSelected=UIButton_Input_ChangePlayMode(2)
+		OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_strat_tutorial")
+		OnToolTip=UIObject_Tooltip_DisplayTooltipStringRef(183583,"OBJECT_X","OBJECT_Y","SCREEN_TOOLTIP_2") >
+		<UIFrame state=up		fill="strategy.tga" />
+		<UIFrame state=down		fill="strategy_down.tga" />
+		<UIFrame state=focused	fill="strategy_hover.tga" />
+		<UIFrame state=hilited	fill="strategy_hover.tga" />
+		<UIFrame state=hifocus	fill="strategy_down.tga" />
+		<UIFrame state=disabled	fill="strategy.tga" />
+    </UIButton>
+
+<UIButton name="CHARACTER" x="632" y="63" width="23" height="23" buttontype="radio" MouseUpSFX="gui_button" groupid="1" groupmemberid="1"
+        OnSelected=UIButton_Input_ChangePlayMode(1)
+		OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_char_tutorial")
+		OnToolTip=UIObject_Tooltip_DisplayTooltipStringRef(183586,"OBJECT_X","OBJECT_Y","SCREEN_TOOLTIP_2") >
+		<UIFrame state=up		fill="character.tga" />
+		<UIFrame state=down		fill="character_down.tga" />
+		<UIFrame state=focused	fill="character_hover.tga" />
+		<UIFrame state=hilited	fill="character_hover.tga" />
+		<UIFrame state=hifocus	fill="character_down.tga" />
+		<UIFrame state=disabled	fill="character.tga" />
+    </UIButton>
+
+<!-- Button 1 -->
+<UIButton name="followOn-btn" x="659" y="11" width="23" height="23" 
+	MouseUpSFX="gui_button"
+        OnToolTip=UIObject_Tooltip_DisplayTooltipString("FollowOn",OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT) 
+	OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_dmfi_playerui",".follow_on")  >
+		<UIFrame state="base"	fill="ia_follow.tga" />
+		<UIFrame state="up"		fill="b_empty.tga" />
+		<UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+		<UIFrame state="focused"	fill="b_empty.tga" />
+		<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.5" />
+		<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.5"/>
+    </UIButton>
+<!-- Cancel Follow, this is hidden normally -->
+<UIButton name="followOff-btn" x="659" y="11" width="23" height="23" 
+	MouseUpSFX="gui_button"
+	hidden=true
+        OnToolTip=UIObject_Tooltip_DisplayTooltipString("FollowOff",OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT) 
+	OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_dmfi_playerui",".follow_off")  >
+		<UIFrame state="base"	fill="dmfi_cancel_follow.tga" />
+		<UIFrame state="up"		fill="b_empty.tga" />
+		<UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+		<UIFrame state="focused"	fill="b_empty.tga" />
+		<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.5" />
+		<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.5"/>
+    </UIButton>
+
+<!-- Button 2 -->
+<UIButton name="counterspellOn-btn" x="659" y="37" width="23" height="23"
+	OnToolTip=UIObject_Tooltip_DisplayTooltipString("Counterspell",OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT)  
+	MouseUpSFX="gui_button"         
+	OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_counterspell","on")  >
+		<UIFrame state="base"	fill="ia_counterspell.tga" />
+		<UIFrame state="up"		fill="b_empty.tga" />
+		<UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+		<UIFrame state="focused"	fill="b_empty.tga" />
+		<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.5" />
+		<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.5"/>
+    </UIButton>
+<!-- Button 2 -->
+<UIButton name="counterspellOff-btn" x="659" y="37" width="23" height="23"
+	OnToolTip=UIObject_Tooltip_DisplayTooltipString("CounterspellOff",OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT) 
+	MouseUpSFX="gui_button"
+	hidden=true        
+	OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_counterspell","off")  >
+		<UIFrame state="base"	fill="ia_banplayer.tga" />
+		<UIFrame state="up"		fill="b_empty.tga" />
+		<UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+		<UIFrame state="focused"	fill="b_empty.tga" />
+		<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.5" />
+		<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.5"/>
+    </UIButton>
+
+
+<!-- Button 3 -->
+<UIButton name="AutoBuff-btn" x="659" y="63" width="23" height="23"
+	OnToolTip=UIObject_Tooltip_DisplayTooltipString("AutoBuff",OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT)  
+	MouseUpSFX="gui_button"         
+	OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_interface","autobuff")  >
+		<UIFrame state="base"	fill="ia_specialabilities.tga" />
+		<UIFrame state="up"		fill="b_empty.tga" />
+		<UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+		<UIFrame state="focused"	fill="b_empty.tga" />
+		<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.5" />
+		<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.5"/>
+    </UIButton>
+
+
+
+
+	<!-- Background Image -->
+	<UIIcon img="hotbar_bg.tga" width=900 height=PARENT_HEIGHT alpha="0.20" />
+

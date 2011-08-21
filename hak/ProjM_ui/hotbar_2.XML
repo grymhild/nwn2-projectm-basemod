@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8">
+
+<UIScene name="SCREEN_HOTBAR_2" OnAdd=UIScene_OnAdd_SetupSpecificHotbar("HOTBAR_GRID_2",108) x="655" y="ALIGN_BOTTOM" width="504" height="44" 
+scriptloadable="true" draggable="true" priority="SCENE_INGAME"/>
+
+	<!-- Hotbar Grid -->
+	<UIGrid name="HOTBAR_GRID_2" rows=1 columns=12 x=10 y=2 xPadding=1 yPadding=0 update=true OnUpdate=UIGrid_OnUpdate_UpdateHotbarGrid(108) >
+		<UIHotbarButton name="HOTBAR_BUTTON" height=40 width=40 draggable=true prototype=true 
+			hotbartype="HOTBAR_BUTTON"
+			MouseDragSFX="gui_drag" MouseDropSFX="gui_drop"
+			OnRadialRequest=UIObject_OnRadial_DisplayInventoryRadial()
+			OnLeftClick=UIObject_Misc_ExtractData("self:","int",0,local:0)
+			OnLeftClick0=UIObject_Misc_ExecuteServerScript("gui_elu_onhotbarbuttonclick_e",local:0)
+			OnLeftClick1=UIButton_Input_HotbarLeftClick() 
+			OnRightClick=UIButton_Input_HotbarRightClick() 
+			OnMouseDrop0=UIObject_Misc_ExtractData("self:","int",0,local:0) 
+			OnMouseDrop1=UIObject_Misc_ExecuteServerScript("gui_elu_hotbarbuttonmove",local:0) 			
+			OnMouseDropReceived=UIButton_OnDropReceived_SetHotbarButton() 
+			OnMouseDropReceived0=UIObject_Misc_ExtractData("self:","int",0,local:0) 					
+			OnMouseDropReceived1=UIObject_Misc_ExecuteServerScript("gui_elu_droponhotbar",local:0) 
+			OnMouseDropFailed=UIObject_Misc_ExtractData("self:","int",0,local:0) 
+			OnMouseDropFailed0=UIObject_Misc_ExecuteServerScript("gui_elu_dropoffhotbar",local:0) 
+			OnMouseDropFailed1=UIButton_OnDropFailed_ClearHotbarButton()
+			update=true OnUpdate=UIButton_OnUpdate_UpdateHotbarButton()
+			OnToolTip=UIObject_Tooltip_DisplayHotbar(OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT) >
+			<UIText name="HOTBAR_TEXT" width=PARENT_WIDTH color="HotbarText" height=PARENT_HEIGHT align=center valign=middle fontfamily="Body_Font" style="1"/>
+			<UIFrame state=base		fill="b_hotbar_secondary.tga" />
+			<UIFrame state=up		fill="b_empty.tga" />
+			<UIFrame state=down		fill="b_overlay.tga" />
+			<UIFrame state=focused	fill="b_empty.tga" />
+			<UIFrame state=hilited	fill="b_overlay.tga" />
+			<UIFrame state=hifocus	fill="b_overlay.tga" />
+			<UIFrame state=disabled fill="b_empty.tga" />
+		</UIHotbarButton>
+	</UIGrid>
+
+	<!-- Background Image 
+	<UIIcon img="hotbar_bg.tga" width=PARENT_WIDTH height=PARENT_HEIGHT />
+	-->
+	<UIFrame x=0 y=0 width=10 height=PARENT_HEIGHT topleft="tp_frame_tl.tga" topright="tp_frame_tr.tga" bottomleft="tp_frame_bl.tga"
+		bottomright="tp_frame_BR.tga" top="tp_frame_t.tga" bottom="tp_frame_b.tga"
+		left="tp_frame_l.tga" right="tp_frame_r.tga" fillstyle="stretch" fill="tp_frame_bg.tga" border=5 />

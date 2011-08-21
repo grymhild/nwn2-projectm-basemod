@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8">
+
+<UIScene name="SCREEN_CHARGEN_DOMAIN" priority="SCENE_FE_FULLSCREEN" fullscreen=true 
+	OnAdd=UIButton_Input_ScreenClose()
+
+	/>	

@@ -1,0 +1,22 @@
+2DA	V2.0
+
+	LABEL	ReqType	ReqParam1	ReqParam2
+0	Lore	SKILL	7	8
+1	BardOr	CLASSOR	1	****
+2	SorcOr	CLASSOR	9	****
+3	AssassinOr	CLASSOR	30	****
+4	AvengerOr	CLASSOR	142	****
+5	ScriptVar	VAR	X1_AllowDrDis	0
+6	Dwarf	RACE	0	****
+7	Elf	RACE	1	****
+8	Gnome	RACE	2	****
+9	Halfling	RACE	3	****
+10	Half-Elf	RACE	4	****
+11	HalfOrc	RACE	5	****
+12	Human	RACE	6	****
+13	Planetouched	RACE	21	****
+14	Outsider	RACE	20	****
+15	Feytouched	RACE	50	****
+16	YuantiPureblood	RACE	31	****
+17	Orc	****	****	****
+18	GrayOrc	RACE	32	****

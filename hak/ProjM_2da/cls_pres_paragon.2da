@@ -1,0 +1,31 @@
+2DA	V2.0
+
+	LABEL	ReqType	ReqParam1	ReqParam2
+0	Gold_Dwarf	SUBRACE	0	****
+1	Gray_Dwarf_Duergar	SUBRACE	1	****
+2	Shield_Dwarf	SUBRACE	2	****
+3	Drow	SUBRACE	3	****
+4	Moon_Elf	SUBRACE	4	****
+5	Sun_Elf	SUBRACE	5	****
+6	Wild_Elf	SUBRACE	6	****
+7	Wood_Elf	SUBRACE	7	****
+8	Deep_Gnome_Svirfneblin	SUBRACE	8	****
+9	Rock_Gnome	SUBRACE	9	****
+10	Ghostwise_Halfling	SUBRACE	10	****
+11	Lightfoot_Halfling	SUBRACE	11	****
+12	Strongheart_Halfling	SUBRACE	12	****
+13	HalfElf	SUBRACE	15	****
+14	HalfOrc	SUBRACE	16	****
+15	Human	SUBRACE	17	****
+16	HalfDrow	SUBRACE	43	****
+17	GrayOrc	SUBRACE	48	****
+18	Star_Elf	SUBRACE	67	****
+19	Painted_Elf	SUBRACE	68	****
+20	Desert_Dwarf	SUBRACE	124	****
+21	Jungle_Halfling	SUBRACE	125	****
+22	Forest_Gnome_RoF	SUBRACE	160	****
+23	Spriggan_RoF	SUBRACE	164	****
+24	Poscadar_RoF	SUBRACE	176	****
+25	Sandstorm_Halfling_RoF	SUBRACE	184	****
+26	Dune_Elf_RoF	SUBRACE	185	****
+27	Aelfborn_RoF	SUBRACE	214	****

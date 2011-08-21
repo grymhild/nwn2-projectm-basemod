@@ -1,0 +1,112 @@
+Various 2DA Alterations
+Kaedrins: (vs SoZ originals)
+Dex: (vs Kaedrins)
+ProjM: (vs Dex)
+
+armorrulestats
+Dex: ACPenalty values for sheilds set to 0
+Dex: altereted descriptions, names, and basestatrefs for Keadrins custom shields and armors
+ProjM: altered basestatrefs of tower sheild to use custom version of number, still points to original dex tlk entry.
+
+appearance
+ProjM: Addded missing MoW entries 1048 - 1050 (vs Dex)
+
+baseitems
+Kaedrins: altered heavy flail to light flail (4), altered gloves (36), altered flail (115)
+Dex: Altered preffered atk distance, damage dice and stack sizes of several items, added TOB entries: (99,100)
+ProjM: longer crossbow ranges, reserved lines marked, smaller ammo and items stacks w/ adjusted costs, dart damage, inventory sound of creature skin set to silent
+ProjM: lt crossbow prof no longer granted by spirit shaman weapon prof (which was changed to primative weapon prof)
+
+classes
+Kaedrins: several new classes, some altered descriptions for existing classes, altered spell progression lookup referenes...
+Dex: corrections to constant column, added Abbrev column, adjusted strref values, added reserved ProjectM slots, added TOB entries
+ProjM: added some resereved markers and blanked out entries on them, 
+
+cls_bfeat_paragon (added)
+ProjM: bonus feats for racial paragon class
+
+cls_feat_cler
+ProjM: added craft constract as available feat
+
+cls_feat_druid
+ProjM: Added improved companion, elemental companion, and epic dragon companion as available feats
+
+clas_feat_paragon (added)
+ProjM: feats list for racial paragon class
+
+cls_feat_ranger
+ProjM: added improved companion, epic dragon companion as available feats
+
+cls_feat_sorc
+ProjM: added improved familiar, elemental familiar, craft construct as available feats
+
+cls_feat_spiritshaman
+ProjM: fixed missing Telthor companion feat entry
+
+cls_feat_wiz
+ProjM: added craft constrct, improved familiar, elemental familiar as available feats
+
+cls_pres_paragon (added)
+ProjM: prestiege class requirements for racial paragon class
+
+cls_skillchapwild
+ProjM: added perform skill as cross class
+
+cls_skilldragonsam
+ProjM: added perform skill as cross class
+
+cls_skill_fmaster
+ProjM: added perform skill as cross class
+
+cls_skill_natwar
+ProjM: added perform skill as cross class
+
+cls_skill_paragon (added)
+ProjM: skill lis for racial paragon class
+
+cls_skill_skullclan
+ProjM: added perform skill as cross class
+
+cls_skill_thug
+ProjM: added perform skill as cross class
+
+domains
+ProjM: Restored missing entries form Kaedrin's domains
+
+feat
+ProjM: Altered Fury domain feats so labels say Fury instead o war. Added several custom feats for Project M.
+ProjM: Spirit Shaman weapon prof changed to Primitive Weapon Prof.
+
+hen_companion
+Added improved companions and Familiars, elemental companions and familiars, constrct familiars
+
+nwn2_icons
+ProjM: added HCR2 food icons
+
+packftrog4 (added)
+ProjM: Made corrections to some entries in this package file. (these are general fixes, not ProjM specific)
+
+poison
+ProjM: Added BoneSpider Bite poison (comes from companion/familiars additions)
+
+polymorph
+ProjM: added missing MoW polymorph to bat for vampires
+
+race_Feat_drow
+ProjM: added sepcialize hidden race feats, and prereq sets to support racial paragon class
+
+racialsubtypes
+ProjM: restored original LA values to RoF and base races. Added Desert Dwarf, and Jungle halfing races.
+
+skills
+ProjM: added ALFA skill entries and reservations for later OnUSeSkill hard-coding workarounds. Additional skills are set as removed for now.
+
+soundset
+ProjM: added MoW entries
+
+spells
+ProjM: All spells which are not part of a spellbook which had innate equal to ****, 0 or 1, have had their innate value set to -1. 
+ProjM: Added sepeveral feat spells  to support ProjectM racial feats, and custom feats.
+
+wingmodel
+ProjM: Removed redundant DragonMan, DragonWoman entries, changed some labels to use underscores instead of spaces and quotes.
