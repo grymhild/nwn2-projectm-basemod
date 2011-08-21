@@ -8,10 +8,10 @@ void main(string sScreen)
 	int nClass = GetLocalInt(oChar, LAST_SELECTED_CLASS);
 	string packageline = Get2DAString("classes", "Package", nClass);
 	int bAllocateByPackage;
-	if (packageline != "****" && packageline != "")
+	if (packageline != "")
 	{
 		string featpackage = Get2DAString("packages", "FeatPref2DA", StringToInt(packageline));
-		if (featpackage != "****" && featpackage != "")
+		if (featpackage != "")
 		{
 			AllocateFeatsByPackage(oChar, featpackage, sScreen);
 			bAllocateByPackage = TRUE;			
@@ -19,7 +19,7 @@ void main(string sScreen)
 	}
 	if (!bAllocateByPackage)
 	{
-		WriteTimestampedLogEntry("WARNING: There is no feat package associated with ClassID:" + IntToString(nClass));
+		WriteTimestampedLogEntry("WARNING: There is no feat package associated with ClassID: " + IntToString(nClass));
 		AllocateFeats(oChar, sScreen);
 	}
 		
