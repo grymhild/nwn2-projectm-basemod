@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Neverwinter Nights 2 -->
+<!-- Copyright (C) 2006 Obsidian Entertainment, Inc. -->
+
+<UIScene name="SCREEN_MODEBAR" x="ALIGN_RIGHT" y="ALIGN_BOTTOM" width="169" height="132" draggable="true" fadeout="0.2" fadein="0.2"
+    capturemouseclicks="false" capturemouseevents="false" scriptloadable="true"
+    OnAdd=UIScene_OnAdd_SetupSpecificHotbar("MODEBAR_GRID",120) priority="SCENE_INGAME"/>
+
+    <UIButton name="SHOW_BARD_PAGE" x="5" y="102" strref="2" style="STYLE_MODEBAR_BUTTON" groupid="1" groupmemberid="2"
+        OnSelected=UIButton_Input_ShowObject("BARD_PAGE") OnUnselected=UIButton_Input_HideObject("BARD_PAGE")
+        update="true" OnUpdate=UIButton_OnUpdate_UpdateBardButton() >
+    </UIButton>
+
+    <UIButton name="SHOW_MODE_PAGE" x="87" y="102" strref="183635" style="STYLE_MODEBAR_BUTTON" groupid="1" groupmemberid="1"
+        OnSelected=UIButton_Input_ShowObject("MODE_PAGE") OnUnselected=UIButton_Input_HideObject("MODE_PAGE")
+        update="true" OnUpdate=UIButton_OnUpdate_UpdateNotBardButton() >
+    </UIButton>
+
+    <UIPane name="MODE_PAGE" x=0 y=0 width=169 height=100 hidden=false capturemouseclicks=false capturemouseevents=false >
+		<UIGrid name="MODEBAR_GRID" x=4 y=0 rows=3 columns=5 xPadding=0 yPadding=0 
+			capturemouseclicks=false capturemouseevents=false
+			update=true OnUpdate=UIGrid_OnUpdate_UpdateHotbarGrid(120) >
+			<UIHotbarButton name="PrototypeButton" height=32 width=32 prototype=true 
+				draggable=true
+				hotbartype="HOTBAR_TOGGLEMODE_BUTTON"
+				OnLeftClick=UIButton_Input_HotbarLeftClick() 
+				OnRightClick=UIButton_Input_HotbarRightClick() 
+				update=true OnUpdate=UIButton_OnUpdate_UpdateHotbarButton()
+				OnToolTip=UIObject_Tooltip_DisplayHotbar(OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT) 
+				OnMouseDrop=UIObject_Misc_ExtractData("self:","int",0,local:0)
+				OnMouseDrop0=UIObject_Misc_ExecuteServerScript("gui_elu_modedrop",local:0) >				
+				<UIText name="HOTBAR_TEXT" width=PARENT_WIDTH height=PARENT_HEIGHT align=right valign=bottom fontfamily="Special_Font" style="1" />
+				<UIFrame state=base		fill="b_emptyframe.tga" />
+				<UIFrame state=up		fill="b_empty.tga" />
+				<UIFrame state=down		fill="b_overlay.tga" />
+				<UIFrame state=focused	fill="b_empty.tga" />
+				<UIFrame state=hilited	fill="b_overlay.tga" />
+				<UIFrame state=hifocus	fill="b_overlay.tga" />
+				<UIFrame state=disabled fill="b_emptyframe.tga" />
+				<UIIcon name="OVERLAY_ICON" img="b_overlay_active.tga" hidden=true />
+			</UIHotbarButton>
+		</UIGrid>
+	</UIPane>
+
+	<UIPane name="BARD_PAGE" x=0 y=0 width=169 height=100 hidden=true >
+		<UIGrid name="BARDBAR_GRID" x=4 y=0 rows=3 columns=5 xPadding=0 yPadding=0 update=true OnUpdate=UIGrid_OnUpdate_UpdateHotbarGrid(140) >
+			<UIHotbarButton name="PrototypeButton" height=32 width=32 prototype=true 
+				draggable=true
+				hotbartype="HOTBAR_TOGGLEMODE_BUTTON"
+				OnLeftClick=UIButton_Input_HotbarLeftClick() 
+				OnRightClick=UIButton_Input_HotbarRightClick() 
+				update=true OnUpdate=UIButton_OnUpdate_UpdateHotbarButton()
+				OnToolTip=UIObject_Tooltip_DisplayHotbar(OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT) 
+				OnMouseDrop=UIObject_Misc_ExtractData("self:","int",0,local:0)
+				OnMouseDrop0=UIObject_Misc_ExecuteServerScript("gui_elu_barddrop",local:0) >
+				<UIText name="HOTBAR_TEXT" width=PARENT_WIDTH height=PARENT_HEIGHT align=right valign=bottom fontfamily="Special_Font" style="1" />
+				<UIFrame state=base		fill="b_emptyframe.tga" />
+				<UIFrame state=up		fill="b_empty.tga" />
+				<UIFrame state=down		fill="b_overlay.tga" />
+				<UIFrame state=focused	fill="b_empty.tga" />
+				<UIFrame state=hilited	fill="b_overlay.tga" />
+				<UIFrame state=hifocus	fill="b_overlay.tga" />
+				<UIFrame state=disabled fill="b_emptyframe.tga" />
+			</UIHotbarButton>
+		</UIGrid>
+	</UIPane>
+
+	<!-- Background Image -->
+    <UIIcon x="ALIGN_LEFT" y="98" width="169" height="23" img="mb_background.tga" />

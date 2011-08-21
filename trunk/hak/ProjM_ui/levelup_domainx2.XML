@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8">
+
+<UIScene name="SCREEN_LEVELUP_DOMAIN" width=1024 height=768 priority="SCENE_INGAME_FULLSCREEN" fullscreen=true cullrenderables=true scriptloadable=true 
+	OnAdd=UIButton_Input_CharGenCommit("LEVELUP","CHARGEN_DOMAIN") />
+	

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="NWN2UI">
+
+<!-- Local:1 on this screen is used for internal logic for when the user hits ESC to cancel instead of clicking
+  -- a button. -->
+
+<UIScene name="SCREEN_MESSAGEBOX_DEFAULT" width=300 height=300 x=ALIGN_CENTER y=ALIGN_CENTER modal=true idleexpiretime="60.0" scriptloadable=true autolayout=true
+		 backoutkey=true
+		 OnCreate=UIScene_OnCreate_SetupMessageBox(300,300,10,10,10,10) priority="SCENE_GLOBAL"
+		 OnAdd=UIObject_Misc_SetLocalVarString(1,"false")
+		 OnRemove=UIScene_OnRemove_FireCancelCallback("cancelbutton") />
+
+	<!-- Message Listbox -->
+	<UIListBox name=messageboxlb x=5 y=5 width=290 height=200 showpartialchild=true xPadding=5 yPadding=10
+	hidescrollbarwhennotneeded=true scrollsegmentsize=17 unequalcontrols=true>
+
+		<UIText name=messagetext width=PARENT_WIDTH height=DYNAMIC sizetofit=true align=center fontfamily="Body_Font" style=1  />
+
+		<UIScrollBar name="SB" style="STYLE_SB_THIN"></UIScrollBar>	
+	</UIListBox>
+
+	<!-- OK Button -->
+	<UIButton name="okbutton" strref="66" x=27 y=220 style="STYLE_SMALL_BUTTON" 
+		OnLeftClick=UIButton_Input_HandleMessageBoxOK()
+		OnLeftClick0=UIObject_Misc_ExecuteServerScript("gui_elu_cancellevelup_e") >
+	</UIButton>
+
+	<!-- Cancel Button -->
+	<UIButton name="cancelbutton" strref="67" x=165 y=220 style="STYLE_SMALL_BUTTON" OnLeftClick=UIButton_Input_HandleMessageBoxCancel()>
+	</UIButton>
+
+	<!-- Background Image -->
+	<UIFrame name="MSGBOX_BACKGROUND" x=0 y=0 width=PARENT_WIDTH height=PARENT_HEIGHT topleft="tp_frame_tl.tga" topright="tp_frame_tr.tga" 
+		bottomleft="tp_frame_bl.tga" bottomright="tp_frame_BR.tga" top="tp_frame_t.tga" bottom="tp_frame_b.tga"
+		left="tp_frame_l.tga" right="tp_frame_r.tga" fillstyle="stretch" fill="tp_frame_bg.tga" border=5 />
+	
