@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<UIScene name="SCREEN_DMCTOOLBAR2" 
+	x=ALIGN_LEFT 
+	y=ALIGN_TOP 
+	width=SCREEN_WIDTH 
+	height=75 
+	fullscreen=false
+	scalescene=true
+	capturemouseclicks=false 
+	capturemouseevents=false
+	ignoreevents=false		
+	draggable=false
+	priority="SCENE_INGAME"
+	scriptloadable=true
+	idleexpiretime="1.0"
+/>
+
+<UIPane name="DMC_TARGET_PANE" x=0 y=39 width=270 height=19 
+	capturemouseclicks=false
+	capturemouseevents=false
+	ignoreevents=true
+	>
+		<UIText name="targetname" x=2 y=2 width=270 height=15 align=left 
+			valign=top color="white" fontfamily="Body_Font" alpha="0.50"
+			update=true OnUpdate=UIText_OnUpdate_DisplayTargetObjectName()  />
+			
+		<UIIcon name="test_background1" capturemouseclicks=false capturemouseevents=false x=ALIGN_LEFT y=ALIGN_TOP img="fx_white.tga" width=150 height=PARENT_HEIGHT color="2F000000" alpha="0.20" />
+	</UIPane>
+
+
+<UIPane name="DMC_MENU_PANE" x=151 y=15 width=SCREEN_WIDTH height=15
+	capturemouseclicks=true
+	capturemouseevents=false
+	ignoreevents=false
+	alpha="0.8"
+	scalewithscene=true
+	>
+			
+			<!-- Target -->
+			<UIButton name="DM_TARGET_BUTTON" x=2 y=0 width=44 height=15 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button"
+			  OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_dmtoolbar","targeting") 
+			>
+			  <UIFrame state="base"	fill="bw_target.tga" />
+			  <UIFrame state="up" fill="b_empty.tga" />
+			  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			  <UIFrame state="focused" fill="b_empty.tga" />
+			  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+			  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+			</UIButton>
+			
+			<!-- Heal -->
+			<UIButton name="DM_HEAL_BUTTON" x=46 y=0 width=44 height=15 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button"
+			  OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_dmtoolbar","heal")
+				OnRightClick=UIObject_Misc_ExecuteServerScript("gui_csl_dmtoolbar","healall")
+			>
+			  <UIFrame state="base"	fill="bw_heal.tga" />
+			  <UIFrame state="up" fill="b_empty.tga" />
+			  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			  <UIFrame state="focused" fill="b_empty.tga" />
+			  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+			  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+			</UIButton>
+			
+			<!-- Kill -->
+			<UIButton name="DM_KILL_BUTTON" x=90 y=0 width=44 height=15 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button"
+			OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_dmtoolbar","kill")
+			OnRightClick=UIObject_Misc_ExecuteServerScript("gui_csl_dmtoolbar","killall")
+			>
+			  <UIFrame state="base"	fill="bw_kill.tga" />
+			  <UIFrame state="up" fill="b_empty.tga" />
+			  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			  <UIFrame state="focused" fill="b_empty.tga" />
+			  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+			  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+			</UIButton>
+			
+			<!-- Inventory -->
+			<UIButton name="INVENTORY_BUTTON" x=134 y=0 width=44 height=15 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button"
+			  OnLeftClick="UIObject_Input_ActionTargetScript(creature,37,39,0,TRUE,gui_csl_charedit_show,target:object)"
+			>
+			  <UIFrame state="base"	fill="bw_charedit.tga" />
+			  <UIFrame state="up" fill="b_empty.tga" />
+			  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			  <UIFrame state="focused" fill="b_empty.tga" />
+			  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+			  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+			</UIButton>
+			
+			<!-- Variables -->
+			<UIButton name="VARIABLES_BUTTON" x=178 y=0 width=44 height=15 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button"
+				OnLeftClick="UIObject_Input_ActionTargetScript(creature,37,39,0,TRUE,gui_csl_varmanager_show,target:object)"
+			>
+			  <UIFrame state="base"	fill="bw_variables.tga" />
+			  <UIFrame state="up" fill="b_empty.tga" />
+			  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			  <UIFrame state="focused" fill="b_empty.tga" />
+			  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+			  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+			</UIButton>
+			
+			<!-- Visibility -->	
+			<UIButton name="VISIBILITY_TOGGLE_BUTTON" x=226 y=0 width=44 height=15 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button"
+			  hidden="true"
+				OnLeftClick0=UIButton_Input_DMCVisibilityToggle()
+				OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_dmtoolbar","chattoggle")
+				OnRigthClick=UIObject_Misc_ExecuteServerScript("gui_csl_dmtoolbar","chattogglealways")
+				update=true OnUpdate=UIButton_OnUpdate_DMCVisibilityToggle()
+			>
+			  <UIFrame state="base"	fill="bw_invisible.tga" />
+			  <UIFrame state="up" fill="b_empty.tga" />
+			  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			  <UIFrame state="focused" fill="b_empty.tga" />
+			  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+			  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+			</UIButton>
+			
+			<UIButton name="PCVISIBILITY_TOGGLE_BUTTON" x=226 y=0 width=44 height=15 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button"
+			  hidden="true"
+				OnLeftClick0=UIObject_Misc_ExecuteServerScript("gui_csl_dmtoolbar","visible") 
+			>
+			  <UIFrame state="base"	fill="bw_visible.tga" />
+			  <UIFrame state="up" fill="b_empty.tga" />
+			  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			  <UIFrame state="focused" fill="b_empty.tga" />
+			  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+			  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+			</UIButton>
+			
+			<UIButton name="PCINVISIBILITY_TOGGLE_BUTTON" x=226 y=0 width=44 height=15 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button"
+			  hidden="true"
+				OnLeftClick0=UIObject_Misc_ExecuteServerScript("gui_csl_dmtoolbar","invisible")
+			>
+			  <UIFrame state="base"	fill="bw_invisible.tga" />
+			  <UIFrame state="up" fill="b_empty.tga" />
+			  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			  <UIFrame state="focused" fill="b_empty.tga" />
+			  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+			  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+			</UIButton>
+			
+			<!-- Pause -->
+			<UIButton name="PAUSE_TOGGLE_BUTTON" x=270 y=0 width=44 height=15 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button"
+				hidden="true"
+				OnLeftClick=UIButton_Input_DMCPauseToggle()
+			>
+			  <UIFrame state="base"	fill="bw_pause.tga" />
+			  <UIFrame state="up" fill="b_empty.tga" />
+			  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			  <UIFrame state="focused" fill="b_empty.tga" />
+			  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+			  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+			</UIButton>
+			
+			<!-- Camera -->
+			<UIButton name="CAMERA_TOGGLE_BUTTON" x=314 y=0 width=44 height=15 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button"
+			  hidden="true"
+				OnLeftClick=UIButton_Input_DMCCameraToggle()
+			>
+			  <UIFrame state="base"	fill="bw_camera.tga" />
+			  <UIFrame state="up" fill="b_empty.tga" />
+			  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			  <UIFrame state="focused" fill="b_empty.tga" />
+			  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+			  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+			</UIButton>
+			
+			<!-- Toggle Traps-->
+			<UIButton name="TRAPS_TOGGLE_BUTTON" x=358 y=0 width=44 height=15 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button"
+				hidden="true"
+				OnLeftClick=UIButton_Input_DMCTrapsToggle()
+			>
+			  <UIFrame state="base"	fill="bw_traps.tga" />
+			  <UIFrame state="up" fill="b_empty.tga" />
+			  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			  <UIFrame state="focused" fill="b_empty.tga" />
+			  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+			  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+			</UIButton>
+			
+			<!-- Chooser  -->
+			<UIButton name="CHOOSER_TOGGLE_BUTTON" x=406 y=0 width=44 height=15 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button"
+			  hidden="true"
+				OnLeftClick0=UIObject_Misc_ExecuteServerScript("gui_csl_dmtoolbar","chooser")
+				OnLeftClick1=UIButton_Input_ToggleScreen("SCREEN_DMC_CHOOSER")
+			>
+			  <UIFrame state="base"	fill="bw_chooser.tga" />
+			  <UIFrame state="up" fill="b_empty.tga" />
+			  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			  <UIFrame state="focused" fill="b_empty.tga" />
+			  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+			  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+			</UIButton>
+			
+			<!-- Creator    -->
+			<UIButton name="CREATOR_TOGGLE_BUTTON" x=450 y=0 width=44 height=15 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button"
+			  	hidden="true"
+				OnLeftClick0=UIObject_Misc_ExecuteServerScript("gui_csl_dmtoolbar","creator")
+				OnLeftClick1=UIButton_Input_ToggleScreen("SCREEN_DMC_CREATOR")
+			>
+			  <UIFrame state="base"	fill="bw_creator.tga" />
+			  <UIFrame state="up" fill="b_empty.tga" />
+			  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			  <UIFrame state="focused" fill="b_empty.tga" />
+			  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+			  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+			</UIButton>
+			
+			<!-- This is from the DMFI VFX  -->
+			<UIButton name="VFX_TOGGLE_BUTTON" x=494 y=0 width=44 height=15 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button"
+			  OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_dmtoolbar","vfx")
+			>
+			  <UIFrame state="base"	fill="bw_vfx.tga" />
+			  <UIFrame state="up" fill="b_empty.tga" />
+			  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			  <UIFrame state="focused" fill="b_empty.tga" />
+			  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+			  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+			</UIButton>
+			
+			<!--This is from the DMFI Ambient -->
+			<UIButton name="AMBIENT_TOGGLE_BUTTON" x=538 y=0 width=44 height=15 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button"
+			  OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_dmtoolbar","ambient")
+			>
+			  <UIFrame state="base"	fill="bw_ambient.tga" />
+			  <UIFrame state="up" fill="b_empty.tga" />
+			  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			  <UIFrame state="focused" fill="b_empty.tga" />
+			  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+			  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+			</UIButton>
+			
+			<!--This is from the DMFI Sounds -->
+			<UIButton name="SOUNDS_TOGGLE_BUTTON" x=582 y=0 width=44 height=15 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button"
+			  OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_dmtoolbar","sounds") 
+			>
+			  <UIFrame state="base"	fill="bw_sounds.tga" />
+			  <UIFrame state="up" fill="b_empty.tga" />
+			  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			  <UIFrame state="focused" fill="b_empty.tga" />
+			  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+			  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+			</UIButton>
+			
+			<!--This is from the DMFI Music -->
+			<UIButton name="MUSIC_TOGGLE_BUTTON" x=626 y=0 width=44 height=15 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button"
+			OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_dmtoolbar","music")
+			>
+			  <UIFrame state="base"	fill="bw_music.tga" />
+			  <UIFrame state="up" fill="b_empty.tga" />
+			  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			  <UIFrame state="focused" fill="b_empty.tga" />
+			  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+			  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+			</UIButton>
+			
+			<!--This is from the DMFI Dice -->
+			<UIButton name="DICE_TOGGLE_BUTTON" x=674 y=0 width=44 height=15 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button"
+			  OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_dmtoolbar","dice")
+			>
+			  <UIFrame state="base"	fill="bw_dice.tga" />
+			  <UIFrame state="up" fill="b_empty.tga" />
+			  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			  <UIFrame state="focused" fill="b_empty.tga" />
+			  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+			  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+			</UIButton>
+			
+			<!--This is from the DMFI Language -->
+			<UIButton name="LANGUAGE_TOGGLE_BUTTON" x=718 y=0 width=44 height=15 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button"
+			  OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_dmtoolbar",".language_on")
+			>
+			  <UIFrame state="base"	fill="bw_language.tga" />
+			  <UIFrame state="up" fill="b_empty.tga" />
+			  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			  <UIFrame state="focused" fill="b_empty.tga" />
+			  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+			  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+			</UIButton>
+			
+			
+			
+					
+			
+			
+
+	<UIIcon name="test_background" capturemouseclicks=false capturemouseevents=false x=ALIGN_LEFT y=0 img="fx_white.tga" width=PARENT_WIDTH height=15 color="2F000000" alpha="0.20" />
+ </UIPane>

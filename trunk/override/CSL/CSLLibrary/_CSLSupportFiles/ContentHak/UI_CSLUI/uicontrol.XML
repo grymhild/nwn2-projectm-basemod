@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8">
+<!-- XML code by: Pain -->
+
+
+<UIScene name="SCREEN_GUI_CONTROL" 
+	x=ALIGN_LEFT y=ALIGN_BOTTOM width="20" height="140"
+	draggable="false" idleexpiretime="1.0f" scriptloadable="true" 
+	priority="SCENE_SCRIPT"
+/>
+	<UIButton name="VoiceThrowingOn" x="0" y="0" width="20" height="20" alpha="0.50"
+		OnToolTip=UIObject_Tooltip_DisplayTooltipString("Turn_Voice_Throwing_On",OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT)
+		OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_interface","voicethrowon") >
+		<UIFrame state="base"	fill="ia_socialize.tga" />
+		<UIFrame state="up"		fill="b_empty.tga" />
+		<UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.85" />
+		<UIFrame state="focused"	fill="b_empty.tga" />
+		<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.6" />
+		<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.6"/>
+	</UIButton>
+	
+	<UIButton name="VoiceThrowingOff" x="0" y="0" width="20" height="20" hidden="true"
+		OnToolTip=UIObject_Tooltip_DisplayTooltipString("Turn_Voice_Throwing_Off",OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT)
+		OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_interface","voicethrowoff") >
+		<UIFrame state="base"	fill="ia_socialize.tga" />
+		<UIFrame state="up"		fill="b_empty.tga" />
+		<UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.85" />
+		<UIFrame state="focused"	fill="b_empty.tga" />
+		<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.6" />
+		<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.6"/>
+	</UIButton>
+	
+	
+	<UIButton name="HideAll" x="0" y="20" width="20" height="20" 
+		OnToolTip=UIObject_Tooltip_DisplayTooltipString("Hide_All",OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT)
+		OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_interface","hideall") >
+		<UIFrame state="base"	fill="b_minus_normal.tga" />
+		<UIFrame state="up"		fill="b_empty.tga" />
+		<UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.85" />
+		<UIFrame state="focused"	fill="b_empty.tga" />
+		<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.6" />
+		<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.6"/>
+	</UIButton>
+	
+	<UIButton name="HideAll" x="0" y="40" width="20" height="20" 
+		OnToolTip=UIObject_Tooltip_DisplayTooltipString("Show_All",OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT)
+		OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_interface","showall") >
+		<UIFrame state="base"	fill="b_plus_normal.tga" />
+		<UIFrame state="up"		fill="b_empty.tga" />
+		<UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.85" />
+		<UIFrame state="focused"	fill="b_empty.tga" />
+		<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.6" />
+		<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.6"/>
+	</UIButton>
+
+
+
+	<UIButton name="HideChat" x="0" y="60" width="20" height="20" 
+		OnToolTip=UIObject_Tooltip_DisplayTooltipString("Hide_Chat",OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT)
+		OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_interface","hidechat") >
+		<UIFrame state="base"	fill="ia_talk.tga" />
+		<UIFrame state="up"		fill="b_empty.tga" />
+		<UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.85" />
+		<UIFrame state="focused"	fill="b_empty.tga" />
+		<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.6" />
+		<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.6"/>
+	</UIButton>
+	
+	<UIButton name="HideChat" x="0" y="80" width="20" height="20" 
+		OnToolTip=UIObject_Tooltip_DisplayTooltipString("Show_Chat",OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT)
+		OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_interface","showchat") >
+		<UIFrame state="base"	fill="ia_talk.tga" />
+		<UIFrame state="up"		fill="b_empty.tga" />
+		<UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.85" />
+		<UIFrame state="focused"	fill="b_empty.tga" />
+		<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.6" />
+		<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.6"/>
+	</UIButton>
+
+	<UIButton name="HideTools" x="0" y="100" width="20" height="20" 
+		OnToolTip=UIObject_Tooltip_DisplayTooltipString("Hide_Tools",OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT)
+		OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_interface","hidetools") >
+		<UIFrame state="base"	fill="b_radio_off.tga" />
+		<UIFrame state="up"		fill="b_empty.tga" />
+		<UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.85" />
+		<UIFrame state="focused"	fill="b_empty.tga" />
+		<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.6" />
+		<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.6"/>
+	</UIButton>
+
+	<UIButton name="HideTools" x="0" y="120" width="20" height="20" 
+		OnToolTip=UIObject_Tooltip_DisplayTooltipString("Show_Tools",OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT)
+		OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_interface","showtools") >
+		<UIFrame state="base"	fill="b_radio_on.tga" />
+		<UIFrame state="up"		fill="b_empty.tga" />
+		<UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.85" />
+		<UIFrame state="focused"	fill="b_empty.tga" />
+		<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.6" />
+		<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.6"/>
+	</UIButton>
+
+								
+
+<!--		
+<UIFrame x="0" y="0" width="PARENT_WIDTH" height="PARENT_HEIGHT" border="32"
+	topleft="frame1_tl.tga" 		topright="frame1_tr.tga"
+	bottomleft="frame1_bl.tga"	bottomright="frame1_BR.tga"
+	top="frame1_t.tga"			bottom="frame1_b.tga"
+	left="frame1_l.tga"			right="frame1_r.tga" />	
+-->
+
+<UIFrame x=0 y=0 width=SCREEN_WIDTH height=SCREEN_HEIGHT fillstyle="tile" fill="frame_main_bg.tga"/>

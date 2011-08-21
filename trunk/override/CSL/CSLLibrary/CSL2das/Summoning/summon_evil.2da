@@ -1,0 +1,19 @@
+2DA	V2.0
+
+	Label	Method	Control	ResRef_1	ResRef_2	ResRef_3	ResRef_4	ResRef_5	ResRef_6	OnSummonScript	OnUnSummonScript	OnSummonEffect	OnUnSummonEffect	DurationEffect	LeveledStart	LeveledSteps	Protection	Formation
+0	LEVEL_0	Single	Protected	csl_sum_fiendish_rat	csl_sum_fiendish_rat	****	****	****	****	****	****	****	****	****	****	****	****	****
+1	LEVEL_1	Radial	Protected	csl_sum_fiendish_spid_01sma	csl_sum_fiendish_spid_01sma	1d3:csl_sum_fiendish_rat	****	****	****	****	****	****	****	****	****	****	****	****
+2	LEVEL_2	Radial	Protected	csl_sum_fiendish_wolf	csl_sum_fiendish_wolf	1d3:csl_sum_fiendish_spid_01sma	1d4+1:csl_sum_fiendish_rat	****	****	****	****	****	****	****	****	****	****	****
+3	LEVEL_3	Radial	Protected	csl_sum_fiendish_boar	csl_sum_fiendish_boar	1d3:csl_sum_fiendish_wolf	1d4+1:csl_sum_fiendish_spid_01sma	1d4+1:csl_sum_fiendish_rat	****	****	****	****	****	****	****	****	****	****
+4	LEVEL_4	Radial	Protected	csl_sum_fiendish_wolfdire	csl_sum_fiendish_wolfdire	1d3:csl_sum_fiendish_boar	1d4+1:csl_sum_fiendish_wolf	1d4+1:csl_sum_fiendish_spid_01sma	1d4+1:csl_sum_fiendish_rat	****	****	****	****	****	****	****	****	****
+5	LEVEL_5	Radial	Protected	csl_sum_fiendish_deinonyc	csl_sum_fiendish_deinonyc	1d3:csl_sum_fiendish_wolfdire	1d4+1:csl_sum_fiendish_boar	1d4+1:csl_sum_fiendish_wolf	1d4+1:csl_sum_fiendish_spid_01sma	****	****	****	****	****	****	****	****	****
+6	LEVEL_6	Radial	Protected	csl_sum_fiendish_spider_08h	csl_sum_fiendish_spider_08h	1d3:csl_sum_fiendish_deinonyc	1d4+1:csl_sum_fiendish_wolfdire	1d4+1:csl_sum_fiendish_boar	1d4+1:csl_sum_fiendish_wolf	****	****	****	****	****	****	****	****	****
+7	LEVEL_7	Radial	Protected	csl_sum_fiendish_scorp_10hu	csl_sum_fiendish_scorp_10hu	1d3:csl_sum_fiendish_spider_08h	1d4+1:csl_sum_fiendish_deinonyc	1d4+1:csl_sum_fiendish_wolfdire	1d4+1:csl_sum_fiendish_boar	****	****	****	****	****	****	****	****	****
+8	LEVEL_8	Radial	Protected	csl_sum_fiendish_smilodon	csl_sum_fiendish_smilodon	1d3:csl_sum_fiendish_scorp_10hu	1d4+1:csl_sum_fiendish_spider_08h	1d4+1:csl_sum_fiendish_deinonyc	1d4+1:csl_sum_fiendish_wolfdire	****	****	****	****	****	****	****	****	****
+9	LEVEL_9	Radial	Protected	csl_sum_fiendish_tyrano	csl_sum_fiendish_tyrano	1d3:csl_sum_fiendish_smilodon	1d4+1:csl_sum_fiendish_scorp_10hu	1d4+1:csl_sum_fiendish_spider_08h	1d4+1:csl_sum_fiendish_deinonyc	****	****	****	****	****	****	****	****	****
+10	LEVEL_10	Radial	Protected	csl_sum_tanar_succubus2	csl_sum_tanar_succubus2	1d3:csl_sum_fiendish_tyrano	1d4+1:csl_sum_fiendish_smilodon	1d4+1:csl_sum_fiendish_scorp_10hu	1d4+1:csl_sum_fiendish_spider_08h	****	****	****	****	****	****	****	****	****
+11	LEVEL_11_GATE	Single	Protected	csl_sum_tanar_hezrou	csl_sum_tanar_hezrou	1d3:csl_sum_tanar_succubus2	1d4+1:csl_sum_fiendish_tyrano	1d4+1:csl_sum_fiendish_smilodon	1d4+1:csl_sum_fiendish_scorp_10hu	****	****	****	****	****	****	****	****	****
+12	LEVEL_12_GATE	Single	Protected	csl_sum_baat_devilhorn	csl_sum_baat_devilhorn	1d3:csl_sum_tanar_hezrou	1d4+1:csl_sum_tanar_succubus2	1d4+1:csl_sum_fiendish_tyrano	1d4+1:csl_sum_fiendish_smilodon	****	****	****	****	****	****	****	****	****
+13	LEVEL_13_EPIC	Single	Protected	csl_sum_tanar_balor	csl_sum_tanar_balor	1d3:csl_sum_baat_devilhorn	1d4+1:csl_sum_tanar_hezrou	1d4+1:csl_sum_tanar_succubus2	1d4+1:csl_sum_fiendish_tyrano	****	****	****	****	****	****	****	****	****
+14	LEVEL_14_EPIC	Single	Protected	csl_sum_baat_pitfiend	csl_sum_baat_pitfiend	1d3:csl_sum_tanar_balor	1d4+1:csl_sum_baat_devilhorn	1d4+1:csl_sum_tanar_hezrou	1d4+1:csl_sum_tanar_succubus2	****	****	****	****	****	****	****	****	****
+15	LEVEL_15_EPIC	Single	Protected	csl_sum_baat_pitfiend	csl_sum_baat_pitfiend	1d3:csl_sum_baat_pitfiend	1d4+1:csl_sum_tanar_balor	1d4+1:csl_sum_baat_devilhorn	1d4+1:csl_sum_tanar_hezrou	****	****	****	****	****	****	****	****	****

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8">
+<UIScene name="SCREEN_EXAMINE_DESCRIPTION"  x="ALIGN_LEFT" y="ALIGN_TOP" width="200" height="40" idleexpiretime="1.0" scriptloadable="true"
+	backoutkey="false" priority="SCENE_SCRIPT" modal="false"	
+
+/>
+<UIPane width="200" height="40" hidden="true" focusable="false" >
+	<UIText name="NOTES_FIELD" width="PARENT_WIDTH" height="PARENT_HEIGHT" update="true" hidden="true"
+		OnUpdate0=UIObject_OnUpdate_GetCharacterData("CHAR_SELECT","DESCRIPTION") 
+		OnUpdate1="UIObject_Misc_SetLocalVarString(local:0)"
+		OnUpdate2="UIObject_Misc_ExecuteServerScript(gui_callback,DESCRIPTION,local:0,local:5)" 
+		OnUpdate3=UIButton_Input_ScreenClose()
+	/>
+</UIPane>
+<!--
+UIObject_OnUpdate_GetCharacterData("CHAR_SELECT","DESCRIPTION")
+UIText_Misc_SetCharGenData("IG_CHARGEN","DESCRIPTION")
+-->

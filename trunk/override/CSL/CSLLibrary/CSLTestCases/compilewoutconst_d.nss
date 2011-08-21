@@ -1,0 +1,1 @@
+const int FEAT_TIRELESS = 999;

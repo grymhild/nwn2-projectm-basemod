@@ -1,0 +1,20 @@
+//::///////////////////////////////////////////////////////////////////////////
+//::
+//::	gc_is_open.nss
+//::
+//::	Simply calls GetIsOpen() on supplied object tag and returns TRUE/FALSE. 
+//::
+//::///////////////////////////////////////////////////////////////////////////
+//::
+//::	Created by: Brian Fox
+//::	Created on: 8/25/05
+//::
+//::///////////////////////////////////////////////////////////////////////////
+#include "_CSLCore_Messages"
+
+int StartingConditional( string sObjectTag )
+{
+	object oObjectToBeChecked = CSLGetTarget( sObjectTag );
+
+	return GetIsOpen( oObjectToBeChecked );
+}

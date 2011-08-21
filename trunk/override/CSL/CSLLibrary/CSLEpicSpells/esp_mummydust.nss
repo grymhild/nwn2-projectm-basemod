@@ -1,0 +1,58 @@
+//::///////////////////////////////////////////////
+//:: Mummy Dust
+//:: X2_S2_MumDust
+//:: Copyright (c) 2001 Bioware Corp.
+//:://////////////////////////////////////////////
+/*
+	Summons a strong warrior mummy for you to
+	command.
+*/
+//:://////////////////////////////////////////////
+//:: Created By: Andrew Nobbs
+//:: Created On: Feb 07, 2003
+//:://////////////////////////////////////////////
+/*
+	Altered by Boneshank, for purposes of the Epic Spellcasting project.
+*/
+//#include "prc_alterations"
+//#include "inc_epicspells"
+
+#include "_HkSpell"
+#include "_SCInclude_Epic"
+#include "_SCInclude_Summon"
+
+void main()
+{	
+	//--------------------------------------------------------------------------
+	//Prep the spell
+	//--------------------------------------------------------------------------
+	object oCaster = OBJECT_SELF;
+	int iSpellId = SPELL_EPIC_MUMDUST;
+	int iClass = CLASS_TYPE_BESTCASTER;
+	int iSpellLevel = 10;
+	//int iImpactSEF = VFXSC_HIT_AOE_HELLBALL;
+	int iAttributes = SCMETA_ATTRIBUTES_MAGICAL | SCMETA_ATTRIBUTES_SOMANTICCOMP | SCMETA_ATTRIBUTES_VOCALCOMP | SCMETA_ATTRIBUTES_HOSTILE | SCMETA_ATTRIBUTES_CANTCASTINTOWN;
+	//--------------------------------------------------------------------------
+	//Run Precast Code
+	//--------------------------------------------------------------------------
+	if (!HkPreCastHook( oCaster, iSpellId, SCMETA_DESCRIPTOR_NONE, iClass, iSpellLevel, SPELL_SCHOOL_NECROMANCY, SPELL_SUBSCHOOL_NONE, iAttributes ) )
+	{
+		return;
+	}
+
+	//--------------------------------------------------------------------------
+	//Declare major variables
+	//--------------------------------------------------------------------------
+	if (GetCanCastSpell(OBJECT_SELF, SPELL_EPIC_MUMDUST))
+	{
+		effect eSummon;
+		eSummon = EffectSummonCreature("csl_sum_undead_mummy3",496,1.0f);
+		eSummon = ExtraordinaryEffect(eSummon);
+		//Apply the summon visual and summon the undead.
+		CSLMultiSummonStacking( oCaster, CSLGetPreferenceInteger("MaxNormalSummons") );
+		HkApplyEffectAtLocation(DURATION_TYPE_INSTANT, eSummon, HkGetSpellTargetLocation());
+	}
+	HkPostCast(oCaster);
+}
+
+

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<UIScene name="SCREEN_PLAYERMENU" 
+	x=ALIGN_LEFT 
+	y=ALIGN_TOP 
+	width=SCREEN_WIDTH 
+	height=50 
+	fullscreen=false
+	scalewithscene=true 
+	scalescene=true
+	capturemouseclicks=false 
+	capturemouseevents=false
+	ignoreevents=false		
+	draggable=false
+	priority="SCENE_INGAME"
+	scriptloadable=true
+	updaterate="12.0"
+	OnUpdate="UIObject_Misc_ExecuteServerScript(gui_csl_interface,showstats,local:999)"
+	OnAdd="UIObject_Misc_ExecuteServerScript(gui_csl_interface,showstats,local:999)"
+	idleexpiretime="1.0"
+/>
+
+<!--
+unloaduiscreen SCREEN_PLAYERMENU
+openuiscreen SCREEN_PLAYERMENU
+-->
+
+	<UIPane name="PM_BUTTON_PANE" x=0 y=0 width=270 height=38 
+	capturemouseclicks=false
+	capturemouseevents=false
+	ignoreevents=true
+	scalewithscene=true
+	>
+		<UIText name="MAINSCREEN_EXPERIENCE" x=2 y=2 width=270 height=15 align=left valign=top color="white" fontfamily="Body_Font" alpha="0.50" scalewithscene=true />
+		<UIText name="MAINSCREEN_STATS" x=2 y=19 width=270 height=15 align=left valign=top color="white" fontfamily="Body_Font" alpha="0.50" scalewithscene=true />
+
+			
+		<UIIcon name="test_background1" capturemouseclicks=false capturemouseevents=false x=ALIGN_LEFT y=ALIGN_TOP img="fx_white.tga" width=150 height=PARENT_HEIGHT color="2F000000" alpha="0.20" scalewithscene=true />
+	</UIPane>
+
+<UIPane name="PM_BUTTON_MENU" x=151 y=0 width=SCREEN_WIDTH height=15
+	capturemouseclicks=true
+	capturemouseevents=false
+	ignoreevents=false
+	alpha="0.8"
+	scalewithscene=true
+
+	>
+			
+			<!-- Rest -->
+			<UIButton name="REST_TOGGLE_BUTTON" x=2 y=0 width=44 height=15 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button"
+			 OnLeftClick=UIButton_Input_Rest()  scalewithscene=true capturemouseclicks=true
+			>
+			  <UIFrame state="base"	fill="bw_rest.tga" />
+			  <UIFrame state="up" fill="b_empty.tga" />
+			  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			  <UIFrame state="focused" fill="b_empty.tga" />
+			  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+			  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+			</UIButton>
+			
+
+			<!-- Save -->
+			<UIButton name="SAVE_TOGGLE_BUTTON" x=46 y=0 width=44 height=15 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button"
+			 OnLeftClick=UIObject_Misc_ExecuteServerScript(gui_csl_savechar)  capturemouseclicks=true
+				OnRightClick0=UIObject_Misc_ExecuteServerScript(gui_csl_savechar) 
+				OnRightClick1=UIButton_Input_ExportCharacter() scalewithscene=true
+			>
+			  <UIFrame state="base"	fill="bw_save.tga" />
+			  <UIFrame state="up" fill="b_empty.tga" />
+			  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			  <UIFrame state="focused" fill="b_empty.tga" />
+			  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+			  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+			</UIButton>
+			
+			<!-- Dislike -->
+			<UIButton name="DISLIKE_TOGGLE_BUTTON" x=90 y=0 width=44 height=15 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button"
+			 OnLeftClick="UIObject_Misc_ExecuteServerScript(gui_csl_dislike)"
+				OnRightClick="UIObject_Misc_ExecuteServerScript(gui_csl_dislikesingle)" scalewithscene=true
+			>
+			  <UIFrame state="base"	fill="bw_dislike.tga" />
+			  <UIFrame state="up" fill="b_empty.tga" />
+			  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			  <UIFrame state="focused" fill="b_empty.tga" />
+			  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+			  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+			</UIButton>
+			
+			
+			
+
+
+
+			<!-- Character -->
+			<UIButton name="CHAR_TOGGLE_BUTTON" x=134 y=0 width=44 height=15 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button"
+			 OnLeftClick=UIButton_Input_PlayerMenuChoice("SCREEN_CHARACTER","SCREEN_PLAYERMENU_POPUP") scalewithscene=true
+			>
+			  <UIFrame state="base"	fill="bw_character.tga" />
+			  <UIFrame state="up" fill="b_empty.tga" />
+			  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			  <UIFrame state="focused" fill="b_empty.tga" />
+			  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+			  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+			</UIButton>
+			
+			
+			<!-- Inventory -->
+			<UIButton name="INVEN_TOGGLE_BUTTON" x=178 y=0 width=44 height=15 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button"
+			 OnLeftClick=UIButton_Input_PlayerMenuChoice("SCREEN_INVENTORY","SCREEN_PLAYERMENU_POPUP") scalewithscene=true
+				update=true OnUpdate=UIButton_OnUpdate_UpdateInventoryButton()
+			>
+			  <UIFrame state="base"	fill="bw_inventory.tga" />
+			  <UIFrame state="up" fill="b_empty.tga" />
+			  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			  <UIFrame state="focused" fill="b_empty.tga" />
+			  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+			  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+			</UIButton>
+			
+			
+			<!-- Journal -->
+			<UIButton name="JOURNAL_TOGGLE_BUTTON" x=222 y=0 width=44 height=15 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button" scalewithscene=true
+			 OnLeftClick=UIButton_Input_PlayerMenuChoice("SCREEN_JOURNAL","SCREEN_PLAYERMENU_POPUP")
+			>
+			  <UIFrame state="base"	fill="bw_Journal.tga" />
+			  <UIFrame state="up" fill="b_empty.tga" />
+			  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			  <UIFrame state="focused" fill="b_empty.tga" />
+			  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+			  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+			</UIButton>
+			
+
+			<!-- Spells Known -->
+			<UIButton name="SB_TOGGLE_BUTTON" x=266 y=0 width=44 height=15 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button" scalewithscene=true
+			 OnLeftClick=UIButton_Input_PlayerMenuChoice("SCREEN_SPELLS_KNOWN","SCREEN_PLAYERMENU_POPUP") 
+				update=true OnUpdate=UIButton_OnUpdate_UpdateSpellbookButton()
+			>
+			  <UIFrame state="base"	fill="bw_spellbook.tga" />
+			  <UIFrame state="up" fill="b_empty.tga" />
+			  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			  <UIFrame state="focused" fill="b_empty.tga" />
+			  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+			  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+			</UIButton>	
+			
+
+			<!-- Quickcast -->
+			<UIButton name="QC_TOGGLE_BUTTON" x=310 y=0 width=44 height=15 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button" scalewithscene=true
+			 OnLeftClick=UIButton_Input_PlayerMenuChoice("SCREEN_SPELLS_QUICK","SCREEN_PLAYERMENU_POPUP")
+			>
+			  <UIFrame state="base"	fill="bw_quickcast.tga" />
+			  <UIFrame state="up" fill="b_empty.tga" />
+			  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			  <UIFrame state="focused" fill="b_empty.tga" />
+			  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+			  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+			</UIButton>
+			
+			
+			<!-- Modes -->
+			<UIButton name="MBAR_TOGGLE_BUTTON" x=354 y=0 width=44 height=15 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button" scalewithscene=true
+			 OnLeftClick=UIButton_Input_PlayerMenuChoice("SCREEN_MODEBAR","SCREEN_PLAYERMENU_POPUP")
+			>
+			  <UIFrame state="base"	fill="bw_modes.tga" />
+			  <UIFrame state="up" fill="b_empty.tga" />
+			  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			  <UIFrame state="focused" fill="b_empty.tga" />
+			  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+			  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+			</UIButton>
+			
+
+			<!-- Area Map -->
+			<UIButton name="AMAP_TOGGLE_BUTTON" x=398 y=0 width=44 height=15 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button" scalewithscene=true
+			 OnLeftClick=UIButton_Input_PlayerMenuChoice("SCREEN_AREAMAP","SCREEN_PLAYERMENU_POPUP")
+			>
+			  <UIFrame state="base"	fill="bw_areamap.tga" />
+			  <UIFrame state="up" fill="b_empty.tga" />
+			  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			  <UIFrame state="focused" fill="b_empty.tga" />
+			  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+			  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+			</UIButton>	
+			
+
+			<!-- Party Select - this is single player only
+			<UIButton name="PLIST_TOGGLE_BUTTON" x=565 y=0 height=18 width=40  text="Player List" DefaultToolTip=182793 style="PM_TOGGLE_BUTTON" align=center scalewithscene=true
+				OnLeftClick=UIButton_Input_PlayerMenuChoice("SCRIPT_SCREEN_PARTYSELECT","SCREEN_PLAYERMENU_POPUP") >
+			</UIButton>
+			-->
+
+			<!-- Player List -->
+			<UIButton name="PLIST_TOGGLE_BUTTON" x=442 y=0 width=44 height=15 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button" scalewithscene=true
+			 OnLeftClick=UIButton_Input_PlayerMenuChoice("SCREEN_PLAYERLIST","SCREEN_PLAYERMENU_POPUP")
+			>
+			  <UIFrame state="base"	fill="bw_playerlist.tga" />
+			  <UIFrame state="up" fill="b_empty.tga" />
+			  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			  <UIFrame state="focused" fill="b_empty.tga" />
+			  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+			  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+			</UIButton>
+			
+				<!-- update=true OnUpdate=UIButton_OnUpdate_EnableIfMultiplayer() > -->
+
+			<!-- Player Chat -->
+			<UIButton name="CHAT_TOGGLE_BUTTON" x=486 y=0 width=44 height=15 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button" scalewithscene=true
+			 OnLeftClick=UIButton_Input_PlayerMenuChoice("SCREEN_CHATSELECT","SCREEN_PLAYERMENU_POPUP")
+			>
+			  <UIFrame state="base"	fill="bw_chat.tga" />
+			  <UIFrame state="up" fill="b_empty.tga" />
+			  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			  <UIFrame state="focused" fill="b_empty.tga" />
+			  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+			  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+			</UIButton>
+			
+
+			<!-- AI -->
+			<UIButton name="AI_ON_BUTTON" x=530 y=0 width=44 height=15 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button" scalewithscene=true
+			 OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_bhvr_a_puppet_on")
+			>
+			  <UIFrame state="base"	fill="bw_aion.tga" />
+			  <UIFrame state="up" fill="b_empty.tga" />
+			  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			  <UIFrame state="focused" fill="b_empty.tga" />
+			  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+			  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+			</UIButton>
+			
+
+			<UIButton name="AI_OFF_BUTTON" x=530 y=0 width=44 height=15 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button" scalewithscene=true
+			 hidden=true
+				OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_bhvr_a_puppet_off")
+			>
+			  <UIFrame state="base"	fill="bw_aioff.tga" />
+			  <UIFrame state="up" fill="b_empty.tga" />
+			  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			  <UIFrame state="focused" fill="b_empty.tga" />
+			  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+			  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+			</UIButton>
+			
+
+			<UIButton name="AI_MIXED_BUTTON" x=530 y=0 width=44 height=15 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button" scalewithscene=true
+			 hidden=true
+				OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_bhvr_a_puppet_on")
+			>
+			  <UIFrame state="base"	fill="bw_aioff.tga" />
+			  <UIFrame state="up" fill="b_empty.tga" />
+			  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			  <UIFrame state="focused" fill="b_empty.tga" />
+			  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+			  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+			</UIButton>
+			
+
+			<!-- Prefs -->
+			<UIButton name="OPTIONS_TOGGLE_BUTTON" x=574 y=0 width=44 height=15 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button" scalewithscene=true
+			 OnLeftClick=UIButton_Input_ScreenOpen("SCREEN_OPTIONS","false")
+			>
+			  <UIFrame state="base"	fill="bw_prefs.tga" />
+			  <UIFrame state="up" fill="b_empty.tga" />
+			  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			  <UIFrame state="focused" fill="b_empty.tga" />
+			  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+			  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+			</UIButton>
+		
+
+			<!-- Main Menu Help -->
+			<UIButton name="MAIN_MENU_HELP" x=618 y=0 width=44 height=15 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button" scalewithscene=true
+			 
+				OnLeftClick=UIButton_Input_ToggleScreen("SCREEN_MENU_OPTIONS")
+			>
+			  <UIFrame state="base"	fill="bw_help.tga" />
+			  <UIFrame state="up" fill="b_empty.tga" />
+			  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			  <UIFrame state="focused" fill="b_empty.tga" />
+			  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+			  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+			</UIButton>
+			
+
+			<!-- Main Menu Exit -->
+			<UIButton name="MAIN_MENU_EXIT" x=662 y=0 width=44 height=15 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button" scalewithscene=true
+			 OnLeftClick=UIButton_Input_ExitToMainMenu() OnRightClick=UIButton_Input_ExitApp("false")
+			>
+			  <UIFrame state="base"	fill="bw_exit.tga" />
+			  <UIFrame state="up" fill="b_empty.tga" />
+			  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			  <UIFrame state="focused" fill="b_empty.tga" />
+			  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+			  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+			</UIButton>
+			
+			
+			
+		
+	<UIIcon name="test_background" capturemouseclicks=false capturemouseevents=false x=ALIGN_LEFT y=ALIGN_TOP img="fx_white.tga" width=PARENT_WIDTH height=15 color="2F000000" alpha="0.20" scalewithscene=true />
+ </UIPane>

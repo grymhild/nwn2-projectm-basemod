@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<UIScene name="SCREEN_CSL_LEVELUP_LANGUAGES"  width=1024 height=768  scalewithscene="true"
+priority="SCENE_INGAME_FULLSCREEN" fullscreen=true cullrenderables=true scriptloadable="true" idleexpiretime="1.0f" />
+
+	<!-- Title Pane-->
+    <UIPane name="TitlePane" x=ALIGN_CENTER y=ALIGN_TOP width=984 height="74" capturemouseclicks="false" ignoreevents="true" >
+        <UIText name="TITLE_TEXT" text="LANGUAGES" x=ALIGN_CENTER y=12 width=356 height=30 align="center" valign="middle"  fontfamily="Special_Font" style="4" />
+        <UIIcon img="main_sub_titles.tga" x="0" y="0" width="PARENT_WIDTH" height="PARENT_HEIGHT"/>
+    </UIPane>
+
+	<UIPane name="CONTENTS_PANE" x=ALIGN_CENTER y=ALIGN_CENTER width=950 height=675 >
+	
+	<!-- Info and Stats Container Pane -->
+    	<UIPane name="InfoStatsPane" x=517 y=41 width="450" height="614" >
+        <!-- Info Pane-->
+    	    
+        	    <UIListBox name="INFOPANE_LISTBOX" x="24" y="11" width="375" height="603" yPadding="10" xPadding="5" showpartialchild="true" unequalcontrols="true" scrollsegmentsize="30" hidescrollbarwhennotneeded="true" >
+	
+				<UIText name="INFOPANE_HELPTEXT" text="While most intelligent creatures speak common, using foreign languages can allow improved diplomacy, subterfuge, and adds flavor." width="PARENT_WIDTH" height="DYNAMIC" align="left" valign="top" fontfamily="NWN1_Dialog" multiline="true" />
+	
+				<UIPane name="INFO_CONTAINER" x=0 y=0 width="PARENT_WIDTH" height=40 >
+					<UIIcon name="INFOPANE_IMAGE" img="b_empty.tga" x=5 y=0 width=40 height=40 ignoreevents=true />
+					<UIText name="INFOPANE_TITLE" x=50 y=0 width=150 height=40 align=left valign=middle fontfamily="NWN1_Dialog" style="bold" />			
+				</UIPane>		
+	
+		                <UIText name="INFOPANE_TEXT" width="PARENT_WIDTH" height="DYNAMIC" align="left" valign="top" fontfamily="NWN1_Dialog" multiline="true" />
+        		        <UIScrollBar name="SB" style="STYLE_SB_THIN"></UIScrollBar>
+        	    	</UIListBox>
+       			
+	</UIPane>
+
+	<!-- Added Language Pane -->
+	<UIPane name="AddedLanguagePane" x=267 y=18 width=284 height=656 >
+		
+		<UIListbox name="ADDED_LANGUAGE_LIST" x=22 y=62 width=239 height=570 xPadding=0 yPadding=5 
+		showpartialchild=true scrollbaronright=true unequalcontrols=true scrollsegmentsize=150 hidescrollbarwhennotneeded=false 		 
+		update=true  selectonleftclick="true" >
+
+			<UIPane name="LANGUAGE_PROTO" x=0 y=0 width=224 height=40 prototype=true tupple=true 
+				OnLeftClick0=UIObject_Misc_ExtractData(selected:ADDED_LANGUAGE_LIST,"string",25,local:25)
+				OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_levelup_languages","select",local:999,local:25)
+				 >
+				<UIButton name="LANGUAGE_ACTION" x=0 y=0 width=15 height=40 prototype=true
+					OnLeftClick0=UIObject_Misc_ExtractData(selected:ADDED_LANGUAGE_LIST,"string",25,local:25)
+					OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_levelup_languages","remove",local:999,local:25)
+				 >
+					<UIFrame state=up		fill="b_addl_normal.tga" />
+					<UIFrame state=down		fill="b_addl_pressed.tga" />
+					<UIFrame state=focused	fill="b_addl_pressed.tga" />
+					<UIFrame state=hilited	fill="b_addl_normal.tga" />
+					<UIFrame state=hifocus	fill="b_addl_pressed.tga" />
+					<UIFrame state=disabled	fill="b_addl_normal.tga" />
+				</UIButton>
+				<UIText name="LANGUAGE_TEXTENABLED" x=15 y=0 width=169 height=40 indent=15 hangingindent=15 align=left valign=middle fontfamily="Title_Font" prototype=true />
+				<UIText name="LANGUAGE_TEXTDISABLED" x=15 y=0 width=169 height=40 indent=15 hangingindent=15 align=left valign=middle fontfamily="Title_Font" prototype=true alpha="25" />
+				<UIButton name="LANGUAGE_TEXT" x=15 y=0 width=169 height=40 prototype=true >
+					<UIText name="LANGUAGE_TEXTFIELD" indent=15 hangingindent=15 align=left valign=middle fontfamily="Title_Font" prototype=true />
+					<UIFrame state=up		fill="b_g_lg01_normal.tga" />
+					<UIFrame state=down		fill="b_g_lg01_pressed.tga" />
+					<UIFrame state=focused	fill="b_g_lg01_pressed.tga" />
+					<UIFrame state=hilited	fill="b_g_lg01_normal.tga" />
+					<UIFrame state=hifocus	fill="b_g_lg01_pressed.tga" />
+					<UIFrame state=disabled	fill="b_g_lg01_normal.tga" />
+				</UIButton>
+				<UIButton name="LANGUAGE_IMAGE" x=184 y=0 width=40 height=40 prototype=true >
+					<UIFrame state=base		fill="b_empty.tga" />
+					<UIFrame state=up		fill="b_empty.tga" />
+					<UIFrame state=down		fill="b_overlay.tga" />
+					<UIFrame state=focused	fill="b_empty.tga" />
+					<UIFrame state=hilited	fill="b_empty.tga" />
+					<UIFrame state=hifocus	fill="b_overlay.tga" />
+					<UIFrame state=disabled	fill="b_empty.tga" />
+				</UIButton>
+			</UIPane>
+
+			<UIScrollBar name="SB" style="STYLE_SB_THIN"></UIScrollBar>	
+		</UIListbox>
+
+		<UIText name="POINT_POOL_TEXT" x="37" y="13" width="40" height="40" align="center" valign="middle" fontfamily="Special_Font" style="2" update="true" />
+        	<UIIcon name="POINT_POOL_IMG" img="points_glass.tga" x="35" y="12" width="45" height="44" ignoreevents="true" />
+
+		<UIIcon name="DETAIL_TOP" img="eye_detail.tga" x="0" y="0" width="202" height="68" ignoreevents="true" />
+
+        	<UIFrame x="0" y="9" width="PARENT_WIDTH" height="647" topleft="frame_main_TL.tga" topright="frame_main_TR.tga" 
+             	bottomleft="frame_main_d_BL.tga" bottomright="frame_main_BR.tga" top="frame_main_T.tga" bottom="frame_main_b.tga"
+             	left="frame_main_l.tga" right="frame_main_r.tga" fillstyle="stretch" fill="frame_main_bg.tga"  border="64" />
+		
+	</UIPane>
+
+	<!-- Available Language Pane -->
+	<UIPane name="AvailableLanguagePane"  x=10 y=18 width=284 height=656 >
+		<UIText text="Available Languages" x=21 y=41 width=230 height=30 align=right valign=middle fontfamily="Title_Font" style=2 />
+		<UIIcon name="DETAIL_TOP" img="3rd_window_title.tga" x=21 y=41 width=240 height=30 ignoreevents="true" />
+		
+		<UIListbox name="AVAILABLE_LANGUAGE_LIST" x=22 y=80 width=239 height=550 xPadding=0 yPadding=5 
+		showpartialchild=true scrollbaronright=true unequalcontrols=true scrollsegmentsize=150 hidescrollbarwhennotneeded=false 		 
+		update=true selectonleftclick="true" >
+
+				<UIPane name="LANGUAGE_PROTO" x=0 y=0 width=225 height=40 prototype=true tupple=true 
+				OnLeftClick0=UIObject_Misc_ExtractData(selected:AVAILABLE_LANGUAGE_LIST,"string",25,local:25)
+				OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_levelup_languages","select",local:999,local:25)
+				 >
+					<UIButton name="LANGUAGE_IMAGE" x=0 y=0 width=40 height=40 prototype=true >
+						<UIFrame state=base		fill="b_empty.tga" />
+						<UIFrame state=up		fill="b_empty.tga" />
+						<UIFrame state=down		fill="b_overlay.tga" />
+						<UIFrame state=focused	fill="b_empty.tga" />
+						<UIFrame state=hilited	fill="b_empty.tga" />
+						<UIFrame state=hifocus	fill="b_overlay.tga" />
+						<UIFrame state=disabled	fill="b_empty.tga" />
+					</UIButton>
+					<UIText name="LANGUAGE_TEXTENABLED" x=40 y=0 width=165 height=40 indent=15 hangingindent=15 align=left valign=middle fontfamily="Title_Font" prototype=true />
+					<UIText name="LANGUAGE_TEXTDISABLED" x=40 y=0 width=165 height=40 indent=15 hangingindent=15 align=left valign=middle fontfamily="Title_Font" prototype=true alpha="25" />
+					<UIButton name="LANGUAGE_TEXT" x=40 y=0 width=165 height=40 prototype=true >
+						<UIText name="LANGUAGE_TEXTFIELD" x=10 y=0 align=left valign=middle fontfamily="Title_Font" prototype=true />
+						<UIFrame state=up		fill="b_g_lg01_normal.tga" />
+						<UIFrame state=down		fill="b_g_lg01_pressed.tga" />
+						<UIFrame state=focused	fill="b_g_lg01_pressed.tga" />
+						<UIFrame state=hilited	fill="b_g_lg01_normal.tga" />
+						<UIFrame state=hifocus	fill="b_g_lg01_pressed.tga" />
+						<UIFrame state=disabled	fill="b_g_lg01_normal.tga" />
+					</UIButton>
+					<UIButton name="LANGUAGE_ACTION" x=205 y=0 width=15 height=40 prototype=true
+					OnLeftClick0=UIObject_Misc_ExtractData(selected:AVAILABLE_LANGUAGE_LIST,"string",25,local:25)
+					OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_levelup_languages","add",local:999,local:25)
+					 >
+						<UIFrame state=up		fill="b_addr_normal.tga" />
+						<UIFrame state=down		fill="b_addr_pressed.tga" />
+						<UIFrame state=focused	fill="b_addr_pressed.tga" />
+						<UIFrame state=hilited	fill="b_addr_normal.tga" />
+						<UIFrame state=hifocus	fill="b_addr_pressed.tga" />
+						<UIFrame state=disabled	fill="b_addr_normal.tga" />
+					</UIButton>
+				</UIPane>
+
+			<UIScrollBar name="SB" style="STYLE_SB_THIN"></UIScrollBar>	
+		</UIListbox>
+
+		<UIFrame x="0" y="9" width="PARENT_WIDTH" height="647" topleft="frame_main_t_TL.tga" topright="frame_main_TR.tga" 
+		bottomleft="frame_main_d_BL.tga" bottomright="frame_main_BR.tga" top="frame_main_T.tga" bottom="frame_main_b.tga"
+		left="frame_main_l.tga" right="frame_main_r.tga" fillstyle="stretch" fill="frame_main_bg.tga"  border="64" />
+		
+	</UIPane>
+
+	
+
+
+
+	
+
+
+
+
+	
+	</UIPane>
+
+
+	<UIPane name="CANCEL_CONTAINER" x=0 y=723 width=176 height=45 >
+		<UIButton name="CHOICE_CANCEL" text="CANCEL" x=ALIGN_RIGHT y=0 style="STYLE_MENU_BUTTON_SML" 
+			OnLeftClick0=UIObject_Misc_ExecuteServerScript("gui_csl_levelup_languages","cancel",local:999)
+			OnLeftClick1=UIButton_Input_ScreenClose()
+			>
+		</UIButton>
+	</UIPane>
+
+	<UIPane name="CHARGEN_BUTTONS" x=ALIGN_RIGHT y=723 width=520 height=45 >
+		<UIButton name="CHOICE_RECOMMEND" text="RECOMMEND" x="168" y="0" style="STYLE_MENU_BUTTON_SML" 
+		OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_levelup_languages","recommend",local:999) ></UIButton>
+		<UIButton name="CHOICE_FINISH" text="Finished" x="336" y="0" style="STYLE_MENU_BUTTON_SML" 
+		OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_levelup_languages","finish",local:999)
+		update="true"  ></UIButton>
+	</UIPane>
+
+
+	<!-- ths is just for testing -->
+	<UIButton name="CloseButton" x=300 y=750 style="STYLE_CLOSE_BUTTON" OnToolTip=UIObject_Tooltip_DisplayTooltipString("Close",OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT) OnLeftClick=UIButton_Input_ScreenClose() /> 
+	<!-- ths is just for testing -->
+
+	
+	
+<!-- ths is just for testing -->
+<UIFrame x="0" y="0" width="PARENT_WIDTH" height="PARENT_HEIGHT" border="32"   scalewithscene="true"
+	topleft="frame1_tl.tga" 		topright="frame1_tr.tga"
+	bottomleft="frame1_bl.tga"		bottomright="frame1_BR.tga"
+	top="frame1_t.tga"			bottom="frame1_b.tga"
+	left="frame1_l.tga"			right="frame1_r.tga" />		
+	
+<UIFrame x="8" y="8" width="PARENT_WIDTH" height="PARENT_HEIGHT"   scalewithscene="true" fillstyle="tile" fill="frame_main_bg.tga"/>

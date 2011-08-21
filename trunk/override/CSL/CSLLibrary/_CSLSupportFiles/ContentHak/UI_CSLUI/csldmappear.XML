@@ -1,0 +1,948 @@
+<?xml version="1.0" encoding="utf-8">
+	
+<!-- Pain: Adapted from the DMFI UI soas to hook it's basic interface and DMFI functionality to the new CSLTable feature 
+     Superficially the same but it's been changed in how it's structured.
+	XML code by: Demetrious.  Special thanks to Abraxas77, Grinning Fool, PIPBoy3000 
+	and Obsidian for their examples, answers and framework that made this possible -->
+	
+<UIScene name="SCREEN_DMFI_DMLIST" x="200" y="175" width="416" height="490" draggable="true" 
+	idleexpiretime="1.0f" backoutkey="true" scriptloadable="true" priority="SCENE_SCRIPT" />
+		
+<UIText name="DMListTitle" text="" x=25 y=15 width="330" height="30" fontfamily="Body_Font" />
+<UIText name="Version" text="" x=25 y=15 width="330" height="30" fontfamily="Body_Font" align="right" />
+
+	<UIIcon name="DIVIDER" img="frame1_b.tga" x=8 y=85 width=400 height=5 />
+
+	<UIButton name="CloseButton" x=378 y=8 style="STYLE_CLOSE_BUTTON" 
+ 		OnToolTip=UIObject_Tooltip_DisplayTooltipString("Cancel",OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT)
+ 		OnLeftClick=UIButton_Input_ScreenClose() /> 
+
+
+<!-- ABC Buttons or Similar -->
+	<UIPane name="FILTER_PANE" x=10 y=35 width=425 height=50 update=true  hidden=true >
+		<UIGrid name="FILTER_GRID" rows=2 columns=14 x=0 y=0 xPadding=1 yPadding=1 update=true >
+			<UIButton name="ButtonA" text=" A"  height=24 width=24 buttontype=radio groupid=1 groupmemberid=1 
+				OnUpdate=UIButton_OnUpdate_SetCheckedIfLocalVarEquals(local:900,"A") update="true" 
+				OnLeftClick0=UIObject_Misc_SetLocalVarString(local:900,"A")
+				OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_appear","category",local:999,"A")
+			>
+			
+				<UIText x=24 y=10 align=left valign=middle fontfamily="Body_Font" style=1 />
+				<UIFrame state=base		fill="b_empty.tga" />
+				<UIFrame state=up		fill="b_sblank_normal.tga" />
+				<UIFrame state=down		fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=focused	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hilited	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hifocus	fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=disabled fill="b_sblank_hover.tga" />
+			</UIButton>
+			
+			<UIButton text=" B" name="ButtonB"  height=24 width=24 buttontype=radio groupid=1 groupmemberid=2 
+				OnUpdate=UIButton_OnUpdate_SetCheckedIfLocalVarEquals(local:900,"B") update="true" 
+				OnLeftClick0=UIObject_Misc_SetLocalVarString(local:900,"B")
+				OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_appear","category",local:999,"B") 
+			>	
+				<UIText align=left valign=middle fontfamily="Body_Font" style=1 />
+				<UIFrame state=base		fill="b_empty.tga" />
+				<UIFrame state=up		fill="b_sblank_normal.tga" />
+				<UIFrame state=down		fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=focused	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hilited	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hifocus	fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=disabled fill="b_sblank_hover.tga" />
+			</UIButton>
+			
+			<UIButton  text=" C" name="ButtonC"  height=24 width=24 buttontype=radio groupid=1 groupmemberid=3 
+				OnUpdate=UIButton_OnUpdate_SetCheckedIfLocalVarEquals(local:900,"C") update="true" 
+				OnLeftClick0=UIObject_Misc_SetLocalVarString(local:900,"C")
+				OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_appear","category",local:999,"C") 
+			>	
+				<UIText align=left valign=middle fontfamily="Body_Font" style=1 />
+				<UIFrame state=base		fill="b_empty.tga" />
+				<UIFrame state=up		fill="b_sblank_normal.tga" />
+				<UIFrame state=down		fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=focused	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hilited	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hifocus	fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=disabled fill="b_sblank_hover.tga" />
+			</UIButton>
+			
+			<UIButton text=" D" name="ButtonD" x=75 y=0 height=24 width=24 buttontype=radio groupid=1 groupmemberid=4 
+				OnUpdate=UIButton_OnUpdate_SetCheckedIfLocalVarEquals(local:900,"D") update="true" 
+				OnLeftClick0=UIObject_Misc_SetLocalVarString(local:900,"D")
+				OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_appear","category",local:999,"D") 
+			>	
+				<UIText align=left valign=middle fontfamily="Body_Font" style=1 />
+				<UIFrame state=base		fill="b_empty.tga" />
+				<UIFrame state=up		fill="b_sblank_normal.tga" />
+				<UIFrame state=down		fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=focused	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hilited	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hifocus	fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=disabled fill="b_sblank_hover.tga" />
+			</UIButton>
+			
+			<UIButton text=" E" name="ButtonB" height=24 width=24 buttontype=radio groupid=1 groupmemberid=5 
+				OnUpdate=UIButton_OnUpdate_SetCheckedIfLocalVarEquals(local:900,"E") update="true" 
+				OnLeftClick0=UIObject_Misc_SetLocalVarString(local:900,"E")
+				OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_appear","category",local:999,"E") 
+			>	
+				<UIText align=left valign=middle fontfamily="Body_Font" style=1 />
+				<UIFrame state=base		fill="b_empty.tga" />
+				<UIFrame state=up		fill="b_sblank_normal.tga" />
+				<UIFrame state=down		fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=focused	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hilited	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hifocus	fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=disabled fill="b_sblank_hover.tga" />
+			</UIButton>
+			
+			<UIButton text=" F"  name="ButtonF" height=24 width=24 buttontype=radio groupid=1 groupmemberid=6 
+				OnUpdate=UIButton_OnUpdate_SetCheckedIfLocalVarEquals(local:900,"F") update="true" 
+				OnLeftClick0=UIObject_Misc_SetLocalVarString(local:900,"F")
+				OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_appear","category",local:999,"F") 
+			>	
+				<UIText align=left valign=middle fontfamily="Body_Font" style=1 />
+				<UIFrame state=base		fill="b_empty.tga" />
+				<UIFrame state=up		fill="b_sblank_normal.tga" />
+				<UIFrame state=down		fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=focused	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hilited	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hifocus	fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=disabled fill="b_sblank_hover.tga" />
+			</UIButton>
+			
+			<UIButton text=" G" name="ButtonG"  height=24 width=24 buttontype=radio groupid=1 groupmemberid=7 
+				OnUpdate=UIButton_OnUpdate_SetCheckedIfLocalVarEquals(local:900,"G") update="true" 
+				OnLeftClick0=UIObject_Misc_SetLocalVarString(local:900,"G")
+				OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_appear","category",local:999,"G") 
+			>	
+				<UIText align=left valign=middle fontfamily="Body_Font" style=1 />
+				<UIFrame state=base		fill="b_empty.tga" />
+				<UIFrame state=up		fill="b_sblank_normal.tga" />
+				<UIFrame state=down		fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=focused	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hilited	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hifocus	fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=disabled fill="b_sblank_hover.tga" />
+			</UIButton>
+			
+			<UIButton text=" H" name="ButtonB" height=24 width=24 buttontype=radio groupid=1 groupmemberid=8 
+				OnUpdate=UIButton_OnUpdate_SetCheckedIfLocalVarEquals(local:900,"H") update="true" 
+				OnLeftClick0=UIObject_Misc_SetLocalVarString(local:900,"H")
+				OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_appear","category",local:999,"H") 
+			>	
+				<UIText align=left valign=middle fontfamily="Body_Font" style=1 />
+				<UIFrame state=base		fill="b_empty.tga" />
+				<UIFrame state=up		fill="b_sblank_normal.tga" />
+				<UIFrame state=down		fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=focused	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hilited	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hifocus	fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=disabled fill="b_sblank_hover.tga" />
+			</UIButton>
+			
+			<UIButton text="I " name="ButtonB" height=24 width=24 buttontype=radio groupid=1 groupmemberid=9 
+				OnUpdate=UIButton_OnUpdate_SetCheckedIfLocalVarEquals(local:900,"I") update="true" 
+				OnLeftClick0=UIObject_Misc_SetLocalVarString(local:900,"I")
+				OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_appear","category",local:999,"I") 
+			>	
+				<UIText align=center valign=middle fontfamily="Body_Font" style=1 />
+				<UIFrame state=base		fill="b_empty.tga" />
+				<UIFrame state=up		fill="b_sblank_normal.tga" />
+				<UIFrame state=down		fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=focused	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hilited	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hifocus	fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=disabled fill="b_sblank_hover.tga" />
+			</UIButton>
+			
+			<UIButton text=" J" name="ButtonB" height=24 width=24 buttontype=radio groupid=1 groupmemberid=10 
+				OnUpdate=UIButton_OnUpdate_SetCheckedIfLocalVarEquals(local:900,"J") update="true" 
+				OnLeftClick0=UIObject_Misc_SetLocalVarString(local:900,"J")
+				OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_appear","category",local:999,"J") 
+			>	
+				<UIText align=left valign=middle fontfamily="Body_Font" style=1 />
+				<UIFrame state=base		fill="b_empty.tga" />
+				<UIFrame state=up		fill="b_sblank_normal.tga" />
+				<UIFrame state=down		fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=focused	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hilited	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hifocus	fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=disabled fill="b_sblank_hover.tga" />
+			</UIButton>
+			
+			<UIButton text=" K" name="ButtonB" height=24 width=24 buttontype=radio groupid=1 groupmemberid=11 
+				OnUpdate=UIButton_OnUpdate_SetCheckedIfLocalVarEquals(local:900,"K") update="true" 
+				OnLeftClick0=UIObject_Misc_SetLocalVarString(local:900,"K")
+				OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_appear","category",local:999,"K") 
+			>	
+				<UIText align=left valign=middle fontfamily="Body_Font" style=1 />
+				<UIFrame state=base		fill="b_empty.tga" />
+				<UIFrame state=up		fill="b_sblank_normal.tga" />
+				<UIFrame state=down		fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=focused	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hilited	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hifocus	fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=disabled fill="b_sblank_hover.tga" />
+			</UIButton>
+
+			<UIButton text=" L" name="ButtonB" height=24 width=24 buttontype=radio groupid=1 groupmemberid=12 
+				OnUpdate=UIButton_OnUpdate_SetCheckedIfLocalVarEquals(local:900,"L") update="true" 
+				OnLeftClick0=UIObject_Misc_SetLocalVarString(local:900,"L")
+				OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_appear","category",local:999,"L") 
+			>	
+				<UIText align=left valign=middle fontfamily="Body_Font" style=1 />
+				<UIFrame state=base		fill="b_empty.tga" />
+				<UIFrame state=up		fill="b_sblank_normal.tga" />
+				<UIFrame state=down		fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=focused	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hilited	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hifocus	fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=disabled fill="b_sblank_hover.tga" />
+			</UIButton>
+			
+			<UIButton text=" M" name="ButtonB" height=24 width=24 buttontype=radio groupid=1 groupmemberid=13 
+				OnUpdate=UIButton_OnUpdate_SetCheckedIfLocalVarEquals(local:900,"M") update="true" 
+				OnLeftClick0=UIObject_Misc_SetLocalVarString(local:900,"M")
+				OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_appear","category",local:999,"M") 
+			>	
+				<UIText align=left valign=middle fontfamily="Body_Font" style=1 />
+				<UIFrame state=base		fill="b_empty.tga" />
+				<UIFrame state=up		fill="b_sblank_normal.tga" />
+				<UIFrame state=down		fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=focused	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hilited	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hifocus	fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=disabled fill="b_sblank_hover.tga" />
+			</UIButton>
+			
+			<UIButton text=" #" name="Button#" height=24 width=24 buttontype=radio groupid=1 groupmemberid=14 
+				OnUpdate=UIButton_OnUpdate_SetCheckedIfLocalVarEquals(local:900,"#") update="true" 
+				OnLeftClick0=UIObject_Misc_SetLocalVarString(local:900,"#")
+				OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_appear","category",local:999,"#") 
+			>	
+				<UIText align=left valign=middle fontfamily="Body_Font" style=1 />
+				<UIFrame state=base		fill="b_empty.tga" />
+				<UIFrame state=up		fill="b_sblank_normal.tga" />
+				<UIFrame state=down		fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=focused	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hilited	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hifocus	fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=disabled fill="b_sblank_hover.tga" />
+			</UIButton>
+			
+			<UIButton text=" N" name="ButtonB" height=24 width=24 buttontype=radio groupid=1 groupmemberid=15
+				OnUpdate=UIButton_OnUpdate_SetCheckedIfLocalVarEquals(local:900,"N") update="true" 
+				OnLeftClick0=UIObject_Misc_SetLocalVarString(local:900,"N")
+				OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_appear","category",local:999,"N") 
+			>	
+				<UIText align=left valign=middle fontfamily="Body_Font" style=1 />
+				<UIFrame state=base		fill="b_empty.tga" />
+				<UIFrame state=up		fill="b_sblank_normal.tga" />
+				<UIFrame state=down		fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=focused	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hilited	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hifocus	fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=disabled fill="b_sblank_hover.tga" />
+			</UIButton>
+			
+			<UIButton text=" O" name="ButtonB"  height=24 width=24 buttontype=radio groupid=1 groupmemberid=16 
+				OnUpdate=UIButton_OnUpdate_SetCheckedIfLocalVarEquals(local:900,"O") update="true" 
+				OnLeftClick0=UIObject_Misc_SetLocalVarString(local:900,"O")
+				OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_appear","category",local:999,"O") 
+			>	
+				<UIText align=left valign=middle fontfamily="Body_Font" style=1 />
+				<UIFrame state=base		fill="b_empty.tga" />
+				<UIFrame state=up		fill="b_sblank_normal.tga" />
+				<UIFrame state=down		fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=focused	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hilited	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hifocus	fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=disabled fill="b_sblank_hover.tga" />
+			</UIButton>
+			
+			<UIButton text=" P" name="ButtonB"  height=24 width=24 buttontype=radio groupid=1 groupmemberid=17 
+				OnUpdate=UIButton_OnUpdate_SetCheckedIfLocalVarEquals(local:900,"P") update="true" 
+				OnLeftClick0=UIObject_Misc_SetLocalVarString(local:900,"P")
+				OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_appear","category",local:999,"P") 
+			>	
+				<UIText align=left valign=middle fontfamily="Body_Font" style=1 />
+				<UIFrame state=base		fill="b_empty.tga" />
+				<UIFrame state=up		fill="b_sblank_normal.tga" />
+				<UIFrame state=down		fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=focused	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hilited	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hifocus	fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=disabled fill="b_sblank_hover.tga" />
+			</UIButton>
+			
+			<UIButton text=" Q" name="ButtonB" height=24 width=24 buttontype=radio groupid=1 groupmemberid=18 
+				OnUpdate=UIButton_OnUpdate_SetCheckedIfLocalVarEquals(local:900,"Q") update="true" 
+				OnLeftClick0=UIObject_Misc_SetLocalVarString(local:900,"Q")
+				OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_appear","category",local:999,"Q") 
+			>	
+				<UIText align=left valign=middle fontfamily="Body_Font" style=1 />
+				<UIFrame state=base		fill="b_empty.tga" />
+				<UIFrame state=up		fill="b_sblank_normal.tga" />
+				<UIFrame state=down		fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=focused	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hilited	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hifocus	fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=disabled fill="b_sblank_hover.tga" />
+			</UIButton>
+			
+			<UIButton text=" R"  name="ButtonB" height=24 width=24 buttontype=radio groupid=1 groupmemberid=19 
+				OnUpdate=UIButton_OnUpdate_SetCheckedIfLocalVarEquals(local:900,"R") update="true" 
+				OnLeftClick0=UIObject_Misc_SetLocalVarString(local:900,"R")
+				OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_appear","category",local:999,"R") 
+			>	
+				<UIText align=left valign=middle fontfamily="Body_Font" style=1 />
+				<UIFrame state=base		fill="b_empty.tga" />
+				<UIFrame state=up		fill="b_sblank_normal.tga" />
+				<UIFrame state=down		fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=focused	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hilited	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hifocus	fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=disabled fill="b_sblank_hover.tga" />
+			</UIButton>
+			
+			<UIButton text=" S" name="ButtonB"  height=24 width=24 buttontype=radio groupid=1 groupmemberid=20 
+				OnUpdate=UIButton_OnUpdate_SetCheckedIfLocalVarEquals(local:900,"S") update="true" 
+				OnLeftClick0=UIObject_Misc_SetLocalVarString(local:900,"S")
+				OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_appear","category",local:999,"S") 
+			>	
+				<UIText align=left valign=middle fontfamily="Body_Font" style=1 />
+				<UIFrame state=base		fill="b_empty.tga" />
+				<UIFrame state=up		fill="b_sblank_normal.tga" />
+				<UIFrame state=down		fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=focused	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hilited	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hifocus	fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=disabled fill="b_sblank_hover.tga" />
+			</UIButton>
+			
+			<UIButton text=" T" name="ButtonB"  height=24 width=24 buttontype=radio groupid=1 groupmemberid=21 
+				OnUpdate=UIButton_OnUpdate_SetCheckedIfLocalVarEquals(local:900,"T") update="true" 
+				OnLeftClick0=UIObject_Misc_SetLocalVarString(local:900,"T")
+				OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_appear","category",local:999,"T") 
+			>	
+				<UIText align=left valign=middle fontfamily="Body_Font" style=1 />
+				<UIFrame state=base		fill="b_empty.tga" />
+				<UIFrame state=up		fill="b_sblank_normal.tga" />
+				<UIFrame state=down		fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=focused	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hilited	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hifocus	fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=disabled fill="b_sblank_hover.tga" />
+			</UIButton>
+			
+			<UIButton text=" U"  name="ButtonB" height=24 width=24 buttontype=radio groupid=1 groupmemberid=22 
+				OnUpdate=UIButton_OnUpdate_SetCheckedIfLocalVarEquals(local:900,"U") update="true" 
+				OnLeftClick0=UIObject_Misc_SetLocalVarString(local:900,"U")
+				OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_appear","category",local:999,"U") 
+			>	
+				<UIText align=left valign=middle fontfamily="Body_Font" style=1 />
+				<UIFrame state=base		fill="b_empty.tga" />
+				<UIFrame state=up		fill="b_sblank_normal.tga" />
+				<UIFrame state=down		fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=focused	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hilited	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hifocus	fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=disabled fill="b_sblank_hover.tga" />
+			</UIButton>
+			
+			<UIButton text=" V" name="ButtonB"  height=24 width=24 buttontype=radio groupid=1 groupmemberid=23 
+				OnUpdate=UIButton_OnUpdate_SetCheckedIfLocalVarEquals(local:900,"V") update="true" 
+				OnLeftClick0=UIObject_Misc_SetLocalVarString(local:900,"V")
+				OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_appear","category",local:999,"V") 
+			>	
+				<UIText align=left valign=middle fontfamily="Body_Font" style=1 />
+				<UIFrame state=base		fill="b_empty.tga" />
+				<UIFrame state=up		fill="b_sblank_normal.tga" />
+				<UIFrame state=down		fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=focused	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hilited	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hifocus	fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=disabled fill="b_sblank_hover.tga" />
+			</UIButton>
+			
+			<UIButton text=" W" name="ButtonB" height=24 width=24 buttontype=radio groupid=1 groupmemberid=24 
+				OnUpdate=UIButton_OnUpdate_SetCheckedIfLocalVarEquals(local:900,"W") update="true" 
+				OnLeftClick0=UIObject_Misc_SetLocalVarString(local:900,"W")
+				OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_appear","category",local:999,"W") 
+			>	
+				<UIText align=left valign=middle fontfamily="Body_Font" style=1 />
+				<UIFrame state=base		fill="b_empty.tga" />
+				<UIFrame state=up		fill="b_sblank_normal.tga" />
+				<UIFrame state=down		fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=focused	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hilited	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hifocus	fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=disabled fill="b_sblank_hover.tga" />
+			</UIButton>
+			
+			<UIButton text=" X" name="ButtonB" height=24 width=24 buttontype=radio groupid=1 groupmemberid=25 
+				OnUpdate=UIButton_OnUpdate_SetCheckedIfLocalVarEquals(local:900,"X") update="true" 
+				OnLeftClick0=UIObject_Misc_SetLocalVarString(local:900,"X")
+				OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_appear","category",local:999,"X") 
+			>	
+				<UIText align=left valign=middle fontfamily="Body_Font" style=1 />
+				<UIFrame state=base		fill="b_empty.tga" />
+				<UIFrame state=up		fill="b_sblank_normal.tga" />
+				<UIFrame state=down		fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=focused	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hilited	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hifocus	fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=disabled fill="b_sblank_hover.tga" />
+			</UIButton>
+			
+			<UIButton text=" Y" name="ButtonB"  height=24 width=24 buttontype=radio groupid=1 groupmemberid=26 
+				OnUpdate=UIButton_OnUpdate_SetCheckedIfLocalVarEquals(local:900,"Y") update="true" 
+				OnLeftClick0=UIObject_Misc_SetLocalVarString(local:900,"Y")
+				OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_appear","category",local:999,"Y") 
+			>	
+				<UIText align=left valign=middle fontfamily="Body_Font" style=1 />
+				<UIFrame state=base		fill="b_empty.tga" />
+				<UIFrame state=up		fill="b_sblank_normal.tga" />
+				<UIFrame state=down		fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=focused	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hilited	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hifocus	fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=disabled fill="b_sblank_hover.tga" />
+			</UIButton>
+			
+			<UIButton text=" Z" name="ButtonB" height=24 width=24 buttontype=radio groupid=1 groupmemberid=27 
+				OnUpdate=UIButton_OnUpdate_SetCheckedIfLocalVarEquals(local:900,"Z") update="true" 
+				OnLeftClick0=UIObject_Misc_SetLocalVarString(local:900,"Z")
+				OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_appear","category",local:999,"Z") 
+			>	
+				<UIText align=left valign=middle fontfamily="Body_Font" style=1 />
+				<UIFrame state=base		fill="b_empty.tga" />
+				<UIFrame state=up		fill="b_sblank_normal.tga" />
+				<UIFrame state=down		fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=focused	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hilited	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hifocus	fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=disabled fill="b_sblank_hover.tga" />
+			</UIButton>
+			
+			<UIButton text=" *" name="Button*" height=24 width=24 buttontype=radio groupid=1 groupmemberid=28 
+				OnUpdate=UIButton_OnUpdate_SetCheckedIfLocalVarEquals(local:900,"*") update="true" 
+				OnLeftClick0=UIObject_Misc_SetLocalVarString(local:900,"*")
+				OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_appear","category",local:999,"*") 
+			>	
+				<UIText align=left valign=middle fontfamily="Body_Font" style=1 />
+				<UIFrame state=base		fill="b_empty.tga" />
+				<UIFrame state=up		fill="b_sblank_normal.tga" />
+				<UIFrame state=down		fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=focused	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hilited	fill="b_sblank_pressed.tga" />
+				<UIFrame state=hifocus	fill="b_sblank_hover_pressed.tga" />
+				<UIFrame state=disabled fill="b_sblank_hover.tga" />
+			</UIButton>
+			
+
+		</UIGrid>
+	</UIPane>
+<!-- Previous and Next Buttons -->
+<UIPane name="NEXT_PANE" x=5 y=85 width=400 height=35 >
+	<UIButton name="btn-first" text="First" x=5 y=0 width="88" height="30" MouseUpSFX="gui_button"		
+		OnToolTip=UIObject_Tooltip_DisplayTooltipString("First",OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT)
+		OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_appear","first",local:999,local:900) >
+		<UIText align=center valign=middle fontfamily="Title_Font" style="1"  />
+		<UIFrame state=up fill="b_sm_normal.tga" />
+		<UIFrame state=down fill="b_sm_pressed.tga" />
+		<UIFrame state=focused	fill="b_sm_normal.tga" />
+		<UIFrame state=hilited	fill="b_sm_hover.tga" />
+		<UIFrame state=hifocus	fill="b_sm_hover.tga" />
+		<UIFrame state=disabled	fill="b_sm_normal.tga" />
+	</UIButton>
+	
+	<UIButton name="btn-prev" text="Previous" x=100 y=0 width="88" height="30" MouseUpSFX="gui_button"	
+		OnToolTip=UIObject_Tooltip_DisplayTooltipString("Previous",OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT)
+		OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_appear","prev",local:999,local:900) >
+		<UIText align=center valign=middle fontfamily="Title_Font" style="1"  />
+		<UIFrame state=up fill="b_sm_normal.tga" />
+		<UIFrame state=down fill="b_sm_pressed.tga" />
+		<UIFrame state=focused	fill="b_sm_normal.tga" />
+		<UIFrame state=hilited	fill="b_sm_hover.tga" />
+		<UIFrame state=hifocus	fill="b_sm_hover.tga" />
+		<UIFrame state=disabled	fill="b_sm_normal.tga" />
+	</UIButton>
+	
+	<UIButton name="btn-next" text="Next" x=205 y=0 width="88" height="30" MouseUpSFX="gui_button"	
+		OnToolTip=UIObject_Tooltip_DisplayTooltipString("Next",OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT)
+		OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_appear","next",local:999,local:900) >
+		<UIText align=center valign=middle fontfamily="Title_Font" style="1"  />
+		<UIFrame state=up fill="b_sm_normal.tga" />
+		<UIFrame state=down fill="b_sm_pressed.tga" />
+		<UIFrame state=focused	fill="b_sm_normal.tga" />
+		<UIFrame state=hilited	fill="b_sm_hover.tga" />
+		<UIFrame state=hifocus	fill="b_sm_hover.tga" />
+		<UIFrame state=disabled	fill="b_sm_normal.tga" />
+	</UIButton>
+	
+	<UIButton name="btn-last" text="Last" x=300 y=0 width="88" height="30" MouseUpSFX="gui_button"
+		OnToolTip=UIObject_Tooltip_DisplayTooltipString("Last",OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT)
+		OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_appear","last",local:999,local:900) >
+		<UIText align=center valign=middle fontfamily="Title_Font" style="1" />
+		<UIFrame state=up fill="b_sm_normal.tga" />
+		<UIFrame state=down fill="b_sm_pressed.tga" />
+		<UIFrame state=focused	fill="b_sm_normal.tga" />
+		<UIFrame state=hilited	fill="b_sm_hover.tga" />
+		<UIFrame state=hifocus	fill="b_sm_hover.tga" />
+		<UIFrame state=disabled	fill="b_sm_normal.tga" />
+	</UIButton>
+</UIPane>
+
+<UIPane name="LIST_ALL" x=5 y=120 width=400 height=250 >
+<!-- COLUMN 1 -->
+	<UIButton name="btn1" x=10 y=0 fontfamily="Body_Font" width="125" height="20" 		
+		OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_appear","setappear",local:999,local:101) >
+		<UIFrame state="base"		fill="b_empty.tga" />
+		<UIFrame state="up"		fill="b_empty.tga" />
+		<UIFrame state="down"		fill="b_overlay_active.tga" alpha="0.85" />
+		<UIFrame state="focused"	fill="b_empty.tga" />
+		<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.6" />
+		<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.6"/>
+	</UIButton>
+	<UIText name="dmlist1" text="" x=15 y=3 width="125" height="20" fontfamily="Body_Font" />
+		
+	<UIButton name="btn2" x=10 y=25 fontfamily="Body_Font" width="125" height="20" 		
+			OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_appear","setappear",local:999,local:102) >
+		<UIFrame state="base"		fill="b_empty.tga" />
+		<UIFrame state="up"		fill="b_empty.tga" />
+		<UIFrame state="down"		fill="b_overlay_active.tga" alpha="0.85" />
+		<UIFrame state="focused"	fill="b_empty.tga" />
+		<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.6" />
+		<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.6"/>
+	</UIButton>
+	<UIText name="dmlist2" x=15 y=28 width="115" height="20" fontfamily="Body_Font" />
+	
+	<UIButton name="btn3" x=10 y=50 fontfamily="Body_Font" width="125" height="20" 		
+			OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_appear","setappear",local:999,local:103) >
+		<UIFrame state="base"		fill="b_empty.tga" />
+		<UIFrame state="up"		fill="b_empty.tga" />
+		<UIFrame state="down"		fill="b_overlay_active.tga" alpha="0.85" />
+		<UIFrame state="focused"	fill="b_empty.tga" />
+		<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.6" />
+		<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.6"/>
+	</UIButton>
+	<UIText name="dmlist3" x=15 y=53 width="115" height="20" fontfamily="Body_Font" />
+	
+	<UIButton name="btn4" x=10 y=75 fontfamily="Body_Font" width="125" height="20" 		
+			OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_appear","setappear",local:999,local:104) >
+		<UIFrame state="base"		fill="b_empty.tga" />
+		<UIFrame state="up"		fill="b_empty.tga" />
+		<UIFrame state="down"		fill="b_overlay_active.tga" alpha="0.85" />
+		<UIFrame state="focused"	fill="b_empty.tga" />
+		<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.6" />
+		<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.6"/>
+	</UIButton>
+	<UIText name="dmlist4" x=15 y=78 width="115" height="20" fontfamily="Body_Font" />
+	
+	<UIButton name="btn5" x=10 y=100 fontfamily="Body_Font" width="125" height="20" 		
+			OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_appear","setappear",local:999,local:105) >
+		<UIFrame state="base"		fill="b_empty.tga" />
+		<UIFrame state="up"		fill="b_empty.tga" />
+		<UIFrame state="down"		fill="b_overlay_active.tga" alpha="0.85" />
+		<UIFrame state="focused"	fill="b_empty.tga" />
+		<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.6" />
+		<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.6"/>
+	</UIButton>
+	<UIText name="dmlist5" x=15 y=103 width="115" height="20" fontfamily="Body_Font" />
+		
+	<UIButton name="btn6" x=10 y=125 fontfamily="Body_Font" width="125" height="20" 		
+			OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_appear","setappear",local:999,local:106) >
+		<UIFrame state="base"		fill="b_empty.tga" />
+		<UIFrame state="up"		fill="b_empty.tga" />
+		<UIFrame state="down"		fill="b_overlay_active.tga" alpha="0.85" />
+		<UIFrame state="focused"	fill="b_empty.tga" />
+		<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.6" />
+		<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.6"/>
+	</UIButton>
+	<UIText name="dmlist6" x=15 y=128 width="115" height="20" fontfamily="Body_Font" />
+	
+	<UIButton name="btn7" x=10 y=150 fontfamily="Body_Font" width="125" height="20" 		
+			OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_appear","setappear",local:999,local:107) >
+		<UIFrame state="base"		fill="b_empty.tga" />
+		<UIFrame state="up"		fill="b_empty.tga" />
+		<UIFrame state="down"		fill="b_overlay_active.tga" alpha="0.85" />
+		<UIFrame state="focused"	fill="b_empty.tga" />
+		<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.6" />
+		<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.6"/>
+	</UIButton>
+	<UIText name="dmlist7" x=15 y=153 width="115" height="20" fontfamily="Body_Font" />
+	
+	<UIButton name="btn8" x=10 y=175 fontfamily="Body_Font" width="125" height="20" 		
+			OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_appear","setappear",local:999,local:108) >
+		<UIFrame state="base"		fill="b_empty.tga" />
+		<UIFrame state="up"		fill="b_empty.tga" />
+		<UIFrame state="down"		fill="b_overlay_active.tga" alpha="0.85" />
+		<UIFrame state="focused"	fill="b_empty.tga" />
+		<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.6" />
+		<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.6"/>
+	</UIButton>
+	<UIText name="dmlist8" x=15 y=178 width="115" height="20" fontfamily="Body_Font" />
+
+	<UIButton name="btn9" x=10 y=200 fontfamily="Body_Font" width="125" height="20" 		
+			OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_appear","setappear",local:999,local:109) >
+		<UIFrame state="base"		fill="b_empty.tga" />
+		<UIFrame state="up"		fill="b_empty.tga" />
+		<UIFrame state="down"		fill="b_overlay_active.tga" alpha="0.85" />
+		<UIFrame state="focused"	fill="b_empty.tga" />
+		<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.6" />
+		<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.6"/>
+	</UIButton>
+	<UIText name="dmlist9" x=15 y=203 width="115" height="20" fontfamily="Body_Font" />
+
+	<UIButton name="btn10" x=10 y=225 fontfamily="Body_Font" width="125" height="20" 		
+			OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_appear","setappear",local:999,local:110) >
+		<UIFrame state="base"		fill="b_empty.tga" />
+		<UIFrame state="up"		fill="b_empty.tga" />
+		<UIFrame state="down"		fill="b_overlay_active.tga" alpha="0.85" />
+		<UIFrame state="focused"	fill="b_empty.tga" />
+		<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.6" />
+		<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.6"/>
+	</UIButton>
+	<UIText name="dmlist10" x=15 y=228 width="115" height="20" fontfamily="Body_Font" />
+
+
+
+<!-- COLUMN 2 -->	
+	
+	<UIButton name="btn11" x=145 y=0 fontfamily="Body_Font" width="125" height="20" 		
+			OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_appear","setappear",local:999,local:111) >
+		<UIFrame state="base"		fill="b_empty.tga" />
+		<UIFrame state="up"		fill="b_empty.tga" />
+		<UIFrame state="down"		fill="b_overlay_active.tga" alpha="0.85" />
+		<UIFrame state="focused"	fill="b_empty.tga" />
+		<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.6" />
+		<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.6"/>
+	</UIButton>
+	<UIText name="dmlist11" x=150 y=3 width="115" height="20" fontfamily="Body_Font" />
+		
+	<UIButton name="btn12" x=145 y=25 fontfamily="Body_Font" width="125" height="20" 		
+			OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_appear","setappear",local:999,local:112) >
+		<UIFrame state="base"		fill="b_empty.tga" />
+		<UIFrame state="up"		fill="b_empty.tga" />
+		<UIFrame state="down"		fill="b_overlay_active.tga" alpha="0.85" />
+		<UIFrame state="focused"	fill="b_empty.tga" />
+		<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.6" />
+		<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.6"/>
+	</UIButton>
+	<UIText name="dmlist12" x=150 y=28 width="115" height="20" fontfamily="Body_Font" />
+	
+	<UIButton name="btn13" x=145 y=50 fontfamily="Body_Font" width="125" height="20" 		
+			OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_appear","setappear",local:999,local:113) >
+		<UIFrame state="base"		fill="b_empty.tga" />
+		<UIFrame state="up"		fill="b_empty.tga" />
+		<UIFrame state="down"		fill="b_overlay_active.tga" alpha="0.85" />
+		<UIFrame state="focused"	fill="b_empty.tga" />
+		<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.6" />
+		<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.6"/>
+	</UIButton>
+	<UIText name="dmlist13" x=150 y=53 width="115" height="20" fontfamily="Body_Font" />
+	
+	<UIButton name="btn14" x=145 y=75 fontfamily="Body_Font" width="125" height="20" 		
+			OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_appear","setappear",local:999,local:114) >
+		<UIFrame state="base"		fill="b_empty.tga" />
+		<UIFrame state="up"		fill="b_empty.tga" />
+		<UIFrame state="down"		fill="b_overlay_active.tga" alpha="0.85" />
+		<UIFrame state="focused"	fill="b_empty.tga" />
+		<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.6" />
+		<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.6"/>
+	</UIButton>
+	<UIText name="dmlist14" x=150 y=78 width="115" height="20" fontfamily="Body_Font" />
+	
+	<UIButton name="btn15" x=145 y=100 fontfamily="Body_Font" width="125" height="20" 		
+			OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_appear","setappear",local:999,local:115) >
+		<UIFrame state="base"		fill="b_empty.tga" />
+		<UIFrame state="up"		fill="b_empty.tga" />
+		<UIFrame state="down"		fill="b_overlay_active.tga" alpha="0.85" />
+		<UIFrame state="focused"	fill="b_empty.tga" />
+		<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.6" />
+		<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.6"/>
+	</UIButton>
+	<UIText name="dmlist15" x=150 y=103 width="115" height="20" fontfamily="Body_Font" />
+		
+	<UIButton name="btn16" x=145 y=125 fontfamily="Body_Font" width="125" height="20" 		
+			OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_appear","setappear",local:999,local:116) >
+		<UIFrame state="base"		fill="b_empty.tga" />
+		<UIFrame state="up"		fill="b_empty.tga" />
+		<UIFrame state="down"		fill="b_overlay_active.tga" alpha="0.85" />
+		<UIFrame state="focused"	fill="b_empty.tga" />
+		<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.6" />
+		<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.6"/>
+	</UIButton>
+	<UIText name="dmlist16" x=150 y=128 width="115" height="20" fontfamily="Body_Font" />
+	
+	<UIButton name="btn17" x=145 y=150 fontfamily="Body_Font" width="125" height="20" 		
+			OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_appear","setappear",local:999,local:117) >
+		<UIFrame state="base"		fill="b_empty.tga" />
+		<UIFrame state="up"		fill="b_empty.tga" />
+		<UIFrame state="down"		fill="b_overlay_active.tga" alpha="0.85" />
+		<UIFrame state="focused"	fill="b_empty.tga" />
+		<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.6" />
+		<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.6"/>
+	</UIButton>
+	<UIText name="dmlist17" x=150 y=153 width="115" height="20" fontfamily="Body_Font" />
+	
+	<UIButton name="btn18" x=145 y=175 fontfamily="Body_Font" width="125" height="20" 		
+			OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_appear","setappear",local:999,local:118) >
+		<UIFrame state="base"		fill="b_empty.tga" />
+		<UIFrame state="up"		fill="b_empty.tga" />
+		<UIFrame state="down"		fill="b_overlay_active.tga" alpha="0.85" />
+		<UIFrame state="focused"	fill="b_empty.tga" />
+		<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.6" />
+		<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.6"/>
+	</UIButton>
+	<UIText name="dmlist18" x=150 y=178 width="115" height="20" fontfamily="Body_Font" />
+
+	
+	<UIButton name="btn19" x=145 y=200 fontfamily="Body_Font" width="125" height="20" 		
+			OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_appear","setappear",local:999,local:119) >
+		<UIFrame state="base"		fill="b_empty.tga" />
+		<UIFrame state="up"		fill="b_empty.tga" />
+		<UIFrame state="down"		fill="b_overlay_active.tga" alpha="0.85" />
+		<UIFrame state="focused"	fill="b_empty.tga" />
+		<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.6" />
+		<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.6"/>
+	</UIButton>
+	<UIText name="dmlist19" x=150 y=203 width="115" height="20" fontfamily="Body_Font" />
+	
+	<UIButton name="btn20" x=145 y=225 fontfamily="Body_Font" width="125" height="20" 		
+			OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_appear","setappear",local:999,local:120) >
+		<UIFrame state="base"		fill="b_empty.tga" />
+		<UIFrame state="up"		fill="b_empty.tga" />
+		<UIFrame state="down"		fill="b_overlay_active.tga" alpha="0.85" />
+		<UIFrame state="focused"	fill="b_empty.tga" />
+		<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.6" />
+		<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.6"/>
+	</UIButton>
+	<UIText name="dmlist20" x=150 y=228 width="115" height="20" fontfamily="Body_Font" />
+	
+	
+	
+<!-- COLUMN 3 -->	
+	
+	<UIButton name="btn21" x=278 y=0 fontfamily="Body_Font" width="125" height="20" 		
+			OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_appear","setappear",local:999,local:121) >
+		<UIFrame state="base"		fill="b_empty.tga" />
+		<UIFrame state="up"		fill="b_empty.tga" />
+		<UIFrame state="down"		fill="b_overlay_active.tga" alpha="0.85" />
+		<UIFrame state="focused"	fill="b_empty.tga" />
+		<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.6" />
+		<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.6"/>
+	</UIButton>
+	<UIText name="dmlist21" x=283 y=3 width="115" height="20" fontfamily="Body_Font" />
+		
+	<UIButton name="btn22" x=278 y=25 fontfamily="Body_Font" width="125" height="20" 		
+			OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_appear","setappear",local:999,local:122) >
+		<UIFrame state="base"		fill="b_empty.tga" />
+		<UIFrame state="up"		fill="b_empty.tga" />
+		<UIFrame state="down"		fill="b_overlay_active.tga" alpha="0.85" />
+		<UIFrame state="focused"	fill="b_empty.tga" />
+		<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.6" />
+		<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.6"/>
+	</UIButton>
+	<UIText name="dmlist22" x=283 y=28 width="115" height="20" fontfamily="Body_Font" />
+	
+	<UIButton name="btn23" x=278 y=50 fontfamily="Body_Font" width="125" height="20" 		
+			OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_appear","setappear",local:999,local:123) >
+		<UIFrame state="base"		fill="b_empty.tga" />
+		<UIFrame state="up"		fill="b_empty.tga" />
+		<UIFrame state="down"		fill="b_overlay_active.tga" alpha="0.85" />
+		<UIFrame state="focused"	fill="b_empty.tga" />
+		<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.6" />
+		<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.6"/>
+	</UIButton>
+	<UIText name="dmlist23" x=283 y=53 width="115" height="20" fontfamily="Body_Font" />
+	
+	<UIButton name="btn24" x=278 y=75 fontfamily="Body_Font" width="125" height="20" 		
+			OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_appear","setappear",local:999,local:124) >
+		<UIFrame state="base"		fill="b_empty.tga" />
+		<UIFrame state="up"		fill="b_empty.tga" />
+		<UIFrame state="down"		fill="b_overlay_active.tga" alpha="0.85" />
+		<UIFrame state="focused"	fill="b_empty.tga" />
+		<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.6" />
+		<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.6"/>
+	</UIButton>
+	<UIText name="dmlist24" x=283 y=78 width="115" height="20" fontfamily="Body_Font" />
+	
+	<UIButton name="btn25" x=278 y=100 fontfamily="Body_Font" width="125" height="20" 		
+			OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_appear","setappear",local:999,local:125) >
+		<UIFrame state="base"		fill="b_empty.tga" />
+		<UIFrame state="up"		fill="b_empty.tga" />
+		<UIFrame state="down"		fill="b_overlay_active.tga" alpha="0.85" />
+		<UIFrame state="focused"	fill="b_empty.tga" />
+		<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.6" />
+		<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.6"/>
+	</UIButton>
+	<UIText name="dmlist25" x=283 y=103 width="115" height="20" fontfamily="Body_Font" />
+		
+	<UIButton name="btn26" x=278 y=125 fontfamily="Body_Font" width="125" height="20" 		
+			OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_appear","setappear",local:999,local:126) >
+		<UIFrame state="base"		fill="b_empty.tga" />
+		<UIFrame state="up"		fill="b_empty.tga" />
+		<UIFrame state="down"		fill="b_overlay_active.tga" alpha="0.85" />
+		<UIFrame state="focused"	fill="b_empty.tga" />
+		<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.6" />
+		<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.6"/>
+	</UIButton>
+	<UIText name="dmlist26" x=283 y=128 width="115" height="20" fontfamily="Body_Font" />
+	
+	<UIButton name="btn27" x=278 y=150 fontfamily="Body_Font" width="125" height="20" 		
+			OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_appear","setappear",local:999,local:127) >
+		<UIFrame state="base"		fill="b_empty.tga" />
+		<UIFrame state="up"		fill="b_empty.tga" />
+		<UIFrame state="down"		fill="b_overlay_active.tga" alpha="0.85" />
+		<UIFrame state="focused"	fill="b_empty.tga" />
+		<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.6" />
+		<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.6"/>
+	</UIButton>
+	<UIText name="dmlist27" x=283 y=153 width="115" height="20" fontfamily="Body_Font" />
+	
+	<UIButton name="btn28" x=278 y=175 fontfamily="Body_Font" width="125" height="20" 		
+			OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_appear","setappear",local:999,local:128) >
+		<UIFrame state="base"		fill="b_empty.tga" />
+		<UIFrame state="up"		fill="b_empty.tga" />
+		<UIFrame state="down"		fill="b_overlay_active.tga" alpha="0.85" />
+		<UIFrame state="focused"	fill="b_empty.tga" />
+		<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.6" />
+		<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.6"/>
+	</UIButton>
+	<UIText name="dmlist28" x=283 y=178 width="115" height="20" fontfamily="Body_Font" />
+	
+	<UIButton name="btn29" x=278 y=200 fontfamily="Body_Font" width="125" height="20" 		
+			OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_appear","setappear",local:999,local:129) >
+		<UIFrame state="base"		fill="b_empty.tga" />
+		<UIFrame state="up"		fill="b_empty.tga" />
+		<UIFrame state="down"		fill="b_overlay_active.tga" alpha="0.85" />
+		<UIFrame state="focused"	fill="b_empty.tga" />
+		<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.6" />
+		<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.6"/>
+	</UIButton>
+	<UIText name="dmlist29" x=283 y=203 width="115" height="20" fontfamily="Body_Font" />
+
+	<UIButton name="btn30" x=278 y=225 fontfamily="Body_Font" width="125" height="20"
+		OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_appear","setappear",local:999,local:130) >
+		<UIFrame state="base"		fill="b_empty.tga" />
+		<UIFrame state="up"		fill="b_empty.tga" />
+		<UIFrame state="down"		fill="b_overlay_active.tga" alpha="0.85" />
+		<UIFrame state="focused"	fill="b_empty.tga" />
+		<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.6" />
+		<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.6"/>
+	</UIButton>
+	<UIText name="dmlist30" x=283 y=228 width="115" height="20" fontfamily="Body_Font" />
+</UIPane>
+
+
+<!--Animation Mode -->
+			<UIPane name="ANIMATIONMODES_CONFIG" x=8 y=385 width=160 height=100 >
+
+				<UIListbox  name="ANIMATIONMODES_LIST"  x=2 y=2 width=156 height=90 showpartialchild=false xPadding=0 yPadding=2
+				 hidescrollbarwhennotneeded=true scrollsegmentsize=1 unequalcontrols=false selectionleftclick=true selectonleftclick="true"
+				>
+				<UIPane name="ANIMATIONMODES_PROTO" x=0 y=0 width=PARENT_WIDTH height=15 prototype=true tupple=true capturemouseclicks=true capturemouseevents=false >					
+					
+					
+					<UIButton name="ANIMATIONMODE_SET" x="0" y="0" width="15" height="15" 
+						OnToolTip=UIObject_Tooltip_DisplayTooltipString("Remove",OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT)
+						
+						OnLeftClick0=UIObject_Misc_ExtractData(selected:ANIMATIONMODES_LIST,"string",6,local:6)
+						OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_appear","setanim_mode",local:999,local:6) >
+						<UIFrame state="base"	fill="b_plus_normal.tga" />
+						<UIFrame state="up"		fill="b_empty.tga" />
+						<UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.85" />
+						<UIFrame state="focused"	fill="b_empty.tga" />
+						<UIFrame state="hilited"	fill="b_empty.tga" alpha="0.6" />
+						<UIFrame state="hifocus"	fill="b_empty.tga" alpha="0.6"/>
+					</UIButton>
+					
+					<UIText name="EFFECTLISTBOX_TEXT" x=16 y=0 width=140 height=15 align=left valign=top fontfamily="Title_Font" style="1" multiline=true maxlines=3 />
+					
+				</UIPane>
+			<UIScrollBar name="EFFECTSB" style="STYLE_SB_THIN"></UIScrollBar>
+				</UIListbox>
+				<UIFrame x=0 y=0 width=PARENT_WIDTH height=PARENT_HEIGHT topleft="tp_frame_tl.tga" topright="tp_frame_tr.tga" bottomleft="tp_frame_bl.tga"
+				bottomright="tp_frame_BR.tga" top="tp_frame_t.tga" bottom="tp_frame_b.tga" left="tp_frame_l.tga" right="tp_frame_r.tga" fillstyle="stretch" fill="tp_frame_bg.tga" border=5 />
+			</UIPane>
+
+
+
+<!-- Previous and Next Buttons -->
+<UIPane name="OPTIONS_PANE" x=8 y=385 width=400 height=35 >
+	<!--
+	<UIButton name="btn-male" text="Male" x=0 y=0 width="78" height="30" MouseUpSFX="gui_button"		
+		OnToolTip=UIObject_Tooltip_DisplayTooltipString("Male",OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT)
+		OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_appear","male",local:999) >
+		<UIText align=center valign=middle fontfamily="Title_Font" style="1"  />
+		<UIFrame state=up fill="b_sm_normal.tga" />
+		<UIFrame state=down fill="b_sm_pressed.tga" />
+		<UIFrame state=focused	fill="b_sm_normal.tga" />
+		<UIFrame state=hilited	fill="b_sm_hover.tga" />
+		<UIFrame state=hifocus	fill="b_sm_hover.tga" />
+		<UIFrame state=disabled	fill="b_sm_normal.tga" />
+	</UIButton>
+	
+	<UIButton name="btn-female" text="Female" x=80 y=0 width="78" height="30" MouseUpSFX="gui_button"	
+		OnToolTip=UIObject_Tooltip_DisplayTooltipString("Female",OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT)
+		OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_appear","female",local:999) >
+		<UIText align=center valign=middle fontfamily="Title_Font" style="1"  />
+		<UIFrame state=up fill="b_sm_normal.tga" />
+		<UIFrame state=down fill="b_sm_pressed.tga" />
+		<UIFrame state=focused	fill="b_sm_normal.tga" />
+		<UIFrame state=hilited	fill="b_sm_hover.tga" />
+		<UIFrame state=hifocus	fill="b_sm_hover.tga" />
+		<UIFrame state=disabled	fill="b_sm_normal.tga" />
+	</UIButton>
+	-->
+	
+	<UIButton name="btn-smaller" text="Smaller" x=160 y=0 width="78" height="30" MouseUpSFX="gui_button"	
+		OnToolTip=UIObject_Tooltip_DisplayTooltipString("Smaller",OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT)
+		OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_appear","smaller",local:999) >
+		<UIText align=center valign=middle fontfamily="Title_Font" style="1"  />
+		<UIFrame state=up fill="b_sm_normal.tga" />
+		<UIFrame state=down fill="b_sm_pressed.tga" />
+		<UIFrame state=focused	fill="b_sm_normal.tga" />
+		<UIFrame state=hilited	fill="b_sm_hover.tga" />
+		<UIFrame state=hifocus	fill="b_sm_hover.tga" />
+		<UIFrame state=disabled	fill="b_sm_normal.tga" />
+	</UIButton>
+	
+	<UIButton name="btn-bigger" text="Bigger" x=240 y=0 width="78" height="30" MouseUpSFX="gui_button"
+		OnToolTip=UIObject_Tooltip_DisplayTooltipString("Bigger",OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT)
+		OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_appear","bigger",local:999) >
+		<UIText align=center valign=middle fontfamily="Title_Font" style="1" />
+		<UIFrame state=up fill="b_sm_normal.tga" />
+		<UIFrame state=down fill="b_sm_pressed.tga" />
+		<UIFrame state=focused	fill="b_sm_normal.tga" />
+		<UIFrame state=hilited	fill="b_sm_hover.tga" />
+		<UIFrame state=hifocus	fill="b_sm_hover.tga" />
+		<UIFrame state=disabled	fill="b_sm_normal.tga" />
+	</UIButton>
+	
+	<UIButton name="btn-reset" text="Reset" x=320 y=0 width="78" height="30" MouseUpSFX="gui_button"
+		OnToolTip=UIObject_Tooltip_DisplayTooltipString("Reset_Appearance",OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT)
+		OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_appear","reset",local:999) >
+		<UIText align=center valign=middle fontfamily="Title_Font" style="1" />
+		<UIFrame state=up fill="b_sm_normal.tga" />
+		<UIFrame state=down fill="b_sm_pressed.tga" />
+		<UIFrame state=focused	fill="b_sm_normal.tga" />
+		<UIFrame state=hilited	fill="b_sm_hover.tga" />
+		<UIFrame state=hifocus	fill="b_sm_hover.tga" />
+		<UIFrame state=disabled	fill="b_sm_normal.tga" />
+	</UIButton>
+</UIPane>
+
+
+
+<UIFrame x="0" y="0" width="PARENT_WIDTH" height="PARENT_HEIGHT" border="32"
+	topleft="frame1_tl.tga" 		topright="frame1_tr.tga"
+	bottomleft="frame1_bl.tga"		bottomright="frame1_BR.tga"
+	top="frame1_t.tga"			bottom="frame1_b.tga"
+	left="frame1_l.tga"			right="frame1_r.tga" />		
+	
+<UIFrame x="8" y="8" width="400" height="474" fillstyle="tile" fill="frame_main_bg.tga"/>

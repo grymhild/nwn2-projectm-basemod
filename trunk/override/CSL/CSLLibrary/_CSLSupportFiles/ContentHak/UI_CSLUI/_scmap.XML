@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8">
+
+<UIScene name="SCREEN_DEXMAP" x=0 y=0 width=570 height=420 draggable=true idleexpiretime="1.0" modal="false" fadeout=.3 fadein=.3 backoutkey=true priority="SCENE_SCRIPT" scriptloadable="true"/>
+<UIText name="DEXMAP_TITLE"  strref="17044220"  x=20 y=2 width=530 height=30 align=left valign=middle fontfamily="Title_Font" style="2" />
+
+<UIButton name="CloseButton" x=530 y=7 style="STYLE_CLOSE_BUTTON" OnLeftClick=UIButton_Input_ScreenClose() />
+
+
+<UIIcon name="MAP" img="_SCmap.tga" x=10 y=30 width=550 height=380 />
+
+
+<UIFrame width="570" height="420" topleft="frame1_tl.tga" topright="frame1_tr.tga" bottomleft="frame1_bl.tga" bottomright="frame1_BR.tga" top="frame1_t.tga" bottom="frame1_b.tga" left="frame1_l.tga" right="frame1_r.tga" border=32 />	
+
+
+
+
+<UIIcon name="DETAIL_TOP" img="title_large04.tga" x=8 y=8 width=554 height=30 ignoreevents="false" />
+<UIIcon img="frame_main_bg.tga" x=10 y=9 width="550" height="405" />
+

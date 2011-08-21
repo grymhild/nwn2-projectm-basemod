@@ -1,0 +1,10 @@
+2DA	V2.0
+
+	LABEL	REMOVED	RangeStart	ActionMode	StartScript	StopScript
+0	SWIMMING	0	4000	27	_mod_onmodeswimstart	_mod_onmodeswimstop
+1	RIDING	0	4200	****	****	****
+2	FLY	1	4400	****	****	****
+3	CRAWL	1	4600	****	****	****
+4	CLIMB	1	4800	****	****	****
+5	Male	0	3600	****	****	****
+6	Female	0	3800	****	****	****
