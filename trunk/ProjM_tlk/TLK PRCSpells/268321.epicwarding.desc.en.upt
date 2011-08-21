@@ -1,0 +1,9 @@
+School: Abjuration
+Components: V,S
+Range: Personal
+Target: Self
+Duration: 1 Round / Caster level
+Saving Throw: None
+Spell Resistance: No
+
+You grant yourself damage reduction 50/+20, to a limit of 50 points of damage per caster level. The spell ends either after the duration or when the damage limit is reached.

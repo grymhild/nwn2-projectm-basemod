@@ -1,0 +1,12 @@
+Caster Level(s): Cleric 4, Druid 3
+Innate Level: 4
+School: Evocation
+Descriptor(s): Cold
+Component(s): Verbal, Somatic
+Range: Short
+Area of Effect / Target: One creature
+Duration: Instant
+Save: Fortitude partial
+Spell Resistance: Yes
+
+The subject takes 1d6 points of cold damage per caster level (maximum 10d6) and becomes fatigued.  A successful Fortitude save halves the damage and negates the fatigue.

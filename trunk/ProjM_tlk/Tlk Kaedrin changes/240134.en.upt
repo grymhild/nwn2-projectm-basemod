@@ -1,0 +1,58 @@
+<color=Gold><b>Black Flame Zealot</b></color>
+
+<color=Red>(PRESTIGE CLASS: This class is not available at character creation and must be unlocked by meeting special requirements, listed below.)</color>
+
+The Order of the Black Flame is the hidden blade of their faith, a secret society of holy slayers devoted to the worship of a dark deity of fire and destruction.  Trained in unholy rites, the black flame zealots use stealth, divine magic, and the zeal of fanaticism to destroy those who have given offense to their god.  Even great rulers are not above the deity's wrath, since the Order is a sanctioned and respected means for the wealthy and powerful to pursue vendettas.
+
+Clerics and particularly devout rogues or fighters most often become black flame zealots.  A small number of the order's members are high-ranking clerics who keep an eye open for fellow devotees who seem like suitable candidates.
+
+<color=Gold>Requirements:</color>
+
+<b>Alignment:</b> Any nongood.
+
+<b>Spellcasting:</b> Able to cast 2nd level divine spells.
+
+<b>Skills:</b> Hide 8 ranks, Lore 8 ranks, Move Silently 8 ranks.
+
+<b>Feats:</b> Iron Will, 1d6 Sneak Attack damage
+
+<color=Gold>Class Features:</color>
+
+- <b>Hit Die:</b> d6
+
+- <b>Base Attack Bonus:</b> Medium.
+
+- <b>High Saves:</b> Reflex, Will.
+
+- <b>Weapon Proficiencies:</b> None.
+
+- <b>Armor Proficiencies:</b> None.
+
+- <b>Skill Points:</b> 4 + Int modifier.
+
+- <b>Class Skills:</b> Concentration, Craft Alchemy, Craft Armor, Craft Weapon, Hide, Listen, Lore, Move Silently, Open Lock, Search, Sleight of Hand, Spellcraft, Spot, and Tumble
+
+<color=Gold>Class Abilities:</color>
+
+Level 1: Zealous Heart, Spellcasting Progression
+Level 2: Poison Use
+Level 3: +1d6 Death Attack
+Level 4: 
+Level 5: 
+Level 6: +2d6 Death Attack
+Level 7: Sacred Flame
+Level 8: 
+Level 9: +3d6 Death Attack
+Level 10: 
+
+- <b>Divine Spellcasting:</b> At each odd-numbered black flame zealot level, the character gains new spells per day (and spells known, if applicable) as if he had also gained a level in a divine spellcasting class to which he belonged before adding the prestige class level. 
+
+- <b>Zealous Heart:</b> A black flame zealot is immune to fear, magical or otherwise.  Unlike a paladin's aura of courage, this confers no special benefits on his companions.  A Black Flame Zealot gains this ability at first level.
+
+- <b>Poison Use:</b> At 2nd level, a black flame zealot gains the ability to use poison safely, as the assassin ability.
+
+- <b>Death Attack:</b> At 3rd level, the black flame zealot can make a special sneak attack called a death attack. This ability adds to the rogue's sneak attack ability, adding an extra 1d6 points of damage. This bonus rises to +2d6 at 6th level, and +3d6 at 9th level. If used against an opponent not already in combat, a successful Death Attack forces the victim to make a Fortitude save or become paralyzed.
+
+- <b>Sacred Flame:</b> Beginning at 7th level, at will, a black flame zealot can command the melee weapons in his possession to burn with a black, deadly fire.  The weapons gain the flaming ability, dealing 1d6 points of fire damage per successful attack in addition to its normal weapon damage.
+
+- <b>Death Touch:</b> Avengers and Black Flame Zealots gain a death touch ability (1 minute cooldown). This ability takes 2 rounds to cast and rolls 1d6 for each level of Avenger, BFZ, and Assassin and compares that to the target's health. If the roll is higher, the creature dies (if not immune to death magic and crits). This is a replacement ability to make up for the loss of DC on Death Attack (it doesn't account for class levels).

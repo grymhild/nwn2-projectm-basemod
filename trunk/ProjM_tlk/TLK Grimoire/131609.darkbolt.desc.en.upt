@@ -1,0 +1,12 @@
+Evocation [Darkness]
+Level: Darkness 5
+Components: V,S
+Casting Time: 1 action
+Range: Medium (100 ft + 10 ft/level)
+Effect: One ray
+Duration: Instantaneous
+Saving Throw: Will partial
+Spell Resistance: Yes
+
+You unleash a beam of darkness from your open palm.   You must succeed at a ranged touch attack to strike your target.
+A Darkbolt deals 2d8 points of damage per every 2 caster levels (maximum 14d8) to a living creature, and the creature is dazed for 1 round unless it makes a Will save.  Undead take no damage, but are dazed if they fail their save.

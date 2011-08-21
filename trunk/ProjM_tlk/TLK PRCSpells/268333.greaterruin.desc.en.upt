@@ -1,0 +1,9 @@
+School: Transmutation
+Components: V,S
+Range: Long
+Target: One creature
+Duration: Instantaneous
+Saving Throw: Fortitude half
+Spell Resistance: Yes
+
+You deal 35d6 points of damage to a single target within range and line of sight.

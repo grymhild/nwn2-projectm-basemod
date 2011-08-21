@@ -1,0 +1,13 @@
+Caster Level(s): Cleric 5
+Innate Level: 5
+School: Necromancy
+Descriptor(s):
+Component(s): Verbal, Somatic
+Range: Touch
+Area of Effect / Target: Living creature touched
+Duration: Instant
+Additional Counter Spells:
+Save: Will negates
+Spell Resistance: Yes
+
+This spell deal 2d6 points of charisma damage and 1d6 points of wisdom damage. It then deals an additional 1d6 charisma damage 1 minute later.

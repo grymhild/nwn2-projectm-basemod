@@ -1,0 +1,10 @@
+School: Transmutation
+Caster Level: Druid/Sorcerer/Wizard 5, Hexblade 4
+Components: V, S
+Range: Close
+Target: One creature
+Duration: Permanent
+Saving Throw: Fortitude negates, Will partial
+Spell Resistance: Yes
+
+As Polymorph, except that you change the subject into a Small or smaller animal of no more than 1 HD (such as a dog, lizard or toad). If the new form would prove fatal to the creature, the target gets a +4 bonus on the save. If the spell succeeds, the subject must also make a Will save. If this second save fails, the creature loses it's extraordinary, supernatural and spell-like abilities, loses it's ability to cast spells, and gains the alignment, special abilities and Intelligence, Wisdom and Charisma scores of it's new form in place of its own. It still retains it's class and level (or HD), as well as all benefits deriving therefrom. Incorporeal or gaseous creatures are immune to being polymorphed, and a creature with the Shapechanger subtype can revert to it's normal form.

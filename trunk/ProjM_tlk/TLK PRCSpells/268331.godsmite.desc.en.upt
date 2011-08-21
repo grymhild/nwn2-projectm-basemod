@@ -1,0 +1,9 @@
+School: Evocation (Good/Evil/Lawful/Chaotic) [Divine]
+Components: V,S
+Range: Medium
+Target: One creature
+Duration: Instantaneous
+Saving Throw: Fortitude for half damage
+Spell Resistance: No
+
+You invoke the wrath of the gods on your target. The power of the wrath exacted is dependant on both your own alignment, as well as the alignment of your target. The greater the distance between the two alignments, the greater the damage will be. For example, if a Lawful Evil caster were to cast it on a Chaotic Good target, the damage would be greater than if the target were Lawful Good or Chaotic Evil, and even more so than if the target were Lawful Neutral or Neutral Evil. 

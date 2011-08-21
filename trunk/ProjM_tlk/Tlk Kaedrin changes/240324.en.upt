@@ -1,0 +1,8 @@
+Type of Feat: Reserve
+You control darkness and shadows.
+Prerequisite: Ability to cast 3rd-level spells.
+Benefit: As long as you have a darkness spell of 3rd level or higher available to cast, shadows and darkness appear to obey your will. As a standard action, you can direct these shadows to obscure the vision of one foe within 30 feet. If your target fails a Will save, its attacks have a miss chance equal to 5% per level of the highest-level darkness spell you have available to cast. This effect lasts until the beginning on your next action.
+
+Creatures that do not rely on sight are unaffected by this effect, and those with Blind-fight or similar abilities can fight as they normally would.
+
+Trigger Spells: Mass Blindness and Deafness, Shadow Conjuration, Shadow Shield

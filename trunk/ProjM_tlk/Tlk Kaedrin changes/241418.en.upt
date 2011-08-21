@@ -1,0 +1,10 @@
+Type of Feat: Spellcasting
+You can cast spells that arc to other targets in addition to the primary target.
+Prerequisite: Any metamagic feat.
+Benefit: Any spell that specifies a single target and has a range greater than touch can be chained so as to affect that primary target normally, then arc to a number of secondary targets equal to your caster level (maximum 20). Each arc affects one secondary target, all of which must be within 30 feet of the primary target. This only affects hostile targets.
+
+If the chained spell deals damage, the secondary targets each take half as much damage as the primary target (rounded down) and can attempt Reflex saving throws for half damage (whether the spell allows the original target a save or not).
+
+For spells that don't deal damage, the save DCs against arcing effects are reduced by 4. For example, if a 10th-level wizard normal casts cause fear at DC 14, a chained cause fear could target the primary target at DC 14 and up to 10 of the nearby targets at DC 10.
+
+A chained spell uses up a spell slot 3 levels higher than the spell's actual level.

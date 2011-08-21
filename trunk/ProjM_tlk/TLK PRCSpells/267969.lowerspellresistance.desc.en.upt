@@ -1,0 +1,13 @@
+Caster Level(s): Cleric 4, Wizard / Sorcerer 4
+Innate Level: 4
+School: Transmutation
+Descriptor(s):
+Component(s): Verbal, Somatic
+Range: Short
+Area of Effect / Target: Single
+Duration: 1 Minute / Level
+Additional Counter Spells:
+Save: Fortitude Negates
+Spell Resistance: No
+
+This spell reduces the target's spell resistance by 1 per caster level (maximum reduction of 15). The caster receives a bonus to the spell's save DC equal to his caster level.

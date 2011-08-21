@@ -1,0 +1,13 @@
+Evocation [Sonic]
+Level: Sor/Wiz 3
+Components: V, S, M
+Casting Time: 1 action
+Range: Close (25 ft. + 5 ft./2 levels)
+Area: 5 ft. wide to close range (25 ft. + 5 ft./2 levels)
+Duration: Instantaneous
+Saving Throw: Reflex half
+Spell Resistance: Yes
+
+You generate a deadly beam of sonic energy from your outstretched hand that deals 1d6 points of damage per caster level (maximum 10d6) to each creature within its area.
+
+The sonic blast may shove creatures in the area back along the path of the spell. Any creature failing its saving throw must make a Strength check (DC equal to damage inflicted by the spell); those who fail find themselves bull rushed directly away from the caster as if by a Large creature with a Strength score equal to the damage the spell inflicted. The spell moves with the target; see the bull rush description in Chapter Eight of the Player's Handbook for details on attacks of opportunity, stability modifiers, etc.

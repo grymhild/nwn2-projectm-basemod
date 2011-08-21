@@ -1,0 +1,26 @@
+Caster Level(s): Cleric 3, Wizard / Sorcerer 4
+Innate Level: 3
+School: Necromancy
+Descriptor(s): Evil
+Component(s): Verbal, Somatic
+Range: Short
+Area of Effect / Target: Point
+Duration: 1 hour /  level
+Save: None
+Spell Resistance: No
+
+Animate Dead summons forth an undead minion. The type of undead summoned is dependent upon your caster level up to 11, with additional bonuses.
+
+Caster Level (max 11) + Undead Level Bonus 
+
+Undead Level Bonuses
+Augment Summoning +1
+Spell Focus Necromancy +1
+Greater Spell Focus Necromancy +1
+Epic Spell Focus Necromancy +1
+Every 3 Levels of Palemaster +1
+
+Caster Level <=11 : Skeleton CR 7 
+Caster Level <=14 : Skeleton CR 9 
+Caster Level <=17 : Skeleton CR 11 
+Caster Level 18+ : Skeleton CR 13 

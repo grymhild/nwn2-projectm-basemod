@@ -1,0 +1,10 @@
+Evocation (Air, Earth)
+Level: Cleric 5, Druid 5, Sorcerer/Wizard 5
+Components: V,S
+Range: 60'
+Area: Cone-shaped burst
+Duration: Instant
+Saving Throw: Reflex half
+Spell Resistance: No
+
+This spell produces a brief windstorm, filled with scouring, supernatural grit that literally strips flesh. Creatures within the area take 1d6 points of magic damage per caster level (maximum 10d6) from the scouring sands and are knocked down. A successful Reflex save halves this damage and avoids the knockdown effect.

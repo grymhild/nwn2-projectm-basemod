@@ -1,0 +1,11 @@
+Abjuration
+Level: Sor/Wiz 2
+Components: V, S
+Casting Time: 1 action
+Range: Touch
+Area: 10 ft sphere around creature touched
+Duration: 1 turn/level
+Saving Throw: None
+Spell Resistance: No
+
+This spell creates an invisible globe of protection that filters out all noxious elements from poisonous vapors created by spells (such as Stinking Cloud), making them immune to damage and any penalties from said effects.  Effects from dragon's breath (such as a green dragon's chlorine gas) cause half-damage.

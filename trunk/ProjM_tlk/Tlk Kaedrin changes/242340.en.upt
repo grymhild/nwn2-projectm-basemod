@@ -1,0 +1,12 @@
+Caster Level(s): Wizard / Sorcerer 5
+Innate Level: 5
+School: Enchantment
+Descriptor(s):
+Component(s): Verbal
+Range: Short
+Area of Effect / Target: One creature with 50 hp or less
+Duration: Instant
+Save: None
+Spell Resistance: Yes
+
+You utter a single word of power that instantly reduces the hit points of one creature of your choice to 1.  Any creature that currently has 51 or more hit points is unaffected by power word disable.

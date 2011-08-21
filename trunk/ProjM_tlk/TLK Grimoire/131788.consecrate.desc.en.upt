@@ -1,0 +1,13 @@
+Evocation
+Level: Clr 2
+Components: V, S
+Casting Time: 1 action
+Range: Close
+Area: 20-ft. radius emanation
+Duration: 2 hours/level
+Saving Throw: None
+Spell Resistance: No
+
+This spell blesses an area with positive energy.  All Charisma checks made to turn undead within this area gain a +3 sacred bonus.  Undead entering this area suffer minor disruption, giving them a -1 sacred penalty on attack rolls, damage rolls, and saves.  Undead cannot be created within or summoned into a consecrated area.
+
+Consecrate counters and dispels Desecrate.

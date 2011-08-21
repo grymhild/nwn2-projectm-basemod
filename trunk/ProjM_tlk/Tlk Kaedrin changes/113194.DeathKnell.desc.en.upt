@@ -1,0 +1,12 @@
+Caster Level(s): Cleric 2
+Innate Level: 2
+School: Necromancy
+Descriptor(s): Death, Evil
+Component(s): Verbal, Somatic
+Range: Touch
+Area of Effect/Target: Living creature touched
+Duration: Instantaneous / 10 minutes / level
+Save: Will negates
+Spell Resistance: Yes
+
+The target takes 2d4 points of negative energy damage.  If this damage is lethal, the target decomposes and you gain 1d8 temporary hit points and a +2 bonus to Strength. You can only benefit from one casting of this spell at a time; its effects do not stack with itself.

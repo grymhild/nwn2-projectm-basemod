@@ -1,0 +1,56 @@
+<color=Gold><b>Pale Master</b></color>
+
+<color=Red>(PRESTIGE CLASS: This class is not available at character creation and must be unlocked by meeting special requirements, listed below.)</color>
+
+Necromancy is usually a poor choice for arcane spellcasters - those who really want to master the deathless arts almost always pursue divine means. However, an alternative exists for those who desire power over undead but refuse to give up their arcane craft completely. Enter the pale master, who draws on a font of special lore that provides a macabre power all its own. Many pale masters still end up supplementing their arcane power with levels of divine magic. The mixture of "pale lore" and clerical abilities to sway, create, command and destroy undead can be a potent one. 
+
+<color=Gold>Requirements:</color>
+
+<b>Alignment:</b> Any non-good.
+
+<b>Spellcasting:</b> Ability to cast 3rd-level arcane spells.
+
+<color=Gold>Class Features:</color>
+
+- <b>Hit Die:</b> d6
+
+- <b>Base Attack Bonus:</b> Low.
+
+- <b>High Saves:</b> Fortitude and Will.
+
+- <b>Weapon Proficiencies:</b> None.
+
+- <b>Armor Proficiencies:</b> None.
+
+- <b>Skill Points:</b> 2 + Int modifier.
+
+- <b>Class Skills:</b> Concentration, Craft Alchemy, Craft Trap, Craft Weapon, Diplomacy, Heal, Hide, Listen, Lore, Move Silently, and Spellcraft.
+
+- <b>Spells per Day/Spells Known:</b> Beginning at 1st level and at each odd level, the character gains new spells per day as though he had gained a level in whatever arcane spellcasting class gave him access to 3rd-level arcane spells. If the character had more than one applicable arcane spellcasting class, he must pick one to improve.
+
+- <b>Bone Skin:</b> At 1st level, the pale master's tough, cadaverous flesh gives him a +2 natural armor bonus to AC. This bonus increases to +4 at 4th level and +6 at 8th level.
+
+- <b>Animate Dead:</b> A 2nd-level pale master can use <i>animate dead</i> as a spell-like ability once per day. Gives 3 different zombies (improves at PM lvl 4 & 6) 
+
+- <b>Darkvision:</b> At 3rd level, the pale master gains the ability to see in the dark.
+
+- <b>Summon Undead:</b> At 4th level, the pale master can use <i>summon undead</i> as a spell-like ability once per day.  Gives 3 different skeletons (improves at PM lvl 6 & 8) 
+
+- <b>Deathless Vigor:</b> At 5th level, the pale master becomes preternaturally tough and resilient. He gains a +4 bonus on Fortitude saves.
+
+- <b>Undead Graft:</b> At 6th level, the pale master performs a horrific operation that replaces one of his arms with a supernaturally-animated, undead appendage. The pale master may make a touch attack with this arm that paralyzes the target twice per day. At 8th level, the pale master may use this touch attack three times per day. 
+
+Add a cool down period - lvl 6: 90 seconds, lvl 8: 60 seconds 
+DC = 5 + PM Level + Int Bonus + Necro Focus
+
+At 10th level, the pale master's undead graft touch attack kills the target if it fails its save, instead of paralyzing it.
+Add a cool down period - 60 seconds 
+DC = 9 + PM Level + Int Bonus + Necro Focus 
+ 
+- <b>Tough as Bone:</b> At 7th level, the pale master becomes more and more like one of the implacable undead. He gains immunity to hold, paralysis, and stun effects.
+
+- <b>Summon Greater Undead:</b> At 9th level, the pale master can use <i>summon greater undead</i> as a spell-like ability once per day. Gives 3 different Ghasts (improves at PM lvl 10 & 12) 
+
+Necro Focuses and Augment Summons Feats and PM Level improve AC, EB and Negative Damage of undead summoned 
+
+- <b>Deathless Mastery:</b> At 10th level, the pale master is practically an undead creature himself. He gains immunity to critical hits.

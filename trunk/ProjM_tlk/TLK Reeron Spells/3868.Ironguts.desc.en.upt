@@ -1,0 +1,13 @@
+Caster Level(s): Wizard / Sorcerer 1
+Innate Level: 1
+School: Abjuration
+Descriptor(s): Poison Resistance
+Component(s): Verbal, Somatic
+Range: Touch
+Area of Effect / Target: Creature touched
+Duration: 10 minutes / level
+Additional Counter Spells:
+Save: No
+Spell Resistance: No
+
+When touched, the target creature gains a +4 circumstance bonus on Fortitude saves against all poisons.

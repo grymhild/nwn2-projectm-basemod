@@ -1,0 +1,16 @@
+Abjuration
+Level: Brd 1, Rgr 1, Sor/Wiz 1
+Components: V,S
+Casting Time: 1 action
+Range: Close (25 ft + 5 ft/2 levels)
+Area: 25-ft radius emanation centered on a point in space
+Duration: 2 hours/level
+Saving Throw: None
+Spell Resistance: No
+
+A mental alarm alerts you (and only you). You note a single mental "ping" that awakens you from normal sleep but does not
+otherwise disturb concentration. A silence spell has no effect on a mental alarm.
+
+Ethereal, Incorpreal or astral creatures do not trigger the alarm.
+
+Only one alarm effect can be in place at any one time and works with unlimited distance within the same plane.

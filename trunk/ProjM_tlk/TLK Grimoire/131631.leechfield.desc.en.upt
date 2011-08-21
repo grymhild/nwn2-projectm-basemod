@@ -1,0 +1,13 @@
+Necromancy
+Level: Death 8, Sor/Wiz 8
+Components: V,S
+Casting Time: 1 action
+Range: Close (25 ft + 5 ft/2 levels)
+Target, Effect, or Area: 10-ft radius spread
+Duration: Instantaneous
+Saving Throw: Fortitude half
+Spell Resistance: yes
+
+Once cast, a leech field generates a shimmering purple haze that spread from the spell's target point to a 10-foot radius.  All living creatures (other than the caster himself) within the leech field takes 1d6 points of damage per two caster levels (maximum 20d6) or half that amount if they make their Fortitude save.
+Each point of damage inflicted by the leech field is added to the total hit points possessed by the caster.  These absorbed hit points first heal the caster to his normal maximum, then any additional hit points become temporary hit points that last for up to one hour.  A caster may not absorb temporary hit points in excess of his normal maximum hit points, so a caster with 40 hit points can absorb only up to 40 temporary hit points on top of his normal 40 hit points.  Even if the caster cannot absorb more hit points, however, targets still take full damage.  A caster cannot absorb more hit points from any one victim than they have to offer (the victim's current hit points plus 10 if they are killed by the spell's damage).
+If any undead are caught in the leech field, the caster himself takes damage (Fortitude save for half).  All undead in the leech field split evenly as a curing effect any damage that the caster takes.  This effect can cure them up to their full normal hit points, but does not provide them any temporary gain.  The caster takes this damage before he absorbs any hit points from living creatures that are also in the area of effect.  If the caster is reduced to less than 0 hit points from this damage, he does not absorb any hit points from the living creatures (they still take damage, however).

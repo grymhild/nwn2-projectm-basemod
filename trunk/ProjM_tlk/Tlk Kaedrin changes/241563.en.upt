@@ -1,0 +1,64 @@
+<color=Gold><b>Bone Knight</b></color>
+
+<color=Red>(PRESTIGE CLASS: This class is not available at character creation and must be unlocked by meeting special requirements, listed below.)</color>
+
+Bone Knights are patriots, living protectors who fight alongside the undead legions of their land. They provide tactical expertise and fine control to the legions of undead raised to defend their people. They serve as elite knights who travel abroad to complete missions that server the greater glory of their king. They wear suits of bonecraft armor that they craft themselves and learn to harness the power of necromancy, turning hordes of undead into disciplined, even cunning, troops.
+
+<color=Gold>Requirements:</color>
+
+<b>Alignment:</b> Lawful Good.
+<b>Feats:</b> Smite Evil 2/day.
+<b>Skills:</b> Craft Armor 6, Lore 6.
+<b>Special:</b> Must not have any Champion of the Silver Flame levels.
+<b>Spellcasting:</b> Level 2 Paladin spells.
+
+<color=Gold>Class Features:</color>
+
+- <b>Hit Die:</b> d10
+- <b>Base Attack Bonus:</b> Medium.
+- <b>High Saves:</b> Fort, Will.
+- <b>Weapon Proficiencies:</b> All.
+- <b>Armor Proficiencies:</b> All armor and shields (including Tower Shields).
+- <b>Skill Points:</b> 2 + Int modifier.
+- <b>Class Skills:</b> Concentration, Craft Weapon, Craft Armor, Diplomacy, Intimidate, Heal, Intimidate, Lore, Parry, and Tumble.
+
+<color=Gold>Class Abilities:</color>
+
+Level 1: Bonecraft Armor, Spellcasting Progression, Turn Undead
+Level 2: Bone March, Faithful Spirit
+Level 3: Master of the White Banner
+Level 4: Improved Bonecraft Armor
+Level 5: Fill the Ranks 1/day
+Level 6: Bonecraft Weapon
+Level 7: 
+Level 8: 
+Level 9: Death Strike 1/day
+Level 10: 
+
+- <b>Spellcasting:</b> At each level, a bone knight gains new spells per day (and spells known, if applicable) as if she had also gained a Paladin level.
+
+- <b>Turn Undead:</b> Bone knights levels stack with all other classes for the purpose of turning undead.
+
+- <b>Bonecraft Armor:</b> At 1st level, you learn to weave enchanted bonecraft into the armor you wear, granting you a +4 skill bonus to Intimidate while worn. In addition, the armor grants you damage reduction 1/bludgeoning if it is medium armor or damage reduction 2/bludgeoning if it is heavy armor.
+
+- <b>Bone March:</b> At 2nd level, you gain the ability to subvert undead to follow your commands (as a dominate undead spell). You may not control any individual undead creature with more Hit Dice than your class level.
+
+- <b>Faithful Spirit:</b> Starting at 2nd level, bone knight levels stack with Paladin levels to determine your effective Paladin level for the Divine Spirit abilities.
+
+- <b>Master of the White Banner:</b> Beginning at 3rd level, you grant any undead under your control turn resistance equal to your Charisma bonus.
+
+- <b>Improved Bonecraft Armor:</b> At 4th, 7th, and 10th levels, the damage reduction afforded by your bonecraft armor increases by 1. Moreover, you gain additional benefits while clad in your bonecraft armor as described below:
+
+At 4th level, your bonecraft armor grants you immunity to stunning attacks.
+
+At 8th level, your bonecraft armor shrouds your body with the essence of undeath. You gain immunity to poison, sleep effects, paralysis, disease, death magic, ability damage, and energy drain.
+
+At 10th level, your bonecraft armor grants you immunity to critical hits and sneak attack damage.
+
+- <b>Fill the Ranks:</b> At 5th level, you can use a limited form of animate dead once per day. You can control this undead as well as the one dominated by your Bone March ability.
+
+- <b>Bonecraft Weapon:</b> At 6th level, if you have at least 6 ranks in Craft Weapon, you can wield weapons with pieces of bone worked into the design. The bonecraft weapons deal +1d6 points of divine damage.
+
+- <b>Death Strike:</b> At 9th level, once per day, you use your bonecraft weapon to strike down a living foe. If the attack succeeds, the target must succeed on a Fortitude save (DC 10 + your bone knight level + your Cha modifier) or die. This is a necromantic death effect.
+
+New Feat Available: Extra Death Strike (3 uses/day) 

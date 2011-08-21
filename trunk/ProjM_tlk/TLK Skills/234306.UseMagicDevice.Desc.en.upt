@@ -1,0 +1,17 @@
+Ability: Charisma.
+Requires Training: Yes.
+Classes: All.
+
+A successful Use Magic Device check allows the character to use a magic item as if he had a required class, race, or alignment.
+
+Check: The base DC is determined by the value of the item and can vary depending on the type of item the character is attempting to use. 
+Emulate a Specific Race: This involves using items that are typically restricted to a certain race. (Minimum DC5)
+Emulate an Alignment: This involves using items that are alignment restricted. (Minimum DC10)
+Emulate a Class: (Minimum DC 13)
+Use a Scroll: Level 1(DC13), Level 2(DC15), Level 3(DC17), Level 4(DC19), Level 5(DC21), Level 6(DC23), Level 7(DC25), Level 8(DC27), Level 9(DC29) *
+Use a Wand: (DC 10)
+Use a Rod: (DC 12)
+
+*Note: The DCs represented here are based on the minimum caster level for a particular scroll. Scrolls with caster levels higher than the minimum can have increased DCs. For example, a character can use a scroll of fireball (5) with a Use Magic Device skill of 17. This is because fireball is a 3rd level spell with a minimum caster level of 5. If the same character attempted to use a scroll of fireball (9), the DC would be increased. 
+
+Use: Automatically applied whenever a character attempts to use or equip an item normally unusable by his class, race, or alignment.

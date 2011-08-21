@@ -1,0 +1,59 @@
+<color=Gold><b>Bard</b></color>
+
+A bard brings forth magic from his soul, not from a book. He can cast only a small number of spells, but he can do so without selecting or preparing them in advance. His magic emphasizes charms and illusions over the more dramatic evocation spells that wizards and sorcerers often use. In addition to spells, a bard works magic with his music and poetry. He can encourage allies, hold his audiences rapt, and counter magical effects that rely on speech or sound. Bards have some of the skills that rogues have, although bards are not as focused on skill mastery as rogues are. A bard listens to stories as well as telling them, of course, so he has a vast knowledge of local events and noteworthy items.
+
+<color=Gold>Class Features:</color>
+
+- <b>Alignment Restrictions:</b> Any nonlawful - bards are wanderers, guided by whim and intuition.
+
+- <b>Hit Die:</b> d6
+
+- <b>Base Attack Bonus:</b> Medium.
+
+- <b>High Saves:</b> Reflex and Will.
+
+- <b>Weapon Proficiencies:</b> Simple weapons plus longsword, rapier, short sword, and shortbow.
+
+- <b>Armor Proficiencies:</b>  Light armor and shields (except tower shields).
+
+- <b>Skill Points:</b> 6 + Int modifier per level,  x4 at first level.
+
+- <b>Class Skills:</b> Appraise, Bluff, Concentration, Craft Alchemy, Craft Armor, Craft Trap, Craft Weapon, Diplomacy, Hide, Listen, Lore, Move Silently, Parry, Perform, Sleight of Hand, Spellcraft, Taunt, Tumble, and Use Magic Device.
+
+- <b>Spells:</b> A bard casts arcane spells, which are drawn from the bard spell list. He can cast any spell he knows without preparing it ahead of time. To learn or cast a spell, a bard must have a Charisma score equal to at least 10 + the spell level (Cha 10 for 0-level spells, Cha 11 for 1st-level spells, and so forth). Starting at 8th level, and every three levels after, bards can replace one known spell with a new spell of the same level. The spell that can be replaced must be two spell levels below what the bard can currently cast (1st level spell at 8, 1st or 2nd level spell at 11, 1st or 2nd or 3rd level spell at 14, and so forth). Bards do not suffer from arcane spell failure when wearing light armor; medium and heavy armors, and shields still incur the normal failure chance.
+
+- <b>Bardic Knowledge:</b> A bard picks up a lot of stray knowledge while wandering the land and learning stories from other bards. Whenever a bard makes a Lore check, he adds his bard level to the result.
+
+- <b>Inspiration:</b> The very presence of a bard is a constant inspiration to his companions. Unlike bardic music, bardic inspirations are always active and do not have a limited number of uses, however, the bard may only use one inspiration at any given time. At 1st level, the bard can only inspire courage, but as he increases in level, he gains access to a variety of inspirations from which his companions (and himself) may benefit. There are seven types of inspirations:
+
+* <b>Inspire Courage (1st level):</b> This gives a bonus to hit and damage. It starts at +1, and becomes +2 at 8th level, +3 at 14th level, +4 at 20th level, and +5 at 26th level.
+
+* <b>Inspire Competence (2nd level):</b> This gives a skill bonus to all allies. It starts at +2 and becomes +4 at 11th level, +6 at 19th level, and +8 at 27th level.
+
+* <b>Inspire Defense (5th level):</b> This gives a dodge AC bonus to all allies. It starts at +2 and becomes +3 at 10th level, +4 at 15th level, +5 at 20th level, +6 at 25th level, and +7 at 30th level.
+
+* <b>Inspire Regeneration (7th level):</b> This heals all party members a certain number of hit points every two rounds. This starts at 1 hit point and becomes 2 at 12th level, 3 at 17th level, 4 at 22nd level, and 5 at 27th level.
+
+* <b>Inspire Toughness (8th level):</b> This gives a bonus to saving throws for all allies. It starts at +1, then +2 at 13th level, +3 at 18th level, +4 at 23rd level, and +5 at 28th level.
+
+* <b>Inspire Slowing (11th level):</b> All enemies that come within 20 feet of the bard have to make a Will save (DC 13 + ½ Bard level + CHA modifier) otherwise they will be slowed down. Initially they are slowed down 15% but at 16th level they are slowed by 30%. There are no further penalties besides movement, unlike the <i>slow</i> spell.
+
+* <b>Inspire Jarring (14th level):</b> All enemies within 20' of the bard suffer a -4 penalty to all Concentration checks and -2 to all Will saves.
+
+- <b>Bardic Music:</b> Once per day per bard level, a bard can use his song or poetics to produce magical effects on those around him (usually including himself, if desired). The bard's ranks in the Perform skill, and in some cases his bard level, determine what bard songs he can use. Bardic music has a duration of 10 rounds, unless an individual song specifies otherwise.
+
+- <b>Countersong (Req: Perform 3):</b> This song puts a buff on the targeted ally that lasts for 10 rounds or until discharged. Any hostile magic spell that would affect the countersong's target has to make a Spell Resistance check of 10 + levels of bard the singer possesses. Whether the spell is blocked or not, the counter-song is discharged.
+
+- <b>Fascinate (Req: Perform 3):</b> Every hostile creature within 90 feet must make a Will save (against a DC of 11 + 1/2 the bard's level + the bard's Charisma modifier). This is an enchantment (compulsion) mind-affecting ability. If the target fails this save, then they are dazed for as long as the song is playing and the bard is within 90 feet of them. If a creature is attacked, or is within 10 feet of a creature being attacked, the effect ends for that creature, though anyone who fails their saving throw will be dazed for at least one round. There is a cool down of 10 rounds before this ability can be used again. Fascinate effects up to one enemy per level of the bard.
+
+- <b>Haven Song (Req: 3rd level, Perform 6):</b> This song renders all enemies who fail a Will save (DC 11 + 1/2 the bard's level + the bard's Charisma modifier) to be unable to attack the bard, unless  the bard takes hostile action against them or their allies (for example, attacking or casting a harmful spell). The Fascinate and Cloud Mind songs do not count as hostile actions.
+
+- <b>Cloud Mind (Req: 6th level, Perform 9):</b> This is a more potent, single-target version of the Fascinate bard song. The saving throw DC is increased to 14 + 1/2 the bard's level + the bard's Charisma modifier, and enemies being attacked nearby don't break the effect. There is a 5-round cool down before this ability can be used again.
+
+- <b>Ironskin Chant (Req: 9th level, Perform 12):</b> This song provides damage reduction 5/- to the party for 4 rounds.
+
+- <b>Song of Freedom (Req: 12th level, Perform 15):</b> At 12th level a bard gains a song that will break curses and enchantments on allies with a check of the bard's level at DC (11 + caster level of the effect to be dispelled)
+
+- <b>Song of Heroism (Req: 15th level, Perform 18):</b> This song inspires either the bard or a single targeted ally. For 5 rounds, the inspired creature gains +4 dodge bonus to AC and +4 morale bonus to saving throws. Additionally the inspired creature gains +4 temporary hit points per level. There is a cool down of 20 rounds before this ability can be used again.
+
+- <b>Legionnaire's March (Req: 18th level, Perform 21):</b> This song inspires all allies within 60 feet. The game determines the highest base attack bonus of all allies in the area of effect, and all affected characters now use this as their new base attack. All affected characters get a +4 competence bonus to damage rolls, as well. This ability lasts for 10 rounds. There is a cool down of 5 minutes (game time) before this ability can be used again.

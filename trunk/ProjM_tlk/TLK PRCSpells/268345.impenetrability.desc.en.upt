@@ -1,0 +1,9 @@
+School: Abjuration
+Components: V,S
+Range: Touch
+Target: Creature touched
+Duration: Caster Level + 10 rounds
+Saving Throw: None (Harmless)
+Spell Resistance: No (Harmless)
+
+The subject of a casting of Impenetrability becomes impervious to half of all piercing damage, effectively negating any physical attacks from spears, arrows, bolts, and the like. (50% Immunity is granted)

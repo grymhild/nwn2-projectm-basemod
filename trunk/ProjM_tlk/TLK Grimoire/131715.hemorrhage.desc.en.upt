@@ -1,0 +1,13 @@
+Necromancy
+Level: Clr 1
+Components: V, S, DF
+Casting Time: 1 action
+Range: Touch
+Target: Creature touched
+Duration: 1 round/2 levels (maximum 5 rounds) 
+Saving Throw: Will negates
+Spell Resistance: Yes
+
+Your touch inflicts a deep, painful wound that bleeds profusely and refuses to heal. The target takes 1d3 points of damage per round from bleeding until the spell's duration expires. A cure spell restores hit points normally but does not stop the bleeding. A styptic or heal spell both stops the bleeding and restores lost hit points as it normally would.
+
+Hemorrhage is countered by styptic.

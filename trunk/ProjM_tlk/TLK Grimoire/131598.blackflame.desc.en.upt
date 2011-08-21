@@ -1,0 +1,13 @@
+Evocation [Fear, Fire]
+Level: Sor/Wiz 8
+Components: S
+Casting Time: 1 action
+Range: Medium (100 ft + 10 ft/level)
+Target: One subject
+Duration: 1 round/level (maximum 25 rounds)
+Saving Throw: Fortitude negates (see text)
+Spell Resistance: Yes (harmless, see text)
+
+This spell causes shadowy flames to burst to life on one subject.  Each round, the subject must make a Fortitude saving throw against this spell or sustain 1d10 points of damage.  Likewise, victims with spell resistance roll every round to prevent the spell effects for that round.  A single success on a saving throw or spell resistance does not negate the blackflame; that can only be accomplished by a successful dispel magic.
+In addition to the damage, the spell causes a mind-affecting, fear effect in its victim.  On any round during which the spell's victim sustains damage, she must also succeed at a Will saving throw versus the spell's DC.  Victims who fail their Will saving throws are considered to be cowering (no dex adjustment to AC, opponents have +2 to attack rolls on victim, victim does not move).  Such a subject will not be able to take any action (melee, spellcasting, etc) except to fruitlessly douse the flames by rolling on the ground or swatting at them.
+Once targeted, the blackflame will stay on its victim for the spell's duration.  Only a dimension door, teleport, or the like will separate the blackflame from the victim.

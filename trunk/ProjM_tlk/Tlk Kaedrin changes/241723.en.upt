@@ -1,0 +1,62 @@
+<color=Gold><b>Silverstar</b></color>
+
+<color=Red>(PRESTIGE CLASS: This class is not available at character creation and must be unlocked by meeting special requirements, listed below.)</color>
+
+Silverstars are dedicated advocates of freedom and tolerance, wanderers on the path of truth, and absolute foes of Shar. They seek to build harmony among lycanthropes and nonshapechangers, and they protect the weak and oppressed everywhere. They cannot abide slavery and they hate most undead. They rarely settle in one place for long, instead moving along when seized by wanderlust or enticed by a new cause or mission. They deal with lunar energies and phenomena and are, to a limited degree, able to wield the power of the moon, bringing its fierce, pure white light to Toril.
+
+<color=Gold>Requirements:</color>
+
+<b>Alignment:</b> Any good.
+<b>Base Attack Bonus:</b> +4.
+<b>Feats:</b> Blind-Fight, Dodge, Mobility, Spring Attack.
+<b>Skills:</b> Diplomacy 4.
+<b>Spellcasting:</b> Ability to cast 2nd-level divine spells.
+
+<color=Gold>Class Features:</color>
+
+- <b>Hit Die:</b> d8
+- <b>Base Attack Bonus:</b> Medium.
+- <b>High Saves:</b> Fort, Will.
+- <b>Weapon Proficiencies:</b> None.
+- <b>Armor Proficiencies:</b> None.
+- <b>Skill Points:</b> 2 + Int modifier.
+- <b>Class Skills:</b> Craft Armor, Craft Weapon, Concentration, Diplomacy, Heal, Lore, Survival, and Spellcraft.
+
+<color=Gold>Class Abilities:</color>
+
+Level 1: Moon Bolt 3/day, Spellcasting Progression
+Level 2: Low-Light Vision
+Level 3: Moon's Hand
+Level 4: Tears of Selune
+Level 5: Prophet's Sight 1/day
+Level 6: 
+Level 7: Moonshield
+Level 8: Prophet's Sight 2/day
+Level 9: 
+Level 10: Moonfire 1/day
+
+- <b>Spellcasting:</b> At each silverstar level, the character gains new spells per day (and spells known, if applicable) as if she had also gained a level in a divine spellcasting class she belonged to before adding the prestige class. If a character had more than one spellcasting class before becoming a silverstar, she must decide which class she increases when she gains a level.
+
+- <b>Moon Bolt:</b> A silverstar can cast Moon Bolt with a caster level equal to her class level 3 times/day.
+
+- <b>Moon's Hand:</b> Any heavy mace wielded by a 3rd-level silverstar is treated as though it were +1 with 1d6 bonus electrical damage. At 6th level, the weapon is treated as a +2 weapon. Upon reaching 9th level, the weapon gains the massive criticals property.
+
+- <b>Tears of Selune:</b> A 4th-level silverstar can project luminescent lunar energy as faerie fire at will, as if cast by a sorcerer of her caster level.
+
+- <b>Prophet's Sight:</b> Starting at 5th level, once per day a silverstar is able to see as if under the effect of a true seeing spell cast by a cleric of her level. At 8th level, this ability can be used 2/day.
+
+- <b>Moonshield:</b> At 7th level, a silverstar learns how to better resist the magic of the Shadow Weave. She gains a +2 bonus on saves against enchantment, illusion, and necromancy spells.
+
+- <b>Moonfire:</b> Upon reaching 10th level, a silverstar can cast moonfire 1/day as a spell like ability.
+
+Moonfire Details:
+Components: V,S
+Area: 60' Cone
+Duration: Instantaneous (see text)
+Saving Throw: Reflex half (see text)
+Spell Resistance: Yes
+
+A cone of fiery, white moonlight springs from your hand. Living creatures in the area feel an unnatural chill and take 1d8 points of divine damage per two caster levels, to a maximum of 10d8. Undead and shapechangers take double damage. This application of the spell allows a Reflex save for half damage.
+
+Shapechanged or polymorphed creatures and objects in the spell's area at the time the spell is cast must make Will saves or immediately return to their normal forms.
+

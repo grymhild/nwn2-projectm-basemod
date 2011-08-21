@@ -1,0 +1,11 @@
+Necromancy
+Level: Asn 3, Sor/Wiz 3
+Components: V,S
+Casting Time: 1 action
+Range: Touch
+Target: Creature Touched
+Duration: Instantaneous (see text)
+Saving Throw: Fortitude negates (see text)
+Spell Resistance: Yes
+
+Similar to the divine spell Poison, you inflict a paralyzing poison up the subject by making a successfuly melee touch attack.  The poison deals 1d6 points of temporary Strength damage immediately and another 1d6 points of temporary Strength damage 1 minute later.  Each instance of damage can be negated by a Fortitude save (DC 10 + one-half caster level + caster's Intelligence or Charisma modifier, for wizards and sorcerers, respectively).

@@ -1,0 +1,12 @@
+Necromancy
+Level: Death 3, Sor/Wiz 3
+Components: V,S
+Casting Time: 1 action
+Range: Personal
+Target: You
+Duration: 1 hour/level or special
+Saving Throw: None
+Spell Resistance: No
+
+This spell allows the caster to create magical armor from the remains of a humanoid.  The caster must touch a corpse (the corpse can be fresh, rotting, or even skeletal, so long as enough of it remains that it could be animated by an animate dead spell) and invoke the spell.  The corpse will then stand erect, embrace the caster, and begin to bend and twist, wrapping itself around the caster to form a gruesome armor of bones and dead flesh.  The armor grants a +2 enhancement bonus to the the caster's AC, 25 temporary hit points, a -1 armor check penalty, and a 5% arcane spell failure penalty.  Damage dealt to the caster is first removed from these hitpoints.  
+The spell ends either when the duration expires or 25 points of damage are dealt to the armor.  Should the spell end normally, all remaining temporary hit points are lost.

@@ -1,0 +1,34 @@
+Claws of the Bebilith
+Transmutation [Evil]
+Level: Corrupt 5
+Components: V, S, Corrupt
+Casting Time: 1 action
+Range: Personal
+Target: Caster
+Duration: 10 minutes/level
+
+The caster gains claws that deal damage based on her size (see below) and can catch and tear an opponent's armor and shield. If the opponent has both armor and a shield, roll 1d6: A result of 1-4 indicates the armor is affected, and a result of 5-6 affects the shield.
+
+The caster makes a grapple check whenever she hits with a claw attack, adding to the opponent's roll any enhancement bonus from magic possessed by the opponent's armor or shield. If the caster wins, the armor or shield is torn away and ruined.
+
+                Caster Size           Claw Damage
+
+                Fine                        1
+
+                Diminutive                  1d2
+
+                Tiny                        ld3
+
+                Small                       ld4
+
+                Medium-size                 ld6
+
+                Large                       1d8
+
+                Huge                        2d6
+
+                Gargantuan                  2d8
+
+                Colossal                    4d6
+
+Corruption Cost: 1d6 points of Dexterity damage.

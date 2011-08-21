@@ -1,0 +1,12 @@
+Abjuration [Darkness]
+Level: Darkness 4
+Components: V,S
+Casting Time: 1 action
+Range: Touch
+Target: Creature Touched
+Duration: 10 minutes/level
+Saving Throw: Will negates (harmless)
+Spell Resistance: Yes (harmless)
+
+The spell envelops the warded creature in a shroud of flickering shadows.  It grants the subject a +3 deflection bonus to Armor Class, plus an additional +1 for every four caster levels (maximum bonus +8).  The subject cans see through the armor as if it did not exist and is also afforded darkvision with a range of 60 feet.  Finally, the subject gains a +2 saving throw against holy or good spells or effects.
+Undead creatures that are subjects of Armor of Darkness also gain +4 turn resistance.

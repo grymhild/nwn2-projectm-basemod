@@ -1,0 +1,13 @@
+Caster Level(s): Sorc/Wiz 3
+Innate Level: 3
+School: Evocation
+Descriptor(s): Fire
+Component(s): Verbal, Somatic
+Range: Long
+Area of Effect / Target: Huge
+Duration: Instant
+Additional Counter Spells:
+Save: Will partial
+Spell Resistance: Yes
+
+Flashburst creates a blinding flash of light. All creatures in the effect are dazzled for 1 round with no save (-1 to attacks), and blinded for 2d8 rounds (will save negates).

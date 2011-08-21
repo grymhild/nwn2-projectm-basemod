@@ -1,0 +1,13 @@
+Evocation [Cold/Fire]
+Level: Sor/Wiz 4
+Components: V, S
+Range: Personal
+Area of Effect / Target: Caster
+Duration: 1 Round / Level
+Additional Counter Spells: 
+Save: None
+Spell Resistance: None
+
+This spell wreathes you in flame and causes damage to each creature who attacks you in melee.  The flames also protect you from either cold-based or fire-based attacks (your choice).   The shield deals 1d6+1 point per caster level of either fire or cold damage, depending on the version selected.
+Warm/Hot Shield: You take only half damage from cold based attacks.  Damage dealt is fire damage.
+Chill/Cold Shield: You take only half damage from fire based attacks.  Damage dealt is cold damage.

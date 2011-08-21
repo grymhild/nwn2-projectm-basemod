@@ -1,0 +1,9 @@
+School: Evocation [Fire, Petrification]
+Components: V,S
+Range: Long
+Area: 40-ft.-radius
+Duration: 1 Round / 5 Caster levels
+Saving Throw: Reflex and Fortitude, see text
+Spell Resistance: Yes
+
+With the casting of Magma Burst, you call forth a small volcanic eruption at the location of the target. This eruption lasts for the duration, and initially deals 20d8 points of fire damage in the eruption (Reflex for half), and subsequently deals 10d8 points of fire damage per round within the flow of magma (Fortitude for half). If a creature within the area remains for a cumulative 5 rounds, then it must make a Fortitude save or turn to stone as the magma cools around the creatures body.

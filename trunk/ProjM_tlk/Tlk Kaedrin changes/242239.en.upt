@@ -1,0 +1,14 @@
+Caster Level(s): Wizard / Sorcerer 9
+Innate Level: 9
+School: Abjuration
+Descriptor(s): 
+Component(s): Verbal
+Range: Medium
+Area of Effect / Target: Single or Colossal
+Duration: Instant
+Save: None
+Spell Resistance: No
+
+Mordenkainen's Disjunction attempts to strip all magical effects from a single target. It can also target a group of creatures, attempting to remove all area effects from the creatures in the group, as well as the most powerful magic effect on each target. To remove an effect, you make a dispel check of 1d20 +1 per caster level (to a maximum of +30) against a DC of 11 + the spell effect's caster level. Finally, the spell will lower the SR of all creatures within the area of effect by 10.
+
+Affected spells include: <i>spell mantles, globes of invulnerability, stoneskin, premonition, protection from elements, ghostly and ethereal visage, mage armor, shadow shield</i> and <i>elemental shield</i>.

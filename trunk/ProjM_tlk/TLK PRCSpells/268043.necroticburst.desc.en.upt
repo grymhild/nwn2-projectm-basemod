@@ -1,0 +1,14 @@
+School: Necromancy [Evil]
+Caster Level: Clr 5, sor/wiz 5
+Components: V, S, F
+Range: Medium
+Target: Living creature with necrotic cyst
+Duration: Instantaneous
+Saving Throw: Fortitude partial
+Spell Resistance: No
+
+You cause the cyst of a subject already harboring a necrotic cyst (see spell of the same name) to explosively enlarge itself at the expense of the subject's body tissue. If the subject succeeds on her saving throw, she takes 1d6 points of damage per level (maximum 15d6), and half the damage is considered vile damage (see necrotic bloat). The subject's cyst-derived saving throw penalty against effects from the school of necromancy applies.
+
+If the subject fails her saving throw, the cyst expands beyond control, killing the subject.
+
+Focus: The caster must posess a Mother Cyst.

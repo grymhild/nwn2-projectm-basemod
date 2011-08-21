@@ -1,0 +1,11 @@
+Necromancy
+Level: Clr 4
+Components: V,S
+Casting Time: 1 full round
+Range: Touch
+Target: 1 living creature
+Duration: Permanent
+Saving Throw: Fortitude negates
+Spell Resistance: Yes
+
+Victims struck by this touch attack spell must make a Fortitude save or become immune to the effects of magical healing for the duration they are condemned.  This affliction will persist until a remove curse or the like is cast upon the target.  However, binding wounds and natural healing are still effective, if not as fast.

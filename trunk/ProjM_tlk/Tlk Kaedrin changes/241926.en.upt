@@ -1,0 +1,5 @@
+Type: Divine
+Prerequisite: Paladin, Turn Undead
+Special: This ability consumes three uses of turn undead and has a 1 minute cooldown.
+Benefit: As a swift action, you can activate a protective aura. While it is active, you gain a +2 sacred bonus to dodge AC, as does every ally within 30 feet of you. This bonus increases by 1 for every four character levels you possess (maximum +7 at 20th level). This ability lasts for 1 minute.
+Limitation: This ability will not work if you have any levels in bard, cleric, druid, sorcerer, or wizard.

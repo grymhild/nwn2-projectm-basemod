@@ -1,0 +1,11 @@
+Abjuration
+Level: Sor/Wiz 1
+Components: S
+Casting Time: 1 action
+Range: Touch
+Effect: One Creature Touched
+Duration: 1 day/caster level
+Saving Throw: No
+Spell Resistance: No
+
+When Protection from Hunger and Thirst is cast, the recipient requires no food, water, or nourishment of any kind during the duration of the spell.  The recipient can be any creature touched.  For each day the recipient is under the effect of the spell, he is fully nourished as if he had eaten and drunk normally.  At the end of the spell's duration, the subject is no more hungry and thirsty than he was when the spell was cast.

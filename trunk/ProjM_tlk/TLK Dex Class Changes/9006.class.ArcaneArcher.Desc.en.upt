@@ -1,0 +1,61 @@
+<color=Gold><b>Arcane Archer</b></color>
+
+<color=Red>(PRESTIGE CLASS: This class is not available at character creation and must be unlocked by meeting special requirements, listed below.)</color>
+
+Master of the elven warbands, the arcane archer is a warrior skilled in using magic to supplement her combat prowess. Beyond the woods, arcane archers gain renown throughout entire kingdoms for their supernatural accuracy with a bow and their ability to imbue their arrows with magic. In a group, they can strike fear into an entire enemy army. Fighters, rangers, paladins, and barbarians become arcane archers to add a little magic to their combat abilities. Conversely, wizards and sorcerers may take this prestige class to add combat capabilities to their repertoire. Monks, clerics, druids, rogues, and bards rarely become arcane archers.
+
+<color=Gold>Requirements:</color>
+
+<b>Race:</b> No Racial Restrictions.
+
+<b>Base Attack Bonus:</b> +6
+
+<b>Feats:</b> Point Blank Shot, Weapon Focus (longbow or shortbow).
+
+<b>Spellcasting: </b>Ability to cast 1st-level arcane spells.
+
+<color=Gold>Class Features:</color>
+
+- <b>Hit Die:</b> d8
+
+- <b>Base Attack Bonus:</b> High.
+
+- <b>High Saves:</b> Fortitude and Reflex.
+
+- <b>Weapon Proficiencies:</b> Simple and martial weapons.
+
+- <b>Armor Proficiencies:</b>  Light and medium armor and all shields  (excluding tower shields).
+
+- <b>Skill Points:</b> 4 + Int modifier.
+
+- <b>Class Skills:</b> Craft Alchemy, Craft Weapon, Heal, Hide, Listen, Move Silently, Spot, and Survival.
+
+- <b>Enhance Arrow:</b> Beginning at 1st level, the arcane archer imbues every arrow she fires with an enhancement bonus. This bonus is +1 at 1st level, +2 at 3rd level, +3 at 5th level, +4 at 7th level, +5 at 9th level, +6 at 11th level, +7 at 13th level, and +8 at 15th level.
+
+- <b>Imbue Arrow:</b> Three times per day, a 2nd-level arcane archer may choose to fire a special arrow imbued with the <i>fireball</i> spell. When the arrow hits its target, the <i>fireball</i> spell detonates from that point, inflicting damage as per the spell as though it were cast by a wizard of the arcane archer's class level. If the archer has an arrow which is of another elemental type, the fireball will do that sort of damage. A successful Ranged Touch Attack is required for the Arrow hit, and a critical RTA multiples Arrow damage by 3 (just arrow damage, not Fireball Damage). 
+
+60 second cooldown timer.
+Explosion fire damage changed to reflect the damage of the arrow equipped. If the arrow does sonic damage, the imbued arrow "fireball" will instead be a sonic blast. 
+DC = 10 + AA Level + CasterModifier + Evocation DC Bonuses 
+ 
+- <b>Seeker Arrow:</b> Once per day, a 3rd-level arcane archer may fire an arrow that unerringly flies to its target, ignoring any and all cover, concealment, or other factors. When this ability is used, no attack roll is made; the target is automatically hit and takes damage as normal. At 6th level, this ability may be used twice per day.
+
+ Add a cool down period - lvl 4: 120 seconds, lvl 6: 90 seconds 
+ Multiply damage by 2 + AA level/5 (up to x 4, currently it does damage x 2). Damage is calculated as d8/d6 + 2 Weapon Focus + STR Mod = 8-10 + STR, or most likely 10-12 max (x 4 = 40-48 damage) 
+ Add Range Touch Attack critical hit check to multiply damage by 3. 
+ Level 4 does Lesser Anti-Magic (lvl 3 Dispel, 4 effects) 
+ Level 8 does Anti-Magic (lvl 5 Dispel, 4 effects) 
+ Level 10 does Greater Anti-Magic (lvl 7 Dispel, 4 effects) 
+ Dispel CasterLevel = AA Level * 3 
+ 
+- <b>Hail of Arrows:</b> At eighth level, the arcane archer gains the ability to perform this special ability, which automatically fires one arrow at every target within range as a full-round action. A successful Ranged Touch Attack is required for the Arrow hit, and a critical RTA multiples the Arrow damage by 3.
+Cool down period - 120 seconds 
+
+ 
+- <b>Arrow of Death:</b> The pinnacle of the arcane archer's ability, at 10th level she may fire a special arrow imbued with powerful necromantic magic. If the target is hit, it must immediately make a Fortitude save (DC 20) or be slain. Even if it passes its saving throw, it takes damage from the arrow as normal.
+Add a cool down period - 120 seconds 
+DC = 10 + AA Level + CasterModifer + Necromancy DC Bonuses; crit hit adds +2 to DC 
+Multiply damage by 2 + AA level/5 (up to x 4, currently it does damage x 2). Damage is calculated as d8/d6 + 2 Weapon Focus + STR Mod = 8-10 + STR, or most likely 10-12 max (x 4 = 40-48 damage) 
+Add Range Touch Attack critical hit check to multiply damage by 3. 
+ 
+This class can progess to 15 levels.

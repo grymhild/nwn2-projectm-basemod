@@ -1,0 +1,12 @@
+Caster Level(s): Cleric 9
+Innate Level: 9
+School: Conjuration
+Descriptor(s): 
+Component(s): Verbal, Somatic
+Range: Touch
+Area of Effect / Target: Large
+Duration: Instant
+Save: None
+Spell Resistance: Yes
+
+All allies within the area of effect regain 10 hit points per caster level (maximum 250) and are cured of the following status effects: blinded, confused, dazzled, deafened, diseased, feebleminded, insane, nauseated, poisoned, and stunned. Healing spells have a reverse effect on undead, harming instead of healing them (allowing a will save for half damage).

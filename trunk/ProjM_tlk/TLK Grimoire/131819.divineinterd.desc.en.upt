@@ -1,0 +1,13 @@
+Abjuration
+Level: Clr 4
+Components: V, S, DF
+Casting Time: 1 action
+Range: Close (25ft. +5ft./2 levels)
+Area: 10-ft.-radius emanation, centered on a creature, object, or point in space
+Duration: 1 round/level
+Saving Throw: Will negates or none (object)
+Spell Resistance: Yes
+
+Divine interdiction interferes with a cleric's connection to his or her divine source of power, resulting in a temporary loss of the ability to turn or rebuke undead (or other creatures). Paladins, blackguards, and other classes capable of rebuking, turning, or otherwise commanding undead or other creatures can also suffer a temporary loss of this ability through divine interdiction.
+
+The spell can be cast on a point in space, but the effect is stationary unless cast on a mobile object. The spell can be centered on a creature, and the effect then radiates from the creature and moves as it moves. An unwilling creature can attempt a Will save to negate the spell and can use SR, if any. Should the save fail, the target's turning abilities are immediately negated for the spell's duration.

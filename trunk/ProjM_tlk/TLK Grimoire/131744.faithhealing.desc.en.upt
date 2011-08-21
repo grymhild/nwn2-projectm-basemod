@@ -1,0 +1,11 @@
+Conjuration (Healing)
+Level: Blk 1, Clr 1, Pal 1
+Components: V,S
+Casting Time: 1 action
+Range: Touch
+Target: Creature touched
+Duration: Instantaneous
+Saving Throw: Will half (harmless)
+Spell Resistance: Yes (harmless)
+
+When laying your hand upon a living creature, you channel positive energy that cures 8 points of damage +1 point per caster level (up to +5).  The spell only works on a creature with the same patron as you.  A target with no patron or a different patron than you is unaffected by the spell, even if the target would normally be harmed by positive energy.

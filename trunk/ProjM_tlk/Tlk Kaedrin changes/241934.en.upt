@@ -1,0 +1,13 @@
+Necromancy
+Levels: Cleric 5, Paladin 4
+Components: V, S
+Range: Touch
+Target: Living creature touched.
+Saving Throw: None
+Spell Resistance: Yes
+
+<i>Your touch draws life from your target, manifesting it in your hand as a glowing ball of positive energy.</i>
+
+You must succeed on a melee touch attack against a living creature. If you do so, your touch deals 1d6 points of divine damage per two caster levels (maximum 15d6). 
+
+You regain one use of lay on hands (if expended) or turn undead on a successful attack.

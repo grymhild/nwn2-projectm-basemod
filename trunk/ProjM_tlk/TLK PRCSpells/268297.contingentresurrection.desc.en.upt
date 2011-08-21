@@ -1,0 +1,9 @@
+School: Conjuration (Healing)
+Components: V,S
+Range: Touch
+Target: You or creature touched
+Duration: Contingent until expended, then instantaneous
+Saving Throw: None (harmless)
+Spell Resistance: No (harmless)
+
+Contingent Resurrection returns the subject to life if he or she is slain. Once cast, the spell remains quiescent and does not activate until the trigger condition is met, which in this case is the subjects death. Each day it remains untriggered, it reserves an epic spell slot, even if you cast it on another creature. If the subject is killed (the trigger), he or she is instantaneously restored to full life and health, and restores the use of the epic spell slot once more. As well, you may at any time (before the contingency is triggered) willfully dispel the contingency to regain the epic spell slot, thereby canceling the spell on the subject.

@@ -1,0 +1,13 @@
+Caster Level(s): Sorc/Wiz 5
+Innate Level: 5
+School: Necromancy
+Descriptor(s):
+Component(s): Verbal, Somatic
+Range: Medium
+Area of Effect / Target: 1 creature
+Duration: 1 round / level
+Additional Counter Spells:
+Save: Fortitude partial
+Spell Resistance: Yes
+
+You infuse a living creature's blood with a hot, corrosive mixture, dealing 1d8 acid and 1d8 fire damage each round. Each round the target may attempt a fortitude save to negate the damage for that round. On any round which the creature fails it's save, it is slowed.

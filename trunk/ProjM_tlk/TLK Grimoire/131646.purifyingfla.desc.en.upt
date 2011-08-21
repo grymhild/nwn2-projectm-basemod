@@ -1,0 +1,9 @@
+Evocation [Fire]
+Level: Sor/Wiz 4, Sun 4
+Casting Time: 1 action
+Range: Close (25 ft + 5 ft/2 levels)
+Target, Effect or Area: Ray
+Duration: 1 round/level
+Saving Throw: Fortitude half
+Spell Resistance: Yes
+This spell causes the target's body to burst into flames if the caster succeeds at a ranged touch attack.  The target suffers 3d6 points of damage or half damage if he succeeds at his initial Fortitude saving throw.  Anyone within five feet of the target will also take 1d6 points of heat damage with no saving throw.  The Purifying Flames continue to deal similar damage each round until the spell's duration lapses.  Each round that the flames are in effect, the victim must roll a new Fortitude save to determine if he takes half or full damage that round.

@@ -1,0 +1,9 @@
+School: Abjuration
+Components: V,S
+Range: Touch
+Target: Creature touched
+Duration: Caster Level + 10 rounds.
+Saving Throw: None (Harmless)
+Spell Resistance: No (Harmless)
+
+The subject of a casting of Dullblades becomes impervious to half of all slashing damage, effectively negating any physical attacks from swords, axes, and the like. (50% immunity is granted)

@@ -1,0 +1,12 @@
+Caster Level(s): Bard 4, Wizard / Sorcerer 4
+Innate Level: 4
+School: Evocation
+Descriptor(s): Sonic
+Component(s): Verbal
+Range: Medium
+Area of Effect / Target: Cone
+Duration: Instant
+Save: Fortitude partial
+Spell Resistance: No
+
+You emit an ear-splitting yell that deafens and damages creatures in its path.  Any creature within the area is deafened for 2d6 rounds and takes 5d6 points of sonic damage.  A successful save negates the deafness and reduces the damage by half.

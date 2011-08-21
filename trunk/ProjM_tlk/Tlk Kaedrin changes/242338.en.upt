@@ -1,0 +1,16 @@
+Caster Level(s): Wizard / Sorcerer 7
+Innate Level: 7
+School: Enchantment
+Descriptor(s):
+Component(s): Verbal
+Range: Short
+Area of Effect / Target:  One living creature with 200 hp or less 
+Duration: See text
+Save: None
+Spell Resistance: Yes
+
+You utter a single word of power that causes one creature of your choice to become blinded, whether the creature can hear the word or not.  The duration of the spell depends on the target's current hit point total.  Any creature that currently has 201 or more hit points is unaffected by power word blind.
+ 
+50 or less hit points - Permanent
+51-100 hit points - 1d4+1 minutes
+101-200 hit points - 1d4+1 rounds

@@ -1,0 +1,12 @@
+Caster Level(s): Bard 6, Cleric 7, Wizard / Sorcerer 6, Protection 7
+Innate Level: 6
+School: Abjuration
+Descriptor(s):
+Component(s): Verbal, Somatic
+Range: Personal
+Area of Effect/Target: 10' radius around caster
+Duration: 6 seconds / Level
+Save: Will negates
+Spell Resistance: Yes
+
+A field of force around you prevents any creature from approaching you. Any creature trying to close to melee range must make a Will save. If it fails, it cannot come closer to you than 10 feet away. If it succeeds, it can engage you in melee as normal. If you walk towards a creature and gets within 10 feet of it, it can attack you as normal without making a Will save.

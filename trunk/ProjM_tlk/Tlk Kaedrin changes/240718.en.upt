@@ -1,0 +1,77 @@
+<color=Gold><b>Forest Master</b></color>
+
+<color=Red>(PRESTIGE CLASS: This class is not available at character creation and must be unlocked by meeting special requirements, listed below.)</color>
+
+Guardians of the pristine wilderness and defenders of the ancient trees, forest masters are the living embodiments of sentient nature. They walk the shadows under the woods and destroy those who would lay waste to the wild lands. Where druids hold all aspects of nature dear - the forest masters consider the forests more ancient than the coming of animals or sentient races in the most sacred spots of the world.
+
+Druids most often become forest masters, but it is not unheard of for rangers or clerics of nature deities to follow this path.
+
+<color=Gold>Requirements:</color>
+
+<b>Base Attack Bonus: </b> +5
+<b>Feats:</b> Alertness, Toughness, Power Attack, Weapon Focus (Warmace).
+<b>Skills: </b> Lore 13, Survival 8.
+<b>Spellcasting:</b> Able to cast divine spells of 3rd level.
+<b>Special:</b> Animal Companion or Plant Domain is required to take the class.
+
+<color=Gold>Class Features:</color>
+
+- <b>Hit Die:</b> d8
+
+- <b>Base Attack Bonus:</b> Medium.
+
+- <b>High Saves:</b> Fort, Will.
+
+- <b>Weapon Proficiencies:</b> Martial.
+
+- <b>Armor Proficiencies:</b> None.
+
+- <b>Skill Points:</b> 2 + Int modifier.
+
+- <b>Class Skills:</b> Concentration, Craft Weapon, Craft Armor, Heal, Hide, Intimidate, Listen, Lore, Move Silently, Spot, Survival.
+
+<color=Gold>Class Abilities:</color>
+
+Level 1: Tree Brother, Spellcasting Progression
+Level 2: Forest Dominion, Forest's Hammer
+Level 3: Oaken Skin (Natural Armor +3)
+Level 4: Oak Strength, Bonus Feat: Knockdown
+Level 5: Spruce Growth, Oaken Skin (Natural Armor +5)
+Level 6: Forest's Hammer (Bursting)
+Level 7: Oakheart, Oaken Skin (Natural Armor +7)
+Level 8: Deep Roots
+Level 9: Forest's Hammer (Cleaving)
+Level 10: Forest Might
+
+- <b>Spellcasting Progression:</b> At levels 1, 2, 3, 5, 6, 7, 9, and 10 you gain new spells per day and an increase in caster level (and spells known) as if you had also gained a level in a divine spellcasting class to which you belonged before adding the prestige class level. If you had more than one divine spellcasting class before becoming a forest master, you must decide which class gains the increased casting ability.
+
+- <b>Tree Brother:</b>
+The forest master may assume tree shape once per day granting the equivalent of the sanctuary spell.
+
+- <b>Forest Dominion:</b>
+At 2nd level, the forest master gains the ability to rebuke or command plants as an evil cleric can rebuke or command undead. His effective level for this ability is his class level, and he may use it eight times per day. If he already has this ability because he is a cleric with the Plant domain, these levels stack with his cleric levels and vice versa.
+
+- <b>Forest's Hammer:</b>
+Beginning at 2nd level, a forest master begins to awaken magical abilities within the wood and metal that make up his warmace. Any warmace used by a forest master is treated as if it were a +2 weapon with either the frost or shock property (the forest master can change which of these elements infuse the weapon at will).
+
+Beginning at 6th-level, the forest master's warmace acts as a +2 icy burst or shocking burst weapon (as the forest master's chooses).
+
+At 9th level, the forest master's warmace acts as a +3 mighty cleaving weapon in addition to the elemental properties.
+
+- <b>Oaken Skin:</b>
+At 3rd level, the forest master's skin changes into a tough, bark-like hide, granting him natural armor +3. This bonus increases to +5 at 5th level and +7 at 7th level. This is an enhance bonus and does not stack with any other natural AC bonus.
+
+- <b>Oak Strength:</b>
+Beginning at 4th level, the forest master gains a +2 bonus to Strength and the ability to make Knockdown attacks (bonus feat). This strength bonus is granted with the Epic feats Great Strength I and II.
+
+- <b>Spruce Growth:</b>
+At 5th level, once per day the forest master can temporarily increase his size and strength as if using a <i>righteous might</i> spell.
+
+- <b>Oakheart:</b>
+Upon reaching 7th level, the forest master's body becomes a thing of wood and leaf rather than meat and bone. His type changes to plant. As such, he is immune to mind-affecting effects, poison, sleep, paralysis, stunning, and hostile polymorphing. He is no longer subject to critical hits or sneak attacks. However, the forest master becomes vulnerable to fire, and suffers double damage from fire attacks if he fails a Reflex saving throw, or half damage if he succeeds.
+
+- <b>Deep Roots:</b>
+Beginning at 8th level, once per day the forest master may sink roots into the ground. While rooted, the forest master gains fast healing 5, but has an effective Dexterity score of 1 and may not move from the spot in which he stands or the effect ends. Deep roots will last for 48 hours or until you move one foot or more from where you used the ability.
+
+- <b>Forest Might:</b>
+At 10th level, the primordial forest infuses the forest master with power. He gains a +2 bonus to Strength (thus +4 total), +2 bonus to Constitution, and he takes only half damage from piercing weapons. He also gains 1 point of regeneration. These attribute bonuses are granted with the Epic feats Great Strength III and IV as well as Greath Constitution I and Great Constitution II.

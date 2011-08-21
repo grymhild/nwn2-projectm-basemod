@@ -1,0 +1,10 @@
+School: Necromancy
+Components: V,S
+Range: Medium
+Target: One creature
+Duration: 20 rounds
+Saving Throw: Fortitude negates (see text)
+Spell Resistance: Yes
+
+The subject withers away, losing physical abilities to the point of utter and complete weakness and frailty. 3 times per round, the subject must make a Fortitude saving throw, or else lose one point in either Constitution, Strength, or Dexterity. A successful save does not end the spells effects, it merely prevents the loss of the ability point for that third of the round. Ability scores will never drop below 3, though reaching that number in all three abilities is quite possible, as the entirety of the spell calls for 60 Fortitude saves, meaning a possible 60 total ability points lost.
+E

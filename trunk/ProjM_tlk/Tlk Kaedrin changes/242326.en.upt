@@ -1,0 +1,15 @@
+Caster Level(s): Druid 3, Plant 5
+Innate Level: 5
+School: Conjuration
+Descriptor(s): Nature
+Component(s): Verbal, Somatic
+Range: Medium
+Area of Effect / Target: Huge
+Duration: 60 seconds / level.
+Save: Yes (Entangle)
+Spell Resistance: No
+
+You create one of the following effects in the targeted area:
+- Entangle (as the spell)
+- Hamper movement (movement speed is halved)
+- Camouflage (add +4 competence bonus on Hide checks)

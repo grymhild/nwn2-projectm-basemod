@@ -1,0 +1,5 @@
+Type: Divine
+Prerequisite: Blackguard, Turn Undead
+Special: This ability consumes one use of turn undead and has a 1 minute cooldown.
+Benefit: As a swift action, you can surround yourself with an aura of evil that grants you and each of your allies within 30 feet damage reduction equal to 1 + 1/five character levels you possess (maximum 5/- at 20th level). This ability lasts for 1 minute.
+Limitation: This ability will not work if you have any levels in bard, cleric, druid, sorcerer, or wizard.

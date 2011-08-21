@@ -1,0 +1,16 @@
+Caster Level(s): Wizard / Sorcerer 8
+Innate Level: 7
+School: Enchantment
+Descriptor(s): 
+Component(s): Verbal
+Range: Short
+Area of Effect / Target: Single
+Duration: Instant
+Save: None
+Spell Resistance: Yes
+
+This spell automatically stuns a single target for a duration based on the target's hit points.  Any creature with 151 or more hit points is unaffected by power word stun.
+
+50 hit points or less - 4d4 rounds
+51-100 hit points - 2d4 rounds
+101-150 hit points - 1d4 rounds

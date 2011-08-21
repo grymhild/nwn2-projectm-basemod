@@ -1,0 +1,12 @@
+Abjuration
+Level: Clr 1
+Components: V, S
+Casting Time: 1 action
+Range: Touch
+Targets: One touched creature
+Duration: 10 minutes/level
+Saving Throw: Will negates
+Spell Resistance: Yes
+
+Undead cannot perceive the warded creature.  Nonintelligent undead are automatically affected and act as if the warded creature is not there.  Intelligent undead get saving throws.  If they fail, they cannot see the warded creature.  However, if they have reason to believe unseen opponents are present, they can attempt to find or strike them.
+If the warded creature makes any attack or casts a spell, the spell ends.

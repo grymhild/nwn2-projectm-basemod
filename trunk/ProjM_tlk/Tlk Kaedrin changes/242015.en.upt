@@ -1,0 +1,10 @@
+Transmutation
+Levels: Druid 4
+Components: V, S
+Range: Close
+Target: One creature.
+Duration: 1 round/level
+Saving Throw: Will partial
+Spell Resistance: Yes
+
+You must succeed on a ranged touch attack with the ray to strike a target. This ray causes the creature it hits to become weak and slow for the spell's duration. A struck creature takes a penalty to Strength equal to 1d6 +1 per two caster levels (maximum 1d6 + 10). In addition, a subject that fails a Will save is slowed.

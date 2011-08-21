@@ -1,0 +1,5 @@
+Type of Feat: Class
+Prerequisite: Druid
+Specifics: The character with this ability can take the shape of an animal at will. It may be used once per day at fifth level, twice per day at sixth level, three times per day at seventh level, four times per day at 10th level, five times per day at 14th level, and six times per day at 18th level. The transformation has a duration of 1 hour per class level. Available shapes include bear, wolf, boar and badger. At 12th level, the druid may assume the dire form of any of these animals.
+Use: Selected. After choosing the ability, the character must choose an animal form to take.
+WARNING: Exporting a character, saving a game, and a persistent world saving your character will cause spell loss and remove all non-AC gear-based bonuses that transferred when you shifted. You will need to unshift-reshift to fix this problem. It is not a problem that the community can fix.

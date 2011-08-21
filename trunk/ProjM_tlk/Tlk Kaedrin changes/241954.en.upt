@@ -1,0 +1,15 @@
+Conjuration
+Level: Cleric 3, Paladin 3
+Components: V,S
+Area: 20-ft. radius burst
+Duration: 1 round/level
+Saving Throw: None
+Spell Resistance: No
+
+The downpour created by this spell falls in a fixed area once created. The storm reduces hearing and visibility, resulting in a -4 penalty to Listen, Spot, and Search checks. It also applies a -4 penalty on ranged attacks.
+
+The rain damages creatures opposed to the type of storm conjured, dealing 2d6 points of divine damage per round (outsiders take double damage). In addition, each round, a bolt of lightning strikes a randomly selected outsider within the spell's area, dealing 5d6 points of electricity damage.
+
+The available storm types are Holy (vs Evil), Unholy (vs Good), Axiomatic (vs Chaotic), and Anarchic (vs Lawful).
+
+<i>You call upon your divine power, and a heavy rain begins to fall around you, its drops a rainbow of soft radiance. Above you, a multicolored lightning bolt flashes.</i>

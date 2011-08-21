@@ -1,0 +1,53 @@
+<color=Gold><b>War Priest</b></color>
+
+<color=Red>(PRESTIGE CLASS: This class is not available at character creation and must be unlocked by meeting special requirements, listed below.)</color>
+
+Warpriests are fierce, earthy clerics who pray for peace but prepare for war. Their strong wills, powerful personalities, and devotion to their deities make them fearsome combatants. Warpriests are experts of group warfare and have many powers to protect and rally their allies while terrifying their foes. Clerics, druids, rangers and paladins can become warpriests to enhance their party's fighting abilities.
+
+<color=Gold>Requirements:</color>
+
+<b>Base Attack Bonus:</b> +5
+
+<b>Spellcasting:</b> Able to cast 4th level divine spells.
+
+<b>Skills:</b> Diplomacy 8 ranks, Spot 5 ranks
+
+<b>Feats:</b> Combat Casting.
+
+<color=Gold>Class Features:</color>
+
+- <b>Hit Die:</b> d10
+
+- <b>Base Attack Bonus:</b> High.
+
+- <b>High Saves:</b> Fortitude.
+
+- <b>Weapon Proficiencies:</b> Simple and martial weapons.
+
+- <b>Armor Proficiencies:</b> All armors (light, medium, and heavy) and all shields (including tower shields).
+
+- <b>Skill Points:</b> 2 + Int modifier.
+
+- <b>Class Skills:</b> Concentration, Craft Alchemy, Craft Armor, Craft Weapon, Diplomacy, Heal, Intimidate, Lore, Parry, Spellcraft, Spot, and Taunt
+
+- <b>Divine Spellcasting:</b> At each even-numbered level, warpriests gain new spells per day and an added level of effective spellcasting in whatever divine spellcasting class gave them access to 4th-level divine spells when becoming a warpriest. If a character has multiple classes that give him access to 4th-level divine spells, he must choose which spellcasting class will benefit from warpriest levels when first selecting this prestige class.
+
+- <b>War Glory:</b> All allies within 10' of the warpriest have +1 to hit, though the warpriest himself does not gain this bonus. All enemies within the same range suffer a -1 morale penalty to saving throws and this penalty cannot be resisted in any way (though leaving the radius instantly cancels the effect). This power is always active.
+
+- <b>Inflame:</b> Starting at 2nd level, a warpriest can use this ability to grant himself and all allies within 40' a bonus to saving throws vs. fear and mind effects for five rounds. This bonus is +2 at level 2 and becomes +4 at level 4, +6 at level 6 and +8 at level 10.
+ 
+- <b>Remove Fear:</b> A warpriest may cast the <i>remove fear</i> spell once per day per level of warpriest.
+
+- <b>Mass Cure Light Wounds:</b> Upon reaching 3rd level, a warpriest may cast <i>mass cure light wounds</i> once per day as a spell-like ability. The warpriest's class level is used to determine the caster level of this spell.
+
+- <b>Fear Aura:</b> At 5th level, a warpriest can create an aura of fear that affects all enemies within 20'. Foes must make a Will save (DC 10 + warpriest class level + Cha modifier) or be affected by the <i>fear</i> spell. This power can be used once per day.
+
+- <b>Battletide:</b> At 6th level, a warpriest can cast <i>battletide</i> as a spell-like ability once per day. The warpriest's class level is used to determine the caster level of this spell.
+
+- <b>Haste:</b> At 7th level, a warpriest can cast <i>haste</i> as a spell-like ability three times per day. The warpriest's class level is used to determine the caster level of this spell.
+
+- <b>Mass Heal:</b> At 9th level, a warpriest can cast <i>mass heal</i> as a spell-like ability once per day. The warpriest's class level is used to determine the caster level of this spell.
+
+- <b>Implacable Foe:</b> At 10th level, a warpriest can bestow all allies within 30' (though not himself) an extra +20 hit points. This ability halves the warpriest's movement for 10 rounds. After ten rounds, all recipients lose 20 hit points. This ability may be used once per day.
+
+- <b>Turn Undead:</b> Warpriest levels are added to all turn undead attempts.

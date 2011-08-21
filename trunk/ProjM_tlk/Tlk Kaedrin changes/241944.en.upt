@@ -1,0 +1,10 @@
+Conjuration (Healing)
+Levels: Cleric 4, Druid 5, Paladin 4
+Components: V, S
+Range: Touch
+Target: Creature touched.
+Duration: Instantaneous
+
+The energy of life flows through you, warming your hand - and indeed your very soul. You infuse this warmth into the wounds of your ally.
+
+Roll a number of d4s equal to half your caster level + 10 (maximum 20d4). The result is the number of hit points of damage instantly healed.

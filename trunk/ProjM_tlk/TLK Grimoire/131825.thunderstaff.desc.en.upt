@@ -1,0 +1,13 @@
+Evocation [Force]
+Level: Sor/Wiz4
+Components: V, S
+Casting Time: 1 action
+Range: 40ft long cone from Caster (Short)
+Area: Cone
+Duration: Instantaneous
+Saving Throw: Fortitude Partial (see text)
+Spell Resistance: Yes
+
+You rap your staff on the ground and produce a thundering cone of force.  All creatures must roll a successful Fortitude save or be stunned for 1d3 rounds, deafened for 1d3+1 rounds, and hurled 4d4+4 ft away from the caster, sustaining 1 hp of damage for every two feet thrown. On a successful save, creatures are not stunned and are only thrown half the distance.
+Creatures of size Large and Huge who make their saves are deafened but not thrown, and sustain no damage.  If the saving throw is failed, such creatures are hurled 2d4+2 ft,
+suffer 1 hp per 2ft in damage, and are deafened and stunned.

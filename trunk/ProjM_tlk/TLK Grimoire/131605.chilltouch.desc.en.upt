@@ -1,0 +1,12 @@
+Necromancy
+Level: Sor/Wiz 1
+Components: V,S
+Casting Time: 1 action
+Range: Touch
+Targets: Creature touched
+Duration: Instantaneous
+Saving Throw: Fortitude partial
+Spell Resistance: Yes
+
+A touch from your hand, which glows with blue energy, disrupts the life force of living creatures.  Your touch channels negative energy that deals 1d6 points of damage and possibly also 1 point of temporary Strength damage. (A successful Fortitude saving throw negates the Strength damage.)
+The spell has a special effect on undead creatures.  Undead touched by you suffer no damage or Strength loss, but they must make a successful Will saving throw or flee as if panicked for 1d4 rounds +1 round per caster level.

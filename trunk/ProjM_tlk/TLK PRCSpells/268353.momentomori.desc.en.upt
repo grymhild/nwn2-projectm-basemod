@@ -1,0 +1,9 @@
+School: Necromancy [Death]
+Components: None
+Range: Medium
+Target: One living creature
+Duration: Instantaneous
+Saving Throw: Fortitude partial (see text)
+Spell Resistance: Yes
+
+Your passing thought connotes death for the target. You will the target dead without a word or gesture. Your bloodthirsty wish snuffs out the life force of a creature of less than 50 hit dice, killing it instantly. The subject is entitled to a Fortitude saving throw (DC 30 + relevant ability modifier) to have a chance of surviving the attack. If the save is successful, the target instead takes 3d6+20 points of damage.

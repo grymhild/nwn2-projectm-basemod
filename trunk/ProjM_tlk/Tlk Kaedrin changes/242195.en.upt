@@ -1,0 +1,13 @@
+Caster Level(s): Blackguard 4
+Innate Level: 4
+School: Necromancy
+Descriptor(s): Poison
+Component(s): Verbal, Somatic
+Range: Touch
+Area of Effect / Target: Single
+Duration: Instant
+Save: Fortitude Negates
+Spell Resistance: Yes
+
+
+If you succeed at a melee touch attack, the target must make a Fortitude save or suffer the effects of black adder venom (1d10 Constitution damage on primary and secondary hits). The DC is roughly 10 + your Wisdom modifier + 1/2 your caster level (the selects the closest value divisible by 5). The DC values can range from 14 to 40.

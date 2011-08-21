@@ -1,0 +1,15 @@
+Caster Level(s): Cleric 4, Protection 4
+Innate Level: 4
+School: Abjuration
+Descriptor(s):
+Component(s): Verbal, Somatic
+Range: Touch
+Area of Effect/Target: Creature touched
+Duration: 10 minutes / Level
+Save: None
+Spell Resistance: No
+
+This spell makes the warded creature immune to certain spell effects for the duration of the spell. The spells the target is immune to, based on your caster level,  are:
+   7th: Fireball and Magic Missile
+   10th: Lightning Bolt and Web
+   13th: Stinking Cloud and Grease.

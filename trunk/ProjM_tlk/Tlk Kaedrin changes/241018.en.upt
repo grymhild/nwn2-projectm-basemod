@@ -1,0 +1,8 @@
+Type of Feat: Class
+Prerequisite: Level 5 Elemental Warrior.
+Specifics: Three times per day, a 5th-level elemental warrior can channel her chosen element to deal a devastating melee touch attack. No save is allowed against the damage dealt by the attack, but a successful Fortitude save negates the secondary effect. The save DC for these effects is 15 + the elemental warrior's Con modifier.
+
+Air, Earth: Target takes 10d6 points of blunt damage from the crushing touch attack and is knocked down (Fort save negates knockdown).
+Fire: Target takes 10d6 points of fire damage and catches fire for 1d4 rounds (Fort save negates catching on fire). The target takes 1d6 fire damage for each round they are on fire unless they make a Reflex save, in which case the flames end.
+Water: Target takes 10d6 points of magic damage as moisture is drawn from its body and becomes nauseated for 1 round (Fort save negates nausea).
+Use: Selected.

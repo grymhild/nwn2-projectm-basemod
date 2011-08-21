@@ -1,0 +1,13 @@
+Evocation [Lawful]
+Level: Law 4
+Components: V,S
+Casting Time: 1 action
+Range: Medium (100 ft + 10 ft/level)
+Area: 30 ft radius burst
+Duration: Instantaneous
+Saving Throw: Reflex half
+Spell Resistance: Yes
+
+You channel lawful power to smite your enemies.  Only chaotic and neutral creatures are harmed by the spell; lawful creatures are unaffected.
+The spell deals 1d8 points of damage per two caster levels (maximum 5d8) to chaotic creatures and dazes them for 1 round.  A successful Reflex saving throw reduces damage to half and negates the daze effect.
+The spell deals only half damage against creatures who are neither lawful nor chaotic, and they are not dazed.  They can reduce that damage by half (down to one-quarter of the roll) with a successful Reflex save.

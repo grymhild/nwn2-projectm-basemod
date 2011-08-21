@@ -1,0 +1,47 @@
+<color=Gold><b>Frenzied Berserker</b></color>
+
+<color=Red>(PRESTIGE CLASS: This class is not available at character creation and must be unlocked by meeting special requirements, listed below.)</color>
+
+The random madness of the thunderstorm and the unpredictability of the slaadi come together in the soul of the frenzied berserker. Unlike most other characters, she does not fight to achieve some heroic goal or defeat a loathsome villain. Those are mere excuses - it is the thrill of combat that draws her. For the frenzied berserker, the insanity of battle is much like an addictive drug - she must constantly seek out more conflict to feed her craving for battle. Because of their traditional love for battle, barbarians are the ones who most frequently adopt this prestige class. Spellcasting characters almost never become frenzied berserkers. 
+
+<color=Gold>Requirements:</color>
+
+<b>Alignment:</b> Any nonlawful.
+
+<b>Base Attack Bonus:</b> +6
+
+<b>Feats:</b> Cleave, Great Cleave, Power Attack.
+
+<color=Gold>Class Features:</color>
+
+- <b>Hit Die:</b> d12
+
+- <b>Base Attack Bonus:</b> High.
+
+- <b>High Saves:</b> Fortitude.
+
+- <b>Weapon Proficiencies:</b> None.
+
+- <b>Armor Proficiencies:</b> None.
+
+- <b>Skill Points:</b> 2 + Int Modifier.
+
+- <b>Class Skills:</b> Craft Armor, Craft Weapon, Healing, Intimidate, Lore, Survival, Taunt, Tumble, and Parry.
+
+- <b>Toughness:</b> A 1st-level frenzied berserker gains Toughness as a bonus feat.
+
+- <b>Frenzy:</b> A 1st-level frenzied berserker gains the ability to frenzy. Frenzy adds a +6 bonus to Strength (no Constitution bonus), imposes a -4 penalty to AC,  and gives the frenzied berserker a single extra attack at his highest Base Attack Bonus (this does not stack with Haste or other effects that add an additional attack). Each round of the frenzy, the frenzied berserker takes 2 points of damage. The effects last 3 + Constitution modifier rounds, after which the frenzied berserker is fatigued for 5 rounds, suffering -2 Strength, -2 Dexterity, and -10% movement penalties. Level 10 Frenzied Berserkers are no longer fatigued by using Frenzy. Initially, this ability can be used once per day and at 3rd level and every odd level after that, the frenzied berserker gains an additional use per day. Bonuses and penalties (including fatigue effects) from Frenzy and Barbarian Rage stack with each other.
+
+- <b>Supreme Cleave:</b> At 2nd level, whenever the frenzied berserker drops an opponent in melee, he gains two cleave attacks against an adjacent foe instead of one.
+
+- <b>Deathless Frenzy:</b> At 4th level, when the frenzied berserker is frenzying he has the equivalent of the 4th level cleric spell <i>death ward</i> in place. The frenzied berserker is immune to any death spells, spell-like abilities, and death effects.
+
+- <b>Enhanced Power Attack:</b> At 5th level, the frenzied berserker gains a +5 damage bonus using the Power Attack feat. Using the Improved Power Attack feat the frenzied berserker gains a +10 damage bonus.  This translates to +10 with two-handed weapons for standard Power Attack and +20 for Improved Power Attack.
+
+- <b>Inspire Frenzy:</b> Specifics: At 6th level, the frenzied berserker can inspire Frenzy in all allies. This ability has no effect on the frenzied berserker, only the berserker's allies. The Frenzy effect adds a +6 bonus to Strength (no Constitution bonus), imposes a -4 penalty to AC,  and gives the subjects a single extra attack at their highest Base Attack Bonus (this does not stack with Haste or other effects that add an additional attack). Each round of the frenzy, the subjects takes 12 points of damage. The effects last 2 rounds, after which the subjects are fatigued for 2 rounds, suffering -2 Strength, -2 Dexterity, and -10% movement penalties. The frenzied berserker can use this ability once per day at 6th level, twice at 8th level, and three times at 10th level. Bonuses from Inspire Frenzy and Barbarian Rage do not stack, though penalties do. If both abilities are used, only the highest modifiers are applied and all penalties take effect.
+
+- <b>Greater Frenzy:</b> At 8th level, the frenzied berserker gains a +10 bonus to Strength while frenzying instead of a +6.
+
+- <b>Supreme Power Attack:</b> At 10th level, the frenzied berserker gains a +6 damage bonus using the Power Attack feat. Using the Improved Power Attack feat the frenzied berserker gains a +12 damage bonus.  This translates to +12 with two-handed weapons for standard Power Attack and +24 for Improved Power Attack.
+
+- <b>Tireless Frenzy:</b> At 10th level, the frenzied berserker is no longer fatigued when using Frenzy.

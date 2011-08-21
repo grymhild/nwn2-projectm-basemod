@@ -1,0 +1,7 @@
+Type of Feat: Reserve
+Your zeal on the battlefield allows you to deal extra damage in combat.
+Prerequisite: Ability to cast 4th-level spells, War domain
+Benefit: As long as you have a War domain spell of 4th level or higher available to cast, you gain a bonus on your weapon damage rolls equal to the level of the highest-level War spell you have available to cast (once activated). This bonus is controlled by a cap in the cmi_options and may be lower than the maximum. 
+Use: Selected.
+
+Trigger Spells: Power Word Kill, Power Word Stun, Blade Barrier, Divine Power, Flame Strike, Power Word Blind

@@ -1,0 +1,15 @@
+Abjuration [Chaotic]
+Level: Chaos 8, Clr 8
+Components: V,S
+Casting Time: 1 action
+Range: 20 ft
+Targets: 1 creature/level in 20 ft radius burst centered on you
+Duration: 1 round/level
+Saving Throw: see text
+Spell Resistance: Yes (harmless)
+
+A random pattern of color surrounds the subjects, protecting them from attacks, and granting them resistance to spells cast by lawful creatures.  This abjuration has three effects:
+First, the warded creatures gain a +4 deflection bonus to AC and a +4 resistance to saves.  Unlike Protection from Law, this benefit applies to all attacks, not just against attacks by lawful creatures.
+Second, the warded creatures gain SR 25 against spells cast by lawful creatures.
+Third, the abjuration blocks possession and mental influence, just as Protection from Law does.
+Last, if a lawful creature succeeds in a melee attack versus a warded creature, the offending creature is confused for 1 round (Will save negates).

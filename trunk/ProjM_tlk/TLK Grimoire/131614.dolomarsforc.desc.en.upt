@@ -1,0 +1,12 @@
+Evocation [Force]
+Level: Brd 2, Sor/Wiz 2
+Components: V,S
+Casting Time: 1 action
+Range: Personal
+Area: 10 feet + 1 foot/level radius burst outward from caster
+Duration: Instantaneous
+Saving Throw: None (see text)
+Spell Resistance: Yes
+
+Dolomar's Force Wave radiates hemispheric waves of force in every direction except downward.  The waves of force push objects and creatures directly away from the caster, similar to the effects of a bull rush attack.  Since this is a force effect, Dolomar's force wave will even affect incorporeal or ethereal targets.
+Though no saving throw is allowed in the conventional sense, each creature in the area of effect makes an opposed Strength check per the rules for bull rush attacks.  Creatures affected by the force wave will automatically be pushed the maximum distance based on the result of the opposed Strength check (5 ft + 1 ft per point the force wave exceeded the opposed Strength check) out to the limit of the force wave's area of effect.

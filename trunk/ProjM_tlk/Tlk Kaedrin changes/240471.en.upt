@@ -1,0 +1,10 @@
+Type of Feat: Wild
+When you use your wild shape ability you take the form of a good-aligned or evil-aligned magical beast (depending on your alignment).
+Prerequisites: Wild Shape, +6 BAB
+Benefit: When you use your wild shape ability you gain either the celestial (if good or neutral) or fiendish (if evil) template of the animal you can normally transform into.
+Both Fiendish and Celestial Animals gain:
+Spell Resistance equal to their hit dice + 5
+Damage Reduction 10/Magic if level 12 or higher, 5/Magic otherwise.
+Darkvision
+Fiendish creatures gain Damage Resistance (Cold and Fire) 10 if level 8 or higher, 5 otherwise.
+Celestial creatures gain Damage Resistance (Cold, Electricity, and Acid) 10 if level 8 or higher, 5 otherwise.

@@ -1,0 +1,13 @@
+Evocation
+Level: Sun 1
+Components: V, S
+Casting Time: 1 action
+Range: Short
+Target: 1 creature
+Duration: Instantaneous
+Saving Throw: Reflex Negates
+Spell Resistance: Yes
+
+This spell creates a brilliant ray of scorching heat that comes down from the sky to strike one target of the caster's choice.  The victim is entitled to a reflex save to avoid the ray - a successful save indicates that it missed altogether.  Any creature struck by the ray sustains 1d6 points of damage, plus 1 point per caster level.  Undead and creatures and monster susceptible to bright light sustain 1d6 points of damage, plus 2 points per caster level.  In addition to sustaining damage, living victims are also blinded for 1d4 rounds by the spell.
+
+The sun must be in the sky when Sunscorch is cast, or the spell fails entirely.  It cannot be cast underground, indoors, or in hours of darkness, although routine overcasts do not hinder the Sunscorch.

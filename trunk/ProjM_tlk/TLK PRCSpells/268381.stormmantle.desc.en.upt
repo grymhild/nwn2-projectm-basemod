@@ -1,0 +1,9 @@
+School: Abjuration
+Components: V, S
+Range: Touch
+Target: AoE: 20 radius
+Duration: 1 rounds/ lvl
+Saving Throw: Will Negates (Harmless)
+Spell Resistance: Will Negates (Harmless)
+
+You cast forth a field of minor storms that create barriers around the caster and all allies within a 20 radius that absorbs all incoming spells. The barriers can absorb 1d12+10 spell levels each before collapsing.

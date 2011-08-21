@@ -1,0 +1,47 @@
+<color=Gold><b>Dread Pirate</b></color>
+
+<color=Red>(PRESTIGE CLASS: This class is not available at character creation and must be unlocked by meeting special requirements, listed below.)</color>
+
+Thugs and cutthroats in every port lay claim to the title "pirate," but actually making a fortune through piracy is no easy task. A dread pirate, however, has mastered every aspect of larceny on the high seas. 
+
+Some dread pirates accomplish their goals through fear, killing indiscriminately and ruling their ships at rapier-point. Others minimize bloodshed and exhibit a curious sort of chivalry.
+
+A dread pirate's lifestyle is ideal for most rogues, because the job requires a number of skills that other classes don't have the time or inclination to learn. 
+
+<color=Gold>Requirements:</color>
+
+<b>Alignment:</b> Any nonlawful.
+<b>Base Attack Bonus:</b> +4.
+<b>Feats:</b> Weapon Finesse.
+<b>Skills:</b> Appraise 8, Lore 8.
+
+<color=Gold>Class Features:</color>
+
+- <b>Hit Die:</b> d8
+- <b>Base Attack Bonus:</b> High.
+- <b>High Saves:</b> Ref.
+- <b>Weapon Proficiencies:</b> All simple and martial.
+- <b>Armor Proficiencies:</b> Light armor.
+- <b>Skill Points:</b> 6 + Int modifier.
+- <b>Class Skills:</b> Appraise, Bluff, Craft Armor, Craft Weapon, Intimidate, Listen, Lore, Perform, Search, Sleight of Hand, Spot, and Tumble.
+
+<color=Gold>Class Abilities:</color>
+
+Level 1: Two Weapon Fighting
+Level 2: Fearsome Reputation +2
+Level 3: Rally the Crew +1
+Level 4: Spring Attack
+Level 5: Luck of Heroes
+Level 6: Fearsome Reputation +4
+Level 7: Rally the Crew +2
+Level 8: Skill Focus (Tumble)
+Level 9: Fight to the Death
+Level 10: Fearsome Reputation +6, Leadership
+
+- <b>Fearsome Reputation:</b> By the time he attains 2nd level, a dread pirate has developed a reputation on the high seas and gains a +2 bonus on Diplomacy checks. This bonus increases to +4 at 6th level and to +6 at 10th level.
+
+- <b>Rally the Crew:</b> Starting at 3rd level, a dread pirate can inspire his allies (including himself) to great bravery in combat once per day. This inspiration grants them a +1 bonus on saving throws against charm and fear effects, a +1 attack bonus, and a +1 bonus on weapon damage rolls. This is an instantly activated ability and lasts for 1 minute per class level. At 7th level, a dread pirate can use this ability twice per day, and the bonus increases to +2. Rally the Crew can not be used while Inspire Courage is active.
+
+If a dread pirate has the inspire courage bardic music ability, he adds this bonus whenever he uses the inspire courage ability. For example, an 8th-level bard/3rd-level dread pirate would provide a +3 bonus on attack rolls and weapon damage rolls.
+
+- <b>Fight to the Death:</b> Fight to the Death: At 9th level and higher, a dread pirate can inspire his allies to carry on against tremendous odds. Each ally affected gains temporary hit points equal to 10 + the dread pirate's Cha bonus (minimum 10), gains a dodge bonus to Armor Class equal to the dread pirate's Cha bonus (minimum +1), and gains a number of bonus hit points equal to their level. These bonuses last for 1 round per dread pirate level.

@@ -1,0 +1,17 @@
+Evocation [Good]
+Level: Glory 6
+Components: V,S, DF
+Casting Time: 1 Round
+Range: Close (25ft + 5 ft/ 2 levels)
+Effect: Ray
+Duration: Instantaneous
+Saving Throw: No
+Spell Resistance: Yes
+
+By casting this spell, you project a bolt of energy from the Positive Energy Plane against one creature. You must make a successful ranged touch attack to strike your target. A creature struck takes varying damage, depending on its nature or its home plane of existence and your level.
+
+Material Plane, Elemental Plane, Neutral Outsiders: 	 1d6 / 2 levels   Max 7d6
+Negative Energy Plane, Evil Outsiders, Undead Creatures: 1d6 / level  Max 15d6
+Positive Energy Plane, Good Outsiders:			 No Damage
+
+Taleron

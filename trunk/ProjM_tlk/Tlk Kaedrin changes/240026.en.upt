@@ -1,0 +1,14 @@
+Caster Level(s): Paladin 4, Cleric 4, Purification 4
+Innate Level: 4
+School: Evocation
+Descriptor(s): Sonic
+Component(s): Verbal
+Range: 10 ft.
+Area of Effect / Target: 10-ft.-radius burst centered on you
+Duration: Instantaneous
+Save: Fortitude half
+Spell Resistance: Yes
+
+This spell has no effect on creatures that cannot hear.  All creatures whose alignment differs from yours on both the law-chaos and the good-evil axes take 1d4 points of damage per caster level (maximum 10d4).  All creatures whose alignment differs from yours on one component take half damage, and this spell does not deal damage to those who share your alignment.
+
+<i>Shouting your deity's teachings, you rebuke your foes with the magic of your sacred words.</i>

@@ -1,0 +1,11 @@
+School: Evocation
+Descriptor(s): Force
+Component(s): Verbal, Somatic
+Range: Long
+Area of Effect / Target: Single
+Duration: Instant
+Additional Counter Spells:
+Save: None
+Spell Resistance: Yes
+
+The caster creates a shimmering projectile of magical force that unerringly slams into a single selected target. After level 1, the spell creates 1 additional missile every two caster levels, to a maximum of 15 missiles at level 29. Magic missiles do 1D4+1 points of damage each.

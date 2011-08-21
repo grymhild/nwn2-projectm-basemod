@@ -1,0 +1,11 @@
+Abjuration
+Level: Clr 7 (Azuth)
+Components: V,S,DF
+Casting Time: 1 action
+Range: Close (25 ft + 5 ft/2 levels)
+Targets: Up to one creature/level, in a 15' radius from the initial target.
+Duration: 1 round/level (see text)
+Saving Throw: Will negates (harmless)
+Spell Resistance: Yes (harmless)
+
+Clerics of Azuth may grant spell resistance to multiple targets with one spell.  Each targeted creature gains spell resistance equal to 12 + caster level.  Divide the duration evenly among all the targeted creatures.

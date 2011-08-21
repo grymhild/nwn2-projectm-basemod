@@ -1,0 +1,13 @@
+Caster Level(s): Wizard / Sorcerer 1
+Innate Level: 1
+School: Evocation
+Descriptor(s): Fire
+Component(s): Verbal, Somatic
+Range: Long
+Area of Effect / Target: Single
+Duration: Instant
+Additional Counter Spells:
+Save: None
+Spell Resistance: Yes
+
+The caster creates a bolt of fire that is aimed at the target with a ranged touch attack. After level 1, the spell creates 1 additional missile every two caster levels. Bolts do 1D4+1 points of fire damage each.

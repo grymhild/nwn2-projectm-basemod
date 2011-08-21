@@ -1,0 +1,52 @@
+<color=Gold><b>Elemental Archer</b></color>
+
+<color=Red>(PRESTIGE CLASS: This class is not available at character creation and must be unlocked by meeting special requirements, listed below.)</color>
+
+Elemental archers focus on channeling the elemental planes to supplement their combat prowess with ranged or thrown weapons.  Through exhaustive training, elemental archers are capable of opening small rifts in one of the planes, infusing their attacks with elemental energy or shielding themselves from harm.  These fearsome displays of raw elemental fury are rarely tolerated in most civilized lands which makes the class a perfect fit for the solitary Genasi though any race may become an elemental archer.
+
+Druids and Rangers are the most likely characters to become elemental archers due to their ties to nature and the elements.  It is not uncommon for Clerics and Favored Souls of a deity whose portfolio includes the elemental planes to follow the path as well.  Those with a taste for the arcane and focus on elemental spells are also good candidates.
+
+A character can achieve a maximum of 5 levels in the Elemental Archer prestige class.
+
+<color=Gold>Requirements:</color>
+
+<b>Base Attack Bonus: </b> +8
+<b>Feats:</b> Point Blank Shot, Manyshot, Weapon Focus in a ranged or thrown weapon.
+
+<color=Gold>Class Features:</color>
+
+- <b>Hit Die:</b> d8
+- <b>Base Attack Bonus:</b> High.
+- <b>High Saves:</b> Reflex.
+- <b>Weapon Proficiencies:</b> None.
+- <b>Armor Proficiencies:</b> None.
+- <b>Skill Points:</b> 4 + Int modifier.
+- <b>Class Skills:</b> Concentration, Craft Armor, Craft Weapon, Intimidate, Listen, Lore, Spot, Survival, Tumble
+
+<color=Gold>Class Abilities:</color>
+
+Level 1: Path of Elements, Elemental Shot 
+Level 2: Accurate Shot +1
+Level 3: Elemental Shield (5 minute cooldown)
+Level 4: Accurate Shot +2
+Level 5: Elemental Shield (2m:30s cooldown), Elemental Storm (5 minute cooldown)
+
+<color=Red>All class abilities require that a ranged or thrown weapon be equipped for the ability to work.</color>
+
+- <b>Path of Elements:</b> At first level, the elemental archer must choose one of the four elements they wish to channel. All following abilities will use this element for their energy type. Genasi gain a +2 elemental damage bonus with Elemental Shot if they choose the same element as their heritage (stacking with the bonus from elemental shot).
+
+- <b>Elemental Shot:</b> At first level, the elemental archer channels their chosen plane through their hands, causing their shots to strike with elemental damage. For each level of Elemental Archer, the player gains 1 point of elemental damage on each shot made. Genasi gain a +2 elemental damage bonus if they choose the same element as their heritage (stacking with the bonus from elemental shot).
+
+- <b>Accurate Shot:</b> At level 2 their accuracy at channeling the elements improves, granting them a +1 attack bonus.  This bonus improves to +2 at level 4.
+
+- <b>Elemental Shield:</b> At 3rd level, the elemental archer is capable of directing their chosen elemental energy into a protective shield about them.  They gain a damage shield of their element that also adds a shield AC bonus. The shield AC bonus is equal to half their class level (+3 at level 5) and the damage shield's damage is d4 + half their class level (d4 + 3 at 5th).  It lasts for a number of rounds equal to their con bonus plus their class level. The elemental archer is able to use this shield more often once they achieve 5th level.
+
+- <b>Elemental Storm:</b> Beginning at 5th level, an elemental archer can tap the raw fury of their native plane and direct it against a group of foes.  You unleash a hail of attacks imbued with elemental damage in a 40' circle, dealing your weapon damage + 2d6 of your chosen element if you succeed with a ranged touch attack. You can affect up to 5 targets.
+
+****
+
+There are new two feats available for selection as an Elemental Archer once you have gained their core abilities.
+
+Improved Elemental Shield: The elemental shield adds an AC bonus equal to class level instead of half of their class level. The damage dealt improves to d4 + class level. Duration is doubled. This feat requires Elemental Shield.
+
+Improved Elemental Storm: The elemental storm becomes a raging conflagration of energy. The damage bonus increases to 4d6 and the number of targets increases to 10. This feat requires Elemental Storm.

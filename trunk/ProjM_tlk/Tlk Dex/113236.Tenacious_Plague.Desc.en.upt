@@ -1,0 +1,9 @@
+Invocation Type: Greater
+Spell Level Equivalent: 6
+
+This invocation summons masses of biting and stinging insects. One swarm is summoned for every three class levels. A swarm has an attack bonus of the casters base attack plus his charisma bonus and it deals 2d6 + Warlock bonus points of magical damage when it hits. A swarm dissipates after three rounds.
+
+The Warlock bonus is the lesser of your charisma modifier or your warlock level / 3.
+
+<i>Tenacious plague</i> does not stack with itself - if the warlock uses this invocation while swarms still exist, the current swarms will be replaced with the new swarms.
+

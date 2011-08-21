@@ -1,0 +1,36 @@
+Evocation
+Level: Brd 2, Sor/Wiz 1
+Components: V, S
+Casting Time: 1 action
+Range: Close (25 ft + 5 ft/2 levels)
+Target: 1 Creature
+Duration: Special
+Saving Throw: Will negates
+Spell Resistance: Yes
+
+This spell causes a 4-in. diameter sphere to appear in your hand.  Within the limits described below, the sphere can appear in a variety of different colors;  each color indicates a different special power.  You can hurl the sphere at an opponent, providing there are no barriers in the way.  If the orb misses the target, it dissipates without effect.  If the target creatures makes a successful Will saving throw, the chromatic orb is also ineffective.  Otherwise, the color of the orb determines the amount of damage inflicted and its special power, as summarized below;  details about the special powers are listed below.  You can create a single orb listed for your level or lower;  for instance, a 3rd level wizard can create an orange, red or white orb.
+
+Special Powers:
+Light - Light from the orb causes the target to become surrounded by light to a radius of 20 feet, as if affected by a light spell.  The effect lasts for 1 round, during which time the target makes his attack rolls and saving throws at a -4 penalty, and his AC is penalized by 4.
+Heat - Heat from the orb is intense enough to melt 1 cubic yard of ice.  The target suffers a loss of 1 point of Strength and 1 point of Dexterity for 1 round.
+Fire - Fire from the orb causes an extra 1d8 damage to the target.  Objects within 5 ft of the target take 1d4 damage.
+Blindness - Blindness from the orb causes the victim to become blind, as per the spell.   The effect lasts for 1 round per caster level.
+Stinking Cloud - Stinking Cloud from the orb surrounds the target in a 5 ft radius noxious cloud.  The victim must make a Fortitude saving throw or be reeling and unable to attack until he leaves the area of effect.
+Cold - Cold from the orb causes an extra 2d4 damage to the target.  Objects within 10 feet of the target take 2d4 damage.
+Paralysis - Paralysis from the orb causes the victim to become paralyzed for for 6-20 (2d8+4) rounds; a successful Will save halves the number of rounds.
+Petrification - Petrification from the orb turns the victim to stone.  If the victim successfully makes a Fortitude saving throw, he avoids turning to stone and instead is slowed (as per the spell) for 2-8 (2d4) rounds.
+Death - Death from the orb causes the victim to die.  If the victim makes a Will saving throw, he avoids death and is instead paralyzed for 2-5 (1d4+1) rounds.
+
+Chromatic Orb Effects
+Lvl  Orb Color  Damage  Special Power
+1st  White     1-4      Light
+2nd  Red       1-6      Heat
+3rd  Orange    1-8      Fire
+4th  Yellow    1-10     Blindness
+5th  Green     1-12     Stinking Cloud
+6th  Turquoise  2-8     Cold
+7th  Blue      2-16     Paralysis
+8th  Violet    slow     Petrification
+9th  Black     paralysis  Death
+
+REMINDER:  Even though you will be able to select higher caster level orbs from the radial menu, they will not work for you if you are not of the appropriate minimum caster level.

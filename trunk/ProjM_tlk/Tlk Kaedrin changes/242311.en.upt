@@ -1,0 +1,17 @@
+Caster Level(s): Wizard / Sorcerer 5
+Innate Level: 5
+School: Conjuration
+Descriptor(s): 
+Component(s): Verbal, Somatic 
+Range: Long
+Area of Effect / Target: Large
+Duration: 6 seconds / level
+Save: Fortitude Special
+Spell Resistance: No
+
+A billowing cloud of noxious vapors settles over the area. Its effects vary according to the Hit Dice of the affected creatures:
+1-3 HD: Instant death
+4-6 HD: Fortitude save or death; 1d4 points of Constitution damage if save is successful
+Over 6 HD: 1d4 points of Constitution damage
+
+Victims inside the spell's area suffer the effects each round. Undead creatures are immune to this spell.

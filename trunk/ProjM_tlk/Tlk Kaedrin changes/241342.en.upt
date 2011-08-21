@@ -1,0 +1,51 @@
+<color=Gold><b>Eldritch Disciple</b></color>
+
+<color=Red>(PRESTIGE CLASS: This class is not available at character creation and must be unlocked by meeting special requirements, listed below.)</color>
+
+All warlocks harbor at least a grudging respect for the entities responsible for their powers. They are clearly beings of great mystical might, and thus worthy of regard. A rare few warlocks go beyond this attitude to actual reverence or worship of the fiendish, fey, or extraplanar powers that have made them far more than mortal. Such is the life of an eldritch disciple devoted to a deity who granted her the arcane talents of the warlock. Though her powers might take different forms, she knows that the source is the same.
+
+This class provides spellcasting progression in either Divine, or Invocation based casters.
+
+<color=Gold>Requirements:</color>
+
+<b>Class:</b> Warlock.
+<b>Feats:</b> Turn Undead.
+<b>Skills:</b> Lore 8.
+<b>Spellcasting:</b> Able to cast 2nd level divine spells.
+
+<color=Gold>Class Features:</color>
+
+- <b>Hit Die:</b> d8
+- <b>Base Attack Bonus:</b> Medium.
+- <b>High Saves:</b> Fort, Will.
+- <b>Weapon Proficiencies:</b> None.
+- <b>Armor Proficiencies:</b> None.
+- <b>Skill Points:</b> 2 + Int modifier.
+- <b>Class Skills:</b> Bluff, Concentration, Craft Armor, Craft Weapon, Diplomacy, Heal, Intimidate, Lore, and Spellcraft.
+
+<color=Gold>Class Abilities:</color>
+
+Level 1: Turn Undead, Spellcasting Progression, Gift of the Divine Patron
+Level 2:
+Level 3:
+Level 4: Gift of the Divine Patron
+Level 5: Bonus Feat: Touch of Healing
+Level 6:
+Level 7: Gift of the Divine Patron
+Level 8:
+Level 9:
+Level 10: Gift of the Divine Patron
+
+- <b>Spellcasting:</b> At each level, you gain new spells per day and an increase in caster level (and spells known, if applicable) as if you had also gained a level in a divine or invocation based spellcasting class to which you belonged before adding the prestige class level. You do not, however, gain any other benefit a character of that class would have gained. If you had more than one spellcasting class before becoming a eldritch disciple, you must decide which class to progress in. Eldritch blast dice are advanced as though taking warlock levels regardless of which spellcasting progression is chosen.
+
+- <b>Turn Undead:</b> Eldritch disciple levels stack with all other classes for the purpose of turning undead.
+
+- <b>Gift of the Divine Patron:</b> At 1st level, you gain a sacred gift of power from your divine patron (who is also the source of your divine spells and, directly or indirectly, your warlock invocations). You can spend one of your turn undead attempts to active these powers. You gain another gift at 4th, 7th, and 10th level.
+
+- <b>Gift (Damage Reduction):</b> This ability is granted at level 1. You gain temporary damage reduction (overcome by cold iron) equal to 1/2 your class level (minimum 1). This damage reduction stacks with the damage reduction granted by the warlock class. This effect lasts for a number of rounds equal to 3 + your Cha modifier (minimum 1 round).
+
+- <b>Gift (Fiendish Resistance):</b> This ability is granted at level 4. You gain resistance to acid and fire equal to 10 + your class level. This resistance stacks with the energy resistance granted by the warlock class. This effect lasts for a number of rounds equal to 3 + your Cha modifier (minimum 1 round).
+
+- <b>Gift (Healing Blast):</b> This ability is granted at level 7. You gain the ability to change your eldritch blast in a wave of healing energy (20' radius, centered on you). The blast heals living creatures instead of dealing damage to them (the damage healed is equal to the damage normally dealt).
+
+- <b>Gift (Wild Frenzy):</b> At 10th level you gain the ability to enter a wild frenzy. You gain a +2 bonus on attack rolls with weapons and eldritch blasts and a +2 bonus on damage rolls for weapons, along with temporary hit points equal to twice your class level. This effect lasts for a number of rounds equal to 3 + your Cha modifier (minimum 1 round).

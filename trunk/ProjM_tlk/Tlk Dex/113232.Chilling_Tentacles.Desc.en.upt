@@ -1,0 +1,6 @@
+Invocation Type: Greater
+Spell Level Equivalent: 5
+
+This invocation allows you to conjure forth a field of soul-chilling black tentacles that ooze from the ground, groping for victims. For every round that a creature is caught in the area of effect, it must make a grapple check or be held for a round and take 1d6+4 points of bludgeoning damage. In addition, each creature within the area of the invocation takes 2d6 points of cold damage each round regardless of whether they are struck by any tentacles. The tentacles last for 1 round per caster level.
+
+A grapple check is an opposed roll, with with the ( d20 + Warlock Level) opposed by the defenders roll of ( d20 + size modifier + strength bonus + base attack ) The size modifer is 8 for huge, 4 for large, -4 for small, and -8 for tiny.

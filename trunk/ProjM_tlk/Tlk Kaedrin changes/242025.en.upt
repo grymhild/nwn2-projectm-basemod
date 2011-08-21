@@ -1,0 +1,45 @@
+<color=Gold><b>Feywild Warden</b></color>
+
+<color=Red>(PRESTIGE CLASS: This class is not available at character creation and must be unlocked by meeting special requirements, listed below.)</color>
+
+x
+
+<color=Gold>Requirements:</color>
+
+<b>Feats:</b> Follow the Guide, Telthor Companion.
+<b>Skills:</b> Lore 12.
+
+<color=Gold>Class Features:</color>
+
+- <b>Hit Die:</b> d8
+- <b>Base Attack Bonus:</b> Medium.
+- <b>High Saves:</b> Fort, Will.
+- <b>Weapon Proficiencies:</b> None.
+- <b>Armor Proficiencies:</b> None.
+- <b>Skill Points:</b> 2 + Int modifier.
+- <b>Class Skills:</b> Craft Alchemy, Craft Armor, Craft Weapon, Concentration, Diplomacy, Heal, Listen, Lore, Spellcraft, Spot, and Survival.
+
+<color=Gold>Class Abilities:</color>
+
+Level 1: Spellcasting Progression, Telthor Companion
+Level 2: Faerie Fire (at will)
+Level 3:
+Level 4: Spirit Journey 1/day
+Level 5: Rejuvenate 1/day
+Level 6: Rejuvenate 2/day
+Level 7: Heartfire (at will), Rejuvenate 3/day
+Level 8: Spirit Journey 2/day
+Level 9:
+Level 10: Gift of the Feywild, Rejuvenate 4/day, Eagle's Majesty 1/day
+
+- <b>Spellcasting:</b> At each Feywild Warden level, the character gains new divine spells per day as if she had also gained a Spirit Shaman level.
+
+- <b>Telthor Companion:</b> Telthor Companion levels continue to advance as a Feywild Warden (Spirit Shaman level + Feywild Warden level - 3 for the companion's HD).
+
+Faerie Fire and Heartfire have a caster level equal to your Spirit Shaman + Feywild Warden levels.
+
+- <b>Gift of the Feywild:</b> Gain DR 5/Cold Iron. This stacks with other sources of DR/Cold Iron such as the Fey heritage line of feats and the Spirit Shaman's capstone ability.
+
+Rejuvenate is a complete self heal.
+
+Eagle's Majesty is similar to Owl's Insight but for boosting Charisma. This is for deep Spirit Shamans (15+) and will scale based off total Spirit Shaman + Feywild Warden levels to prevent abuse. The likely growth rate is 1/2 your Spirit Shaman + Feywild Warden levels (capped at +12).

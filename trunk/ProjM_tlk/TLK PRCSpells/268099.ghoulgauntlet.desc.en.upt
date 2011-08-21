@@ -1,0 +1,14 @@
+School: Necromancy [Death, Evil]
+Caster Level: Sorcerer/Wizard 6
+Components: V, S
+Range: Touch
+Target: One creature
+Duration: Instantaneous
+Saving Throw: Fortitude negates
+Spell Resistance: Yes
+
+Your touch gradually transforms a living victim into a ravening, flesh-eating ghoul.  The victim takes 3d6 points of damage per round while the body slowly dies.  When the victim reaches 0 hit points, she becomes a ghoul, body and mind.
+
+If the victim fails her saving throw, cure disease, dispel magic, Mordenkainen's disjunction, remove curse, or greater restoration negates the gradual change.  Healing spells may temporarily prolong the process by increasing hit points, but does not end the effects of the spell.
+
+No matter how many ghouls you generate with this spell, however, you can control only 2HD worth of undead creatures per caster level.  If you are a cleric, any undead you might control via command or rebuke do not count toward the limit.

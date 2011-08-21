@@ -1,0 +1,13 @@
+Caster Level(s): Sorc/Wiz 9
+Innate Level: 9
+School: Conjuration
+Descriptor(s):
+Component(s): Verbal, Somatic
+Range: Medium
+Area of Effect / Target: 1 creature
+Duration: 1 round / level
+Additional Counter Spells:
+Save: Fortitude partial
+Spell Resistance: Yes
+
+You conjure a sphere of energy that attacks your enemies. Each round it makes a touch attack, creatures hit by the attack must make a fortitude save or be destroyed instantly, those that make their save suffer 5d6 points of damage.

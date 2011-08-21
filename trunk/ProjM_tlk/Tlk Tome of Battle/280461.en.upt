@@ -1,0 +1,13 @@
+Type of Feat: Class
+Prerequisite: Crusader level 1.
+Specifics: Your supreme dedication and intense focus allow you to temporarily set aside the pain and hindering effects of injuries. When an opponent strikes you, the injury does not immediately affect you.
+You have a delayed damage pool that allows you to forestall the effects of many injuries. This pool begins at 0 with each encounter. When you are attacked, any hit point damage the blow deals is added to your delayed damage pool. At the end of your next turn, you take damage equal to the total stored in your delayed damage pool, which then resets to 0. Any healing you receive can either increase your current hit point total as normal or reduce the total damage in your delayed damage pool. When you receive healing, it first affects your hit points, and then your damage pool.
+
+At 1st level, your delayed damage pool can hold up to 5 points of damage. Any damage beyond that comes off your hit points as normal. The maximum damage your pool holds increases by 5 every four levels.
+Use: Automatic.
+
+Special Notes: Damage reduction and resistance are applied at the time of the hit, but not to the damage done by the Delayed Damage Pool. 
+
+In order for the Delayed Damage Pool to function the player takes one point of damage even when the pool is not full.  This point is not added to the pool and therefore does not do extra damage to the player when the pool damages the player at the end of the round. 
+
+Sometimes when damage exceeds the current limit of the pool, (as when there are ten points in a fifteen point pool and a hit damages the player for twenty) the pool will immediately damage the player.  This damage is inflicted because the damage pool cannot selectively absorb damage and therefore damages the player for the number that exceeded the pool's limit.

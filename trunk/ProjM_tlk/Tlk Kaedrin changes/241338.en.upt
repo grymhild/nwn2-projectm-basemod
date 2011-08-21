@@ -1,0 +1,10 @@
+Transmutation
+Level: Sorc / Wiz 1
+Component: V,S,M
+Range: Touch
+Target: One Living Creature
+Duration: Instantaneous
+Saving Throw: Fortitude Negates
+Spell Resistance: Yes
+
+If the caster is wounded, she can cast this spell and touch a living creature. The creaure takes the caster's wounds as damage, either 1 point per caster level or the amount needed to bring the caster up to her maximum hit points, whichever is less. The caster heals that much damage as if a cure spell had been cast on them.

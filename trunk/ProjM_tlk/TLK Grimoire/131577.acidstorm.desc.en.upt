@@ -1,0 +1,10 @@
+Evocation [Acid]
+Level: Sor/Wiz 6
+Casting Time: 1 Action
+Range: Medium (100 ft + 10 ft/lvl
+Area: Cylinder (20 ft rad, 20 ft high)
+Duration: Instantaneous
+Saving Throw: Reflex Half
+Spell Resistance: Yes
+
+This spell creates a deluge of acid in the area of effect.  Everyone in the area of effect takes 1d6 per caster level of acid damage, to a maximum of 15d6.

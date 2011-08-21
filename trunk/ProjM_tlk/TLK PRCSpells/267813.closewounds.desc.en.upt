@@ -1,0 +1,11 @@
+School: Conjuration (Healing)
+Level: Cleric/Healer 3
+Components: V
+Range: Short
+Target: One Creature
+Duration: Instantaneous
+Save: Will for half (harmless)
+Spell Resistance: Yes (harmless)
+
+This spell cures 2d4 points of damage. You can cast this spell with an instant utterance. If you cast this spell immediately after the subject takes damage, it effectively prevents the damage. It would keep alive someone who had just dropped to -10 hit points, for example, leaving the character at negative hit points but stable.
+Used against an undead creature, Close Wounds deals damage instead of curing the creature (which takes half damage if it makes a Will saving throw).

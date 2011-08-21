@@ -1,0 +1,11 @@
+Evocation [Electricity]
+Level: Air 5, Clr 6, Sor/Wiz 7
+Components: V,S
+Casting Time: 1 action
+Range: Medium (100 ft + 10 ft / level)
+Area: Cylinder (20 ft radius, 60 ft high)
+Duration: 1 round/6 levels
+Saving Throw: Reflex half
+Spell Resistance: Yes
+
+Casting Talos' Wrath causes a storm of lightning to strike from the heavens, creating a column of raging electrical energy.  The spell does 1d6 points of damage per caster level (maximum 15d6) to all caught within the area of effect.  Every round of the storm, targets within its area of effect may make a Reflex save to halve the damage caused by the storm that round.

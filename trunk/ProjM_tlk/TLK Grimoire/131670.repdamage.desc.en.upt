@@ -1,0 +1,11 @@
+Transmutation
+Level: Sor/Wiz 1
+Components: V,S
+Casting Time: 1 action
+Range: Touch
+Target: Construct touched
+Duration: Instantaneous
+Saving Throw: None
+Spell Resistance: Yes (harmless)
+
+When laying your hands upon a construct that has at least 1 hit point remaining, you transmute its structure to repair damage it has suffered.  The spell repairs 1d8 points of damage + 1 point per caster level (up to +5).

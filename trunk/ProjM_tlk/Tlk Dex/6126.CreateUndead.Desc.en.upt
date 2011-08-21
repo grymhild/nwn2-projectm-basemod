@@ -1,0 +1,26 @@
+Caster Level(s): Cleric 6, Wizard / Sorcerer 6
+Innate Level: 6
+School: Necromancy
+Descriptor(s): Evil
+Component(s): Verbal, Somatic
+Range: Short
+Area of Effect / Target: Point
+Duration: 1 hour / level
+Save: None
+Spell Resistance: None
+
+The caster brings an undead creature into being. The type of undead summoned is dependent upon your caster level up to 14, with additional bonuses.
+
+Caster Level (max 14) + Undead Level Bonus 
+
+Undead Level Bonuses
+Augment Summoning +1
+Spell Focus Necromancy +1
+Greater Spell Focus Necromancy +1
+Epic Spell Focus Necromancy +1
+Every 3 Levels of Palemaster +1
+
+ Caster Level <=14 : Ghoul CR 11 
+ Caster Level <=17 : Ghoul CR 13 
+ Caster Level <=20 : Ghoul CR 15 
+ Caster Level 21+: Ghoul CR 17 

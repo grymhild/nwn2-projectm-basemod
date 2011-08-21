@@ -1,0 +1,12 @@
+Evocation [Fire]
+Level: Sor/Wiz 1
+Components: V,S
+Casting Time: 1 action
+Range: Medium (100 ft + 10 ft/level)
+Target: One creature
+Duration: Instantaneous
+Saving Throw: None
+Spell Resistance: Yes
+
+You create two flaming missiles, plus one for every two levels of experience past 1st.  Thus you have two bolts at 1st, three bolts at 3rd, four bolts at 5th, etc.
+This spell differs from the more common magic missile in that it provides more missiles, does fire damage, requires a ranged touch attack roll for each bolt, and has no upper limit on the number of bolts created.  Each flame bolt that hits its target does 1d4+1 points of damage.

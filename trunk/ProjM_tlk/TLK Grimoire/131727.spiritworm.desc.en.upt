@@ -1,0 +1,11 @@
+Necromancy
+Level: Sor/Wiz 1
+Components: V, S
+Casting Time: 1 action
+Range: Touch
+Target: Living Creature Touched
+Duration: 1 round/level (see text)
+Saving throw: Fortitude partial
+Spell Resistance: Yes
+
+You create a lingering decay in the spirit and body of the target.  If the target fails is saving throw, it takes 1 point of temporary Constitution damage each round while the spell lasts (maximum 5 points of Constitution).  If it makes its save, it does not lose any Constitution but takes 1d2 points of damage each round while the spell lasts (maximum 5d2).  The damage remains after the spell ends.

@@ -1,0 +1,23 @@
+Enchantment (Compulsion) [Mind-Affecting]
+Level: Clr 1
+Components: V, S
+Casting Time: 1 action
+Range: Short
+Target: One living creature
+Duration: 1 round
+Saving Throw: Will negates
+Spell Resistance: Yes
+
+The enchanted creature is compelled to act randomly for 1 round.  Rather than deciding its action for itself, the subject of the spell takes an action determined randomly on the following table:
+
+1d8        Action
+1            Attack self
+2            Attack nearest creature
+3            Flee away from caster
+4            Unequip items held in hands
+5            Stand motionless as if stunned
+6            Dazed
+7            Walk around randomly
+8            Attack caster
+
+Nothing can affect this die roll in any way.  It is always entirely random.

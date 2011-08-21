@@ -1,0 +1,5 @@
+Type: Divine
+Prerequisite: Paladin, Turn Undead
+Special: This ability consumes three uses of turn undead and has a 1 minute cooldown.
+Benefit: As a swift action, you can summon the power of law to aid you. You gain a +3 sacred bonus on your attack rolls. The bonus increases to +5 at 10th level, and to +7 when you attain 15th level. This ability lasts for 1 minute.
+Limitation: This ability will not work if you have any levels in bard, cleric, druid, sorcerer, or wizard.

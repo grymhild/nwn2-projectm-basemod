@@ -1,0 +1,11 @@
+Evocation [Sonic]
+Level: Brd 2, Sor/Wiz 2, War 2
+Components: V,S
+Casting Time: 1 action
+Range: Close (25 ft + 5 ft/2 levels)
+Target, Effect or Area: Cone
+Duration: Instantaneous
+Saving Throw: Fortitude negates
+Spell Resistance: None
+
+When the caster screams his battlecry, all creatures (of 6 or fewer HD) in a cone area in front of the caster must make a Fortitude saving throw or be stunned for one round.  A stunned creature cannot act and loses any Dexterity modifiers to AC.  Attackers gain a +2 bonus to attack it.

@@ -1,0 +1,13 @@
+Evocation
+Level: Clr 2, Evil 2
+Components: V, S
+Casting Time: 1 action
+Range: Close
+Area: 20-ft. radius emanation
+Duration: 2 hours/level
+Saving Throw: None
+Spell Resistance: No
+
+This spell imbues an area with negative energy.  All Charisma checks made to turn undead within this area suffer a -3 profane penalty.  Undead entering this area gain a +1 profane bonus on attack rolls, damage rolls, and saves.  Undead created or summoned into a desecrated area gain +1 hit points per HD.
+
+Desecrate counters and dispels Consecrate.
