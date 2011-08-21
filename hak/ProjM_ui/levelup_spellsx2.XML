@@ -1151,7 +1151,7 @@
 
 	<UIPane name="CHARGEN_BUTTONS" x=ALIGN_RIGHT y=723 width=520 height=45 >
 		<UIButton name="CHOICE_RECOMMEND" strref="113764" x="168" y="0" style="STYLE_MENU_BUTTON_SML"
-		OnLeftClick=UIButton_Input_CharGenRecommend("LEVELUP","CHARGEN_SPELLS") ></UIButton>
+		OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_elu_spellrecommend") ></UIButton>
 		<UIButton name="CHOICE_NEXT" strref="113752" x="336" y="0" style="STYLE_MENU_BUTTON_SML" 			
 		OnLeftClick0=UIButton_Input_CharGenCommit("LEVELUP","CHARGEN_SPELLS") 				
 		update="true" ></UIButton>

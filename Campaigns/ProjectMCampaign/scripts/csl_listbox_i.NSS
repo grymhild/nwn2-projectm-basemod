@@ -30,6 +30,8 @@ object CSLCreateListBoxObject(object oChar, string sScreen, string sListBox, str
 void CSLDefineListBoxHeaders(object oListBoxObj, string sHeaderButtonName, string sClosedImage, string sOpenedImage);
 void CSLAddListBoxHeader(object oListBoxObj, string sRowName, string sHeaderText);
 void CSLAddListBoxRow(object oListBoxObj, string sRowName, string sTextFields, string sTextures, string sVariables, string sHideUnhide, int bVisible, string sHeader = "");
+string CSLGetListBowRowName(object oListBoxObj, int nIndex, string sHeader = "");
+int CSLGetListBoxRowVisible(object oListBoxObj, string sRowName);
 void CSLSetListBoxRowVisible(object oListBoxObj, string sRowName, int bVisible);
 void CSLRefreshListBox(object oListBoxObj);
 void CSLToggleListBoxHeader(object oListBoxObj, string sHeader);
@@ -150,6 +152,15 @@ void CSLAddListBoxRow(object oListBoxObj, string sRowName, string sTextFields, s
 	SetLocalString(oListBoxObj, sRowName, sVar);
 }
 
+//Gets the Rowname of the listbox by the current index and header if provided
+//Returns row name regardless if row is visible or not.
+string CSLGetListBoxRowName(object oListBoxObj, int nIndex, string sHeader = "")
+{
+	string sVar = sHeader + CHILDROW + IntToString(nIndex);
+	string sRowName = GetLocalString(oListBoxObj, sVar + CRNAME);
+	return sRowName;
+}
+
 //Gets the value set with CSLAddListBoxRow or CSLSetListBoxRowValue by sValueType.
 //valid sValueTypes are: 
 //TextFields
@@ -264,8 +275,9 @@ int CSLGetListBoxRowVisible(object oListBoxObj, string sRowName)
 	nChildRows = GetLocalInt(oListBoxObj, NONHEADER_ROWCOUNT);	
 	for(i = 0; i < nChildRows; i++)
 	{
-		if (GetLocalString(oListBoxObj, CHILDROW + IntToString(i) + CRNAME) == sRowName)		
-			return GetLocalInt(oListBoxObj, CHILDROW + IntToString(i) + CRVISIBLE);			
+		string sIndex =  IntToString(i);
+		if (GetLocalString(oListBoxObj, CHILDROW + sIndex + CRNAME) == sRowName)		
+			return GetLocalInt(oListBoxObj, CHILDROW + sIndex + CRVISIBLE);			
 	}
 	return 0;
 }

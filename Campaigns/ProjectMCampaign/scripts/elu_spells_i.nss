@@ -10,7 +10,6 @@ const string ADDED_SPELL_COUNT = "ADDED_SPELL_COUNT";
 const string ADDED_SPELL = "ADDED_SPELL";
 const string REMOVED_SPELL = "REMOVED_SPELL";
 
-
 void SetSpellPoolPointsAvailableByLevel(object oChar, int nLevel, int nPoints)
 {
 	int nSelectedClassID = GetLocalInt(oChar, LAST_SELECTED_CLASS);
@@ -64,7 +63,7 @@ string GetSpellSummaryText(object oChar)
 	return sText;
 }
 
-void AddSpell(object oChar, int nLevel, int nSpellID)
+int AddSpell(object oChar, int nLevel, int nSpellID)
 {
 	int nSpellPoints = GetSpellPoolPointsAvailableByLevel(oChar, nLevel);
 	int bReAddRemovedSpell = (GetLocalString(oChar, REMOVED_SPELL) == IntToString(nSpellID));
@@ -74,7 +73,13 @@ void AddSpell(object oChar, int nLevel, int nSpellID)
 		string sLevel = IntToString(nLevel);
 		object oLB1 = CSLGetListBoxObject(oChar, SCREEN_LEVELUP_SPELLS, CUSTOM_AVAILABLE_SPELL_LIST_ + sLevel);
 		object oLB2 = CSLGetListBoxObject(oChar, SCREEN_LEVELUP_SPELLS, CUSTOM_ADDED_SPELL_LIST_ + sLevel);		
-		
+		string sSpellID = IntToString(nSpellID);		
+		int bVisible = CSLGetListBoxRowVisible(oLB1, sSpellID);
+		if (bVisible == FALSE)
+		{
+			h2_LogMessage(H2_LOG_ERROR, "Attempt to add spell: " + sSpellID + ", was not visible on available list."); 
+			return FALSE;
+		}
 		if (!bReAddRemovedSpell)
 		{
 			int nAddedSpellCount = GetLocalInt(oChar, ADDED_SPELL_COUNT);
@@ -84,7 +89,6 @@ void AddSpell(object oChar, int nLevel, int nSpellID)
 		else
 			DeleteLocalString(oChar, REMOVED_SPELL);
 			
-		string sSpellID = IntToString(nSpellID);
 		CSLSetListBoxRowVisible(oLB1, sSpellID, FALSE);
 		CSLSetListBoxRowVisible(oLB2, sSpellID, TRUE);
 		nSpellPoints = nSpellPoints - 1;
@@ -92,7 +96,72 @@ void AddSpell(object oChar, int nLevel, int nSpellID)
 		SetGUIObjectText(OBJECT_SELF, SCREEN_LEVELUP_SPELLS, "POINT_POOL_TEXT", -1, IntToString(nSpellPoints));
 		CSLRefreshListBox(oLB1);
 		CSLRefreshListBox(oLB2);
+		return TRUE;
 	}
+	return FALSE;
+}
+
+void AllocateSpellsByPackage(object oChar, string spellpackage, int nSelectedClassID)
+{	
+	int nRows = GetNum2DARows(spellpackage);
+	int i = 0;
+	int nTotalSpells = 0;
+	if (nSelectedClassID == 10) //Wizard has a static quantity of spells
+	{
+		nTotalSpells = GetSpellPoolPointsAvailableByLevel(oChar, 0);
+		//TODO do something in here to check for spell school somehow if a wizard, and alter the package chosen
+	}
+	else
+	{		
+		for (i = 0; i < 10; i++)
+			nTotalSpells += GetSpellPoolPointsAvailableByLevel(oChar, i);
+	}
+	
+	object oSpellBook = CSLGetSpellBookByClass( nSelectedClassID );
+	for (i = 0; i < nRows; i++)
+	{
+		string sSpellID = Get2DAString(spellpackage, "SpellIndex", i);
+		int nSpellID = StringToInt(sSpellID);
+		int nLevel = StringToInt(CSLDataTableGetStringByRow(oSpellBook, "Level", nSpellID));
+		int nSpellsForLevel = GetSpellPoolPointsAvailableByLevel(oChar, nLevel);
+		if (nSpellsForLevel > 0)
+		{	//Recommended Spell known slot avialble, take this spell.
+			int bKnown = GetSpellKnown(oChar, nSpellID); //TODO: this needs to be able to check for class
+			if (!bKnown)
+			{
+				int bSuccess = AddSpell(oChar, nLevel, nSpellID);
+				if (bSuccess)
+					nTotalSpells--;
+			}
+		}
+		if (nTotalSpells <= 0)
+			return;
+	}		
+}
+
+void AddAllCantrips(object oChar)
+{
+	object oLB1 = CSLGetListBoxObject(oChar, SCREEN_LEVELUP_SPELLS, CUSTOM_AVAILABLE_SPELL_LIST_ + "0");
+	object oLB2 = CSLGetListBoxObject(oChar, SCREEN_LEVELUP_SPELLS, CUSTOM_ADDED_SPELL_LIST_ + "0");
+	int nIndex = 0;
+	string sSpellID = CSLGetListBoxRowName(oLB1, nIndex);
+	while (sSpellID != "")
+	{				
+		sSpellID = CSLGetListBoxRowName(oLB1, nIndex);
+		int nAddedSpellCount = GetLocalInt(oChar, ADDED_SPELL_COUNT);
+		SetLocalInt(oChar, ADDED_SPELL + IntToString(nAddedSpellCount), StringToInt(sSpellID));			
+		SetLocalInt(oChar, ADDED_SPELL_COUNT, nAddedSpellCount + 1);
+		int bVisible = CSLGetListBoxRowVisible(oLB1, sSpellID);		
+		if (bVisible)
+		{
+			CSLSetListBoxRowVisible(oLB1, sSpellID, FALSE);
+			CSLSetListBoxRowVisible(oLB2, sSpellID, TRUE);
+		}
+		nIndex++;
+		sSpellID = CSLGetListBoxRowName(oLB1, nIndex);
+	}
+	CSLRefreshListBox(oLB1);
+	CSLRefreshListBox(oLB2);
 }
 
 int CanSwapSpells(object oChar, int nLevel, int nSelectedClassID)
@@ -133,7 +202,7 @@ void RemoveSpell(object oChar, int nLevel, int nSpellID)
 	int bFound = FALSE;
 	int nSelectedClassID = GetLocalInt(oChar, LAST_SELECTED_CLASS);
 	if (nLevel == 0 && nSelectedClassID == 10)
-		return;	//Wizards cant remove cantrips
+		return;	//Wizards can't remove cantrips
 	for(i = 0; i < nAddedSpellCount; i++)
 	{
 		string s = IntToString(i);
@@ -179,12 +248,16 @@ void UpdateSpellListBoxes(object oChar, int nLevel)
 	}
 	int nPoints = GetSpellPoolPointsAvailableByLevel(oChar, nLevel);
 	SetGUIObjectText(OBJECT_SELF, SCREEN_LEVELUP_SPELLS, "POINT_POOL_TEXT", -1, IntToString(nPoints));
+	
+	int nSelectedClassID = GetLocalInt(oChar, LAST_SELECTED_CLASS);
+	if (nLevel == 0 && nSelectedClassID == 10)
+		AddAllCantrips(oChar);	//Wizards get all cantrips for free
 }
 
 int GetInitialSpellsAvailableByClassAndLevel(object oChar, int nClass, int nSpellLevel)
 {
 	int nLevels = CSLGetLevelsByClass(oChar, nClass);
-	if (nClass == 10) //Wizards are hardcoded. 2 spells per level or 3 _ Intmodifier 1st level spells at Level 1.
+	if (nClass == 10) //Wizards are hardcoded. 2 spells per level or 3 + Intmodifier 1st level spells at Level 1.
 	{
 		if (nLevels == 0)
 			return 3 + GetIntBonusPoints(oChar);
