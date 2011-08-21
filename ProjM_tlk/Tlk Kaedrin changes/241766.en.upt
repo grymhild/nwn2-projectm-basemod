@@ -1,0 +1,22 @@
+Type of Feat: Class
+Benefit: Upon reaching 5th level, you can call upon your deity for aid in the form of a celestial spirit. Using this ability is a standard action that does not provoke attacks of opportunity. See below for detailed spirit descriptions and rules.
+
+Your paladin level determines which kinds of celestial spirits answer your summons. You can summon the spirit available at your current level as well as any that became available at lower levels.
+
+Paladin Level
+5th: Spirit of Healing
+11th: Spirit of Combat 1/day
+16th: Spirit of Heroism 1/day
+20th: Spirit of the Fallen 1/day
+25th: Spirit of Heroism 2/day
+30th: Spirit of the Fallen 2/day
+
+Each spirit available to you can be summoned once per day. A spirit remains for a number of rounds equal to your paladin level (except for Spirit of Healing which provides a passive benefit).
+
+Spirit of Healing: This spirit increases your ability heal damage to you or your allies. This grants the Paladin the equivalent of two additional uses of Lay on Hands (healing version).
+
+Spirit of Combat: This spirit enhances combat ability. You and your allies within 10' when the spirit is summoned gain holy fervor. Holy fervor grants a +1 sacred bonus on attack and damage rolls for every four paladin levels you possess (up to a maximum of +7 at 28th level). This is an instantly activated ability. 
+
+Spirit of Heroism: You gain DR 10/-. In addition, you gain bonus hit points equal to your character level. This is an instantly activated ability.
+
+Spirit of the Fallen: You summon a celestial spirit to watch over you and your allies within 30 feet. You and your allies present when the spirit is summoned gain fast healing 10 and a ward against death. If those warded against death drop to 0 or fewer hps the spirit revives that character. The character revived heals an amount equal to twice your paladin level. This is an instantly activated ability.

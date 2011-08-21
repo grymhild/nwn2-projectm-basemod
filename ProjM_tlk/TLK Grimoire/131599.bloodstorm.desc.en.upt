@@ -1,0 +1,11 @@
+Evocation [Fear]
+Level: Sor/Wiz 3
+Components: V,S
+Casting Time: 1 full round
+Range: Medium (100 ft + 10 ft/level)
+Area: 25 ft diameter sphere
+Duration: 1 round/level
+Saving Throw: See Text
+Spell Resistance: Yes
+
+Blood Storm summons a whirlwind of blood that envelops the entire area of effect and has several effects on those caught within it.  First, those in the area of effect must make Reflex saving throws or be blinded by the swirling blood while they remain within the whirlwind and for 2d6 rounds after leaving it.  Second, all combatants within the bloodstorm fight at -4 to their attack rolls.  Third, the blood is slightly acidic, and causes 1d4 points of damage per round.  Finally, victims must make a Will saving throw or become frightened if 8HD or above or panicked if less than 8HD.

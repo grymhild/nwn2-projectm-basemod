@@ -1,0 +1,23 @@
+Caster Level(s): Druid 7
+Innate Level: 7
+School: Evocation
+Descriptor(s): Sonic
+Component(s): Verbal
+Range: Personal
+Area of Effect / Target: Gargantuan, centered on you
+Duration: Instant
+Additional Counter Spells:
+Save: None
+Spell Resistance: Yes
+
+Any lawful good, chaotic good, lawful evil, or chaotic evil creature who hears the word of balance suffers ill effects according to it's hit dice, according to the table below, with no saving throw.
+
+HD equal to caster level: Slowed
+HD up to caster level - 1: Weakened, Slowed
+HD up to caster level - 5: Paralyzed, Weakened, Slowed
+HD up to caster level - 10: Killed
+
+Slowed: target is slowed for 1 round
+Weakened: target's strength is reduced by 2d6 points for 2d4 rounds
+Paralyzed: target is paralyzed for 1d10 minutes
+Killed: target is killed (if living) or destroyed (if undead).

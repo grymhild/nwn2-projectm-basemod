@@ -1,0 +1,10 @@
+Type: Divine
+Prerequisite: Spirit Shaman, Lore 5.
+Special: This ability consumes one use of chastise spirits and has a 1 minute cooldown.
+Benefit: You make a Lore check and gain a bonus on attack rolls and damage rolls for 1 minute. 
+Check result 1-15 : +1 Bonus
+Check result 16-25 : +2 Bonus
+Check result 26-30 : +3 Bonus
+Check result 31-35 : +4 Bonus
+Check result 36+ : +5 Bonus
+Limitation: This ability will not work if you have any levels in bard, cleric, druid, sorcerer, or wizard.

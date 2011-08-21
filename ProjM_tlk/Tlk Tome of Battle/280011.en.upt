@@ -1,0 +1,59 @@
+<color=Gold><b>Warblade </b></color>
+
+The warblade was born for conflict. Swift, strong, enduring, and utterly confident in his martial skills, he seeks to test himself against worthy foes. Battle is beautiful to him-a perfect moment in which life hangs suspended on the bright edge of a sword. Sheer combat skill is important to a warblade, so he trains intensely with his chosen weapons. But even more important are his athleticism, endurance, daring, recklessness, and joy in the hour of danger. Warblades, often called sword princes, live for the chance to test themselves in battle-the stronger the foe, the greater the glory once an enemy is defeated.
+
+<color=Gold>Class Features:</color>
+
+- <b>Alignment Restrictions:</b> A warblade can choose any alignment, though many prefer chaotic over lawful.
+
+- <b>Hit Die:</b> d12
+
+- <b>Base Attack Bonus:</b> High.
+
+- <b>High Saves:</b>Fortitude.
+
+- <b>Weapon and Armor Proficiencies:</b> You are proficient with simple and martial melee weapons (including those that can be used as thrown weapons), light and medium armor, and all shields except tower shields.
+
+- <b>Skill Points:</b> 4 + Int modifier per level, x4 at first level.
+
+- <b>Class Skills:</b> Appraise, Concentration, Craft Alchemy, Craft Armor, Craft Trap, Craft Weapon, Diplomacy, Intimidate, Lore, Parry, Search, Taunt, and Tumble.
+
+- <b>Maneuvers:</b> You begin your career with knowledge of three martial maneuvers. The disciplines available to you are Diamond Mind, Iron Heart, Stone Dragon, Tiger Claw, and White Raven.
+
+Once you know a maneuver, you must ready it before you can use it.  A maneuver usable by warblades is considered an extraordinary ability unless otherwise noted in its description. Your maneuvers are not affected by spell resistance, and you do not provoke attacks of opportunity when you initiate one.
+
+Upon reaching 4th level, and at every even-numbered warblade level after that (6th, 8th, 10th, and so on), you can choose to learn a new maneuver in place of one you already know. In effect, you lose the old maneuver in exchange for the new one. You can choose a new maneuver of any level you like, as long as you observe your restriction on the highest-level maneuvers you know; you need not replace the old maneuver with a maneuver of the same level.  You can swap only a single maneuver at any given level.
+
+- <b>Maneuvers Readied:</b> You can ready all three of the maneuvers you know at 1st level, but as you advance in level and learn more maneuvers, you must choose which maneuvers to ready.
+
+You begin an encounter with all your readied maneuvers unexpended, regardless of how many times you might have already used them since you chose them. When you initiate a maneuver, you expend it for the current encounter, so each of your readied maneuvers can be used once per encounter (until you recover them, as described below).
+
+You can recover all expended maneuvers with a single swift action, which must be taken in the same round as a melee attack.  Doing anything else in this round (such as moving) will prevent the recovery.
+
+<i>Special Note:</i>  There is a six second delay after the initiation of the swift action until the recovery of the maneuvers is executed.  While not exactly in keeping with the original wording of Warblade recovery, it helps to prevent certain exploits that are possible with the way that NWN2's engine detects actions.  In either implementation of the rules, there is no way to use a standard or a swift action outside of the designated round for recovery, therefore I feel I am still well within the intent of this recovery mechanism.
+
+- <b>Stances Known:</b> You begin play with knowledge of one 1st-level stance from any discipline open to Warblades. At 4th, 10th, and 16th level, you can choose additional stances.  Unlike maneuvers, you cannot learn a new stance at higher levels in place of one you already know.
+
+- <b>Battle Clarity:</b> As long as you are not flat-footed, you gain an insight bonus equal to your Intelligence bonus (maximum equals your warblade level) on your Reflex saves.
+
+- <b>Weapon Aptitude:</b> You qualify for feats that usually require a minimum number of fighter levels (such as Weapon Specialization) as if you had a fighter level equal to two minus your warblade level.
+
+You also have the flexibility to adjust your weapon training.  After each rest you can change the designated weapon for any feat you have that applies only to a single weapon (such as Weapon Focus, but not Discipline Focus: Weapon Focus). The newly designated weapon is the weapon you have equipped. For example, if you wish to change the designated weapon for your Weapon Focus feat from greatsword to longsword, you must have a longsword equipped when you activate this feat.
+
+When you adjust a feat in this way, you adjust all of the feats that specifically require the weapon as a prerequisite.  For instance, if you have both Weapon Focus (longsword) and Weapon Specialization (longsword), you change the designated Weapon Focus and you also change the weapon for Weapon Specialization in the same way.
+
+- <b>Uncanny Dodge:</b> At 2nd level, you gain the ability to react to danger before your senses would normally allow you to do so. You retain your Dexterity bonus to AC (if any) even if you are caught flat-footed or struck by an invisible attacker. However, you still lose your Dexterity bonus to AC if you are immobilized.
+
+- <b>Battle Ardor:</b> Starting at 3rd level, you gain a bonus equal to your Intelligence modifier when you make rolls to confirm critical hits on maneuvers.  On half of your standard attacks, a separate roll is made and results in an occasional burst of damage if the roll would normally threaten and confirm a critical hit.  Your Intelligence modifier is added to the confirmation roll.  This results in the same amount of average damage over time as a direct increase to your critical confirmation modifier, but the damage is more reliably applied.
+
+- <b>Bonus Feats:</b> At 5th level, you gain a bonus feat.  Every four levels thereafter (at 9th, 13th, and 17th level), you choose another bonus feat from the list.
+
+- <b>Battle Cunning:</b> At 7th level, you gain an bonus equal to your Intelligence bonus on melee damage rolls against flat-footed or flanked opponents.
+
+- <b>Battle Skill:</b> You anticipate your enemies` ploys and tactics. At 11th level, you gain a bonus equal to your Intelligence modifier on any check made to oppose an enemy’s taunt, disarm, feint, parry, or knockdown attempt.
+
+- <b>Battle Mastery:</b> At 15th level, you gain a bonus equal to your Intelligence modifier on melee attack rolls and melee damage rolls made whenever you make an attack of opportunity.
+
+- <b>Improved Uncanny Dodge:</b> At 6th level and higher, you can no longer be flanked; you can react to opponents on opposite sides of you as easily as you can react to a single attacker.
+
+- <b>Stance Mastery:</b> At 20th level, you can have two stances active simultaneously.

@@ -1,0 +1,11 @@
+Necromancy
+Level: Sor/Wiz 1
+Components: V, S
+Range: Long
+Casting Time: 1 action
+Area of Effect: 1 living creature
+Duration: Instantaneous
+Saving Throw: None
+Spell Resistance: Yes
+
+With this spell the wizard drains the life force from a target and adds it to his own. The target creature suffers 1-4 points of damage, while the wizard gains the same number of hit points. If the wizard goes over his maximum hit point total with this spell, he loses them after 10 rounds.

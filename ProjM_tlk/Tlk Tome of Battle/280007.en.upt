@@ -1,0 +1,55 @@
+<color=Gold><b>Swordsage </b></color>
+
+A master of martial maneuvers, the swordsage is a physical adept-a blade wizard whose knowledge of the Sublime Way lets him unlock potent abilities, many of which are overtly supernatural or magical in nature. Depending on which disciplines he chooses to study, a swordsage might be capable of walking through walls, leaping dozens of feet into the air, shattering boulders with a single touch, or even mastering the elements of fire or shadow. Whatever his specific training, a swordsage blurs the line between martial prowess and magical skill.
+
+<color=Gold>Class Features:</color>
+
+- <b>Alignment Restrictions:</b> A Swordsage can choose any alignment.
+
+- <b>Hit Die:</b> d8
+
+- <b>Base Attack Bonus:</b> Medium.
+
+- <b>High Saves:</b> Reflex and Will.
+
+- <b>Weapon and Armor Proficiencies:</b> As a swordsage, you are proficient with simple weapons, martial melee weapons (including those that can be used as thrown weapons), and light armor, but not with shields.
+
+- <b>Skill Points:</b> 6 + Int modifier per level, x4 at first level.
+
+- <b>Class Skills:</b> Appraise, Craft Alchemy, Craft Armor, Craft Trap, Craft Weapon, Concentration, Heal, Hide, Intimidate, Listen, Lore, Move Silently, Parry, Spot, Spellcraft, Taunt, Tumble.
+
+- <b>Maneuvers:</b> You begin your career with knowledge of six martial maneuvers. The disciplines available to you are Desert Wind, Diamond Mind, Setting Sun, Shadow Hand, Stone Dragon, and Tiger Claw.
+
+Once you know a maneuver, you must ready it before you can use it.  A maneuver usable by swordsages is considered an extraordinary ability unless otherwise noted in its description. Your maneuvers are not affected by spell resistance, and you do not provoke attacks of opportunity when you initiate one.
+
+Upon reaching 4th level, and at every even-numbered swordsage level after that (6th, 8th, 10th, and so on), you can choose to learn a new maneuver in place of one you already know. In effect, you lose the old maneuver in exchange for the new one. You can choose a new maneuver of any level you like, as long as you observe your restriction on the highest-level maneuvers you know; you need not replace the old maneuver with a maneuver of the same level.  You can swap only a single maneuver at any given level.
+
+- <b>Maneuvers Readied:</b> You can ready four of your six maneuvers known at 1st level, and as you advance in level and learn more maneuvers, you are able to ready more, but you must still choose which maneuvers to ready.
+
+You begin an encounter with all your readied maneuvers unexpended, regardless of how many times you might have already used them since you chose them. When you initiate a maneuver, you expend it for the current encounter, so each of your readied maneuvers can be used once per encounter (unless you recover them, as described below).
+
+You can recover an expended maneuver by using a full round action to quickly meditate. Doing this does not provoke attacks of opportunity. If you complete your meditation, you can choose one expended maneuver to refresh. It is now available for use in a subsequent round.
+
+- <b>Stances Known:</b> You begin play with knowledge of one 1st-level stance from any discipline open to you. At 2nd, 5th, 9th, 14th, and 20th level, you can choose additional stances.  Unlike maneuvers, you cannot learn a new stance at higher levels in place of one you already know.
+
+- <b>AC Bonus:</b> Starting at 2nd level, you can add your Wisdom modifier as a bonus to Armor Class, so long as you wear light armor, are unencumbered, and do not use a shield. This bonus to AC applies even against touch attacks or when you are flat-footed. However, you lose this bonus when you are immobilized or helpless.  This bonus qualifies as a shield bonus and will not stack with abilities or spells that grant the same bonus.
+
+- <b>Discipline Focus:</b> As a swordsage, you can focus your training to take advantage of each discipline’s fighting style. Each time you gain the discipline focus ability, select one of the six swordsage disciplines to which that focus applies. You can select a different discipline each time you gain discipline focus, but you must know at least one martial maneuver from the selected discipline. Even if you select a different discipline at higher levels, your discipline choice for earlier abilities does not change.
+
+This focus manifests in the following ways.
+
+Weapon Focus: At 1st level, you gain the benefit of the Weapon Focus feat for weapons associated with the chosen discipline.
+
+Insightful Strikes: At 4th level, you can add your Wisdom modifier as a bonus on damage rolls whenever you execute a strike from the chosen discipline. At 12th level, you can choose a second discipline to which this ability applies.
+
+Defensive Stance: At 8th level, you gain a +2 bonus on saving throws whenever you adopt a stance from the chosen discipline.  At 16th level, you can choose a second discipline to which this ability applies.
+
+- <b>Improved Initiative:</b> At 5th level you gain Improved Initiative as a bonus feat.
+
+- <b>Sense Magic:</b> Gain a bonus to your Lore skill equal to one half your Swordsage level, once per day.
+
+- <b>Evasion:</b> At 9th level, you can avoid even magical and unusual attacks with great agility. If you make a successful Reflex saving throw against an attack that normally deals damage on a successful save, you instead take no damage. Evasion can be used only if you are wearing light armor or no armor. If you are helpless, you do not gain the benefit of evasion.
+
+- <b>Improved Evasion:</b> From 17th level on, you gain the benefit of improved evasion. You still take no damage if you make a successful Reflex save against an attack, and even if you fail the Reflex save, you take only half damage from the attack. If you are helpless, you do not gain the benefit of improved evasion.
+
+- <b>Dual Boost:</b> When you reach 20th level, you can use two boost maneuvers simultaneously. Whenever you initiate a boost maneuver, you can also initiate any other boost maneuver that you know as a free action. Both boosts you initiate are expended normally.  To use this ability, select the feat.  For a single round you can initiate two boosts.  You can use this ability three times per day.

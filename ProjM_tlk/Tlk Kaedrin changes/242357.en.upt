@@ -1,0 +1,7 @@
+Type of Feat: Class
+Specifics: Once per day, a hexblade can unleash a curse upon a foe as an instant action. The target of a hexblade's curse takes a -2 penalty on attacks, saves, skill checks, and armor class rolls for 1 hour. A successful Will save (DC 10 + 1/2 hexblade's class level + hexblade's Cha modifier) negates the effect and does not consume a use of the curse.
+
+At every odd level after 1st a hexblade gains the ability to use her curse one additional time per day. Multiple hexblade's curses do not stack and can be removed with a Remove Curse spell.
+When a hexblade attains 7th level, the penalty on attacks, saves, skill checks, and armor class rolls incurred by a target of the hexblade's curse becomes -4 instead of -2.
+When a hexblade attains 19th level, the penalty on attacks, saves, skill checks, and armor class rolls incurred by a target of the hexblade's curse becomes -6 instead of -4.
+Use: Selected

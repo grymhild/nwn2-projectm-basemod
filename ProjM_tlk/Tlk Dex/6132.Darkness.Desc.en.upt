@@ -1,0 +1,12 @@
+Caster Level(s): Bard 2, Cleric 2, Wizard / Sorcerer 2
+Innate Level: 2
+School: Evocation
+Descriptor(s): Darkness
+Component(s): Verbal
+Range: Long
+Area of Effect / Target: Huge
+Duration: 6 seconds / Level
+Save: None
+Spell Resistance: Yes
+
+All creatures within the area of effect are shrouded in a haze of darkness which can only be pierced using Ultravision or trueseeing. Those inside have a 20% miss chance. All light type spells lower in spell level than this spell are dispelled.

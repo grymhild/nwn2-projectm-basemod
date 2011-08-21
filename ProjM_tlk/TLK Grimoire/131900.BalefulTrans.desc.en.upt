@@ -1,0 +1,10 @@
+Conjuration (Teleportation)
+Level: Sor/Wiz 2
+Components: V
+Range: Medium
+Targets: Caster + 1 creature
+Duration: Instant
+Saving Throw: Will negates
+Spell Resistance: Yes
+
+You switch places with the target creature.  If the target creature is not a member of your party, it receives spell resistance and a will save to attempt to block the transposition.

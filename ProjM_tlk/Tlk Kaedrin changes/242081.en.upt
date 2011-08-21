@@ -1,0 +1,68 @@
+<color=Gold><b>Scout</b></color>
+
+Any force on the move, whether it's an army or an adventuring group, needs information about what's ahead and what's behind and, more important, time to prepare for battle. A scout can navigate difficult terrain at good speed, and she specializes in seeing her foe before the opponent ever detects her presence. In a dungeon or in the wild, a scout is seen only when she wants to be.
+
+This is a base class and has 30 levels.
+
+<color=Gold>Class Features:</color>
+
+- <b>Hit Die:</b> d8
+
+- <b>Base Attack Bonus:</b> Medium.
+
+- <b>High Saves:</b> Ref.
+
+- <b>Weapon Proficiencies:</b> All Simple and Rogue weapons.
+
+- <b>Armor Proficiencies:</b> Light armor.
+
+- <b>Skill Points:</b> 8 + Int modifier.
+
+- <b>Class Skills:</b> Craft Armor, Craft Weapon, Craft Trap, Diplomacy, Disable Device, Heal, Hide, Listen, Lore, Move Silently, Search, Set Trap, Spot, Survival, and Tumble.
+
+<color=Gold>Class Abilities:</color>
+
+Level 1: Sneak Attack +1d6, Trapfinding
+Level 2: Battle Fortitude, Uncanny Dodge
+Level 3: Dash, Swashbuckler Dodge +1 AC, Trackless Step
+Level 4: Bonus Feat
+Level 5: Evasion, Sneak Attack +2d6
+Level 6:
+Level 7: Swashbuckler Dodge +2 AC
+Level 8: Bonus Feat, Camouflage
+Level 9: Sneak Attack +3d6
+Level 10:
+Level 11: Swashbuckler Dodge +3 AC, Improved Initiative
+Level 12: Bonus Feat
+Level 13: Sneak Attack +4d6
+Level 14: Hide in Plain Sight
+Level 15: Swashbuckler Dodge +4 AC, Skirmisher
+Level 16: Bonus Feat
+Level 17: Sneak Attack +5d6
+Level 18: Free Movement
+Level 19: Swashbuckler Dodge +5 AC
+Level 20: Bonus Feat, Blind-Fight
+Level 21: Sneak Attack +6d6
+Level 22:
+Level 23: Bonus Epic Feat, Swashbuckler Dodge +6 AC
+Level 24:
+Level 25: Sneak Attack +7d6
+Level 26: Bonus Epic Feat
+Level 27: Skirmish +1 AC
+Level 28:
+Level 29: Bonus Epic Feat, Sneak Attack +8d6
+Level 30:
+
+Scouts gain bonus epic feats at 23rd, 26th, and 29th level.
+
+- <b>Battle Fortitude:</b> At 2nd level, a scout gains a +1 bonus on Fortitude saves. This bonus increases to +2 at 11th, +3 at 20th, and +4 at 29th.
+
+- <b>Skirmisher:</b> At 15th level, a Scout is consider a master skirmisher and qualifies for feats which require this title (Epic Skirmish I - V).
+
+- <b>Free Movement:</b> At 18th level and higher, a scout can slip out of bonds, grapples, and even the effects of confining spells easily. This ability duplicates the effect of a freedom of movement spell, except that it is always active.
+
+- <b>Skirmish:</b> At 27th level, a scout gains a +1 dodge AC bonus.
+
+Scout, Wilderness Stalker, and Swashbuckler levels stack for determining your Swashbuckler Dodge ability.
+
+New Feats: Swift Ambusher, Swift Hunter

@@ -1,0 +1,12 @@
+Shivering Touch
+Necromancy [cold]
+Level: Cleric 3, Sorceror/Wizard 3
+Components: V, S
+Casting Time: 1 Standard Action
+Range: Touch
+Target: Creature Touched
+Duration: 1 round/level
+Saving Throw: None
+Spell Resistance: Yes
+
+On a succesful melee attack, you instantly suck the heat from the target's body, rendering it numb. The target takes 3d6 points of Dexterity damage. Creatures with the cold subtype are immune to the effects of Shivering Touch.

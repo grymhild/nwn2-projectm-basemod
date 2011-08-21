@@ -1,0 +1,14 @@
+Stone Dragon (Strike)
+Level: Crusader 8, Swordsage 8, Warblade 8
+Prerequisite: Two Stone Dragon maneuvers
+Initiation Action: 1 standard action
+Range: 20 ft.
+Area: 20-ft. radius burst, centered on you
+Duration: Instantaneous
+Saving Throw: Reflex negates
+
+You channel <i>ki</i> into the earth with your mighty strike, causing the ground to rumble and shake briefly. Anyone standing on the ground in this maneuver's area must make a successful Reflex save (DC 18 + your Str modifier) or be knocked prone. Any creature in this area that is currently casting a spell must succeed on an opposed skill challenge of its Concentration check versus your Parry check or suffer from a spell failure effect for six seconds. 
+
+You are immune to the effect of the earthstrike quake maneuver. Your allies must still save as normal against its effect. 
+
+Walls and similar barriers don’t block the line of effect of an earthstrike quake.

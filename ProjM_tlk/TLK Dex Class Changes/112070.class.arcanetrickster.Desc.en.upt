@@ -1,0 +1,51 @@
+<color=Gold><b>Arcane Trickster</b></color>
+
+<color=Red>(PRESTIGE CLASS: This class is not available at character creation and must be unlocked by meeting special requirements, listed below.)</color>
+
+Arcane tricksters combine their knowledge of spells with a taste for intrigue, larceny, or just plain mischief. They are among the most adaptable of adventurers. Arcane spellcasting and the sneak attack ability are needed to qualify for this class, making it a natural choice for multiclass wizard/rogues or sorcerer/rogues. Assassins occasionally opt for this class, but usually only if they already have wizard or sorcerer levels.
+
+<color=Gold>Requirements:</color>
+
+<b>Alignment:</b> Any nonlawful.
+
+<b>Skills:</b> Lore 7 ranks, Disable Device 7 ranks, Tumble 7 ranks, Spellcraft 4 ranks.
+
+<b>Spellcasting:</b> Ability to cast at least one arcane spell of 3rd level or higher.
+
+<b>Special:</b> Sneak attack +2d6.
+
+<color=Gold>Class Features:</color>
+
+- <b>Hit Die:</b> d4
+
+- <b>Base Attack Bonus:</b> Low.
+
+- <b>High Saves:</b> Reflex and Will.
+
+- <b>Weapon Proficiencies:</b> None.
+
+- <b>Armor Proficiencies:</b> None.
+
+- <b>Skill Points:</b> 4 + Int Modifier.
+
+- <b>Class Skills:</b> Appraise, Bluff, Concentration, Craft Alchemy, Craft Trap, Craft Weapon, Diplomacy, Disable Device, Hide, Listen, Lore, Move Silently, Open Lock, Parry, Search, Set Trap, Sleight of Hand, Spellcraft, Spot, Taunt, and Tumble.
+
+- <b>Spells per Day/Spells Known:</b> When a new arcane trickster level is gained, the character gains new spells per day (and spells known, if applicable) as though he had gained a level in whatever arcane spellcasting class gave him access 3rd-level arcane spells. If the character has more than one applicable arcane spellcasting class, he must pick one to improve.
+
+- <b>Pilfer Magic:</b> At 1st level, once per day, the arcane trickster can dispel a magical effect on a target and receive statistical bonuses from it.  The ability is a touch attack "lesser" dispel that affects the most powerful effect currently on the target. If successful, the effect vanishes from the target and the arcane trickster receives +2 bonus to attack rolls and all saving throws for the next ten rounds.
+
+ Level 3 gains Lesser Pilfer Magic (lvl 3) once every 20 rounds (120 secs), +2 AB/Saves 
+ Level 5 gains Pilfer Magic (lvl 5) once every 15 rounds (90 secs), +3 AB/Saves 
+ Level 9 gains Greater Pilfer Magic (lvl 7) once every 10 (60 secs), +4 AB/Saves 
+ Dispel CasterLevel = AT Level * 3 
+ This uses the Dex Dispel Formula.
+ 
+ 
+ 
+- <b>Sneak Attack:</b> At every even-numbered level (2nd, 4,th, 6th, 8th, and 10th), the arcane trickster gains an additional +1d6 to his sneak attack damage. This ability stacks with sneak attack dice from other classes.
+
+- <b>Impromptu Sneak Attack:</b> Once per day, a 3rd-level arcane trickster can use this ability to deny an enemy his Dexterity bonus to AC for one round, allowing the target to be sneak attacked. The arcane trickster gains an additional daily use of this ability at 7th level, and again at 9th level.
+
+Level 3 can use once every 20 rounds (120 secs) 
+Level 5 can use once every 15 rounds (90 secs) 
+Level 9 can use once every 10 rounds (60 secs) 

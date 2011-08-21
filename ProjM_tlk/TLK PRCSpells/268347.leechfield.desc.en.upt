@@ -1,0 +1,9 @@
+School: Necromancy (Healing) [Negative]
+Components: V,S
+Range: Long
+Area: 40-ft.-radius spread
+Duration: 1 Round / Caster level
+Saving Throw: Will negates
+Spell Resistance: Yes
+
+Leech Field saturates all creatures in the area with 4d6 points of negative energy damage per round, and transfers any lost hit points over to you, effectively granting you a temporary hit point increase. Undead are affected in the reverse, as the negative energy heals them each round.

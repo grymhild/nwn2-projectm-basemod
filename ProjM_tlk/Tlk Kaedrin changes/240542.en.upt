@@ -1,0 +1,69 @@
+<color=Gold><b>Blackguard</b></color>
+
+<color=Red>(PRESTIGE CLASS: This class is not available at character creation and must be unlocked by meeting special requirements, listed below.)</color>
+
+The blackguard epitomizes evil. Consorting with demons and devils and serving dark deities, the blackguard is hated and feared by all. The blackguard has many options available to him--sending forth dark minions and servants to do his bidding, attacking with stealth and honorless guile, or straightforward smiting of the forces of good that stand in his way. Therefore, almost any class is suited to take the blackguard prestige class.
+
+<color=Gold>Requirements:</color>
+
+<b>Alignment:</b> Any evil.
+
+<b>Base Attack Bonus:</b> +6.
+
+<b>Skills:</b> Hide 5 ranks.
+
+<b>Feats:</b> Cleave, Power Attack.
+
+<color=Gold>Class Features:</color>
+
+- <b>Hit Die:</b> d10
+
+-<b>Base Attack Bonus:</b> High.
+
+- <b>High Saves:</b> Fortitude.
+
+- <b>Weapon Proficiencies:</b> Simple and martial weapons.
+
+- <b>Armor Proficiencies:</b> All types of armor (light, medium, and heavy) and shields (except for tower shields).
+
+- <b>Skill Points:</b> 2 + Int modifier.
+
+- <b>Class Skills:</b> Concentration, Craft Armor, Craft Trap, Craft Weapon, Diplomacy, Heal, Hide, Intimidate, Lore, and Parry.
+
+- <b>Smite Good:</b> Once a day, a blackguard of 2nd level or higher may attempt to smite a good-aligned enemy with one normal melee attack. The blackguard adds their Charisma bonus to the attack roll and adds 1 extra point of damage per class level. At 10th level they gain the Extra Smiting feat.
+
+- <b>Dark Blessing:</b> At 2nd level, the blackguard adds his Charisma bonus to all saving throws.
+
+- <b>Aura of Despair:</b> Beginning at 3rd level, the blackguard radiates a malign aura that causes enemies within 10 feet of him to take a -2 penalty on all saving throws.
+
+- <b>Turn Undead:</b> At 3rd level, the blackguard gains the ability to rebuke or destroy undead as a paladin of his class level.
+
+- <b>Create Undead:</b> At 3rd level, the blackguard can summon an undead minion to fight alongside him. At 7th level, the minion becomes more powerful.
+
+- <b>Summon Fiendish Servant:</b> At 5th level, the blackguard can summon a fiendish dire rat to serve as a scout or spy. The Blackguard gains the ability at 8th level to summon an immensely powerful Hell Hound from the lower planes. This beast is nearly the size of a Nessian Warhound and has the fiendish benefits of being a Blackguard's servant. It is a 12 HD creature with an 18 Spell Resistance and Damage Reduction 10/Magic. By virtue of it's increased size and strength it also wears a chain shirt as barding like the Nessian Warhound increasing it's survivability greatly. It's bite deals 2d6 damage plus d8 in fire damage along with the usual strength bonus. The servant is immune to fire. While a hell hound has a natural 50% vulnerability to cold, being a fiendish servant of the Blackguard has granted the hound a 10/- resistance to cold to minimize their vulnerability.
+
+- <b>Sneak Attack:</b> At 4th level, the blackguard gains the sneak attack ability. This ability functions exactly like the rogue ability of the same name. The bonus damage is +1d6 at 4th level, +2d6 at 7th level, and +3d6 at 10th level.
+
+- <b>Extra Smiting:</b> At 10th level, the blackguard gains Extra Smiting as a bonus feat.
+
+- <b>Spells:</b> Blackguards now get a number of spellbook feats that cast spells from a subradial set of choices. You gain bonus spells based on your natural Wisdom score.
+
+Bull's Strength now grants access to the following spells (cast from a subradial): Bull's Strength, Magic Weapon, Doom, and Cure Light Wounds.
+
+Inflict Serious Wounds is now granted at level 4 (instead of 6th) and grants access to the following spells (cast from a subradial): Inflict Serious Wounds, Cure Moderate Wounds, Veil of Shadow, Eagle's Splendor, and Death Knell.
+
+Contagion is now granted at level 6 (instead of 7th) and grants access to the following spells (cast from a subradial): Contagion, Cure Serious Wounds, Protection from Energy, and Summon Creature III.
+
+Inflict Critical Wounds change: The feat now grants access to the following spells (cast from a subradial): Inflict Critical Wounds, Cure Critical Wounds, Poison, and Freedom of Movement.
+
+Level   L1      L2      L3      L4
+1st 	0	— 	— 	—
+2nd 	1	— 	— 	—
+3rd 	1	0	— 	—
+4th 	1	1	— 	—
+5th 	1	1	0	—
+6th 	1	1	1	—
+7th 	2	1	1	0
+8th 	2	1	1	1
+9th 	2	2	1	1
+10th 	2	2	2	1

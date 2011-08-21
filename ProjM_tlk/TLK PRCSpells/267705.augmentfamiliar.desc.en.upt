@@ -1,0 +1,12 @@
+School: Transmutation
+Caster Level: Sorcerer/Wizard 2, Hexblade 1
+Components: V, S
+Range: Close
+Target: Your familiar
+Duration: Concentration + 1 round/level
+Saving Throw: Fortitude negates (harmless)
+Spell Resistance: Yes (harmless)
+
+This spell grants your familiar a +4 enhancement bonus to Strength, Dexterity and Constitution, damage reduction 5/+1, and a +2 resistance bonus on saving throws.
+
+(note that a Hexblade can't get a familiar due to NWN hardcoding, and it's unlikely that this changes)

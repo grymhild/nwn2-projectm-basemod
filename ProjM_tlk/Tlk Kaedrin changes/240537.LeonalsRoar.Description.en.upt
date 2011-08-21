@@ -1,0 +1,40 @@
+Caster Level(s): Druid 8
+Innate Level: 8
+School: Evocation
+Descriptor(s): Sonic
+Component(s): Verbal
+Range: 40'
+Area of Effect / Target: Enemies within 40'
+Duration: Varies (see details)
+Save: Fortitude partial (see details)
+Spell Resistance: Yes
+
+Any creature within the area of a Leonal's Roar spell suffers the following ill effects:
+
+2d6 Sonic damage. A successful Fortitude saving throw negates the sonic damage. 
+
+The effects of the Leonal's Roar are based on level:
+
+Equal to caster level: Deafened 
+Up to caster level -1: Blinded, Deafened 
+Up to caster level -5: Paralyzed, Blinded, Deafened 
+Up to caster level -10: Killed, paralyzed, Blinded, Deafened 
+
+The effects are cumulative and concurrent. 
+PCs can make a separate save at a -4 penalty to avoid the other effects of this spell but there is no save for monsters.
+
+Deafened
+The creature is Deafened for 1d4 rounds
+
+Blinded
+Blinded for 2d4 rounds. 
+
+Paralyzed
+The creature is paralyzed and helpless for 1d10 rounds, (1d4 rounds if PC). 
+
+Killed
+Living creatures die. Undead creatures are destroyed. 
+
+Furthermore, if you are on your home plane when you cast this spell, nongood extraplanar creatures within the area are instantly banished back to their home planes. Creatures so banished cannot return for at least 24 hours. This effect takes place regardless of whether the creatures hear the holy word. The banishment effect allows a Will save (at a -4 penalty) to negate. Non native Outsiders are banished (Will save -4 to negate). 
+
+Creatures whose Hit Dice exceed your caster level are unaffected by Leonal's Roar. Also Deafened creatures are immune to most of this spells effects.

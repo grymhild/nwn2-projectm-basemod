@@ -1,0 +1,11 @@
+Evocation [Fire]
+Level: Sor/Wiz 7
+Components: V, S
+Range: Medium
+Area of Effect / Target: Huge
+Duration: Up to 5 round delay
+Additional Counter Spells: 
+Save: Reflex 1/2
+Spell Resistance: Yes
+
+This spell functions like fireball, except that it is more powerful and can detonate up to 5 rounds after the spell is cast. The burst of flame deals 1d6 points of fire damage per caster level (maximum 20d6).  The caster chooses to delay the burst for as many as 5 rounds. The caster selects the amount of delay upon casting the spell, and that time cannot change once it has been set.

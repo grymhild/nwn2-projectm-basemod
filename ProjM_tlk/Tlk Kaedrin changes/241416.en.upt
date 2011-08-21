@@ -1,0 +1,5 @@
+Type of Feat: Spellcasting
+You can apply a selected metamagic feat to your spells more easily.
+Prerequisite: Spellcraft 8, Quicken Spell, Level 3 spells.
+Benefit: When applying the chosen metamagic feat to a spell, the spell uses a spell slot one level lower than normal for the applied metamagic feat.
+Use: Automatic.

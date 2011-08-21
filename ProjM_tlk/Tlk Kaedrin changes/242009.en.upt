@@ -1,0 +1,10 @@
+Evocation (Fire)
+Levels: Druid 6
+Components: V, S
+Range: Touch
+Target: Creature touched
+Duration: 1 round/level
+
+The creature you touch bursts into magical flames that do not harm the subject, but are capable of harming anyone else who comes into contact with the creature.
+
+The subject deals an extra 1 point of fire damage per caster level (maximum +10) with attacks. Creatures that make successful melee attacks against the subject take the same damage as the subject gains with it's attacks. The subject of fires of purity also gains 50% fire resistance.

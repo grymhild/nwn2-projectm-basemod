@@ -1,0 +1,58 @@
+<color=Gold><b>Paladin</b></color>
+
+Divine power protects the paladin and gives her special powers. It wards off harm, protects her from disease, lets her heal herself, and guards her heart against fear. A paladin can also direct this power to help others, healing their wounds or curing diseases. Finally, a paladin can use this power to destroy evil. Even a novice paladin can detect evil, and more experienced paladins can smite evil foes and turn away undead. 
+
+<color=Gold>Class Features:</color>
+
+- <b>Alignment Restrictions:</b> Lawful good. Paladins must be lawful good, and they lose their divine powers if they deviate from that alignment. 
+
+- <b>Hit Die:</b> d10
+
+- <b>Base Attack Bonus:</b> High.
+
+- <b>High Saves:</b> Fortitude.
+
+- <b>Weapon Proficiencies:</b> Simple and martial weapons.
+
+- <b>Armor Proficiencies:</b> All types of armor (heavy, medium, and light), and with shields (except tower shields). 
+
+- <b>Skill Points:</b> 2 + Int modifier per level,  x4 at first level.
+
+- <b>Class Skills:</b> Concentration, Craft Armor, Craft Weapon, Diplomacy, Heal, Lore, Parry, and Tumble.
+
+- <b>Smite Evil:</b> Once per day, a paladin may attempt to smite evil with one normal melee attack. She adds her Charisma bonus (if any) to her attack roll and deals 1 extra point of damage per paladin level. If the paladin accidentally smites a creature that is not evil, the smite has no effect, but the ability is still used up for that day. At 5th level, and at every five levels thereafter, the paladin may smite evil one additional time per day, to a maximum of five times per day at 20th level.
+
+- <b>Divine Grace:</b> At 2nd level, a paladin gains a bonus equal to her Charisma bonus (if any) on all saving throws.
+
+- <b>Lay on Hands:</b> Beginning at 2nd level, a paladin with a Charisma score of 12 or higher can heal wounds (her own or those of others) by touch. Each day she can heal a total number of hit points of damage equal to her paladin level times her Charisma bonus. For example, a 7th-level paladin with a 16 Charisma (+3 bonus) can heal 21 points of damage per day.
+
+- <b>Aura of Courage:</b> Beginning at 3rd level, a paladin is immune to fear (magical or otherwise). Each ally within 10 feet of her gains a +4 morale bonus on saving throws against fear effects.
+
+- <b>Divine Health:</b> At 3rd level, a paladin gains immunity to all diseases, including supernatural and magical diseases (such as mummy rot and lycanthropy).
+
+- <b>Turn Undead:</b> When a paladin reaches 4th level, she gains the ability to rebuke or destroy undead. She may use this ability a number of times per day equal to 3 + her Charisma modifier. She turns undead as a cleric of three levels lower would.
+
+- <b>Spells:</b> Beginning at 4th level, a paladin gains the ability to cast a small number of divine spells, which are drawn from the paladin spell list. A paladin must choose and prepare her spells in advance. To prepare or cast a spell, a paladin must have a Wisdom score equal to at least 10 + the spell level (Wis 10 for 0-level spells, Wis 11 for 1st-level spells, and so forth).
+
+- <b>Remove Disease:</b> At 6th level, a paladin can remove disease once per day. At 9th level and every three levels after that, the paladin can cure disease one more time per day.
+
+- <b>Divine Spirit:</b> At 5th level, a paladin is granted their alternate class feature instead of a mount: Divine Spirit.
+Benefit: Upon reaching 5th level, you can call upon your deity for aid in the form of a celestial spirit. Using this ability is a standard action that does not provoke attacks of opportunity. Your paladin level determines which kinds of celestial spirits answer your summons. You can summon the spirit available at your current level as well as any that became available at lower levels.
+
+Paladin Level
+5th: Spirit of Healing
+10th: Spirit of Combat 1/day
+15th: Spirit of Heroism 1/day
+20th: Spirit of the Fallen 1/day
+25th: Spirit of Heroism 2/day
+30th: Spirit of the Fallen 2/day
+
+Each spirit available to you can be summoned once per day. A spirit remains for a number of rounds equal to your paladin level (except for Spirit of Healing which provides a passive benefit).
+
+Spirit of Healing: This spirit increases your ability heal damage to you or your allies. This grants the Paladin the equivalent of two additional uses of Lay on Hands (healing version).
+
+Spirit of Combat: This spirit enhances combat ability. You and your allies within 10' when the spirit is summoned gain holy fervor. Holy fervor grants a +1 sacred bonus on attack and damage rolls for every four paladin levels you possess (up to a maximum of +7 at 28th level). This is an instantly activated ability. 
+
+Spirit of Heroism: You gain DR 10/-. In addition, you gain bonus hit points equal to your character level. This is an instantly activated ability.
+
+Spirit of the Fallen: You summon a celestial spirit to watch over you and your allies within 30 feet. You and your allies present when the spirit is summoned gain fast healing 10 and a ward against death. If those warded against death drop to 0 or fewer hps the spirit revives that character. The character revived heals an amount equal to twice your paladin level. This is an instantly activated ability.

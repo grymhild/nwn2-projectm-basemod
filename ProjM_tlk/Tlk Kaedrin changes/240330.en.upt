@@ -1,0 +1,14 @@
+Caster Level(s): Cleric 3
+Innate Level: 3
+School: Abjuration
+Descriptor(s):
+Component(s): Verbal, Somatic
+Range: Touch
+Area of Effect / Target: Living creature touched
+Duration: 10 min./level
+Save: None
+Spell Resistance: None
+
+The warded creature gains partial protection against negative energy effects.  Subtract 10 from the hit point damage dealt by any negative energy effect (such as <i>inflict</i> spells) that affects the warded creature.
+
+Negative energy effects that don't directly deal hit point damage (such as <i>energy drain</i>) affect the target normally.

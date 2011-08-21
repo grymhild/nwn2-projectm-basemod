@@ -1,0 +1,67 @@
+(TEMPLATE CLASS)
+Feared by mortal beings for their malign magic, their intelligence, and their willingness to embrace undeath for a chance to live forever, Liches are evil beings of great power.
+
+This template class is the evolution of an Arcane or Divine caster of level 11 or greater into the feared Lich. The progression of un-death is not to be taken lightly, and it may completely destroy the one who seeks it. The Lich does not gain any spells or caster levels, yet they gain heavy defenses.
+
+- Hit Die: d4
+- Proficiencies: A Lich does not gain any additional weapon or armor proficiencies.
+- Skill points: 0 + Int Modifier.
+As a template class:
+- No BAB increase.
+- No Save increase.
+
+REQUIREMENTS:
+
+Spells: Must be able to cast at least 6th level arcane or divine spells.
+Alignment: Any non-good.
+Feat: Craft Wondrous Item.
+Must not have any levels in Baelnorn.
+
+To gain lich powers:
+Creation of first stage of phylactery. (First level up in the Lich class, then create your phylactery useing the Craft Lich Items feat to gain your Lich powers. Each level, this phylactery must be upgraded. Costs 40,000 gold and 1,600 XP.)
+
+ABILITIES:
+
+Level
+1: Lich Properties +2 - Gain bonuses to Hide, Listen, Move Silently, Search, Persuade, and Spot.
+  Lich Touch - Touch attack causes 1d6+5 damage and possible paralyzation for 1d4 rounds.
+  Increased Defense - Gain Damage Resistance 5 to cold and electricity.
+  Intelligence +2
+2: Lich Properties +4 - Bonuses increase.
+  Lich Touch - Increases damage and duration of paralyzation.
+  Increased Defense - Gain Damage Reduction 5/+1, Natural Armor +3, and Damage Resistance 10 to cold and electricity.
+  Fear Aura
+3: Lich Properties +6 - Bonuses increase.
+  Lich Touch - Increases duration of paralyzation.
+  Increased Defense - Gain Damage Reduction 10/+1, Natural Armor +4, and Damage Resistance 20 to cold and electricity.
+  Wisdom +2
+4: Lich Properties +8 - Bonuses increase.
+  Lich Touch - Increases duration of paralyzation to permanent.
+  Increased Defense - Gain Damage Reduction 15/+1, Natural Armor +5, immunity to cold and electricity, and Turn Resistance +4.
+  Charisma +2
+  Constitution +12
+  Undeath
+
+In order to become a Demilich you must be a level 21 caster.
+Each level, you must create one soul gem in order to gain the powers for that level. You must also upgrade your phylactery. To gain the final level, you must have 8 soul gems.
+Soul gems cost 120,000 gold and 4,800 exp each gem. (Use the Craft Lich Items feat to create them)
+
+Level
+5: Lich Properties +10 - Bonuses increase.
+  Increased Defense - Damage Reduction 5/+5; Damage Resistance 5 to acid, fire, and sonic; Turn Resistance +5; and Immunity to Level 1 spells.
+  Intelligence, Wisdom, and Charisma +3
+6: Lich Properties +12 - Bonuses increase.
+  Increased Defense - Damage Reduction 10/+8; Damage Resistance 10 to acid, fire, and sonic; Turn Resistance +8; and Immunity to Level 3 spells and below.
+  Intelligence, Wisdom, and Charisma +4
+7: Lich Properties +14 - Bonuses increase.
+  Increased Defense - Damage Reduction 15/+11, Turn Resistance +11, Immunity to Level 5 spells and below.
+  Intelligence, Wisdom, and Charisma +6
+8: Lich Properties +16 - Bonuses increase.
+  Increased Defense - Damage Reduction 10/+14; Damage Resistance 15 to acid, fire, and sonic; Turn Resistance +14; and Immunity to Level 7 spells and below.
+  Intelligence, Wisdom, and Charisma +7
+9: Lich Properties +18 - Bonuses increase.
+  Increased Defense - Damage Reduction 25/+17, Turn Resistance +17, and Immunity to Level 8 spells and below.
+  Intelligence, Wisdom, and Charisma +8
+10: Lich Properties +20 - Bonuses increase.
+  Increased Defense - Damage Reduction 30/+20; Damage Resistance 20 to acid, fire, and sonic; Turn Resistance +20; and Immunity to Level 9 spells and below.
+  Intelligence, Wisdom, and Charisma +10

@@ -1,0 +1,19 @@
+Type of Feat: Class
+Prerequisite: Bard.
+Specifics: The very presence of a bard is a constant inspiration to his companions. Unlike bardic music, bardic inspirations are always active and do not have a limited number of uses, however, the bard may only use one inspiration at any given time. At 1st level, the bard can only inspire courage, but as he increases in level, he gains access to a variety of inspirations from which his companions (and himself) may benefit. There are seven types of inspirations:
+
+* <b>Inspire Courage (1st level):</b> This gives a bonus to hit and damage. It starts at +1, and becomes +2 at 8th level, +3 at 14th level, +4 at 20th level, and +5 at 26th level.
+
+* <b>Inspire Competence (2nd level):</b> This gives a skill bonus to all allies. It starts at +2 and becomes +4 at 11th level, +6 at 19th level, and +8 at 27th level.
+
+* <b>Inspire Defense (5th level):</b> This gives a dodge AC bonus to all allies. It starts at +2 and becomes +3 at 10th level, +4 at 15th level, +5 at 20th level, +6 at 25th level, and +7 at 30th level.
+
+* <b>Inspire Regeneration (7th level):</b> This heals all party members a certain number of hit points every round. This starts at 1 hit point per round, becomes 2 at 12th level, 3 at 17th level, 4 at 22nd level, and 5 at 27th level.
+
+* <b>Inspire Toughness (8th level):</b> This gives a bonus to saving throws for all allies. It starts at +1, then +2 at 13th level, +3 at 18th level, +4 at 23rd level, and +5 at 28th level.
+
+* <b>Inspire Slowing (11th level):</b> All enemies that come within 20 feet of the bard have to make a Will save (DC 13 + ½ Bard level + CHA modifier) otherwise they will be slowed down. Initially they are slowed down 15% but at 16th level they are slowed by 30%. There are no further penalties besides movement, unlike the <i>slow</i> spell.
+
+* <b>Inspire Jarring (14th level):</b> All enemies within 20' of the bard suffer a -4 penalty to all Discipline and Concentration checks and -2 to all Will saves.
+
+Use: Select the particular form of Inspiration to turn that power on (and turn off any Inspiration already in effect).

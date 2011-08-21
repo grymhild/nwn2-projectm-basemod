@@ -1,0 +1,16 @@
+Evocation [Force]
+Level: Force 3, Sorc/Wiz 2
+Components : V,S
+Casting Time: 1 Action
+Range: Medium
+Target: One Target
+Duration: Instant
+Save: Fort Partial
+SR: Yes
+Meta Magic: Still, Silent, Extend, Quicken, Maximize, Empower
+
+<i>Drawing upon magic in its purest form, you send invisible energy whistling through the air to batter your foe.</i>
+
+You must succeed on a ranged touch attack with the ray to strike a target. A blast of force deals 1d6 points of damage per 2 caster levels (maximum 5d6). In addition, a successful hit forces the subject to make a fortitude save or be knocked prone for one round.
+
+Taleron

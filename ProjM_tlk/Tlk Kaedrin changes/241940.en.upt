@@ -1,0 +1,8 @@
+Abjuration
+Levels: Paladin 4
+Components: V, S
+Range: Touch
+Target: Creature touched.
+Duration: 1 min./level
+
+You shield one creature in a nimbus of holy light. The creature gains a +2 dodge AC bonus. This spell may not be used on yourself.

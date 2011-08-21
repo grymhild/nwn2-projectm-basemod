@@ -1,0 +1,16 @@
+School:Abjuration
+Level:Sorc/Wiz 5
+Components :V,S
+Casting Time:1
+Range:Personal
+Effect:You
+Duration	:1 round / 3 Levels
+Saving Throw:n/a
+Spell Resist:n/a
+
+<i>Few legends even speak of the Steel Dragon, fewer still have any truth to them. What few steel dragons left in existance have left their draconic lives behind and are shapeshifted almost permanently into humanoid forms. Some sorcerers claim their powers come from a long ago dragon ancestor, one of the first Steel Dragons
+to hide himself away.</i>
+
+This spell grants you spell resistance 10 + your caster level. If you are a sorcerer it will also grant you a +5 resistance bonus on saving throws vs poison.
+
+Taleron

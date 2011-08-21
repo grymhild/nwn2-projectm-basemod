@@ -1,0 +1,14 @@
+Caster Level(s): Wizard / Sorcerer 7
+Innate Level: 7
+School: Necromancy
+Descriptor(s): Death
+Component(s): Verbal, Somatic
+Range: Short
+Area of Effect / Target: Single
+Duration: Instant
+Save: Fortitude partial
+Spell Resistance: Yes
+
+You must succeed on a ranged touch attack with the ray to strike a target.  If the attack succeeds, the subject is damaged and stunned for 1 round.  On a successful Fortitude saving throw, the subject is not stunned.
+
+Damage is the least of three possible damage amounts, half of its current hit points, 150 hit points, or the casters level * 10.

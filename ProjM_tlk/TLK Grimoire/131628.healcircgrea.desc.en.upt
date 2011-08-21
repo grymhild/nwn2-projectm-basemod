@@ -1,0 +1,12 @@
+Conjuration (Healing)
+Level: Clr 7, Drd 8, Healing 7
+Components: V,S
+Casting Time: 1 action
+Range: Personal
+Target: All living allies and undead creatures within a 3 ft/caster level radius burst centered on the caster
+Duration: Instantaneous
+Saving Throw: Fortitude half (harmless)
+Spell Resistance: Yes (harmless)
+
+The spell is similar to healing circle except as follows:
+Greater healing circle cures 2d8 points of damage +2 points per caster level (maximum of +40) to nearby living allies.  Like other cure spells, the greater healing circle damages undead in its area of effect.

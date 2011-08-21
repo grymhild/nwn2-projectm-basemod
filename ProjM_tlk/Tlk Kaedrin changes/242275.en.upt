@@ -1,0 +1,12 @@
+Caster Level(s): Cleric 5
+Innate Level: 5
+School: Transmutation
+Descriptor(s): Mind-Affecting
+Component(s): Verbal, Somatic
+Range: Personal
+Area of Effect / Target: Large
+Duration: 6 seconds / Level
+Save: No
+Spell Resistance: Yes
+
+You create an aura that steals energy from your enemies. Your enemies suffer a -2 circumstance penalty on saves, attack rolls, and damage rolls, once entering the aura. On casting, you gain a +1 circumstance bonus to your reflex saves, attack rolls, and dodge armor class. You also gain an additional attack every round (this extra attack does not stack with haste).

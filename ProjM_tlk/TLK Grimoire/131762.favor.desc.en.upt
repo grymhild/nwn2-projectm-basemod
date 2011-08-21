@@ -1,0 +1,14 @@
+Necromancy
+Level: Clr 4 (Ilmater), Pal 4
+Components: V, S
+Casting Time: 1 action
+Range: Medium
+Target: Willing Creature
+Duration: 1 minute/level or instantaneous
+Saving Throw: None
+Spell Resistance: Yes
+
+This spell has two possible effects:
+    Divine Fortitude:  The target becomes immune to charm effects and compulsions, and is immune to effects that would cause the target to be dazed or stunned.
+    Pact of Martyrdom:  You and the target exchange hit point totals.  This variant of the spell only works if you have more hit points than the target when the spell is cast.  If the target was unconscious and dying, you become unconscious and dying. 
+Clerics and paladins who don't worship Ilmater name this spell after their own deity - Favor of Torm, for example.

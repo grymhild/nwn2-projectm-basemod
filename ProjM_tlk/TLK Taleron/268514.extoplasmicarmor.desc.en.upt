@@ -1,0 +1,15 @@
+Abjuration 
+Level: Sorc/ Wiz 1
+Components : V
+Casting Time: 1 Action
+Range: Touch
+Target: Creature TOuched
+Duration: 1 hour / level
+Meta Magic: Still, Silent, Extend, Quicken, Persist
+
+<i>With a final word, a shimmering translucent slime appears around the target and fits its form like a suit of plate.</i>
+
+The subject of the spell gains a +5 armor bonus to AC, with an additional +1 to the bonus for every 4 caster levels you have (maximum +9 at 16th level). This armor bonus only applies against spirits. All other creatures ignore this bonus.
+~~(Sprits are defined as Incorperal Undead, Fey, and Elementals)
+
+Taleron

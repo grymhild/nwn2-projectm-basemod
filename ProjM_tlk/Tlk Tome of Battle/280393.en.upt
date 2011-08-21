@@ -1,0 +1,9 @@
+Stone Dragon (Strike)
+Level: Crusader 7, Swordsage 7, Warblade 7
+Prerequisite: Two Stone Dragon maneuvers
+Initiation Action: 1 standard action
+Range: Melee attack
+Target: One creature
+Saving Throw: Fortitude
+
+As part of this maneuver, you make a melee attack against your foe. This attack deals an extra 6d6 points of damage, and the creature struck must succeed on a Fortitude save (DC 17 + your Str modifier) or be hurled 1d4 squares away from you, falling prone in that square. A creature of a smaller size category than yours gets a -2 penalty on this save; a creature of a larger size category than yours gets a +2 bonus on the save. The enemy's movement doesn't provoke attacks of opportunity. If an obstacle blocks the creature's movement, it instead stops in the first unoccupied square.

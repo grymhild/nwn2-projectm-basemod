@@ -1,0 +1,11 @@
+Type of Feat: Class
+Specifics: At 6th level, you can heal the wounds of living creatures (your own or others) by touch. Each day you can heal a number of points of damage equal to twice your class level * your Charisma bonus. For example, a 7th-level dragon shaman with a Charisma score of 14 (+2 bonus) can heal 28 points of damage. It has no effect on undead. This ability can be used repeatedly until you run out of points (so you can heal a player for 20 points and then another for 8 points using the previous example).
+
+Beginning at 11th level your touch of vitality can remove status effects from your target. Damage is healed first, followed by curses, then poison, and finally negative levels, blindness, deafness, and disease.
+
+    * Curse: 20 points to remove.
+    * Poison: 10 points to remove.
+    * Negative Levels: 20 points to remove.
+    * Blindness: 20 points to remove.
+    * Deafness: 20 points to remove.
+    * Disease: 20 points to remove.

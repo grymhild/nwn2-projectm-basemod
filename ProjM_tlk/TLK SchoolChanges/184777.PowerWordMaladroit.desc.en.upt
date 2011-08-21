@@ -1,0 +1,16 @@
+Caster Level(s): Wizard / Sorcerer 3
+Innate Level: 3
+School: Enchantment
+Descriptor(s):
+Component(s): Verbal
+Range: Short
+Area of Effect / Target: One living creature with 75 hp or less 
+Duration: See text
+Save: None
+Spell Resistance: Yes
+
+You utter a single word of power that instantly causes one creature of your choice to become clumsier, dealing 2 points of damage to its Dexterity, whether the creature can hear the word or not.  The specific effect and duration of the spell depend on the target's current hit point total, as shown below.  Any creature that currently has 75 or more hit points is unaffected by power word maladroit.
+
+25 or less hit points - Dexterity drain
+26-50 hit points - lasts 1d4+1 minutes
+51-75 hit points - lasts 1d4+1 rounds

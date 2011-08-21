@@ -1,0 +1,15 @@
+Necromancy
+Level: Sor/Wiz 4
+Components: V,S
+Casting Time: 1 action
+Range: 50 ft
+Effect: 50-ft radius burst, centered on you
+Duration: Instantaneous (see text)
+Saving Throw: Will negates (see text)
+Spell Resistance: Yes
+
+You release a silent burst of negative energy from your body.
+You can affect up to 1d6 HD worth of undead creatures per level (maximum 15d6).  Those closest to you are affected first.  The spell can have one of two effects, which you select when you cast it.
+
+Rebuked: The undead creatures cower as if in awe. (Treat them as stunned.) The effect lasts 10 rounds.
+Bolstered: Undead creatures gain turn resistance of 1d4 plus your Charisma modifier (minimum +1). The effect lasts 10 rounds.

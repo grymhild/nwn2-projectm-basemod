@@ -1,0 +1,18 @@
+School: Enchantment
+Level: Clr 4, Rgr 4
+Components: V, DF
+Casting Time: 1 action
+Range: Close.
+Target: One Evil Creature.
+Duration: Instantaneous
+Saving Throw: Will Negates
+Spell Resistance: Yes
+
+The target creature takes Wisdom and Charisma damage equal to its Evil Power rating.
+
+Creature/Object     Evil Power
+Evil creature       HD / 5
+Undead creature     HD / 2
+Evil elemental      HD / 2
+Evil outsider       HD
+Cleric of an evil deity     Caster Level   

@@ -1,0 +1,13 @@
+Caster Level(s): Sorc/Wiz 4
+Innate Level: 4
+School: Necromancy
+Descriptor(s):
+Component(s): Verbal, Somatic
+Range: Medium
+Area of Effect / Target: Chain of targets in a straight line
+Duration: Instant
+Additional Counter Spells:
+Save: Reflex half
+Spell Resistance: Yes
+
+You conjure a bolt of black energy, the bolt deals constitution and strength damage to each creature in the area, each equal to 1d3 +1 per 4 caster levels (maximum 1d3+3). The drain recovers at the rate of 1 point per day but NOT through resting.

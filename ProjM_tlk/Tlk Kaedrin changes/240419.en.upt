@@ -1,0 +1,64 @@
+<color=Gold><b>Bladesinger</b></color>
+
+<color=Red>(PRESTIGE CLASS: This class is not available at character creation and must be unlocked by meeting special requirements, listed below.)</color>
+
+Bladesingers are elves who have blended art, swordplay, and arcane magic into a harmonious whole. In battle, a bladesinger's lithe movements and subtle tactics are beautiful, belying their deadly martial efficiency.
+
+Multiclass fighter/wizards are the most obvious candidates for the prestige class, although any elf who can wield a martial weapon and cast arcane spells can become a bladesinger. Bladesinger ranger/wizards, rogue/wizards, and even bards are not unknown.
+
+<color=Gold>Requirements:</color>
+
+<b>Feats:</b> Combat Casting, Combat Expertise, Dodge, Weapon Focus (longsword or rapier).
+
+<b>Base Attack Bonus:</b> +5
+
+<b>Race:</b> Elf or half-elf.
+
+<b>Skills:</b> Concentration 4, Tumble 2.
+
+<b>Spellcasting:</b> Able to cast arcane spells of 2nd level.
+
+<color=Gold>Class Features:</color>
+
+- <b>Hit Die:</b> d8
+
+- <b>Base Attack Bonus:</b> High.
+
+- <b>High Saves:</b> Ref, Will.
+
+- <b>Weapon Proficiencies:</b> None.
+
+- <b>Armor Proficiencies:</b> Light.
+
+- <b>Skill Points:</b> 2 + Int modifier.
+
+- <b>Class Skills:</b> Bluff, Concentration, Craft Weapon, Craft Alchemy, Craft Armor, Craft Trap, Lore, Parry, Perform, Spellcraft, Tumble.
+
+<color=Gold>Class Abilities:</color>
+
+Level 1: Bladesong Style, Spellcasting Progression
+Level 2: Skill Focus: Concentration, Mobility
+Level 3: 
+Level 4: Song of Celerity 1/day
+Level 5: Spring Attack
+Level 6: Armored Caster
+Level 7: 
+Level 8: Song of Celerity 2/day, Battle Caster
+Level 9: 
+Level 10: Song of Fury
+
+- <b>Spellcasting Progression:</b> At each odd bladesinger level (1, 3, 5, 7, and 9), the character gains new spells per day (and spells known, if applicable) as if she had also gained a level in a spellcasting class she belonged to before adding the prestige class.  If a character had more than one arcane spellcasting class before becoming a bladesinger, she must decide which class she increases when she gains a level.
+
+- <b>Bladesong Style:</b> When wielding a longsword or rapier in one hand (and nothing in the other), a bladesinger gains a dodge bonus to Armor Class equal to her class level, up to a maximum of her Intelligence bonus. If the bladesinger wears medium or heavy armor, she loses all benefits of the bladesong style. This bonus will not stack with the AC bonus granted by Invisible Blade or Duelist.
+
+- <b>Mobility:</b> At 2nd level, a bladesinger gains Mobility as a bonus feat.
+
+- <b>Song of Celerity:</b> Once per day, a bladesinger of 4th level or higher may grant her party the benefits of the haste spell for a number of rounds equal to three times her class level. At 8th level this increases to two uses per day.
+
+- <b>Spring Attack:</b> At 5th level, a bladesinger gains Spring Attack as a bonus feat.
+
+- <b>Armored Caster:</b> At 6th level, bladesingers do not suffer spell failure penalties while wearing light armor. However, they suffer the full arcane spell failure penalties from casting spells while wearing medium or heavy armor, or while equipped with shields.
+
+- <b>Battle Caster:</b> At 8th level, bladesingers do not suffer spell failure penalties from wearing medium armor. However, they suffer the full arcane spell failure penalties from casting spells while wearing heavy armor or while equipped with shields.
+
+- <b>Song of Fury:</b> When a 10th-level bladesinger makes a full attack with a longsword or rapier in one hand (and nothing in the other), she can make one extra attack in a round at her highest base attack bonus, but this attack and each other attack made in that round take a -2 penalty.

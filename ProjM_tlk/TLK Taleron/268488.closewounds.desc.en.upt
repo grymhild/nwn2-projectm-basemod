@@ -1,0 +1,18 @@
+Conjuration [Healing]
+Level: Cleric 2
+Components : V
+Casting Time: 1 Action
+Range: Close
+Target: One Creature
+Duration: Instant
+Save: Will half
+SR: Yes
+Meta Magic:  Silent, Empower, Maximize, Quicken
+
+<i>Your ally falls from a crushing blow, but you don't have time to reach him. You quickly speak words of power, and the worst of his injuries glow golden and begin to heal.</i>
+
+This spell cures 1d4 points of damage per caster level (maximum +5).
+If you cast this spell on a subject bleeding to death it return them to 1 hp regardless of how close to death the were.
+Used against and undead creature, close wounds deals damage instead of curing the creature.
+
+Taleron

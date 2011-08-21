@@ -1,0 +1,13 @@
+Caster Level(s): Druid 3
+Innate Level: 3
+School: Necromancy
+Descriptor(s): Negative
+Component(s): Verbal, Somatic
+Range: Touch
+Area of Effect / Target: Creature touched
+Duration: Instantaneous
+Additional Counter Spells:
+Save: Fortitude negates
+Spell Resistance: Yes
+
+You inflict 1d6 points of damage,  +1 per caster level  to the living creature touched and gain an equal amount of hit points. You may not gain more Hit Points than your maximum with the Healing Sting.

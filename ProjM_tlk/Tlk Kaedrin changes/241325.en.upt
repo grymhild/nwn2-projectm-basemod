@@ -1,0 +1,12 @@
+Caster Level(s): Sorcerer/Wizard 4
+Innate Level: 4
+School: Conjuration
+Descriptor(s): Sound
+Component(s): Verbal, Somatic
+Range: Close
+Area of Effect / Target: Single
+Duration: Instant
+Save: Fortitude partial
+Spell Resistance: No
+
+An orb of sound about 3 inches across shoots from your palm at its target, dealing 1d4 points of sound damage per caster level (maximum 15d4). You must succeed on a ranged touch attack to hit your target. A creature struck by the orb takes damage and becomes deafened by the sound for 1 round. A successful Fortitude save negates the deafened effect but does not reduce the damage.

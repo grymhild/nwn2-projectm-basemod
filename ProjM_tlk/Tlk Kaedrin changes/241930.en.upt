@@ -1,0 +1,5 @@
+Type: Divine
+Prerequisite: Spirit Shaman
+Special: This ability consumes two uses of chastise spirits.
+Benefit: You can direct a bolt of spiritual energy as a ranged touch attack against a target. If this attack hits, it deals 1d6 points of magic damage per two character levels.
+Limitation: This ability will not work if you have any levels in bard, cleric, druid, sorcerer, or wizard.

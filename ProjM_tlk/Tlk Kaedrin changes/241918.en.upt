@@ -1,0 +1,5 @@
+Type: Divine
+Prerequisite: Blackguard, Turn Undead
+Special: This ability consumes three uses of turn undead and has a 1 minute cooldown.
+Benefit: As a swift action, you can cause one of your melee weapons to radiate negative energy for 1 minute. When you make a successful attack with this weapon, the target must succeed on a Fortitude save (DC 10 + 1/2 your character level + your Cha modifier) or gain a negative level (which stacks). You can bestow a maximum of one negative level per target for every four character levels (maximum 5 at 20th level).
+Limitation: This ability will not work if you have any levels in bard, cleric, druid, sorcerer, or wizard.

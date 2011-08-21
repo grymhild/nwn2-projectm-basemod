@@ -1,0 +1,47 @@
+<color=Gold><b>Thayan Knight</b></color>
+
+<color=Red>(PRESTIGE CLASS: This class is not available at character creation and must be unlocked by meeting special requirements, listed below.)</color>
+<b>Description:</b>
+While the Red Wizards of Thay are not opposed to blasting their opponents with deadly spells or shredding the minds of their enemies with dark magic, there are times when they need protectors who have mastered the art of swordplay. These protectors are the Thayan Knights, familiar with magic and loyal to none but the tattooed mages.
+
+
+Requirements:
+Race:  Human.
+Alignment:  Any Nongood.
+Base Attack Bonus:  +5
+Skills:  Intimidate 2 ranks, Lore 4 ranks.
+Feats:  Iron Will, Weapon Focus(Long Sword)
+Special:  Sworn Allegiance to the Red Wizards of Thay.
+
+
+Class Skills:
+Bluff, Climb, Craft, Gather Information, Handle Animal, Intimidate, Jump, Knowledge(arcana), Knowledge(Thay local), Profession, Ride, Spot, and Swim.
+
+
+Skill Points at Each Level: 2 + Int modifier.
+
+
+Thayan Knight:
+Level  BAB  Frt  Ref  Will  Special
+1           +1   +2   +0   +0     Horror's of Thay, Zulkir's Favor
+2           +2   +3   +0   +0     Zulkir's Defender
+3           +3   +3   +1   +1     Fighter Feat
+4           +4   +4   +1   +1     Horror's of Thay, Final Stand
+5           +5   +4   +1   +1     Zulkir's Champion
+
+
+Class Features:
+
+Weapon and Armor Proficiency:  Tower Shields
+
+Horrors of Thay (Ex):  Because of long exposure to the cruelty of her homeland, a Thayan Knight gains a +2 morale bonus on saving throws against fear effects and a +1 morale bonus on saving throws against charm effects.  At fourth level, these bonuses increase to +4 and +2, respectively.  None of these bonuses apply against attacks from Red Wizards.
+
+Zulkir's Favor (Su):  At first Level, a Thayan Knight Undergoes a long and painful tattoing ritual.  A magic tatoo, place either on the back or the forehead, provides a +2 risistance bonus on Reflex saves.  The tatto also marks the knight as someone loyal to the Red Wizards.  The knight automatically fails any saving throw against a mind-affecting spell cast by a Red wizard.  
+
+Zulkir's Defender (Ex):  A Thayan Knight of second level or higher gains a +2 morale bonus on attack rolls and damge rolls against any creature that attacks her or that she has previously seen attack a Red Wizard.
+
+Fighter Feat:  At 3rd level, a Thayan Knight may choose one feat except Weapon Specialization from the fighter bonus feat list.
+
+Final Stand (Su):  Once per day as a standard action, a Thayan Knight of  4th level or higher can inspire her troops.  Allies witin 10 feet of the knight gain 2d10 temporary hitpoints.  This ability affects a number of creatres equal to the knights class level plus Charisma modifier and lasts the same number of rounds.
+
+Zulkir's Champion (Su):  A 5th-level Thayan knight recieves a large magic tattoo across her face, signifying her devotion to the protection of Red Wizards.  Once per day, she can add a +2 luck bonus on a single saving throw.  This bonus can be taken after the die is rolled and after other modifiers have been applied to the roll.  When the tattoo is visible, the knight gains a +4 morale bonus on Intimidate checks as an extaordinary ability.

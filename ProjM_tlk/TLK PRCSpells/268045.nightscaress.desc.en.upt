@@ -1,0 +1,9 @@
+School: Necromancy [Evil]
+   Level: Sorc/Wiz 5
+   Compnents: V,S
+   Range: Touch
+   Duration: Instantaneous
+   Save: Fortitude partial
+   Spell Resistance: Yes
+
+   A touch from your hand, which sheds darkness like  the blackest of night, disrupts the life force of a living creature.  Your touch deals 1d6 points of   damage per caster level (max 15d6), and 1d6+2 points of Constituion damage (a sucessful Fortitude saving throw negates the Constitution damage.)  The spell has a special effect on an undead creature.  An undead touched by you takes no damage, but it must make a successful Will saving throw or flee as if panicked for 1d4 rounds + 1 round per caster level.

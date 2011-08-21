@@ -1,0 +1,12 @@
+Necromancy 
+Level: Clr 9, Destruction 9 
+Components: V,S 
+Casting Time: 1 action 
+Range: Touch 
+Target: Creature touched 
+Duration: Instantaneous 
+Saving Throw: Fortitude negates 
+Spell Resistance: yes 
+
+Incapacitate works as Harm (reduces to 1d4 hit points or 10 times caster level damage, max 150, depending upon rules being used) and permanently reduces all of its ability scores to 3. This spell will not reduce a creature below 1 hp.  This damage cannot be healed by normal means; only a combination of heal and greater restoration, or more powerful magic, can restore the target's hit points and abilities. 
+If the target is undead, the spell heals all but 1d4 hit points of damage (or 10 times caster level, max 150) to the target, similar to a harm spell, and restores any ability damage the target has suffered.

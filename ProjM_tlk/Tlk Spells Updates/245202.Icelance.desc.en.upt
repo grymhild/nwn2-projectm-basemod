@@ -1,0 +1,14 @@
+Caster Level(s): Druid 3, Wizard / Sorcerer 3
+Innate Level: 3
+School: Conjuration
+Descriptor(s): Cold
+Component(s): Verbal, Somatic
+Range: Medium
+Area of Effect/Target: One icy missile.
+Duration: Instantaneous
+Saving Throw: Fortitude partial
+Spell Resistance: Yes
+
+You must succeed on a ranged touch attack. If you hit, the icelance deals 6d6 points of damage to the target. Half of this damage is piercing damage, the rest is cold damage. In addition, the target must make a Fortitude save or be stunned for 1d4 rounds.
+
+This spell gains the benefit of Sneak Attack or Death Attack when appropriate.

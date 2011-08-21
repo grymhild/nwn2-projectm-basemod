@@ -1,0 +1,15 @@
+Abjuration 
+Level: Sor/Wiz 4 
+Components: V, S 
+Casting Time: 1 action 
+Range: Personal 
+Target: You 
+Duration: 3 rounds/level or until expended 
+
+Spells (and spell-like effects) targeted against you rebound on the original caster. The abjuration turns only spells that have you as a target. Effect and area spells are not affected. Spell turning also fails to affect touch range spells. Thus a charm person cast at you could be turned back upon and possibly enable you to charm the caster, but a fireball could not be turned back, and neither could Inflict Critical Wounds. 
+From one to four (1d4) spell levels are affected by the turning. Each spell turned subtracts its level from the amount of spell turning left. Spells of higher level than what is remaining to be turned are not affected. If you and a spellcasting attacker are both warded by spell turning effects in operation, a resonating field is created. The following results may occur: 
+d% Effect 
+01-70 Spell drains away without effect 
+71-80 Spell affects both of you at full effect 
+81-97 Both turning effects are removed 
+98-00 Both casters die.

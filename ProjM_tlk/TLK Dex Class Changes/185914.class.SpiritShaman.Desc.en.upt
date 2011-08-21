@@ -1,0 +1,48 @@
+<color=Gold><b>Spirit Shaman</b></color>
+
+Master of the spirit world, the spirit shaman follows a different divine tradition than the cleric or druid. Her world is filled with powerful, living spirits, some helpful and some malign. By bargaining with these spirits, the spirit shaman gains power over the natural world and mighty divine magic with which to aid her comrades or smite her enemies. Creatures which are considered spirits include fey, elementals, and incorporeal undead such as wraiths and shadows.
+
+<color=Gold>Class Features:</color>
+
+- <b>Hit Die:</b> d8
+
+- <b>Base Attack Bonus:</b> Medium.
+
+- <b>High Saves:</b> Fortitude and Will.
+
+- <b>Weapon Proficiencies:</b> Club, dagger, dart, handaxe, spear, quarterstaff, sling, shortbow, throwing axe, and light crossbow.
+
+- <b>Armor Proficiencies:</b>  Light armor and shields (except tower shields).
+
+- <b>Skill Points:</b> 4 + Int modifier per level,  x4 at first level.
+
+- <b>Class Skills:</b> Concentration, Craft Alchemy, Diplomacy, Heal, Lore, Listen, Spellcraft, Spot, and Survival
+
+- <b>Spells:</b> A spirit shaman casts divine spells, which are drawn from the druid spell list. Unlike the druid, a spirit shaman does not have to memorize his spells in advance, but he is only able to learn a limited number of spells. To cast a spell, a spirit shaman must have a Wisdom score equal to at least 10 + the spell level (Wis 10 for 0-level spells, Wis 11 for 1st-level spells, and so forth). A spirit shaman's Charisma determines the Difficulty Check of his spells.
+
+- <b>Spirit Guide:</b> Spirit shamans have a spirit guide, a personification of the spirit world, which exists only inside her mind and soul. The spirit guide grants the spirit shaman the Alertness feat at 1st level.
+
+- <b>Chastise Spirits:</b> Beginning at 2nd level, a spirit shaman can deal 1d4 damage/shaman level to all spirits within 30 feet of herself. The affected spirits get a Will save (DC 10 + spirit shaman level + Charisma modifier) for half damage. This ability can be used a number of times per day equal to 3 + the shaman's Charisma modifier.
+
+- <b>Detect Spirits:</b> At 3rd level, the spirit shaman gains the ability to use her spirit guide to detect any nearby spirits. Detected spirits will appear on the minimap. This effect lasts for 10 minutes.
+
+- <b>Blessing of the Spirits:</b> At 4th level, the spirit shaman gains a +2 deflection bonus to AC and a +2 resistance bonus on saves against attacks and effects made by spirits. This effect may be dispelled, but the spirit shaman can reactivate it at will.
+
+- <b>Follow the Guide:</b> A spirit shaman's spirit guide helps her maintain control of her mind.  At 5th level, if a spirit shaman is affected by a mind-affecting spell or effect and fails her saving throw, she can attempt it again immediately at the same DC. She only gets this one extra chance to succeed on her saving throw. This ability does not stack with similar abilities granted by other classes the spirit shaman may have.
+
+- <b>Ghost Warrior:</b> At 6th level, the spirit shaman is able to strike spirits with unerring accuracy. The spirit shaman ignores all concealment and miss chance effects when fighting against spirits.
+
+- <b>Warding of the Spirits:</b> At 7th level, the spirit shaman is able to grant his party members a +2 deflection bonus to AC and a +2 resistance bonus on saves against attacks and effects made by spirits. This ability is usable once per day and lasts for 10 minutes per shaman level. The effects from this ability do not stack with the spirit shaman's Blessing of the Spirits effect.
+
+- <b>Spirit Form:</b> At 9th level, the spirit shaman gains the ability to become temporarily incorporeal once per day, gaining a 50% concealment bonus for 5 rounds. The spirit shaman can use this ability twice per day at 15th level, and three times per day at 20th level.
+
+- <b>Recall Spirit:</b> At 11th level, the spirit shaman gains the ability to restore life to the recently deceased once per day. This effect is similar to the <i>raise dead</i> spell.
+
+- <b>Weaken Spirits:</b> At 16th level, the spirit shaman can choose to strip all spirits within 30 feet of herself of their defensive abilities by expending a daily use of her Chastise Spirits ability. When a spirit is weakened, it loses its spell resistance, any damage reduction, and any miss chance or concealment effect it may have. This weakening effect lasts for 1 round plus 1 additional round for every 3 spirit shaman levels. Spirits that make their Will save (DC 10 + spirit shaman level + Charisma modifier) are unaffected by the weakening effect.
+
+- <b>Spirit Journey:</b> At 17th level, the spirit shaman gains the ability to vanish bodily into the spirit world once per day. This effect lasts for 1 round per spirit shaman level, and during this time the spirit shaman cannot attack or be attacked.
+
+- <b>Favored of the Spirits:</b> At 19th level, the spirit shaman can perform a special rite to guard herself from death. Under this protection, the spirit shaman instantly heals 10 hit points per spirit shaman level, up to 150 hit points, if she is reduced to 0 hit points. Once the rite's protection has been discharged, the spirit shaman must rest to regain the favor of the spirits.
+
+- <b> Spirit Who Walks:</b> At 20th level, the spirit shaman becomes one with the spirit world. She gains damage reduction 5/cold iron, a +3 resistance bonus to saves against enchantments, and the Low-light Vision feat if she doesn't already have it.
+

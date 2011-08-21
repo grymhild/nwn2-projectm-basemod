@@ -1,0 +1,11 @@
+Abjuration
+Level: Clr 3
+Components: S
+Casting Time: 1 Action
+Range: Medium (100 ft + 10 ft/level)
+Target: One shadow creature
+Duration: Instantaneous
+Saving Throw: Will partial (see text)
+Spell Resistance: Yes
+
+This spell is used to banish a creature of the Plane of Shadow (shadow, shadow mastiff, etc.) back to that plane.  The target receives a Will save.  A successful save means the subject is not banished, but it still sustains 3d4+1/level (maximum +10) damage.

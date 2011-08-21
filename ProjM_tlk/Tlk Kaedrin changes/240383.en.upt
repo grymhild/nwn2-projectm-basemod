@@ -1,0 +1,5 @@
+Type of Feat: General
+Benefit: When using a crossbow for which you have the Weapon Focus feat, you gain a bonus on damage rolls equal to 1/2 your Dexterity bonus.
+Use: Automatic.
+
+Note: There is a cmi_options.2da entry that allows the full dex bonus to be added as a damage bonus.

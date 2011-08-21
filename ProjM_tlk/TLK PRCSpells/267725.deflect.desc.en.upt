@@ -1,0 +1,12 @@
+School: Illusion (Phantasm) [Mind-Affecting]
+Caster Level: Bard 1, Hexblade 1
+Components: V, S
+Range: Close
+Target: One creature
+Duration: 1 round/level
+Saving Throw: Will negates
+Spell Resistance: Yes
+
+You create the sensation in the subject's mind that it is threatened by more foes than it actually faces. A creature affected by this spell is considered flanked, even if not threatened by other creatures. A creature that can't be flanked is immune to this spell.
+
+(due to the way NWN is set up, you can't sneak attack a target affected by this spell, as you could in PnP)

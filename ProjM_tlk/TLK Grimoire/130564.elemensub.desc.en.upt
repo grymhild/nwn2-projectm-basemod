@@ -1,0 +1,5 @@
+Type of Feat: Metamagic
+Prerequisite: One of: Empower Spell, Extend Spell, Maximize Spell, Quicken Spell or Silent Spell; Lore - 5 ranks
+Specifics:  Choose one type of energy: acid, cold, electricity, fire, or sonic.  You can modify a spell with an energy desiginator (ie [Fire]) to use the chosen type of energy instead.  A substituted spell works normally in all respects, except the type of damage dealt.
+A substituted spell uses a spell slot of the spell's normal level, modified by any other metamagic feats.  You can gain this feat multiple times, each time it applies to a different type of energy.
+Game Usage: You must trigger this feat prior to casting the spell for which you wish to substitute the given energy type.  The substitution will remain in effect for all energy spells until you toggle the feat "off".

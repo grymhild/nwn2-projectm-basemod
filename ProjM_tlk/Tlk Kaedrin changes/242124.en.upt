@@ -1,0 +1,53 @@
+<color=Gold><b>Daggerspell Shaper</b></color>
+
+<color=Red>(PRESTIGE CLASS: This class is not available at character creation and must be unlocked by meeting special requirements, listed below.)</color>
+
+In a reclusive monastery in the heart of an ancient forest, a varied group of druids and arcane spellcasters train together. The adherents of this monastery work to perfect a unique fighting and spellcasting style that relies on wielding a pair of daggers at all times. Some of these students - known as daggerspell shapers - blend the fighting style with druid magic, spinning a deadly web of steel in front of them as they perform powerful feats of natural magic, or blending their daggers into the claws and talons of their wild-shaped forms.
+
+Daggerspell shapers see the precise martial powers of their twin-dagger style and their magic as an extension of one powerful philosophy. The shapers seek truth in all things, believing that you can seperate right from wrong and nature from corruption with the clean slice of a blade. Although never numerous, shapers are respected as judges, warriors, and defenders of the weak.
+
+Almost every daggerspell shaper begins her career as a druid, taking a level or two of rogue after a few successful adventures. These individuals are drawn to the exotic fighting style and balanced ideals of the guild. Although most daggerspell shapers are primarily spellcasters, some have more complicated multiclass pathways that include ranger or barbarian levels. These shapers follow all the precepts of the guild, but they are more likely to defend nature with the steel of their daggers than with their spells.
+
+This class provides spellcasting progression in Divine based casters.
+
+<color=Gold>Requirements:</color>
+
+<b>Alignment:</b> Any nonevil.
+<b>Feats:</b> Weapon Focus (dagger), Two-Weapon Fighting, Wildshape
+<b>Skills:</b> Concentration 8.
+<b>Special:</b> Sneak Attack 1d6 (or equivalent)
+
+<color=Gold>Class Features:</color>
+
+- <b>Hit Die:</b> d6
+- <b>Base Attack Bonus:</b> Medium.
+- <b>High Saves:</b> Ref, Will.
+- <b>Weapon Proficiencies:</b> None.
+- <b>Armor Proficiencies:</b> None.
+- <b>Skill Points:</b> 6 + Int modifier.
+- <b>Class Skills:</b> Craft Weapon, Craft Armor, Concentration, Heal, Hide, Listen, Lore, Move Silently, Spellcraft, Spot, Survival, and Tumble.
+
+<color=Gold>Class Abilities:</color>
+
+Level 1: Daggercast, Wild Shape (1/day), Spellcasting Progression
+Level 2: Dagger Claws
+Level 3: Sneak Attack +1d6
+Level 4: Wild Shape (2/day)
+Level 5: 
+Level 6: Sneak Attack +2d6
+Level 7: Wild Shape (3/day)
+Level 8:
+Level 9: Sneak Attack +3d6
+Level 10: Daggerspell Flurry, Wild Shape (4/day)
+
+- <b>Spellcasting:</b> At each level except 2nd, you gain new spells per day and an increase in caster level (and spells known, if applicable) as if you had also gained a level in a divine based spellcasting class to which you belonged before adding the prestige class level. You do not, however, gain any other benefit a character of that class would have gained. If you had more than one divine spellcasting class before becoming a daggerspell shaper, you must decide which class to progress in.
+
+- <b>Sneak Attack:</b> Beginning at 3rd level, a daggerspell shaper deals an extra dice of sneak attack. It increases to two dice at 6th level and three dice at 9th level.
+
+- <b>Daggercast: When making a melee touch attack spell the shaper uses her dagger to deliver the spell, adding her right hand's dagger damage to the spells (base dagger damage plus any enhance bonus). Supported spells are Cause Light Wounds, Cause Moderate Wounds, Cause Serious Wounds, Harm, and the reserve feat Clap of Thunder.
+
+- <b>Wild Shape: Daggerspell shaper class levels stack with druid levels (along with Lion of Talisid and Nature's Warrior) to determine wild shape abilities. A daggerspell shaper gains one additional daily use of her wild shape ability at 1st level, 4th level, 7th level, and 10th level.
+
+- <b>Dagger Claws: When a daggerspell shaper of 2nd level or higher uses wild shape, she adds the enhance bonus from the dagger she is holding in her right hand into the natural attacks of her new form.  
+
+- <b>Daggerspell Flurry: A 10th-level daggerspell shaper can blend spellcasting with a flurry of dagger attacks. When delivering a touch attack spell and wielding daggers, the daggerspell shaper adds each of her dagger's damage (base damage plus any enhance bonus) to the touch spell's damage. This replaces the Daggercast ability by adding both daggers damage instead of the main hand's damage. Supported spells are Cause Light Wounds, Cause Moderate Wounds, Cause Serious Wounds, Harm, and the reserve feat Clap of Thunder. Each dagger's damage is applied separately of the touch spell's affect.

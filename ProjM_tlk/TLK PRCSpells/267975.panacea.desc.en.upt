@@ -1,0 +1,12 @@
+Caster Level(s): Cleric 4, Druid 5
+Innate Level: 4
+School: Conjuration
+Descriptor(s):
+Component(s): Verbal, Somatic
+Range: Touch
+Area of Effect / Target: Single
+Duration: Instant
+Additional Counter Spells:
+Save: Will half
+Spell Resistance: Yes
+This spell channels positive energy into a creature to wipe away afflictions. It immediately ends any of the following effects: blinded, confused, dazed, deafened, diseased, frightened, paralyzed, poisoned, sleep, and stunned. It also cures 1d8 points of damage +1 per caster level (maximum 1d8+20). Used against undead, panacea deals damage instead of curing it (with a will save for half), but has no other effect.

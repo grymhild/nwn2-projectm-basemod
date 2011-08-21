@@ -1,0 +1,11 @@
+Transmutation
+Level: Sor/Wiz 4
+Components: V,S
+Casting Time: 1 action
+Range: Touch
+Target: Construct touched
+Duration: Instantaneous
+Saving Throw: None
+Spell Resistance: Yes (harmless)
+
+As Repair Light Damage, except Repair Critical Damage repairs 4d8 points of damage +1 point per caster level (up to +20).

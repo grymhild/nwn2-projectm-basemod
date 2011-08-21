@@ -1,0 +1,11 @@
+Evocation
+Level: Sor/Wiz 3
+Components: S
+Casting Time: 1 action
+Range: Medium (100 ft + 10 ft/level)
+Effect: Ray
+Duration: Instantaneous
+Saving Throw: Fortitude halves
+Spell Resistance: Yes
+
+This spell creates a black, pulsating bolt of shadowstuff, which is hurled at an opponent.  The caster must make a ranged touch attack.  If hit, the target sustains 1d6 damage/level (maximum 12d6) unless a Fortitude save is successful, in which case, only half damage is sustained.

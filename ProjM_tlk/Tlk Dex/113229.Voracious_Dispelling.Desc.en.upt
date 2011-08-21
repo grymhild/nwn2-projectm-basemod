@@ -1,0 +1,4 @@
+Invocation Type: Lesser
+Spell Level Equivalent: 4
+
+This spell attempts to strip all magical effects from a single target. To dispel an effect, you make a caster level check (d100() + AdjurationFocuses(3-6) + ( CasterLevel*2) + CasterStatBonus - 5 * (9-DispelLevel) ) against a DC of (70 + Abjuration Bonus + (Creator Level*2) + Creator Stat Bonus ) the caster level of the targeted spell's caster). You make a caster level check for each effect on the target. If any spells on the target are dispelled, the target takes 3 points of damage per two spell levels of the caster (no save, but spell resistance applies).

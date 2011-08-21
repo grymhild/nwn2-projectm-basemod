@@ -1,0 +1,14 @@
+Caster Level(s): Bard 2, Druid 2
+Innate Level: 2
+School: Evocation
+Descriptor(s): [Light, Fire]
+Component(s): Verbal, Somatic
+Range: Close (25 ft + 5 ft./2 levels)
+Area of Effect / Target: Living creatures within a 5-ft.-radius burst
+Duration: 1 round/level
+Save: Fortitude partial
+Spell Resistance: Yes
+
+Outlined creatures do not benefit from the concealment normally provided by darkness, blur, displacement, invisibility, or similar effects.  In addition, if they fail a Fortitude save, affected creatures take 1d4 points of fire damage each round as their passions manifest as physically damaging fire.  Creatures that make a successful Fortitude save take only half damage each round for the duration of the spell (minimum 1 point per round).
+
+<i>A flickering red fire bursts in the area you intended.  Creatures in the area are outlined in the flame, some more intensely than others.</i>

@@ -1,0 +1,12 @@
+Caster Level(s): Wizard / Sorcerer 3
+Innate Level: 3
+School: Transmutation
+Descriptor(s): Weapon Enchantment
+Component(s): Verbal, Somatic
+Range: Short
+Area of Effect / Target: Creature, Piercing, or Slashing Weapon
+Duration: 10 Minutes / Level
+Save: None
+Spell Resistance: No
+
+This spell adds the Keen property to the targeted piercing or slashing weapon, increasing its critical threat range. When cast on a creature, this spell grants the Keen property to its equipped weapon if it is of the appropriate type. This effect does not stack with the Improved Critical feat or other effects that increase the threat range of a weapon.

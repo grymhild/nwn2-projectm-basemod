@@ -1,0 +1,16 @@
+Caster Level(s): Cleric 3, Sorcerer/Wizard 3
+Innate Level: 3
+School: Transmutation  
+Descriptor(s): [Energy]
+Component(s): Verbal, Somatic
+Range: Touch
+Area of Effect / Target: Weapon touched
+Duration: 1 round/level
+Save: None
+Spell Resistance: No
+
+You cause a weapon to gain the ability to deal energy damage in addition to its other abilities, similar to how a flaming burst weapon deals extra fire damage on a hit or critical hit.  The weapon can deal acid, cold, electricity, or fire damage, chosen by you at the time of casting.  The weapon deals an extra 1d6 points of damage of that energy type on a successful hit.  The weapon also gains the massive criticals property.
+
+The spell can be cast on a weapon that already deals energy damage, and if the weapon already creates the same type of damage as the spell, the effects stack.
+
+<i>Your hand glows slightly.  With a touch, you transfer the glow from your hand onto the intended weapon.</i>

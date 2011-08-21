@@ -1,0 +1,12 @@
+Caster Level(s): Wizard / Sorcerer 5
+Innate Level: 5
+School: Conjuration
+Descriptor(s): Acid
+Component(s): Verbal, Somatic
+Range: Long
+Area of Effect/Target: 10 ft. radius burst
+Duration: Instantaneous
+Save: Reflex Special (see description)
+Spell Resistance: No
+
+You conjure a sizzling emerald sphere that drenches all within the area with a potent acid. Affected creatures take 1d4 points of acid damage per caster level (maximum 15d4) and must succeed on a Reflex save or risk taking damage in the following 2 rounds (6d4 points of damage in the second round and 3d4 points of damage in the third round). Both rounds of continuing damage are subject to Reflex saves for half damage; if an affected creature succeeds on its second Reflex save, it takes no acid damage in the third round.

@@ -1,0 +1,54 @@
+<color=Gold><b>Dragonslayer</b></color>
+
+<color=Red>(PRESTIGE CLASS: This class is not available at character creation and must be unlocked by meeting special requirements, listed below. This class has 10 levels.)</color>
+
+They come from all walks of life, from all cultures and societies. They may be poor or wealthy, strong or wise, good or evil, skilled with blade or spell. But all dragonslayers share a singular courage and strength of heart, a necessary commodity in their line of work.
+
+<color=Gold>Requirements:</color>
+
+<b>Base Attack Bonus:</b> +5.
+<b>Feats:</b> Dodge, Iron Will.
+<b>Skills:</b> Tumble 2.
+
+<color=Gold>Class Features:</color>
+
+- <b>Hit Die:</b> d10
+- <b>Base Attack Bonus:</b> High.
+- <b>High Saves:</b> Fort, Will.
+- <b>Weapon Proficiencies:</b> Simple and Martial.
+- <b>Armor Proficiencies:</b> All armor and shields (including Tower Shields).
+- <b>Skill Points:</b> 2 + Int modifier.
+- <b>Class Skills:</b> Craft Armor, Craft Weapon, Intimidate, Lore, Parry, Search, and Tumble.
+
+<color=Gold>Class Abilities:</color>
+
+Level 1: Aura of Courage, Damage Bonus (vs Dragons), Spellcasting Progression
+Level 2: True Strike 1/day, Spell Penetration
+Level 3: DR 1/-
+Level 4:
+Level 5: Energy Resistance 5
+Level 6: DR 2/-, Lightning Reflexes
+Level 7: Greater Spell Penetration
+Level 8:
+Level 9: DR 3/-
+Level 10: Energy Resistance 10, True Strike 2/day
+
+- <b>Spellcasting: At each odd level (1, 3, 5, 7, 9), you gain new spells per day and an increase in caster level (and spells known, if applicable) as if you had also gained a level in an arcane, divine, or invocation based spellcasting class to which you belonged before adding the prestige class level. You do not, however, gain any other benefit a character of that class would have gained. If you had more than one spellcasting class before becoming a dragonslayer, you must decide which class to progress in. Eldritch Blast progresses for Warlocks when a level granting spellcasting progression is gained. This includes Assassin, Avenger, and Blackguard.
+
+- <b>Aura of Courage:</b> At 1st level, a dragonslayer gains immunity to fear. Allies within 10 feet of the dragonslayer gain a +4 bonus on saving throws against fear effects.
+
+- <b>Damage Bonus:</b> A dragonslayer gains a bonus on weapon damage rolls against dragons equal to his class level.
+
+- <b>True Strike:</b> At 2nd level, a dragonslayer may use true strike once per day. At 10th level, a dragonslayer may use true strike twice per day.
+
+- <b>Spell Penetration:</b> A dragonslayer gains Spell Penetration as a bonus feat at 2nd level.
+
+- <b>Damage Reduction:</b> At 3rd level, a dragonslayer gains damage reduction 1/-. This improves to damage reduction 2/- at 6th level, and to damage reduction 3/- at 9th level. This damage reduction only stacks with the DR granted by Greater Resiliency and the epic damage reduction feats.
+
+- <b>Energy Resistance:</b> At 5th level, a dragonslayer gains resistance to acid 5, cold 5, electricity 5, fire 5, and sonic 5. These resistances improve to 10 at 10th level.
+
+- <b>Lightning Reflexes:</b> A dragonslayer gains Lightning Reflexes as a bonus feat at 6th level.
+
+- <b>Greater Spell Penetration:</b> A dragonslayer gains Greater Spell Penetration as a bonus feat at 7th level.
+
+

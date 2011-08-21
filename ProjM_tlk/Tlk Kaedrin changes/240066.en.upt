@@ -1,0 +1,12 @@
+Caster Level(s): Cleric 4, Paladin 4
+Innate Level: 4
+School: Necromancy  
+Descriptor(s):
+Component(s): Verbal, Somatic
+Range: Medium (100' + 10'/level)
+Area of Effect / Target: Target Creature
+Duration: None
+Save: None
+Spell Resistance: No
+
+You may transfer your own hit points directly to a target creature within range.  You must transfer at least 20 points.  Transferred hit points are damage to you.  The creature takes your transferred hit points as if receiving a <i>cure wounds</i> spell and cannot gain more hit points than its maximum allows; any excess points are lost.

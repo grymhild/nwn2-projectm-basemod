@@ -1,0 +1,9 @@
+School: Transmutation
+Components: V,S
+Range: Touch
+Target: Creature touched
+Duration: 20 hours
+Saving Throw: None (harmless)
+Spell Resistance: No (harmless)
+
+You grant the subject touched spell resistance 35 until the duration expires. The spell resistance granted does not stack, but overlaps with, any previous spell resistance.

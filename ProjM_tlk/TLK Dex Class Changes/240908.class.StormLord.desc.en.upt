@@ -1,0 +1,45 @@
+<color=Gold><b>Stormlord</b></color>
+
+<color=Red>(PRESTIGE CLASS: This class is not available at character creation and must be unlocked by meeting special requirements, listed below.)</color>
+
+Stormlords wield thunder and lightning like a warrior wields his sword. Because of their command of one of the most destructive aspects of nature, stormlords are viewed with awe and fear by lesser folk, regardless of their motivation.
+
+<color=Gold>Requirements:</color>
+
+<b>Base Save Bonus:</b> Fortitude +4
+
+<b>Feats:</b> Toughness, Great Fortitude, and Weapon Focus (Spear, Throwing Axe, Dart, or Shuriken).
+
+<b>Spellcasting:</b> Able to cast 3rd-level divine spells.
+
+<color=Gold>Class Features:</color>
+
+- <b>Hit Die:</b> d8
+
+- <b>Base Attack Bonus:</b> Medium.
+
+- <b>High Saves:</b> Fortitude and Will.
+
+- <b>Weapon Proficiencies:</b> Stormlords gain no weapon proficiencies.
+
+- <b>Armor Proficiencies:</b> Stormlords gain no armor proficiencies.
+
+- <b>Skill Points:</b> 2 + Int Modifier.
+
+- <b>Class Skills:</b> Bluff, Concentration, Craft Alchemy, Diplomacy, Intimidate, Lore, Spellcraft, and Survival.
+
+- <b>Spells per Day/Spells Known:</b> When a new stormlord level is gained, the character gains new spells per day (and spells known, if applicable) as though he had gained a level in whatever divine spellcasting class gave him access to 3rd-level divine spells. If the character has more than one applicable divine spellcasting class, he must pick one to improve.
+
+- <b>Electricity Resistance:</b> At 1st level, a stormlord gains electrical resistance 5. This increases to electrical resistance 10 at 4th level and electrical resistance 15 at 7th level.
+
+- <b>Enhanced Stormlord Weapons:</b> At 1st level, the stormlord's thrown weapons and spears count as +1 weapons. This bonus increases to +2 at 6th level and +3 at 9th level.
+
+- <b>Shock Weapon:</b> At 2nd level, a stormlord may enchant any equipped thrown weapon or spear to deal an additional 1d8 points of electricity damage.  This effect lasts 20 rounds.
+
+- <b>Shocking Burst Weapon:</b> At 5th level, a stormlord may enchant any equipped thrown weapon or spear to deal an additional 1d8 points of electricity damage and an extra 2d8 points of weapon damage on a critical hit (4d8 if the critical multiplier is x3, 6d8 if the critical multiplier is x4).  This effect lasts 20 rounds.
+
+- <b>Shocking Burst and Sonic Weapon:</b> At 8th level, the stormlord may enchant any equipped thrown weapon or spear to deal an additional 1d8 points of electrical damage, an extra 1d8 points of sonic damage, and an extra 2d8 points of weapon damage on a critical hit (4d8 if the critical multiplier is x3, 6d8 if the critical multiplier is x4). This effect lasts 20 rounds.
+
+- <b>Electricity Immunity:</b> At 9th level, the stormlord gains immunity to electrical damage.
+
+- <b>Extended Storm Avatar:</b> At 10th level, the stormlord can cast <i>storm avatar</i> as if he were a druid with a caster level equal to his character level. This ability is usable once per day and otherwise functions as the 8th-level druid spell of the same name, lasting twice the normal duration.

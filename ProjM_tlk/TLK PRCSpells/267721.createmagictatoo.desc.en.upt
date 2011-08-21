@@ -1,0 +1,29 @@
+Caster Level(s): Sorc/Wiz 2
+Innate Level: 2
+School: Conjuration
+Descriptor(s):
+Component(s): Verbal, Somatic
+Range: Touch
+Area of Effect / Target: Creature touched
+Duration: 24 hours
+Additional Counter Spells:
+Save: None
+Spell Resistance: No
+
+Create magic tattoo creates a single magic tattoo. The caster determines the exact type of tattoo created, though the selection allowed is limited by the caster's level. Creating a tattoo requires a lore skill check, the DC depending on the exact tattoo created. A single creature may only have 3 tattoos at any one time. Once a creature has 3 tattoos additional tattoos fail.
+
+The following tattoos may be created, all require a lore skill check, DC10:
+
++2 to one saving throw type.
++1 to attack rolls.
++1 deflection bonus to AC.
+
+The following tattoos may be created by casters of level 7 or higher, all require a lore skill check, DC15.
+
++2 to all saving throws.
++2 to attack rolls.
+
+The following tattoos may be created by casters of level 13 or higher, all require a lore skill check, DC20.
+
+Spell resistance of 10 + 1 / 6 caster levels.
++2 to any one ability score.

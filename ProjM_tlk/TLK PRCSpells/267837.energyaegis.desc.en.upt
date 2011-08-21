@@ -1,0 +1,11 @@
+Caster Level(s): Cleric/Duskblade/Sorcerer/Wizard 3
+Innate Level: 3
+School: Abjuration
+Component(s): Verbal
+Range: Close
+Area of Effect / Target: One creature
+Duration: 1 round
+Saving Throw: Will negates (harmless)
+Spell Resistance: Yes (harmless)
+
+When you cast Energy Aegis, specify an energy type (acid, cold, electricity, fire, or sonic). Against the next attack using this energy type that targets the subject, it gains resistance 20.

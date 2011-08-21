@@ -1,0 +1,5 @@
+Type of Feat: Class
+Prerequisite: Frenzied Berserker level 1
+Specifics: The frenzied berserker gains this ability at 1st level. Frenzy works like a modified version of the barbarian's rage ability. It adds a +6 bonus to Strength (no Constitution bonus), imposes a -4 penalty to AC,  and gives the frenzied berserker a single extra attack at his highest Base Attack Bonus (this does not stack with Haste or other effects that add an additional attack). Each round of the frenzy, the frenzied berserker takes 2 points of damage. The effects last 3 + Constitution modifier rounds, after which the frenzied berserker is fatigued for 5 rounds, suffering -2 Strength, -2 Dexterity, and -10% movement penalties. Initially, this ability can be used once per day and at 3rd level and every odd level after that, the frenzied berserker gains an additional use per day. This is an instantly activated ability.
+Special: Bonuses and penalties (including fatigue penalties) from Frenzy and Barbarian Rage stack. Extend rage also extends the duration of frenzy.
+Use: Selected. This ability cannot be re-used until the fatigue effects have expired.

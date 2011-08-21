@@ -1,0 +1,14 @@
+Caster Level(s): Cleric 5, Druid 7, Wizard / Sorcerer 6, Knowledge 4, Animal 4
+Innate Level: 5
+School: Divination
+Descriptor(s): 
+Component(s): Verbal, Somatic
+Range: Touch
+Area of Effect / Target: Single
+Duration: 60 seconds / level
+Save: Harmless
+Spell Resistance: No
+
+This spell gives 10+CasterLevel/3 Spot Bonus + Ultravision + See Invisible
+
+<color="red">True Seeings normal effects are not available in Dex.</color>

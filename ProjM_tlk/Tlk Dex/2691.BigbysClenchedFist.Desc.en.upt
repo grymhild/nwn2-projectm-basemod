@@ -1,0 +1,16 @@
+Caster Level(s): Wizard / Sorcerer 8
+Innate Level: 8
+School: Evocation
+Descriptor(s):
+Component(s): Verbal, Somatic
+Range: Long
+Area of Effect / Target: Single
+Duration: 4 Rounds
+Save: Special
+Spell Resistance: Yes
+
+A giant hand appears and holds the target for the duration. Each round the spell does damage, and attempts to daze and knockdown the target.
+
+Damage each round is 8d6+CasterModifier per round.
+
+Each round the Target gets a reflex save. Success allows target to avoid effects for that round and only take half damage for that round. Failure the target takes full damage and dazes the target for the spell duration. In addition the target now makes a fortitude save and if not yet dazed is now dazed for the spell duration, and if dazed is knocked down for the round.

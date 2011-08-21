@@ -1,0 +1,53 @@
+<color=Gold><b>Silver Shadow</b></color>
+
+<color=Red>(HERITAGE CLASS: This class is available at character creation and is only available to the Lythari race of elves.)</color>
+
+The Silver Shadow is another name for the Lythari, those that focus on their werewolf heritage. Those that follow this path heed the call of nature and become even more ferocious and graceful wolves.
+
+This is an 8-level class that is only open to chaotic good members of the Lythari sub-race of elves.
+
+<color=Gold>Requirements:</color>
+
+<b>Alignment:</b> Chaotic Good.
+<b>Race:</b> Lythari
+
+<color=Gold>Class Features:</color>
+
+- <b>Hit Die:</b> d8
+- <b>Base Attack Bonus:</b> High.
+- <b>High Saves:</b> All.
+- <b>Weapon Proficiencies:</b> None.
+- <b>Armor Proficiencies:</b> None.
+- <b>Skill Points:</b> 2 + Int modifier.
+- <b>Class Skills:</b> Heal, Hide, Intimidate, Listen, Lore, Move Silently, Spot, Survival, and Tumble.
+
+<color=Gold>Class Abilities:</color>
+
+Level 1: Damage Reduction 5/Alchemical Silver, Bonus Feat: Iron Will, Bonus Feat: Weapon Focus (Bite)
+Level 2: Damage Reduction 10/Alchemical Silver
+Level 3: Feral Strength +2, Feral Constitution +2, Natural Armor +4, Improved bite damage
+Level 4: Feral Dexterity +4, Feral Constitution +4, Bonus Feat: Knockdown
+Level 5: Feral Strength +4, Natural Armor +5
+Level 6: Feral Strength +6, Bonus Feat: Dash
+Level 7: Feral Strength +10
+Level 8: Feral Strength +14, Feral Constitution +6, Bonus Feat: Alertness
+
+- <b>Damage Reduction:</b> The damage reduction granted by the silver shadow works in all forms. At first level, the silver shadow receives damage reduction 5/alchemical silver. This improves to damage reduction 10/alchemical silver at 2nd level.
+
+- <b>Feral Strength, Constitution, and Dexterity</b> are the bonuses the silver shadow receives while in wolf form (see details below).
+
+- <b>Natural Armor:</b> The wolf form's natural armor bonus improves to +4 at 3rd level and +5 at 5th level. This bonus will stack with the natural bonus that Lythari recieve.
+
+- <b>Improved bite damage:</b> At 3rd level, the lythari's wolf form bite improves from d6 to d8. The improved natural attack feat will increase the progression from d8 (so improved natural attack I would increase the d8 to 2d6).
+
+- <b>Feat Access:</b> While leveling up in the Silver Shadow PrC, the character will have access to the Multi-Attack feat they would not otherwise have access to. This must be taken while leveling up in the prestige class.
+
+- <b>Feats available while leveling up in any class that will improve the wolf form:</b>
+Improved Natural Attack I, Improved Natural Attack II, Improved Natural Attack III. These feats increases the wolf form's bite damage by one rank. Progression starts at d6 or d8 depending on class level. The progression is d6 to d8, d8 to 2d6, 2d6 to 3d6, and 3d6 to 4d6. A level 3 Silver Shadow with Improved Natural Attack III will deal 4d6 points of damage with each bite.
+
+- <b>Silver Shadow Level 8 Wolf Form</b>
+Strength: 27
+Dexterity: 19
+Constitution: 21
+Armor Class: 21 (10 + 4 Dex + 5 Natural Wolf AC + 2 Lythari's Natural Armor bonus)
+Damage: d8 + 8

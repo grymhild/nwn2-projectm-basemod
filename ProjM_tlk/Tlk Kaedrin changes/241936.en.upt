@@ -1,0 +1,13 @@
+Necromancy
+Levels: Blackguard 4
+Components: V, S
+Range: Touch
+Target: Creature touched.
+Saving Throw: None
+Spell Resistance: Yes
+
+<i>Your touch siphons some of the life energy from a creature, leaving a soul-numbing ball of darkness in your grasp.</i>
+
+You must succeed on a melee touch attack against a living creature. If you do so, your touch deals 1d6 points of negative damage per two caster levels (maximum 15d6). 
+
+You regain one use of turn undead on a successful attack.

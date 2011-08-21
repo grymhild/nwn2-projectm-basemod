@@ -1,0 +1,53 @@
+<color=Gold><b>Warlock</b></color>
+
+Born of a supernatural bloodline, a warlock seeks to master the perilous magic that suffuses his soul. Unlike wizards, who approach arcane magic through the medium of spells, a warlock invokes powerful magic through nothing more than an effort of will. The font of dark magic burning in their souls makes them resistant to many forms of attack and arms them with dangerous power. Warlocks learn to harness their power to perform a small number of specific attacks and tricks called invocations. Warlocks make up for their lack of versatility by being tougher and more resilient than sorcerers or wizards.
+
+<color=Gold>Class Features:</color>
+
+- <b>Alignment:</b> Any evil or any chaotic.
+
+- <b>Hit Die:</b> d6
+
+- <b>Base Attack Bonus:</b> Medium.
+
+- <b>High Saves:</b> Will.
+
+- <b>Weapon Proficiencies:</b> Simple weapons.
+
+- <b>Armor Proficiencies:</b> Light armor.  A warlock can use any of his invocations while wearing light armor without incurring the normal arcane spell failure chance. A warlock wearing medium or heavy armor or using a shield incurs a chance of arcane spell failure.
+
+- <b>Skill Points:</b> 2 + Int modifier per level,  x4 at first level.
+
+- <b>Class Skills:</b> Bluff, Concentration, Craft Alchemy, Craft Armor, Craft Trap, Craft Weapon, Heal, Intimidate, Lore, Spellcraft, Taunt, and Use Magic Device.
+
+- <b>Invocations:</b> A warlock does not prepare or cast spells as other wielders of arcane magic do. Instead, he possesses a repertoire of attacks, defenses, and abilities known as invocations that require him to focus the wild energy that suffuses his soul. A warlock can use any invocation he knows at will.
+
+- <b>Eldritch Blast:</b> A warlock attacks his foes with eldritch power, using baleful magical energy to deal damage and sometimes impart other debilitating effects. An eldritch blast deals 1d6 points of damage at 1st level and increases in power as the warlock rises in level. There is no saving throw with this attack, but spell resistance can negate it. This power can be used at will.
+
+- <b>Eldritch Lore:</b> At 2nd level the warlock gains a +2 bonus to his Lore and Spellcraft skills.
+
+- <b>Damage Reduction:</b> Fortified by the supernatural power flowing in his body, a warlock becomes resistant to physical attacks at 3rd level and above, gaining damage reduction 1/cold iron (damage from attacks are reduced by 1 point unless the damage comes from cold iron). At 7th level and every four levels thereafter, a warlock's damage reduction improves.
+
+- <b>Deceive Item:</b> At 4th level, a warlock gains a +4 bonus to his Use Magic Device skill.
+
+- <b>Fiendish Resilience:</b> Beginning at 8th level, a warlock can activate this ability once per day. For 20 rounds, the warlock heals 1 hit point a round. This improves at 13th level to 2 hit points of healing a round, then at 18th level it becomes 5 hit points a round.
+
+- <b>Energy Resistance:</b> At 10th level and higher, a warlock has resistance 5 against any two of the following energy types: acid, cold, electricity, fire, and sonic. Once the types are chosen, the resistances can't be changed. At 20th level, a warlock gains resistance 10 to his chosen energy types.
+
+- <b>Eldritch Essence:</b> Some of a warlock's invocations, such as frightful blast, modify the damage or other effects of the warlock's eldritch blast. Unless otherwise noted, the eldritch blast deals normal damage in addition to the effect of the essence. The warlock can apply only one essence to a blast at a time. 
+
+- <b>Blast Shape:</b> These invocations modify the range, target(s), or area of a warlock's eldritch blast. Unless otherwise noted, the eldritch blast does normal damage.
+
+<color=Red>This class has been adjusted to be closer to PNP rules on Dex</color>
+Warlock caster level is always the full warlock level.
+
+Warlock blasts are always effectively level 1 spells by themselves.
+Essences and Shapes have a spell level listed, and when used your blast is considered the highest of these spell levels.
+
+Warlocks do not have vocal components except for the "Word of Changing" on their invocations.
+
+Warlocks do not use spells, so feats that enhance spells are not applicable to them.
+
+There are feats to enhance ranged touch and ray attacks, blasts can have critical hits.
+
+Flee the scene works as in PNP as a short range teleport.

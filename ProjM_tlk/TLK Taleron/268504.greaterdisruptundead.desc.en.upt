@@ -1,0 +1,16 @@
+Necromancy
+Level: Sorc/ Wiz 3
+Components : V,S
+Casting Time: 1 Action
+Range: Close
+Target: 1 Undead Creature
+Duration: Instant
+Save: None
+SR: Yes
+Meta Magic: Still, Silent, Empower, Maximize, Quicken
+
+<i>A black ray fires from your outstretched hand, piercing and passing thru nearby undead.</i>
+
+You must succeed on a ranged touch attack with the ray to strike a target. This spell functions just like <i>disrupt undead</i>, except that this ray deals 1d8 points of damage per caster level to any undead, to a maximum of 10d8.
+
+Taleron

@@ -1,0 +1,14 @@
+Caster Level(s): Druid 6
+Innate Level: 6
+School: Abjuration
+Descriptor(s):
+Component(s): Verbal, Somatic
+Range: Touch
+Area of Effect / Target: Living  creature touched
+Duration: 10 minutes/level
+Save: None
+Spell Resistance: No
+
+Tortoise shell grants a +6 enhancement bonus to the subject's existing natural armor bonus. This enhancement bonus increases by 1 for every three caster levels beyond 11th, to a maximum of +9 at 20th level. Tortoise shell slows a creature's movement to half its normal rate for the duration.
+
+Though this spell's effects will stack with the natural armor of a subject, it will not stack with other <i>enhancements</i> to natural armor. E.g.: tortoise shell would stack with the bonuses provided by a bear's hide, but not with the bonuses provided by the <i>barkskin</i> spell.

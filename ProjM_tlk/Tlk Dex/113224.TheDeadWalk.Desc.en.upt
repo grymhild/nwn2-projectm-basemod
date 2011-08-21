@@ -1,0 +1,21 @@
+Invocation Type: Lesser
+Spell Level Equivalent: 4
+
+You can summon undead skeletons or zombies with your infernal power. This invocation lasts 1 hour per level. The type of undead summoned is dependent upon your caster level up to 15, with additional bonuses.
+
+Caster Level (max 15) + Undead Level Bonus 
+
+Undead Level Bonuses
+Augment Summoning +1
+Spell Focus Necromancy +1
+Greater Spell Focus Necromancy +1
+Epic Spell Focus Necromancy +1
+Every 3 Levels of Palemaster +1
+
+Caster Level <= 6 : Zombie CR 5
+Caster Level <= 9 : Zombie CR 7
+Caster Level <=12 : Skeleton CR 9
+Caster Level <=15 : Skeleton CR 11
+Caster Level <=18 : Ghoul CR 13
+Caster Level <=21 : Ghoul CR 15
+Caster Level 22+ : Vampire CR 17

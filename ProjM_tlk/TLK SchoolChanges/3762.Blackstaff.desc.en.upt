@@ -1,0 +1,14 @@
+Caster Level(s): Wizard / Sorcerer 8, Magic 8
+Innate Level: 8
+School: Transmutation
+Descriptor(s): Weapon Enchantment
+Component(s): Verbal, Somatic
+Range: Touch 
+Area of Effect / Target: Creature holding quarterstaff or item (quarterstaff)
+Duration: 6 seconds / Level
+Save: None
+Spell Resistance: Yes
+
+This spell grants a quarterstaff the following abilities:
+- +4 enhancement bonus.
+- On striking a creature, dispel magic is cast on the target.

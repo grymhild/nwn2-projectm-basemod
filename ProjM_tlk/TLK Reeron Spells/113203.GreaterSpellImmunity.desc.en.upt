@@ -1,0 +1,17 @@
+Caster Level(s): Cleric 8
+Innate Level: 8
+School: Abjuration
+Descriptor(s):
+Component(s): Verbal, Somatic
+Range: Touch
+Area of Effect/Target: Creature touched
+Duration: 10 minutes / level
+Save: None
+Spell Resistance: No
+
+This spell makes the warded creature immune to certain spell effects for the duration of the spell. The spells the target is immune to, based on your caster level,  are:
+   15th: Harm, Blade Barrier, Cone of Cold, Delayed Blast Fireball
+   17th: Chain Lightning, Earthquake
+   20th: Polar Ray, Firestorm
+
+

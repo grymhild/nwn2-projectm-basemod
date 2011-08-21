@@ -1,0 +1,9 @@
+School: Transmutation [Teleportation]
+Components: V,S
+Range: Medium
+Target: One humanoid creature
+Duration: Instantaneous
+Saving Throw: Will negates
+Spell Resistance: Yes
+
+Your spell fixes the target to the sky indefinitely, where the target remains suspended, receiving 2d6 damage each round until either dead or a successful Will save is made.

@@ -1,0 +1,9 @@
+Abjuration
+Level: Animal 4, Clr 4, Drd 4
+Casting Time: 1 action
+Range: 10 ft
+Area: 10 ft emanation centered on you
+Duration: 10 minutes/level
+Saving Throw: None or will negates (see text)
+Spell Resistance: Yes
+An invisible barrier holds back vermin. A vermin with less than 1/3 you level in HD cannot penetrate the barrier.  a vermin with at least 1/3 your level in HD can penetrate the barrier on a successful Will Save.  Even so, crossing the barrier does 2d6 points of damage.

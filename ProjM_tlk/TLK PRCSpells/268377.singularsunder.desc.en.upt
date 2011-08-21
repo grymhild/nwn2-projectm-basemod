@@ -1,0 +1,9 @@
+School: Transmutation
+Components: V,S
+Range: Short
+Target: One creatures equipment
+Duration: Instantaneous
+Saving Throw: Will avoids
+Spell Resistance: Yes
+
+You target a creatures equipment, and attempt to destroy a single item. The spell runs through a hierarchy of different pieces of equipment, targeting the highest priority item first, and moving to the next if none exists at that level of the hierarchy. The spells initial target is always (in order) the creatures main weapon, its armor, its off-hand (shield, etc), its arms, its neck, its cloak, its boots, its belt, its helmet, its right-hand ring, its left-hand ring, its arrows, its bolts, and it bullets. If the creature has no equipped items, the spell does nothing. Once the spell has acquired a target item, the owner of the item must make a Will saving throw to avoid having that item irrevocably destroyed.

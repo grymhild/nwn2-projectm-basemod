@@ -1,0 +1,11 @@
+Necromancy
+Level: Clr 3, Pal 4
+Components: V,S
+Casting Time: 1 action
+Range: Touch
+Target: One Living Creature
+Duration: Instantaneous
+Saving Throw: Will (harmless)
+Spell Resistance: Yes (harmless)
+
+When a priest or paladin casts this spell and lays hands upon an injured subject, he absorbs - and thereby lessens - part or all of the damage the subject has taken.  A cleric may absorb up to a maximum of 2 points per level, and the target regains 2 hit points for every one absorbed by the caster.  Life force transfer cannot heal more than 60 points of damage per casting (30 points of damage absorbed).

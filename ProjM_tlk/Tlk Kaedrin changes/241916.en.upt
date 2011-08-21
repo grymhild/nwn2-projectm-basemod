@@ -1,0 +1,5 @@
+Type: Divine
+Prerequisite: Blackguard, Turn Undead
+Special: This ability consumes three uses of turn undead and has a 1 minute cooldown.
+Benefit: As a swift action, you can summon the force of chaos to aid you. When you activate this ability, roll 1d6. If the result is odd, add that number as a sacred bonus on your attack rolls. If the result is even, add that number as a sacred dodge AC bonus. This effect lasts for one minute. When you attain 10th level, the die increases to d8. At 15th level the die increases to d10.
+Limitation: This ability will not work if you have any levels in bard, cleric, druid, sorcerer, or wizard.

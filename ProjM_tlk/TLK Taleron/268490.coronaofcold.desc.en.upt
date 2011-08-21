@@ -1,0 +1,15 @@
+Evocation [Cold]
+Level: Cleric 3, Druid 3
+Components : V,S
+Casting Time: 1 Action
+Range: 10ft
+Area: 10 ft raidus centerd on you
+Duration: 1 round/level
+Meta Magic: Still, Silent, Extend, Persist
+
+<i>As you complete the spell you feel your extremities turn ice cold, numb,and sluggish. The feeling subsides as the cold drains away from your body into the air around you, causing your breath to emerge as white puffs in the now-chill air.</i>
+
+You are surrounded by a protective aura of cold that also causes damage to others within its radius. You gain resistance to fire 10.
+Starting in the round you cast the spell, corona of cold also deals 1d12 points of damage each round at the beggining of your turn to all other creatures within the area. A successful save prevents the damage caused by the spell in that round does not prevent damage in future rounds. Creatures damaged by the spell shiver uncontrollably, taking a -2 penalty to their Strength and Dexterity and moving at half speed for the remainder of the round. These penalties do not stack with consecutive rounds of damage.
+
+Taleron

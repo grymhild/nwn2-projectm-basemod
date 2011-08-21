@@ -1,0 +1,9 @@
+School: Abjuration
+Components: V,S
+Range: Touch
+Target: Creature touched
+Duration: Caster Level Rounds
+Saving Throw: None
+Spell Resistance: No
+
+You can create a permanent ward against all spells of 1st through 9th level that target the subject.
