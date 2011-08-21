@@ -1,0 +1,202 @@
+
+My adamantine dagger cant cut through Judah's dark premo. Is that normal? adam weapon only can cut through normal premo?
+ 
+
+The Necrotic Guardian uses touch attack that kill me instantly without any save.
+ 
+By the way what the CR for boss Judah? 
+ 
+Shadow dark monster has no xp. I was lvl 22 when i tested it.
+They are really too strong.. I can die in 2 sec right after being dispelled...
+
+After moving through water (maybe other terrain slowing areas also) you do not go back to normal speed even though have quick feet buff
+
+
+
+
+The warlock works now without sneak message. I only get the message now if i attack from stealth or when i am invisible. 
+I don't think that i get extra sneak damage . With racial sneak damage 3d6 an 1d6 from ninja the damage should be higher.
+Do you use > v1.39.6 Kaedrins custom contend  ?.
+I am also not sure if i get the extra damage from the Daggerspell Mage class.
+
+now I already lvl 26. lvl at drow is a hell... they just keep using dispel.. pls remove it for good.. :(
+leveling for strong build is easy. but if u want to play weaker build. its almost impossible to lvl after 20. 
+
+i got ganged in holding company. Some of the pawn can use dispel.. and the arrows are too powerful.
+I done jotuns and got afew good loots from the boss. :) The XP are not good anymore at lvl 23..
+I believe any monsters that can dispel are too powerful, i think should reserve that to the bosses only..
+ 
+------------------
+server
+Administrator
+pi55p00r
+
+- review seems to be working - Chain missile spell had no casting/in-transit type or on target vfx; appeared to be completely broken. Chain missile did not work.
+
+- perhaps spellpowerissue - Snowball Swarm had no casting/in-transit type vfx though there were some that appeared on the target.
+
+- brigtened up - Daylight: Supposed to spread light bright as day, but looks more like a flashlight (slight exaggeration!).
+
+-works - Chain lightning could only target allies instead of enemies. It would then arc to nearby enemies.
+
+- works, odd spell in that it damages after a few rounds - Talo's Wrath did not appear to work for me. 
+
+- works and kills ogres. Deadly Lahar: Has an animation and VFX, but the spell doesn't work.
+
+- did a revisions - Freezing Curse did freeze the target but did not kill the target when struck for more than 5 points of damage as stated in its description.
+
+- need to look at closer - Wail of the Banshee has a short range casting which puts the caster inside the spells AoE. Wail of the Banshee caused TMI's.
+
+- redid core spellid lookup iterator - Mordenkian's Disjunction caused TMI's.
+
+Negative Energy Wave (missed writing down the name) that can rebuke or bolster undead, had casting vfx but appeared not to rebuke. I was not able to test the bolster portion of the spell.
+
+Negative energy burst has a "invalid cube" as it's projectile it sends. spells.2da issue
+--
+
+druid - Faery Fire seems to have no effect. Casting animation, sparkles, but no adverse effects.
+
+ 
+
+Liveoak spell: Nonfunctional - fixed, was missing script, not sure on blueprint
+
+
+Voracious Dispelling has some text after each dispelling... if it's dispelled everything, it'l come back as 'Failure, spell resisted: None' Or something of the sort.
+
+Eldrich Doom: Worked against most critters I tried it on. Did not work on green slimes.
+
+Devouring Swarm and Summon Zombie Buddy (Dead Walk): Missing blueprints for summons
+
+Word of Changing: Spell acts like a massive heal, does not change caster into the demon form, nor does it place the additional spells in the spell tray
+
+
+// need to look at 
+Make screen sizes at top larger - Some people thought the buttons were too small (hard to see). Perhaps slide the HP/BAB/AC info down to make room for a larger toolbar on the top with bigger buttons/writing?
+Remove Difficulty Slider (or option to remove?).
+Dm does not show up in chat - invisible or not.
+Player list does not show who plays what character.
+"Character exported" message regularly came up in the message window (not chat window).
+
+/// need to research
+Player list was not populated with names just Hostile/friendly icons
+
+Divine Vigor (feat linked to Turn Undead) seemed to do nothing.
+
+'Epic of the Lost King' bardsong feat does not seem to refresh fatigue as it suggests.
+
+/// these are not yet implemented, mansion needs an area for example
+Magnificent mansion has casting and "building" vfx but did not create the mansion.
+
+/// Missing VFX
+
+
+// Fixed
+Hitting ESC makes "testing" show up in the combat log.
+Misspelling of a word or two in 'Calm Animals' ( teh was wrong )
+Blast of Flame acted like a melee touch spell. PC would run up to target to cast. range of P, changed to M
+
+// fixed
+Tells respond with with "Target in Transition" even with the target is NOT in transition. Also "transistion" is mispelled.
+transition  --> flag is on character named GetLocalInt( oTarget, "TRANSITION"), it is being set as true but not being removed.
+
+
+
+
+
+fixed // Sewer goblins are "brutish race" but not labeled as such.
+
+Fix the bug reporting command.
+
+"begger" is misspelled!
+The transition to the graveyard from the rock plains trail is misnamed on the overhead map. It's called "Rock Plains Trail" on the map note.
+
+NA - confusion on players part - you ought to have undead as playable so inflict wounds will heal them
+
+bigger buttons, The new icons on the gui is a little bit small
+
+I can't drop the axe, hm that is a bug, need to look at that
+
+fixed // removed some blocks since kaedrin fixed - spell fail, what went wrong
+
+fixed // min of 2 bonus at level 1 - Leaps and Bounds does nothing at level 1 and 2 warlock.
+
+
+fixed // Also, the Chromatic Orb spell that is labeled 6-9 can't be cast at level 6.
+
+fixed // Daylight spell cannot be cast by a level 4 wizard. Combat log reads "max is 2 and spell slot level is 3." >>#A#crypts1#X# 92.257110596#Y# 77.211494446#Z# -0.000000000#O# 243.298812866#END#
+
+stone of loftenwood is unusable when 0 UMD >>#A#Loftenwood#X# 132.497863770#Y# 140.730117798#Z# 0.137500003#O# 22.321142197#END#
+
+kapal/Kapal Raja : the race of aelfborn haven't got the extra 1 feat at 1st level as human. >>#A#Loftenwood#X# 110.237579346#Y# 124.252510071#Z# 0.134775504#O# 254.703430176#END#
+
+LordCyric420/Victoria Lock : the dc on deathspells is capped wail of the banshie is capped at 39 and it shouldn';t bethe wail >>#A#descent#X# 250.287994385#Y# 112.698661804#Z# 28.194633484#O# 34.596324921#END#
+
+Fist of the Forest PrC broken. Feral trance dont work, 1d6 blunt dont aplly to fists >>#A#Loftenwood#X# 120.578948975#Y# 126.898902893#Z# 0.137385875#O# 80.944030762#END#
+
+CK(79) blixen71/Flames of Fury : Extend rage feat to extend feral trance is not selectable feat for fist of the fores.t bug >>#A#Loftenwood#X# 117.970108032#Y# 130.483474731#Z# 0.125614807#O# 126.047012329#END#
+
+CK(19) Arestes1/Arestes Holy Fist : Invisible staircase to northern combat training hall from lower level >>#A#BloodstoneStrongholdLower#X# 196.492065430#Y# 73.783523560#Z# -0.000000000#O# 183.367599487#END#
+
+CK(79) blixen71/Sorceress of the Order : the entrance door to gukumaz temple at serpent island is bugged. it is very trick to open >>#A#Loftenwood#X# 119.588088989#Y# 123.094482422#Z# 0.137500003#O# 263.854736328#END#
+
+CK(3222) Grayhamn/Graymina : Song of Requiem disables any inspiration active; it's a bug in the engine. Would it be possible to create a work around? >>#A#descent#X# 217.961151123#Y# 193.319137573#Z# 0.653337359#O# 237.989593506#END#
+
+AI breaking summons - TMI resolved
+
+Arrow boxes not creating arrows - triaging with debug messages
+
+Add option to make added levels given by augment summoning and conjuration focus a choice in preferences
+
+Mercy
+
+This spell causes two effects within a target creature. First, it channels a small amount of positive energy into a dying creature, stabilizing it, and even restoring consciousness if so desired. Second, the spell paralyzes the target creature, rendering it unable to move for the duration of the spell.
+
+implemented preferences to limit bonuses from focus feats, augment summoning and red wizard levels
+
+xp issue where entire party is blocked instead of just lowbies
+
+Does nothing- no script hooked up to them, need to double check as approving new ones for your pw and see if any other ones are missing ( this range seems to have a lot set to **** )
+Horizakul's Boom (1st level wizard)
+Ball Lightning (5th level wizard)
+
+Pale Master Animate Dead and Create Greater Undead
+"A is at your service"
+Does nothing else - missing blueprint ( since it says name when it goes a XXX is at your service indicates nothign showed up and i know this works, note this is really OP on even my pw )
+
+Create Greater Undead (Normal Spell)
+It lasts 1/hour per level and summons a vampire with 5/regen. Over. Powered. - plan on moving to 2da system so will fix then, input on which row goes with which 2da row would be helpful in how you want it set up
+
+Nightshield stacks with Greater Resistance/Superior Resistance. Due to this, I'm betting 10,000 xp that;
+Conviction Stacks with Greater Resistance/Superior Resistance. - made all 4 spells unstake and akavit gets 10,000 xp
+
+SP_insigniaheal:  Stack overflow message -- fixed
+
+as_na_bugs1.WAV
+
+I had one of mine report to me that they could not cast Magic Missile or any other hostile spell that calls for a single target as an NPC while possessing.
+
+http://edgemeal.110mb.com/SetAffinity/index.htm
+
+--- akavit error reports SOD
+Reported by Snarg:
+I have Aura of Courage, the aura that Paladins and Clerics with the Good Domain get.
+A Greenscale Mystic cast dispel magic and it got rid of it. This is supposed to be a permanent ability and should not be able to be dispelled.
+In fact, Aura of Courage seems to suffer from Bard spell abilities. If you relog, you don't have it. You have to go and rest to get it back. I have no idea if this is normal.
+
+
+Reported by Snarg
+previous version of scripts, should be fixed
+Why does he [Level 6 Lizard cleric] have to beat DC 14? I have a 5 caster level, it should be DC 16 (11 + Caster level). Why does he get +17 to his checks? Is he a level 17 cleric? I highly doubt it. Why do his bonuses keep changing? +17, +15, +12, +11? Either the spell itself is hideously bugged or he is.
+
+
+Reported by Snarg:
+Deeper Darkness (3rd cleric) - Does nothing
+Mercy (3rd Cleric) - Has no description
+Old verison of spell - Unliving Weapon (3rd Cleric) - Has no picture for the spell, plus, it should be discharged after hitting the undead once but it stays. Repeated hits causes the spell to go off again and again.
+missing blueprint - Wall of Stone (Something Cleric) - Does nothing
+Stone Bones (2nd Cleric) - Has no picture
+
+Reported by The_Puppeteer:
+I could not get damage dice to work properly when forcecasting from a placeable.  Setting all the HKPERM variables on the placeable for caster level and DC got everything working properly except for damage.  Changing the caster level alters the damage amount but it's always a fixed amount per hit such as 4 if the caster level is low and 27 if it's set to a caster level of 11.
+
+

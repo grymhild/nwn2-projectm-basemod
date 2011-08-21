@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8">
+<UIScene name="ChatSelect" 
+  draggable=true scriptloadable=true fadeout=.3 fadein=.3 priority="SCENE_INGAME" idleexpiretime="1.0f"
+  OnAdd=UIObject_Misc_ExecuteServerScript("gui_csl_playerlist","setup")
+ dragresizable=true dragresize_x=0 dragresize_y=20  dragresizeborder=6
+  capturemouseevents=true capturemouseclicks=false  
+ dragregion_x=0 dragregion_y=0 dragregion_width=260 dragregion_height=36
+  x=20 y=128 width=370 height=400 
+/>
+
+<!-- alpha="0.65" draggable=true  OnUpdate=UIObject_OnUpdate_FadeAlpha("0.25")
+		OnMouseEnter=UIObject_Input_SetFadeAlpha("1.0")
+		OnMouseLeave=UIObject_Input_SetFadeAlpha("0.0")  update=true
+		just changed capturemouseclicks=true
+		-->
+
+<UIPane name="CSL_DRAG" x=0 y=0 width=210 height=40 capturemouseclicks=false capturemouseevents=false
+ fillstyle="stretch" fill="tp_frame_bg.tga"
+  >
+	
+  <!-- Close Button -->
+  <UIButton name="CloseButton"
+    style="STYLE_CLOSE_BUTTON"
+    OnLeftClick=UIButton_Input_CancelPartySelect()
+    x=180 y=1 width=27 height=27 >
+    </UIButton>
+	<UIIcon name="DETAIL_TOP" img="title_large03.tga" x=0 y=0 width=PARENT_WIDTH height=PARENT_HEIGHT fillstyle="stretch" ignoreevents="true" capturemouseclicks=true capturemouseevents=true />
+</UIPane>
+<UIPane name="CSL_LISTBOX" x=0 y=32 width=210 height=368 capturemouseclicks=false capturemouseevents=false  >
+
+<UIListbox name="RosterMemberList" capturemouseclicks=false capturemouseevents=false
+  showpartialchild="false" scrollbaronright="false" update="true" updaterate=15.0 hidescrollbarwhennotneeded=false
+  OnUpdate=UIObject_Misc_ExecuteServerScript("gui_csl_playerlist","update") 	
+  x="2" y="4" width="213" height="360" yPadding=2 >
+
+<UIPane name="PrototypeButton"
+  prototype=true tupple=true 
+  OnRightClick0=UIObject_Misc_ExtractData("self:","string",1,local:1)
+  OnRightClick1=UIObject_Misc_ExecuteServerScript("gui_csl_playerlist","select",local:1)
+  OnLeftClick0=UIObject_Misc_ExtractData("self:","string",1,local:1)
+  OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_playerlist","chatselect",local:1)
+  OnLeftClick2=UIButton_Input_SelectedInitiateChat()
+capturemouseclicks=true capturemouseevents=false
+  x=0 y=0 width=210 height=24 >
+	<UIButton name="CSL_REPUTATION" img="ip_reput_unknown.tga" x=3 y=0 width=24 height=24 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button" capturemouseclicks=false capturemouseevents=false
+  OnLeftClick0=UIObject_Misc_ExtractData("parent:","string",1,local:1)
+  OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_playerlist","iconselect",local:1)
+>
+<UIFrame state="base"	fill="b_empty.tga" />
+  <UIFrame state="up" fill="b_empty.tga" />
+  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+  <UIFrame state="focused" fill="b_empty.tga" />
+  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+</UIButton>
+	<UIText name="CSL_NAME" x=30 y=2 height=22 width=120 valign=top align=left fontfamily="Body_Font" style=2 />
+	<UIText name="CSL_STATUS" x=32 y=2 height=22 width=155 valign=middle align=right fontfamily="Body_Font" style=1  color="AAACCC"  />			
+	
+  </UIPane>
+  <UIScrollBar name="SB" style="STYLE_SB_THIN" hidescrollbarwhennotneeded=true></UIScrollBar>
+</UIListbox>	
+
+<UIIcon img="stats_container_03.tga" width=PARENT_WIDTH height=PARENT_HEIGHT/>
+</UIPane>
+
+<UIPane name="CSL_INFOBOX" x=211 y=0 width=158 height=400 capturemouseclicks=false capturemouseevents=false hidden=true>
+
+<!-- Target Button 1 -->
+<UIButton name="CSL_DMTARGET" x=3 y=2 width=27 height=27 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button"  hidden="true"
+  OnLeftClick0=UIObject_Misc_ExtractData("parent:","string",1,local:1)
+  OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_playerlist","dmtarget",local:1)
+>
+  <UIFrame state="base"	fill="ip_target.tga" />
+  <UIFrame state="up" fill="b_empty.tga" />
+  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+  <UIFrame state="focused" fill="b_empty.tga" />
+  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+</UIButton>
+
+<!-- Inspect Button 2-->
+<UIButton name="CSL_DMINSPECT" x=33 y=2 width=27 height=27 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button"  hidden="true"
+	OnToolTip=UIObject_Tooltip_DisplayTooltipString("Character_Editor",OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT) 
+  OnLeftClick0=UIObject_Misc_ExtractData("parent:","string",1,local:1)
+  OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_playerlist","dminspect",local:1)
+>
+  <UIFrame state="base"	fill="ip_inspect.tga" />
+  <UIFrame state="up" fill="b_empty.tga" />
+  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+  <UIFrame state="focused" fill="b_empty.tga" />
+  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+</UIButton>
+
+<!-- Heal Button 3-->
+<UIButton name="CSL_DMHEAL" x=63 y=2 width=27 height=27 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button"  hidden="true"
+  OnToolTip=UIObject_Tooltip_DisplayTooltipString("Heal_Or_Rez",OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT) 
+  OnLeftClick0=UIObject_Misc_ExtractData("parent:","string",1,local:1)
+  OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_playerlist","dmheal",local:1)
+>
+  <UIFrame state="base"	fill="ip_heal.tga" />
+  <UIFrame state="up" fill="b_empty.tga" />
+  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+  <UIFrame state="focused" fill="b_empty.tga" />
+  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+</UIButton>
+
+<!-- Kill Button 4-->
+<UIButton name="CSL_DMKILL" x=93 y=2 width=27 height=27 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button"  hidden="true"
+	OnToolTip=UIObject_Tooltip_DisplayTooltipString("Kill",OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT) 
+  OnLeftClick0=UIObject_Misc_ExtractData("parent:","string",1,local:1)
+  OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_playerlist","dmkill",local:1)
+>
+  <UIFrame state="base"	fill="ip_kill.tga" />
+  <UIFrame state="up" fill="b_empty.tga" />
+  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+  <UIFrame state="focused" fill="b_empty.tga" />
+  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+</UIButton>
+
+<!-- Hide Pane Button 5-->
+<UIButton name="CSL_HIDEPANE" x=127 y=2 width=27 height=27 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button"
+  OnLeftClick0=UIObject_Misc_ExtractData("parent:","string",1,local:1)
+  OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_playerlist","hideinfopane",local:1)
+>
+  <UIFrame state="base"	fill="b_empty.tga" />
+  <UIFrame state="up" fill="b_close_normal.tga" />
+  <UIFrame state="down"	fill="b_close_hover_pressed.tga" alpha="0.8" />
+  <UIFrame state="focused" fill="b_close_normal.tga" />
+  <UIFrame state="hilited" fill="b_close_hover.tga" alpha="0.9" />
+  <UIFrame state="hifocus" fill="b_close_hover.tga" alpha="0.9"/>
+  <UIFrame state=disabled fill="b_close_normal.tga" />
+</UIButton>
+
+  <!-- Close Button 
+     <UIButton name="CloseButton" style="STYLE_CLOSE_BUTTON" OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_playerlist","hideinfopane")
+     x=120 y=5 width=27 height=27 ></UIButton> -->
+<!--OnLeftClick0=UIObject_Misc_ExtractData("parent:","string",1,local:1)
+  OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_playerlist","iconselect",local:1) 
+<UIText name="CSL_CHARREFERENCE"  x=3 y=5 width=150 height=20  ignoreevents=true align=left valign=middle fontfamily="Body_Font" style="1" hidden=true />
+
+-->
+
+<!-- where things were -->
+		
+
+
+
+<!-- This is Upper Row ( DM Only Visible ) -->
+<!-- port_here Button 4-->
+<UIButton name="CSL_PORT_HERE" x=93 y=159 width=27 height=27 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button"  hidden="true"
+  OnToolTip=UIObject_Tooltip_DisplayTooltipString("Port_Player_To_My_Location",OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT) 
+  OnLeftClick0=UIObject_Misc_ExtractData("parent:","string",1,local:1)
+  OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_playerlist","port_here",local:1)
+>
+  <UIFrame state="base"	fill="ip_porthere.tga" />
+  <UIFrame state="up" fill="b_empty.tga" />
+  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+  <UIFrame state="focused" fill="b_empty.tga" />
+  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+</UIButton>
+
+<!-- port_there Button 5-->
+<UIButton name="CSL_PORT_THERE" x=123 y=159 width=27 height=27 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button"  hidden="true"
+  OnToolTip=UIObject_Tooltip_DisplayTooltipString("Port_Myself_To_Location_of_Player",OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT)
+  OnLeftClick0=UIObject_Misc_ExtractData("parent:","string",1,local:1)
+  OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_playerlist","port_there",local:1)
+>
+  <UIFrame state="base"	fill="ip_portthere.tga" />
+  <UIFrame state="up" fill="b_empty.tga" />
+  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+  <UIFrame state="focused" fill="b_empty.tga" />
+  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+</UIButton>
+
+
+
+
+
+
+
+<!-- This is bottom Row -->
+<!-- Invite Button 1 -->
+<UIButton name="CSL_INVITE" x=3 y=189 width=27 height=27 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button" hidden="true"
+	 OnToolTip=UIObject_Tooltip_DisplayTooltipString("Invite",OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT) 
+   OnLeftClick0=UIObject_Misc_ExtractData("parent:","string",1,local:1)
+OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_playerlist","Invite",local:1)
+>
+  <UIFrame state="base"	fill="ip_invite.tga" />
+  <UIFrame state="up" fill="b_empty.tga" />
+  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+  <UIFrame state="focused" fill="b_empty.tga" />
+  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+</UIButton>
+
+<!-- Like Button 2-->
+<UIButton name="CSL_LIKE" x=33 y=189 width=27 height=27 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button" hidden="true"
+  OnToolTip=UIObject_Tooltip_DisplayTooltipString("Like",OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT) 
+  OnLeftClick0=UIObject_Misc_ExtractData("parent:","string",1,local:1)
+  OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_playerlist","Like",local:1)
+>
+  <UIFrame state="base"	fill="ip_like.tga" />
+  <UIFrame state="up" fill="b_empty.tga" />
+  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+  <UIFrame state="focused" fill="b_empty.tga" />
+  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+</UIButton>
+
+<!-- Dislike Button 3-->
+<UIButton name="CSL_DISLIKE" x=63 y=189 width=27 height=27 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button" hidden="true"
+  OnToolTip=UIObject_Tooltip_DisplayTooltipString("Dislike",OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT) 
+  OnLeftClick0=UIObject_Misc_ExtractData("parent:","string",1,local:1)
+  OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_playerlist","Dislike",local:1)
+>
+  <UIFrame state="base"	fill="ip_dislike.tga" />
+  <UIFrame state="up" fill="b_empty.tga" />
+  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+  <UIFrame state="focused" fill="b_empty.tga" />
+  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+</UIButton>
+
+<!-- Boot Button 4-->
+<UIButton name="CSL_BOOT" x=93 y=189 width=27 height=27 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button" hidden="true"
+OnToolTip=UIObject_Tooltip_DisplayTooltipString("Boot_Player",OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT) 
+  OnLeftClick0=UIObject_Misc_ExtractData("parent:","string",1,local:1)
+  OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_playerlist","Boot",local:1)
+>
+  <UIFrame state="base"	fill="ip_boot.tga" />
+  <UIFrame state="up" fill="b_empty.tga" />
+  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+  <UIFrame state="focused" fill="b_empty.tga" />
+  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+</UIButton>
+
+<!-- TransferLeader Button 5-->
+<UIButton name="CSL_TRANSFERLEADER" x=123 y=189 width=27 height=27 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button" hidden="true"
+OnToolTip=UIObject_Tooltip_DisplayTooltipString("Transfer_Leader",OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT) 
+  OnLeftClick0=UIObject_Misc_ExtractData("parent:","string",1,local:1)
+  OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_playerlist","TransferLeader",local:1)
+>
+  <UIFrame state="base"	fill="ip_transfer.tga" />
+  <UIFrame state="up" fill="b_empty.tga" />
+  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+  <UIFrame state="focused" fill="b_empty.tga" />
+  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+</UIButton>
+
+
+<!-- Accept and Unaccept Like Button 1-->
+
+<UIText name="CSL_MESSAGE" text="" x=0 y=223 width=150 height=20 ignoreevents=true align=center valign=middle fontfamily="Body_Font" style="1"  hidden="true" />
+<!-- accept_invite Button 1-->
+<UIButton name="CSL_ACCEPTINVITE" x=33 y=243 width=27 height=27 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button" hidden="true"
+  OnLeftClick0=UIObject_Misc_ExtractData("parent:","string",1,local:1)
+  OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_playerlist","accept_invite",local:1)
+>
+  <UIFrame state="base"	fill="ip_accept.tga" />
+  <UIFrame state="up" fill="b_empty.tga" />
+  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+  <UIFrame state="focused" fill="b_empty.tga" />
+  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+</UIButton>
+
+<!-- reject_invite Button 2-->
+<UIButton name="CSL_REJECTINVITE" x=63 y=243 width=27 height=27 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button" hidden="true"
+  OnLeftClick0=UIObject_Misc_ExtractData("parent:","string",1,local:1)
+  OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_playerlist","reject_invite",local:1)
+>
+  <UIFrame state="base"	fill="ip_reject.tga" />
+  <UIFrame state="up" fill="b_empty.tga" />
+  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+  <UIFrame state="focused" fill="b_empty.tga" />
+  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+</UIButton>
+
+<!-- ignore_invites Button 3-->
+<UIButton name="CSL_IGNOREINVITES" x=93 y=243 width=27 height=27 MouseDownSFX="gui_m_down" MouseUpSFX="gui_button" hidden="true"
+  OnLeftClick0=UIObject_Misc_ExtractData("parent:","string",1,local:1)
+  OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_playerlist","ignore_invites",local:1)
+>
+  <UIFrame state="base"	fill="ip_ignore.tga" />
+  <UIFrame state="up" fill="b_empty.tga" />
+  <UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+  <UIFrame state="focused" fill="b_empty.tga" />
+  <UIFrame state="hilited" fill="b_overlay_active.tga" alpha="0.5" />
+  <UIFrame state="hifocus" fill="b_overlay_active.tga" alpha="0.5"/>
+</UIButton>
+
+
+<UIListBox name="HEADER_LISTBOX"  yPadding=0 xPadding=0 showpartialchild=true unequalcontrols=true scrollsegmentsize=30 hidescrollbarwhennotneeded=true  capturemouseevents=false capturemouseclicks=false  
+    x=2 y=30 width=156 height=190 >
+
+    <UIText name="CHARACTER_DESCRIPTION" width=PARENT_WIDTH height=DYNAMIC capturemouseevents=false capturemouseclicks=false 
+      align=left valign=top color="white" fontfamily="NWN1_Dialog" style="bold"
+    />
+    <UIScrollBar name="SB" style="STYLE_SB_THIN"></UIScrollBar>	
+</UIListBox>
+
+<!-- Custom Button 1-->
+<UIButton name="CSL_BUTTON1" hidden="true"
+  style="STYLE_SMALL_BUTTON" MouseDownSFX="gui_m_down" MouseUpSFX="gui_button"
+  OnLeftClick0=UIObject_Misc_ExtractData("parent:","string",1,local:1)
+ OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_playerlist","Button1",local:1) 
+x=10 y=274 />
+
+<!-- Custom Button 2-->
+<UIButton name="CSL_BUTTON2" hidden="true"
+  style="STYLE_SMALL_BUTTON" MouseDownSFX="gui_m_down" MouseUpSFX="gui_button"
+  OnLeftClick0=UIObject_Misc_ExtractData("parent:","string",1,local:1)
+  OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_playerlist","Button2",local:1) 
+x=10 y=305 />
+
+<!-- Custom Button 3-->
+<UIButton name="CSL_BUTTON3" hidden="true"
+  style="STYLE_SMALL_BUTTON" MouseDownSFX="gui_m_down" MouseUpSFX="gui_button"
+  OnLeftClick0=UIObject_Misc_ExtractData("parent:","string",1,local:1)
+  OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_playerlist","Button3",local:1) 
+x=10 y=335 />
+
+<!-- Custom Button 4-->
+<UIButton name="CSL_BUTTON4" hidden="true"
+  style="STYLE_SMALL_BUTTON" MouseDownSFX="gui_m_down" MouseUpSFX="gui_button"
+  OnLeftClick0=UIObject_Misc_ExtractData("parent:","string",1,local:1)
+  OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_csl_playerlist","Button4",local:1) 
+x=10 y=365 />  
+
+
+
+<UIIcon img="stats_container_03.tga" width=156 height=220 y=0 ignoreevents=true />
+<UIIcon img="stats_container_03.tga" width=156 height=175 y=225 ignoreevents=true />
+<UIIcon name="DETAIL_TOP" img="title_large03.tga" x=0 y=0 width=PARENT_WIDTH height=40 fillstyle="stretch" ignoreevents="true" capturemouseclicks=true capturemouseevents=true />
+
+</UIPane>

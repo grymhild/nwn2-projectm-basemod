@@ -1,0 +1,29 @@
+//::///////////////////////////////////////////////
+//:: War Glory
+//:: NW_S2_WarGloryB.nss
+//:: Copyright (c) 2006 Obsidian Entertainment, Inc.
+//:://////////////////////////////////////////////
+/*
+	Grants a bonus to hit to allies and penalties
+	to saves for enemies.
+
+	On Exit.
+*/
+//:://////////////////////////////////////////////
+//:: Created By: Andrew Woo (AFW-OEI)
+//:: Created On: 05/19/2006
+//:://////////////////////////////////////////////
+/////////////////////////////////////////////////////
+//////////////// Includes //////////////////////////
+////////////////////////////////////////////////////
+#include "_HkSpell"
+
+
+
+void main()
+{
+	if ( GetExitingObject() != GetAreaOfEffectCreator() )
+	{
+		CSLRemoveEffectSpellIdSingle( SC_REMOVE_ONLYCREATOR, GetAreaOfEffectCreator(), GetExitingObject(), SPELLABILITY_WAR_GLORY );
+	}
+}

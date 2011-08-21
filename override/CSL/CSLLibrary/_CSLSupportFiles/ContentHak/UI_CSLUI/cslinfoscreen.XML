@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="NWN2UI">
+
+<UIScene name="SCREEN_INFOBOX" 
+		idleexpiretime="1.0" scriptloadable="true" updaterate="10.0"
+		x=ALIGN_CENTER y=ALIGN_CENTER modal=false width=310 height=589
+		fadeout="0.3" fadein="0.3" draggable=true backoutkey=true
+	/>
+
+<!--
+OnAdd0=UIScene_OnAdd_AddExamineScreen("EXAMINE_NAME_TEXT","EXAMINE_DESCRIPTION_TEXT","IDENTIFY_BUTTON")
+OnAdd1="UIObject_Misc_ExecuteServerScript(gui_csl_examine)"
+OnRemove=UIScene_OnRemove_RemoveExamineScreen() priority="SCENE_INGAME"
+		
+OnAdd1="UIObject_Misc_ExtractData("self:","objectid",0,local:0)"
+UIObject_Misc_ExtractData("self:","objectid",0,local:0)
+OnUpdate0="UIObject_OnUpdate_GetCharacterData(PARTY,SCHOOL)" 
+		OnUpdate1="UIObject_Misc_SetLocalVarString(local:0)"
+		OnUpdate2="UIObject_Misc_ExecuteServerScript(gui_testingfeedback,running,local:0)"
+
+OnUpdate0="UIObject_Misc_ExtractData("self:","objectid",0,local:0)"
+OnUpdate1="UIObject_Misc_ExecuteServerScript(gui_testingfeedback,running,local:0)"
+<UIIcon name="EXAMINE_DETAIL" img="ia_examine.tga" x=15 y=12 width=40 height=40 />
+-->
+
+	<UIText name="INFOBOX_SCREEN_NAME" text="Info Box" uppercase=true x=15 y=12 width=208 height=20 align=left valign=middle fontfamily="Title_Font" style="1" />
+	
+
+	<!-- Close Button -->
+	<UIButton name="CloseButton" x=274 y=8 style="STYLE_CLOSE_BUTTON" 
+		OnLeftClick=UIButton_Input_ScreenClose()>
+	</UIButton>
+
+	<!-- Item Name -->	
+	<UIText name="INFOBOX_NAME_TEXT"
+		x=ALIGN_CENTER y=35 width=274 height=50 align=center valign=middle
+		fontfamily="Body_Font" style="bold" multiline=true maxlines=3
+	/>
+
+	
+	<UIListBox name="HEADER_LISTBOX"
+		x=26 y=89 width=272 height=490 yPadding=0 xPadding=0
+		showpartialchild=true unequalcontrols=true
+		scrollsegmentsize=30 hidescrollbarwhennotneeded=true >
+
+		<UIText name="INFOBOX_DESCRIPTION_TEXT" width=PARENT_WIDTH height=DYNAMIC
+			align=left valign=top color="black" fontfamily="NWN1_Dialog" style="bold"
+		/>
+		
+		<UIScrollBar name="SB" style="STYLE_SB_THIN"></UIScrollBar>	
+	</UIListBox>	
+
+	<!-- Background Image -->
+	<UIIcon name="DETAIL_TOP" img="title_large03.tga" x=9 y=8 width=291 height=32 ignoreevents="true" capturemouseclicks=true capturemouseevents=true />
+	
+	<UIIcon name="HZ_BAR" img="grid_pixel.tga" x=10 y=85 width=295 height=1 />
+	
+	<UIIcon name="EXAMINE_BACKGROUND" img="idesc_paper_bg.tga" x=10 y=32 width=290 height=548 />
+	<UIFrame x=0 y=0 width=PARENT_WIDTH height=PARENT_HEIGHT topleft="frame1_tl.tga" topright="frame1_tr.tga" bottomleft="frame1_bl.tga"
+		bottomright="frame1_BR.tga" top="frame1_t.tga" bottom="frame1_b.tga"
+		left="frame1_l.tga" right="frame1_r.tga" border=32 />	

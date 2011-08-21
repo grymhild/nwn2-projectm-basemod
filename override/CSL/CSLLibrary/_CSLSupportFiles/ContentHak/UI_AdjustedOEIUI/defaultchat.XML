@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8">
+
+<UIScene name="SCREEN_MESSAGE_1" width=398 height=138 x=112 y=575 minwidth=314 minheight=118 
+	capturemouseclicks="false" priority="SCENE_INGAME" idleexpiretime="1.0f"
+	dragresizable="true" dragresize_x=0 dragresize_y=20 dragresizeborder="6" capturemouseevents="true" 
+	scriptloadable="true" draggable="true" dragregion_x=0 dragregion_y=0 dragregion_width=100 dragregion_height=20 
+	OnAdd=UIObject_Misc_ExecuteServerScript("gui_csl_language","load",local:920)
+	/>
+
+
+	<UIPane name="DRAG_REGION" x=0 y=0 width=314 height=20 alpha="1.0" fadealpha="0.0" update=true capturemouseclicks=false
+		
+		OnUpdate=UIObject_OnUpdate_FadeAlpha("0.25")
+		OnMouseEnter=UIObject_Input_SetFadeAlpha("1.0")
+		OnMouseLeave=UIObject_Input_SetFadeAlpha("0.0") >
+
+		<UIButton name="CloseButton" x=1 y=1 style="STYLE_CLOSE_BUTTON" width=17 height=17
+			OnLeftClick=UIButton_Input_ScreenClose()>
+		</UIButton>
+		
+
+		<UIButton name="Language-0" x="125" y="0" width="20" height="20"
+			OnToolTip=UIObject_Tooltip_DisplayTooltipString("Cancel",OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT)  
+			MouseUpSFX="gui_button" hidden="true"
+			OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_language","off")  >
+			<UIFrame state="base"	fill="ia_specialabilities.tga" />
+			<UIFrame state="up"		fill="b_empty.tga" />
+			<UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			<UIFrame state="focused"	fill="b_empty.tga" />
+			<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.5" />
+			<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.5"/>
+    		</UIButton>
+		
+			<!-- OnLeftClick0=UIObject_Misc_ExecuteServerScript("gui_csl_language",local:901)
+			OnLeftClick1=UIObject_Input_SetFocus("inputbox") 
+			OnLeftClick2=UIButton_Input_ShowObject("INPUT_CONTAINER") -->
+
+		<UIButton name="Language-1" x="146" y="0" width="20" height="20"
+			OnToolTip=UIObject_Tooltip_DisplayTooltipString(local:911,OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT)  
+			MouseUpSFX="gui_button" hidden="true"    
+			OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_language",local:901)
+			 >
+			<UIFrame state="base"	fill="p_t_elf.tga" />
+			<UIFrame state="up"		fill="b_empty.tga" />
+			<UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			<UIFrame state="focused"	fill="b_empty.tga" />
+			<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.5" />
+			<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.5"/>
+    		</UIButton>
+
+		<UIButton name="Language-2" x="167" y="0" width="20" height="20"
+			OnToolTip=UIObject_Tooltip_DisplayTooltipString(local:912,OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT)  
+			MouseUpSFX="gui_button" hidden="true" 
+			OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_language",local:902)
+			 >
+			<UIFrame state="base"	fill="ia_specialabilities.tga" />
+			<UIFrame state="up"		fill="b_empty.tga" />
+			<UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			<UIFrame state="focused"	fill="b_empty.tga" />
+			<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.5" />
+			<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.5"/>
+    		</UIButton>
+
+		<UIButton name="Language-3" x="188" y="0" width="20" height="20"
+			OnToolTip=UIObject_Tooltip_DisplayTooltipString(local:913,OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT)  
+			MouseUpSFX="gui_button" hidden="true"
+			OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_language",local:903)
+			  >
+			<UIFrame state="base"	fill="ia_specialabilities.tga" />
+			<UIFrame state="up"		fill="b_empty.tga" />
+			<UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			<UIFrame state="focused"	fill="b_empty.tga" />
+			<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.5" />
+			<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.5"/>
+    		</UIButton>
+
+		<UIButton name="Language-4" x="209" y="0" width="20" height="20"
+			OnToolTip=UIObject_Tooltip_DisplayTooltipString(local:914,OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT)  
+			MouseUpSFX="gui_button" hidden="true"
+			OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_language",local:904)
+			  >
+			<UIFrame state="base"	fill="ia_specialabilities.tga" />
+			<UIFrame state="up"		fill="b_empty.tga" />
+			<UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			<UIFrame state="focused"	fill="b_empty.tga" />
+			<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.5" />
+			<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.5"/>
+    		</UIButton>
+
+		<UIButton name="Language-5" x="230" y="0" width="20" height="20"
+			OnToolTip=UIObject_Tooltip_DisplayTooltipString(local:915,OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT)  
+			MouseUpSFX="gui_button" hidden="true"
+			OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_language",local:905)
+			  >
+			<UIFrame state="base"	fill="ia_specialabilities.tga" />
+			<UIFrame state="up"		fill="b_empty.tga" />
+			<UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			<UIFrame state="focused"	fill="b_empty.tga" />
+			<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.5" />
+			<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.5"/>
+    		</UIButton>
+
+		<UIButton name="Language-6" x="251" y="0" width="20" height="20"
+			OnToolTip=UIObject_Tooltip_DisplayTooltipString(local:916,OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT)  
+			MouseUpSFX="gui_button" hidden="true"
+			OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_language",local:906)
+			  >
+			<UIFrame state="base"	fill="ia_specialabilities.tga" />
+			<UIFrame state="up"		fill="b_empty.tga" />
+			<UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			<UIFrame state="focused"	fill="b_empty.tga" />
+			<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.5" />
+			<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.5"/>
+    		</UIButton>
+
+		<UIButton name="Language-7" x="272" y="0" width="20" height="20"
+			OnToolTip=UIObject_Tooltip_DisplayTooltipString(local:917,OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT)  
+			MouseUpSFX="gui_button" hidden="true"
+			OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_language",local:907)
+			 >
+			<UIFrame state="base"	fill="ia_specialabilities.tga" />
+			<UIFrame state="up"		fill="b_empty.tga" />
+			<UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			<UIFrame state="focused"	fill="b_empty.tga" />
+			<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.5" />
+			<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.5"/>
+    		</UIButton>
+
+		<UIButton name="Language-8" x="293" y="0" width="20" height="20"
+			OnToolTip=UIObject_Tooltip_DisplayTooltipString(local:918,OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT)  
+			MouseUpSFX="gui_button"  hidden="true"
+			OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_csl_language",local:908)
+			  >
+			<UIFrame state="base"	fill="ia_specialabilities.tga" />
+			<UIFrame state="up"		fill="b_empty.tga" />
+			<UIFrame state="down"	fill="b_overlay_active.tga" alpha="0.8" />
+			<UIFrame state="focused"	fill="b_empty.tga" />
+			<UIFrame state="hilited"	fill="b_overlay_active.tga" alpha="0.5" />
+			<UIFrame state="hifocus"	fill="b_overlay_active.tga" alpha="0.5"/>
+    		</UIButton>
+
+		<UIText strref=2392 align=center valign=middle x=0 y=0 width=120 height=20 fontfamily="Default" />
+		<UIFrame width=120 height=20 topleft="tp_frame_tl.tga" topright="tp_frame_tr.tga" bottomleft="tp_frame_bl.tga"
+			bottomright="tp_frame_BR.tga" top="tp_frame_t.tga" bottom="tp_frame_b.tga"
+			left="tp_frame_l.tga" right="tp_frame_r.tga" fillstyle="stretch" fill="tp_frame_bg.tga"
+			border=5 />
+
+
+	</UIPane>
+	
+	
+	
+	<UIIcon name="left_edge"	x="0" y="20" img="fx_white.tga" width="1" height="PARENT_HEIGHT" color="A1A29A" scalewidthtoparent="false" scaleheighttoparent="false" />
+	<UIIcon name="top_edge"		x="0" y="20" img="fx_white.tga" width="PARENT_WIDTH" height="1" color="A1A29A" scalewidthtoparent="false" scaleheighttoparent="false" />
+	<UIIcon name="right_edge"	x="397" y="20" img="fx_white.tga" width="1" height="PARENT_HEIGHT" color="A1A29A" scalewidthtoparent="false" scaleheighttoparent="false" />
+	<UIIcon name="bottom_edge"	x="0" y="137" img="fx_white.tga" width="PARENT_WIDTH" height="1" color="A1A29A" scalewidthtoparent="false" scaleheighttoparent="false" />
+
+	<!-- Input Fields -->
+	<!-- Nota Bene: These 3 groups need to be in sequence -->
+		<UIText name="IMEReadingWindow" x=16 y=106 valign="middle" width=64 height=32 editable="false" selectable="false" 
+			multiline="false" scaleytoparent="false" scalewidthtoparent="true" fontfamily="International" hidden="true" color="FFFFFF" />
+		<UIIcon name="IMEReadingWindowBG" img="fx_white.tga" color="FF0F2F2F" alpha="1.0" x=16 y=86 width=64 height=32 scaleytoparent="false" />
+
+		<UIText name="IMEComposeWindow" x="2" y="22" valign="middle" width="296" height="32" editable="false" selectable="false"
+			multiline="false" scaleytoparent="false" scalewidthtoparent="true" fontfamily="International" hidden="true" color="FFFFFF" />
+		<UIIcon name="IMEComposeWindowBG" img="fx_white.tga" color="FF0F2F2F" alpha="1.0" x="2" y="2" width="296" height="32" scaleytoparent="false" />
+
+		<UIText name="IMECandidateWindow" x="128" y="84" valign="middle" width="188" height="32" editable="false" selectable="false"
+			multiline="true" scaleytoparent="false" scalewidthtoparent="true" fontfamily="International" hidden="true" color="FFFFFF" />
+		<UIIcon name="IMECandidateWindowBG" img="fx_white.tga" color="FF0F2F2F" alpha="1.0" x="128" y="64" width="188" height="32" scaleytoparent="false" />
+	<!-- End 3 group Sequence -->
+
+	<!-- Chat Listbox -->
+	<UIListBox name="messagelistbox" x=24 y=26 xPadding=5 yPadding=2 showpartialchild="true" width=375 height=70
+		OnResize=UIListBox_OnResize_ScrollToBottom()
+		OnRadialRequest=UIObject_OnRadial_DisplayQuickchatRadial()
+		scrollbaronright="false" unequalcontrols="true" scrollsegmentsize="16" hidescrollbarwhennotneeded="true" snaptobottom="true"
+		scaleheighttoparent="true" scalewidthtoparent="true" capturemouseclicks="false" >
+
+		<UIText name="repliestext" width="PARENT_WIDTH" height="DYNAMIC" color="ffc8c0" highlightcolor="FFFFFF" sizetofit="true" align="left" 
+			prototype="true" fontfamily="Default" capturemouseclicks=false capturemouseevents=true />
+
+		<UIScrollBar name="SB" style="STYLE_SB_ULTRA_THIN"></UIScrollBar>
+	</UIListBox>
+
+	<!-- Input Listbox -->
+	<UIPane name="INPUT_CONTAINER" x="24" y="96" width="375" height="36" >
+		<UIListBox name="INPUT_LISTBOX" x="0" y="0" width="PARENT_WIDTH" height="PARENT_HEIGHT" showpartialchild="true"
+		unequalcontrols="true" scrollsegmentsize="30" hidescrollbarwhennotneeded="true" >
+
+			<!-- WAS filter="alphanumeric" and not allowspace="true" -->
+			<UIText name="inputbox" allowspace="true" width="PARENT_WIDTH" height="DYNAMIC" align="left" valign="top" 
+			fontfamily="International" multiline="true" returnrestricted="true" editable="true" selectable="true"
+			maxlength="255" OnReturn="UIText_OnReturn_ParseChatInput()" 
+			update=true OnUpdate="UIText_OnUpdate_ParseChatInput()"
+			/>
+
+			<UIScrollBar name="SB" style="STYLE_SB_ULTRA_THIN"></UIScrollBar>
+		</UIListBox>
+		<UIIcon name="inputbg" x="0" y="0" width="PARENT_WIDTH" height="PARENT_HEIGHT" img="fx_white.tga" color="2F000000" alpha="0.75" />
+	</UIPane>
+
+	<!-- Background Image -->
+	<UIIcon name="messagebackground" x="0" y="20" img="fx_white.tga" width=PARENT_WIDTH height=PARENT_HEIGHT color="2F000000" alpha="0.60" />
+
+
+
+

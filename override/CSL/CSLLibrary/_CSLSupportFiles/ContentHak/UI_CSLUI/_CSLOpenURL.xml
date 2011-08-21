@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8">
+<!--
+	local:0 - Stores the value.
+	(use additional variables if you want to extract multiple fields)
+-->
+<UIScene name="SCREEN_OPENURL" 
+	x="ALIGN_LEFT" y="ALIGN_TOP" width="5" height="5"
+	idleexpiretime="1.0" scriptloadable="true" update="true" updaterate=1.0
+	backoutkey="false" priority="SCENE_SCRIPT" modal="false"
+	OnUpdate0=UIScene_Misc_SetPauseState("false")	
+	OnUpdate1=UIButton_Input_OpenURL(local:1)
+	OnUpdate2=UIButton_Input_ScreenClose()
+/>
+<UIPane width="5" height="5" hidden="true" focusable="false" >
+	
+</UIPane>

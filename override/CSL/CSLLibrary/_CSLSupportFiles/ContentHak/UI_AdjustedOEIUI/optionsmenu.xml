@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8">
+
+<UIScene name="SCREEN_MENU_OPTIONS" x=ALIGN_CENTER y=ALIGN_TOP width="SCREEN_WIDTH" height="350" scriptloadable=true idleexpiretime="1.0f" fadeout="0.3" fadein="0.3" priority="SCENE_INGAME_SYSTEM" 
+	OnAdd0=UIScene_Misc_SetPauseState("true")
+	OnAdd1=UIObject_Misc_ExecuteServerScript("gui_csl_interface","showextension")
+	OnRemove=UIScene_Misc_SetPauseState("false") scalewithscene=true scalescene=true />
+
+	<!-- The 'false' parameter in UIButton_OnUpdate_DisableClientPrivs tells it not to HIDE the disabled UI Object. -->
+
+	<UIPane x=12 y=5 width="194" height="323" scalewithscene=true  >
+        	<UIText name="TITLE" text="Menus" 
+			x=0 y=0 width=194 height=27 align=center valign=middle 
+			fontfamily="Title_Font" style="2"
+		/>		
+
+		<UIButton name="SAVE_GAME"  text="Save Game"
+			x=ALIGN_CENTER y="30" style="STYLE_LARGE_BUTTON"
+			OnLeftClick=UIButton_Input_ScreenOpen("SCREEN_SAVEGAME","false") 
+			update="true" OnUpdate=UIButton_OnUpdate_DisableClientPrivs("false") 
+		></UIButton>
+
+		<UIButton name="LOAD_GAME" strref=178833
+			x=ALIGN_CENTER y="66" style="STYLE_LARGE_BUTTON"
+			OnLeftClick=UIButton_Input_ScreenOpen("SCREEN_LOADGAME","false") 
+			update=true OnUpdate=UIButton_OnUpdate_DisableClientPrivs("false") 
+		></UIButton>
+
+		<UIButton name="GAME_OPTIONS" text="Game Options"
+			x=ALIGN_CENTER y="102" style="STYLE_LARGE_BUTTON"
+			OnLeftClick=UIButton_Input_ScreenOpen("SCREEN_OPTIONS","false") 
+		></UIButton>
+
+        	<UIButton name="" text=""
+			x=ALIGN_CENTER y="138" style="STYLE_LARGE_BUTTON"
+			 
+		></UIButton>
+
+		<UIButton name="EXPORT_CHAR"  strref=178837
+			x=ALIGN_CENTER y="174" style="STYLE_LARGE_BUTTON" 
+			OnLeftClick=UIButton_Input_ExportCharacter() 
+		></UIButton>
+
+		<UIButton name="XXXXX" text="Rest"
+			x=ALIGN_CENTER y="210" style="STYLE_LARGE_BUTTON"
+			OnLeftClick0=UIButton_Input_ScreenClose()
+			OnLeftClick1=UIButton_Input_Rest()
+			 >
+		></UIButton>
+
+		<UIButton name="MAIN_MENU" strref=178832 
+			x=ALIGN_CENTER y="246" style="STYLE_LARGE_BUTTON"
+			OnLeftClick=UIButton_Input_ExitToMainMenu() 
+		></UIButton>
+
+		<UIButton name="EXIT_GAME" strref=6602
+			x=ALIGN_CENTER y="282" style="STYLE_LARGE_BUTTON"
+			OnLeftClick=UIButton_Input_ExitApp("false") 
+		></UIButton>
+	</UIPane>
+
+
+	<UIPane x=215 y=5 width="394" height="323" scalewithscene=true  >
+        	<UIText name="XXXX1" text="In Game Controls" 
+			x=0 y=0 width=394 height=27 align=center valign=middle 
+			fontfamily="Title_Font" style="2"
+		/>		
+
+		<UIButton name="CHAR_TOGGLE_BUTTON"  text="Character"
+			x=ALIGN_LEFT y="30" style="STYLE_LARGE_BUTTON"
+			OnLeftClick=UIButton_Input_PlayerMenuChoice("SCREEN_CHARACTER","SCREEN_PLAYERMENU_POPUP") 
+			DefaultToolTip=122293 OnToolTip=UIObject_Tooltip_DisplayObject(OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT)
+		></UIButton>
+		
+		<UIButton name="MAP_TOGGLE_BUTTON"  text="World Map"
+			x=ALIGN_RIGHT y="30" style="STYLE_LARGE_BUTTON"
+			 OnLeftClick=UIButton_Input_PlayerMenuChoice("SCREEN_WORLDMAP","SCREEN_PLAYERMENU_POPUP") 
+			DefaultToolTip=176425 OnToolTip=UIObject_Tooltip_DisplayObject(OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT)
+			update=true OnUpdate=UIButton_OnUpdate_UpdateWorldMapButton()
+
+		></UIButton>
+
+		<UIButton name="INVEN_TOGGLE_BUTTON"  text="Inventory"
+			x=ALIGN_LEFT y="66" style="STYLE_LARGE_BUTTON"
+			OnLeftClick=UIButton_Input_PlayerMenuChoice("SCREEN_INVENTORY","SCREEN_PLAYERMENU_POPUP") 
+			DefaultToolTip=122292 OnToolTip=UIObject_Tooltip_DisplayObject(OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT)
+			update=true OnUpdate=UIButton_OnUpdate_UpdateInventoryButton()
+		></UIButton>
+
+		<UIButton name="MAP_TOGGLE_BUTTON"  text="Area Map"
+			x=ALIGN_RIGHT y="66" style="STYLE_LARGE_BUTTON"
+			OnLeftClick=UIButton_Input_PlayerMenuChoice("SCREEN_AREAMAP","SCREEN_PLAYERMENU_POPUP") 
+			DefaultToolTip=6379 OnToolTip=UIObject_Tooltip_DisplayObject(OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT)
+		></UIButton>
+
+		<UIButton name="JOURNAL_TOGGLE_BUTTON"   text="Journal"		
+			x=ALIGN_LEFT y="102" style="STYLE_LARGE_BUTTON" strref=178835
+			OnLeftClick=UIButton_Input_PlayerMenuChoice("SCREEN_JOURNAL","SCREEN_PLAYERMENU_POPUP") 
+			DefaultToolTip=122294 OnToolTip=UIObject_Tooltip_DisplayObject(OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT) 
+			
+		></UIButton>
+
+		<UIButton name="CHAT_PLAYER_LIST"   text="Chat Player List"		
+			x=ALIGN_RIGHT y="102" style="STYLE_LARGE_BUTTON" strref=178835
+			OnLeftClick0=UIButton_Input_ScreenClose()
+			OnLeftClick1=UIButton_Input_PlayerMenuChoice("SCREEN_CHATSELECT","SCREEN_PLAYERMENU_POPUP")
+		></UIButton>
+
+        	<UIButton name="SB_TOGGLE_BUTTON" text="Spells Known"
+			x=ALIGN_LEFT y="138" style="STYLE_LARGE_BUTTON"
+			OnLeftClick=UIButton_Input_PlayerMenuChoice("SCREEN_SPELLS_KNOWN","SCREEN_PLAYERMENU_POPUP") 
+			DefaultToolTip=122296 OnToolTip=UIObject_Tooltip_DisplayObject(OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT)
+			update = true OnUpdate=UIButton_OnUpdate_UpdateSpellbookButton()
+
+		></UIButton>
+
+        	<UIButton name="" text="Party Select"
+			x=ALIGN_RIGHT y="138" style="STYLE_LARGE_BUTTON"
+			
+			 OnLeftClick=UIButton_Input_PlayerMenuChoice("SCRIPT_SCREEN_PARTYSELECT","SCREEN_PLAYERMENU_POPUP") 
+			DefaultToolTip=182793 OnToolTip=UIObject_Tooltip_DisplayObject(OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT) 
+			
+		></UIButton>
+
+		<UIButton name="QC_TOGGLE_BUTTON"   text="Quick Cast"
+			x=ALIGN_LEFT y="174" style="STYLE_LARGE_BUTTON"
+			 OnLeftClick=UIButton_Input_PlayerMenuChoice("SCREEN_SPELLS_QUICK","SCREEN_PLAYERMENU_POPUP") 
+			DefaultToolTip=183637 OnToolTip=UIObject_Tooltip_DisplayObject(OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT) 
+		></UIButton>
+		
+		<UIButton name="PLAYER_LIST"   text="Player List" 
+			x=ALIGN_RIGHT y="174" style="STYLE_LARGE_BUTTON" 
+			
+				OnLeftClick=UIButton_Input_PlayerMenuChoice("SCREEN_PLAYERLIST","SCREEN_PLAYERMENU_POPUP") 
+			DefaultToolTip=122297 OnToolTip=UIObject_Tooltip_DisplayObject(OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT) 
+				update=true OnUpdate=UIButton_OnUpdate_EnableIfMultiplayer() 
+
+		></UIButton>
+
+		<UIButton name="MBAR_TOGGLE_BUTTON"   text="Mode Bar"
+			x=ALIGN_LEFT y="210" style="STYLE_LARGE_BUTTON"
+			OnLeftClick=UIButton_Input_PlayerMenuChoice("SCREEN_MODEBAR","SCREEN_PLAYERMENU_POPUP") 
+			DefaultToolTip=183635 OnToolTip=UIObject_Tooltip_DisplayObject(OBJECT_X,OBJECT_Y,SCREEN_TOOLTIP_2,ALIGN_NONE,ALIGN_NONE,0,0,ALIGN_LEFT) 
+			
+		></UIButton>
+
+		<UIButton name="PCTOOLS"   text="PC Tools" 
+			x=ALIGN_RIGHT y="210" style="STYLE_LARGE_BUTTON"
+			OnLeftClick=UIObject_Misc_ExecuteServerScript("gui_hss_pc_tool","","1","1.0","") 
+		></UIButton>
+
+		<UIButton name="PLIST_TOGGLE_BUTTON"   text="" hidden=true
+			x=ALIGN_LEFT y="246" style="STYLE_LARGE_BUTTON"
+		></UIButton>
+
+		<UIButton name="BUTTON_MODULE_FORUMS"   text="This Modules Forums" 
+			x=ALIGN_CENTER y="250" style="STYLE_LARGE_BUTTON" hidden="true"
+			 OnLeftClick0=UIScene_Misc_SetPauseState("false")
+			OnLeftClick1=UIButton_Input_ScreenClose()
+			OnLeftClick2="UIButton_Input_OpenURL(local:700)"
+		></UIButton>
+
+		<UIButton name="BUTTON_MODULE_ABOUT"   text="About This Module"
+			x=ALIGN_LEFT y="287" style="STYLE_LARGE_BUTTON" hidden="true"
+
+			 OnLeftClick0=UIScene_Misc_SetPauseState("false")
+			OnLeftClick1=UIButton_Input_ScreenClose()
+			OnLeftClick2="UIButton_Input_OpenURL(local:701)"
+		></UIButton>
+
+		<UIButton name="BUTTON_MODULE_VAULT"   text="Vote for Module"
+			x=ALIGN_RIGHT y="287" style="STYLE_LARGE_BUTTON" hidden="true"
+			OnLeftClick0=UIScene_Misc_SetPauseState("false")
+			OnLeftClick1=UIButton_Input_ScreenClose()
+			OnLeftClick2="UIButton_Input_OpenURL(local:702)"
+
+		></UIButton>
+	</UIPane>
+
+
+	
+<!-- 
+"UIButton_Input_OpenURL(http://nwcitadel.forgottenrealmsweave.org/showthread.php?t=1811)"
+"UIButton_Input_OpenURL(http://nwcitadel.forgottenrealmsweave.org/showthread.php?t=1811)"
+UIObject_Misc_ExecuteServerScript("gui_csl_interface","showextension")
+"UIButton_Input_OpenURL(&quot;http://nwvault.ign.com/View.php?view=nwn2scripts.detail&amp;id=37&quot;)"
+OnLeftClick2="UIButton_Input_OpenURL(&quot;http://nwvault.ign.com/View.php?view=nwn2scripts.detail&amp;id=37&quot;)" -->
+
+	<UIPane x=620 y=5 width="394" height="295" scalewithscene=true  >
+        	<UIText name="XXXX1" text="Community Links" 
+			x=0 y=0 width=394 height=27 align=center valign=middle 
+			fontfamily="Title_Font" style="2"
+		/>		
+
+		<UIButton name="XXXX2"  text="Main Forums"
+			x=ALIGN_LEFT y="30" style="STYLE_LARGE_BUTTON"
+			OnLeftClick0=UIScene_Misc_SetPauseState("false")
+			OnLeftClick1=UIButton_Input_ScreenClose()
+			OnLeftClick2="UIButton_Input_OpenURL(http://social.bioware.com/forum/1/subindex/156)"
+		></UIButton>
+		
+		<UIButton name="XXXX2"  text="NWN2Wiki Game Rules"
+			x=ALIGN_RIGHT y="30" style="STYLE_LARGE_BUTTON"
+			OnLeftClick0=UIScene_Misc_SetPauseState("false")
+			OnLeftClick1=UIButton_Input_ScreenClose()
+			OnLeftClick2="UIButton_Input_OpenURL(http://nwn2.wikia.com/wiki/Main_Page)"
+			
+		></UIButton>
+
+		<UIButton name="XXXX3"  text="NW Citadel Project"
+			x=ALIGN_LEFT y="66" style="STYLE_LARGE_BUTTON"
+			OnLeftClick0=UIScene_Misc_SetPauseState("false")
+			OnLeftClick1=UIButton_Input_ScreenClose()
+			OnLeftClick2="UIButton_Input_OpenURL(http://nwcitadel.forgottenrealmsweave.org/index.php)"
+		></UIButton>
+
+		<UIButton name="XXXX3"  text="Thieves-Guild"
+			x=ALIGN_RIGHT y="66" style="STYLE_LARGE_BUTTON"
+			OnLeftClick0=UIScene_Misc_SetPauseState("false")
+			OnLeftClick1=UIButton_Input_ScreenClose()
+			OnLeftClick2="UIButton_Input_OpenURL(http://thieves-guild.net/)"
+			
+		></UIButton>
+
+		<UIButton name="XXXX4"   text="NWN PodCast"		
+			x=ALIGN_LEFT y="102" style="STYLE_LARGE_BUTTON"
+			OnLeftClick0=UIScene_Misc_SetPauseState("false")
+			OnLeftClick1=UIButton_Input_ScreenClose()
+			OnLeftClick2="UIButton_Input_OpenURL(http://www.nwnpodcast.com/nwnp/)"
+			
+		></UIButton>
+
+		<UIButton name="XXXX4"   text="TroubleShooting"		
+			x=ALIGN_RIGHT y="102" style="STYLE_LARGE_BUTTON" 
+			OnLeftClick0=UIScene_Misc_SetPauseState("false")
+			OnLeftClick1=UIButton_Input_ScreenClose()
+			OnLeftClick2="UIButton_Input_OpenURL(http://social.bioware.com/forum/1/category/158/index)"
+			
+		></UIButton>
+
+        	<UIButton name="XXXX5" text="NWNConnections"
+			x=ALIGN_LEFT y="138" style="STYLE_LARGE_BUTTON"
+			OnLeftClick0=UIScene_Misc_SetPauseState("false")
+			OnLeftClick1=UIButton_Input_ScreenClose()
+			OnLeftClick2="UIButton_Input_OpenURL(http://www.neverwinterconnections.com/)"
+			 
+		></UIButton>
+
+        	<UIButton name="XXXX5" text="Finding A PW"
+			x=ALIGN_RIGHT y="138" style="STYLE_LARGE_BUTTON"
+			OnLeftClick0=UIScene_Misc_SetPauseState("false")
+			OnLeftClick1=UIButton_Input_ScreenClose()
+			OnLeftClick2="UIButton_Input_OpenURL(http://nwvault.ign.com/fms/TopRated.php?content=nwn2gameworlds)"
+			 
+		></UIButton>
+
+		<UIButton name="XXXX6"   text="NWN Vault Content"
+			x=ALIGN_LEFT y="174" style="STYLE_LARGE_BUTTON" 
+			OnLeftClick0=UIScene_Misc_SetPauseState("false")
+			OnLeftClick1=UIButton_Input_ScreenClose()
+			OnLeftClick2="UIButton_Input_OpenURL(http://nwvault.ign.com/)"
+			
+		></UIButton>
+		
+		<UIButton name="XXXX6"   text="Finding A SP Module"
+			x=ALIGN_RIGHT y="174" style="STYLE_LARGE_BUTTON" 
+			OnLeftClick0=UIScene_Misc_SetPauseState("false")
+			OnLeftClick1=UIButton_Input_ScreenClose()
+			OnLeftClick2="UIButton_Input_OpenURL(http://nwvault.ign.com/fms/TopRated.php?content=nwn2modulesenglish)"
+			
+		></UIButton>
+
+		<UIButton name="XXXX7"   text="NWN2DB Builds"
+			x=ALIGN_LEFT y="210" style="STYLE_LARGE_BUTTON"
+			OnLeftClick0=UIScene_Misc_SetPauseState("false")
+			OnLeftClick1=UIButton_Input_ScreenClose()
+			OnLeftClick2="UIButton_Input_OpenURL(http://nwn2db.com/)"
+			 
+		></UIButton>
+
+		<UIButton name="XXXX7"   text="UpGrade to MOTB SOZ"
+			x=ALIGN_RIGHT y="210" style="STYLE_LARGE_BUTTON"
+			OnLeftClick0=UIScene_Misc_SetPauseState("false")
+			OnLeftClick1=UIButton_Input_ScreenClose()
+			OnLeftClick2="UIButton_Input_OpenURL(http://store.steampowered.com/app/2760/)"
+			 
+		></UIButton>
+		
+		
+		<UIText name="OPTIONS_EXTENDER" x=0 y=246 width=394 height=15 align=center valign=top color="white" fontfamily="Body_Font" alpha="0.50" scalewithscene=true />
+		
+		<UIButton name="XXXX8"   text="NWN2 Client Extension" 
+			x=ALIGN_CENTER y="266" style="STYLE_LARGE_BUTTON"
+			OnLeftClick0=UIScene_Misc_SetPauseState("false")
+			OnLeftClick1=UIButton_Input_ScreenClose()
+			OnLeftClick2="UIButton_Input_OpenURL(http://www.nynaeve.net/Skywing/nwn2/cliext/ClientExtension_Latest.zip)"
+			 
+		></UIButton>
+
+		
+	</UIPane>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<UIPane x=ALIGN_RIGHT y=318 width="294" height="30" scalewithscene=true  >
+	<UIButton name="RESUME_GAME"	text="Return To Game"
+		x="50" y="0" style="STYLE_LARGE_BUTTON"
+		OnLeftClick=UIButton_Input_ScreenClose() >
+        </UIButton>
+
+	</UIPane>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- Background Image <UIIcon name="DETAIL_TOP" img="title_eye_01.tga" x="9" y="4" width="317" height="87" /> -->
+    
+
+    <UIFrame x="0" y="0" width=PARENT_WIDTH height=343 topleft="frame1_tl.tga" topright="frame1_tr.tga" bottomleft="frame1_bl.tga"
+	bottomright="frame1_BR.tga" top="frame1_t.tga" bottom="frame1_b.tga"
+	left="frame1_l.tga" right="frame1_r.tga" border="32" scalewithscene=true  />
+
+    <UIIcon name="PANE_BACKGROUND" img="frame_main_bg.tga" x="0" y="0" width=PARENT_WIDTH height=333 scalewithscene=true  />

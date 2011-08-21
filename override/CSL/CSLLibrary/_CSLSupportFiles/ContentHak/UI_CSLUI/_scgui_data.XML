@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8">
+<!--
+	local:0 - Stores the value.
+	(use additional variables if you want to extract multiple fields)
+-->
+<UIScene name="SCREEN_CHAR_DATA" 
+	x="ALIGN_LEFT" y="ALIGN_TOP" width="200" height="40"
+	idleexpiretime="1.0" scriptloadable="true"
+	backoutkey="false" priority="SCENE_SCRIPT" modal="false"	
+	OnAdd="UIObject_Misc_RequestCharacterUpdates(0,true,STATS)"
+	OnRemove="UIObject_Misc_RequestCharacterUpdates(0,false)"
+/>
+<UIPane width="200" height="40" hidden="true" focusable="false" >
+	<UIText width="PARENT_WIDTH" height="PARENT_HEIGHT" update="true" hidden="true"
+		OnUpdate0="UIObject_OnUpdate_GetCharacterData(PARTY,SCHOOL)" 
+		OnUpdate1="UIObject_Misc_SetLocalVarString(local:0)"
+		OnUpdate2="UIObject_Misc_ExecuteServerScript(gui_getchardata,SCHOOL,local:0)"
+	/>
+</UIPane>
