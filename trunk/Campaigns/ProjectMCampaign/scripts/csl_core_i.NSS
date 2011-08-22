@@ -42,3 +42,19 @@ int CSLGetLevelsByClass(object oChar, int nClass)
 			return GetLevelByPosition(i, oChar);
 	return 0;
 }
+
+int CSLGetBannedSchool(int nActiveSchool)
+{
+	switch (nActiveSchool)
+	{
+		case SPELL_SCHOOL_ABJURATION: return SPELL_SCHOOL_CONJURATION;
+		case SPELL_SCHOOL_CONJURATION: return SPELL_SCHOOL_TRANSMUTATION;
+		case SPELL_SCHOOL_DIVINATION: return SPELL_SCHOOL_ILLUSION;
+		case SPELL_SCHOOL_ENCHANTMENT: return SPELL_SCHOOL_ILLUSION;
+		case SPELL_SCHOOL_EVOCATION: return SPELL_SCHOOL_CONJURATION;
+		case SPELL_SCHOOL_ILLUSION: return SPELL_SCHOOL_ENCHANTMENT;
+		case SPELL_SCHOOL_NECROMANCY: return SPELL_SCHOOL_DIVINATION;
+		case SPELL_SCHOOL_TRANSMUTATION: return SPELL_SCHOOL_CONJURATION;		
+	}
+	return -1;
+}

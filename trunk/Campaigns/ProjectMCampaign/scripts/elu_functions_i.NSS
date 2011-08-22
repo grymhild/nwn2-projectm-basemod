@@ -109,7 +109,7 @@ int GetAdjustedSpellLevel(object oPC, int nAdjBestCasterLvl, int nBestCasterClas
 {
 	int nSpellLevel = 0;
 	string sSpGain = Get2DAString("classes", "SpellGainTable", nBestCasterClass);
-	if (sSpGain != "****")
+	if (sSpGain != "")
 	{
 		nSpellLevel = StringToInt(Get2DAString(sSpGain, "NumSpellLevels", nAdjBestCasterLvl)) - 1;
 		string sSpellStat = Get2DAString("classes", "SpellAbil", nBestCasterClass);
