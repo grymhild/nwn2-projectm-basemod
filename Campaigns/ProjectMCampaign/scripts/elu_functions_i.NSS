@@ -182,6 +182,16 @@ string GetClassSummaryText(object oChar)
 	string sText = "Class: ";
 	int nSelectedClassID = GetLocalInt(oChar, LAST_SELECTED_CLASS);
 	sText += GetStringByStrRef(StringToInt(Get2DAString("classes", "Name", nSelectedClassID))) + "\n\n";
+	int nStatBump = GetLocalInt(oChar, LVL_STATBUMP);
+	switch (nStatBump)
+	{
+		case 1: sText += GetStringByStrRef(135) + " +1\n\n"; break;
+		case 2: sText += GetStringByStrRef(133) + " +1\n\n"; break;
+		case 3: sText += GetStringByStrRef(132) + " +1\n\n"; break;
+		case 4: sText += GetStringByStrRef(134) + " +1\n\n"; break;
+		case 5: sText += GetStringByStrRef(136) + " +1\n\n"; break;
+		case 6: sText += GetStringByStrRef(131) + " +1\n\n"; break;
+	}
 	int nHP = GetConBonusPoints(oChar) + StringToInt(Get2DAString("classes", "HitDie", nSelectedClassID));
 	if (GetHasFeat(FEAT_TOUGHNESS, oChar))
 		nHP += 1;
