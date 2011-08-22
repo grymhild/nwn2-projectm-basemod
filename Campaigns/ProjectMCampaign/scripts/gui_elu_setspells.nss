@@ -1,4 +1,5 @@
 #include "elu_spells_i"
+#include "_CSLCore_Magic"
 
 void CreateSpellListListBoxRow(object oChar, int nSpellID, string sName, string sIcon, string sLevel)
 {	
@@ -18,7 +19,7 @@ void CreateSpellListListBoxRow(object oChar, int nSpellID, string sName, string 
 	CSLAddListBoxRow(oLB2, sRowName, sTextFields, sTextures, sVariables, "", !bKnown);		
 }
 
-void ProcessSpellbook(object oChar, object oSpellBook, int iStartRow, int iEndRow)
+void ProcessSpellbook(object oChar, object oSpellBook, int iStartRow, int iEndRow, int nBannedSchool)
 {
 	int i = 0;
 	int iCurrent;
@@ -27,18 +28,21 @@ void ProcessSpellbook(object oChar, object oSpellBook, int iStartRow, int iEndRo
 	{
 		if (i > maxIterations)
 		{
-			DelayCommand(0.1, ProcessSpellbook(oChar, oSpellBook, iCurrent, iEndRow));
+			DelayCommand(0.1, ProcessSpellbook(oChar, oSpellBook, iCurrent, iEndRow, nBannedSchool));
 			return;
 		}
-		int nSpellID = CSLDataTableGetRowByIndex( oSpellBook, iCurrent );
+		int nSpellID = CSLDataTableGetRowByIndex(oSpellBook, iCurrent);
 		string sDoNotShow = Get2DAString("spells", "DoNotShowOnLevelUp", nSpellID);
 		if (sDoNotShow != "1")
 		{
-			//TODO: get School, and compare to school, skip if banned spell.
-			string sName = CSLDataTableGetStringByRow(oSpellBook, "Name", nSpellID);							
-			string sIcon = Get2DAString("spells", "IconResRef", nSpellID);			
-			string sLevel = CSLDataTableGetStringByRow(oSpellBook, "Level", nSpellID);						
-			CreateSpellListListBoxRow(oChar, nSpellID, sName, sIcon, sLevel);								
+			int nSpellSchool = CSLGetSchoolByInitial(Get2DAString("spells", "School", nSpellID));
+			if (nSpellSchool != nBannedSchool)
+			{
+				string sName = CSLDataTableGetStringByRow(oSpellBook, "Name", nSpellID);							
+				string sIcon = Get2DAString("spells", "IconResRef", nSpellID);			
+				string sLevel = CSLDataTableGetStringByRow(oSpellBook, "Level", nSpellID);						
+				CreateSpellListListBoxRow(oChar, nSpellID, sName, sIcon, sLevel);								
+			}
 		}				
 		i++;
 	}
@@ -61,9 +65,13 @@ void ProcessSpellbook(object oChar, object oSpellBook, int iStartRow, int iEndRo
 	SetLocalInt(oChar, DONE_PROCESSING_SPELLS, 1);	
 	UpdateSpellListBoxes(oChar, nHighestGainLevel);
 	
+	if (nTotalLevels == 0 && nSelectedClassID == 10)
+		AddAllCantrips(oChar);	//Wizards get all cantrips for free
+	
 	SetGUIObjectHidden(oChar, SCREEN_LEVELUP_SPELLS, "SPELL_LEVEL_GRID", FALSE);
 	h2_LogMessage(H2_LOG_DEBUG, "Finshed executing all delayed actions in gui_elu_setspells.");
 }
+
 
 
 void main()
@@ -71,7 +79,9 @@ void main()
 	h2_LogMessage(H2_LOG_DEBUG, "Executing gui_elu_setspells");	
 	object oChar = GetControlledCharacter(OBJECT_SELF);
 	int nSelectedClassID = GetLocalInt(oChar, LAST_SELECTED_CLASS);
-	
+	int nBannedSchool = -1;
+	if (nSelectedClassID == 10) //Leveling up as a wizard check for school specialization
+		nBannedSchool = CSLGetBannedSchool(GetLocalInt(oChar, "SC_iSpellSchool"));
 	object oSpellBook = CSLGetSpellBookByClass( nSelectedClassID ); 
 	if (GetIsObjectValid(oSpellBook))
 	{
@@ -84,8 +94,8 @@ void main()
 			CSLCreateListBoxObject(oChar, "SCREEN_LEVELUP_SPELLS", CUSTOM_AVAILABLE_SPELL_LIST_ + sLevel, "SPELL_ACTION,SPELL_IMAGE,SPELL_TEXT");
 			int nSpells = GetInitialSpellsAvailableByClassAndLevel(oChar, nSelectedClassID, i);
 			SetLocalInt(oChar, SPELL_LEVEL + sLevel, nSpells);
-		}						
-		ProcessSpellbook(oChar, oSpellBook, 0, iEndRow);
+		}	
+		ProcessSpellbook(oChar, oSpellBook, 0, iEndRow, nBannedSchool);
 	}
 	else
 		WriteTimestampedLogEntry("Spellbook for classID: " + IntToString(nSelectedClassID) + " was not valid.");

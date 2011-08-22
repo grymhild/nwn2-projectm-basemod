@@ -106,10 +106,26 @@ void AllocateSpellsByPackage(object oChar, string spellpackage, int nSelectedCla
 	int nRows = GetNum2DARows(spellpackage);
 	int i = 0;
 	int nTotalSpells = 0;
-	if (nSelectedClassID == 10) //Wizard has a static quantity of spells
+	int nMaxSpellLevel = 10;
+	if (nSelectedClassID == 10) //Wizards need special handling
 	{
 		nTotalSpells = GetSpellPoolPointsAvailableByLevel(oChar, 0);
-		//TODO do something in here to check for spell school somehow if a wizard, and alter the package chosen
+		int nWizLevels = CSLGetLevelsByClass(oChar, nSelectedClassID) + 1;
+		int nStatBonus = GetLocalInt(oChar, LVL_STATBUMP);
+		int nInt = GetAbilityScore(oChar, ABILITY_INTELLIGENCE, TRUE) + (nStatBonus == 5);
+		nMaxSpellLevel = GetAdjustedSpellLevel(oChar, nWizLevels, nSelectedClassID, 10, nInt, 10);
+		int nSchool = GetLocalInt(oChar, "SC_iSpellSchool");
+		switch (nSchool)
+		{
+			case SPELL_SCHOOL_ABJURATION: spellpackage = "PackSPWiz2"; break;
+			case SPELL_SCHOOL_CONJURATION: spellpackage = "PackSPWiz3"; break;
+			case SPELL_SCHOOL_DIVINATION: spellpackage = "PackSPWiz4"; break;
+			case SPELL_SCHOOL_ENCHANTMENT: spellpackage = "PackSPWiz5"; break;
+			case SPELL_SCHOOL_EVOCATION: spellpackage = "PackSPWiz6"; break;
+			case SPELL_SCHOOL_ILLUSION: spellpackage = "PackSPWiz7"; break;
+			case SPELL_SCHOOL_NECROMANCY: spellpackage = "PackSPWiz8"; break;
+			case SPELL_SCHOOL_TRANSMUTATION: spellpackage = "PackSPWiz9"; break;		
+		}
 	}
 	else
 	{		
@@ -123,8 +139,8 @@ void AllocateSpellsByPackage(object oChar, string spellpackage, int nSelectedCla
 		string sSpellID = Get2DAString(spellpackage, "SpellIndex", i);
 		int nSpellID = StringToInt(sSpellID);
 		int nLevel = StringToInt(CSLDataTableGetStringByRow(oSpellBook, "Level", nSpellID));
-		int nSpellsForLevel = GetSpellPoolPointsAvailableByLevel(oChar, nLevel);
-		if (nSpellsForLevel > 0)
+		int nSpellsForLevel = GetSpellPoolPointsAvailableByLevel(oChar, nLevel);		
+		if (nSpellsForLevel > 0 && nLevel < nMaxSpellLevel)
 		{	//Recommended Spell known slot avialble, take this spell.
 			int bKnown = GetSpellKnown(oChar, nSpellID); //TODO: this needs to be able to check for class
 			if (!bKnown)
@@ -249,9 +265,7 @@ void UpdateSpellListBoxes(object oChar, int nLevel)
 	int nPoints = GetSpellPoolPointsAvailableByLevel(oChar, nLevel);
 	SetGUIObjectText(OBJECT_SELF, SCREEN_LEVELUP_SPELLS, "POINT_POOL_TEXT", -1, IntToString(nPoints));
 	
-	int nSelectedClassID = GetLocalInt(oChar, LAST_SELECTED_CLASS);
-	if (nLevel == 0 && nSelectedClassID == 10)
-		AddAllCantrips(oChar);	//Wizards get all cantrips for free
+	int nSelectedClassID = GetLocalInt(oChar, LAST_SELECTED_CLASS);	
 }
 
 int GetInitialSpellsAvailableByClassAndLevel(object oChar, int nClass, int nSpellLevel)
