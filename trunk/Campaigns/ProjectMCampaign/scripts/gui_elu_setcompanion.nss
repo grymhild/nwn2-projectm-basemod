@@ -26,7 +26,7 @@ void FilterCompanionListBox(object oChar, string sListBoxScreen, string sListBox
 
 	SetGUIObjectDisabled(OBJECT_SELF, sListBoxScreen, sButtonName, TRUE);
 
-	DeleteLocalString(oChar, ANIMAL_COMPANION_LAST_SELECTED);
+	//DeleteLocalString(oChar, ANIMAL_COMPANION_LAST_SELECTED);
 	DeleteLocalString(oChar, FAMILIAR_LAST_SELECTED);
 
 	h2_LogMessage(H2_LOG_DEBUG, "Finished executing gui_elu_setcompanion");

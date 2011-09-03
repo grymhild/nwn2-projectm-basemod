@@ -1,17 +1,13 @@
 #include "elu_functions_i"
-//#include "pm_spellfeats_i"
 #include "hcr2_core_i"
 
-const string ANIMAL_COMPANION_OVERRIDE = "ANIMAL_COMPANION_OVERRIDE";
 const string FAMILIAR_OVERRIDE = "FAMILIAR_OVERRIDE";
-const string ANIMAL_COMPANION_LAST_SELECTED = "ANIMAL_COMPANION_LAST_SELECTED";
 const string FAMILIAR_LAST_SELECTED = "FAMILIAR_LAST_SELECTED";
-
 
 void HandleUnsummon(object oSummoned)
 {
 	string sResRef = GetResRef(oSummoned);
-	//Hanlde special cases for custom familiars and such.
+	//Handle special cases for custom familiars and such.
 	object oMaster = GetMaster(oSummoned);
 	object oSkin = GetItemInSlot(INVENTORY_SLOT_CARMOUR, oMaster);
 	if (GetSubString(sResRef, 0, 11) == "c_fam_raven")
@@ -25,7 +21,6 @@ void HandleUnsummon(object oSummoned)
 		DeleteLocalInt(GetMaster(oSummoned), "FT_FAM_IMPINTIMIDATE");
 	}
 }
-
 
 int GetFamiliarLevel(object oChar)
 {
@@ -90,17 +85,6 @@ void SetFamiliarOverride(object oChar, string sOverride)
 	SetLocalString(oSkin, FAMILIAR_OVERRIDE, sOverride);
 }
 
-void SetAnimalCompanionOverride(object oChar, string sOverride)
-{
-	object oSkin = GetItemInSlot(INVENTORY_SLOT_CARMOUR, oChar);
-	if (!GetIsObjectValid(oSkin))
-	{
-		h2_LogMessage(H2_LOG_ERROR, "A player skin is required for SetAnimalCompanionOverride, and it was not detected.");
-		return;
-	}
-	SetLocalString(oSkin, ANIMAL_COMPANION_OVERRIDE, sOverride);
-}
-
 string GetFamiliarOverrideResRef(object oChar)
 {
 	object oSkin = GetItemInSlot(INVENTORY_SLOT_CARMOUR, oChar);
@@ -113,10 +97,7 @@ string GetFamiliarOverrideResRef(object oChar)
 	if (sOverride == "")
 		return "";
 
-	if (FindSubString(sOverride, "elef") > -1 ||
-		FindSubString(sOverride, "elee") > -1 ||
-		FindSubString(sOverride, "elew") > -1 ||
-		FindSubString(sOverride, "elea") > -1)
+	if (FindSubString(sOverride, "csl_ancom_ele") > -1)
 		sOverride += IntToString(GetElemFamRange(oChar));
 	else
 		sOverride += IntToString(GetFamiliarRange(oChar));
@@ -124,28 +105,5 @@ string GetFamiliarOverrideResRef(object oChar)
 	return sOverride;
 }
 
-string GetAnimalCompanionOverrideResRef(object oChar)
-{
-	object oSkin = GetItemInSlot(INVENTORY_SLOT_CARMOUR, oChar);
-	if (!GetIsObjectValid(oSkin))
-	{
-		h2_LogMessage(H2_LOG_ERROR, "A player skin is required for GetAnimalCompanionOverrideResRef, and it was not detected.");
-		return "";
-	}
-	string sOverride = GetLocalString(oSkin, ANIMAL_COMPANION_OVERRIDE);
-	if (sOverride == "")
-		return "";
-
-	if (FindSubString(sOverride, "elef") > -1 ||
-	    FindSubString(sOverride, "elee") > -1 ||
-	    FindSubString(sOverride, "elew") > -1 ||
-	    FindSubString(sOverride, "elea") > -1)
-	    sOverride += GetElemCompRange(oChar);
-	else
-		sOverride += IntToString(GetAnimCompRange(oChar));
-
-
-	return sOverride;
-}
 
 

@@ -4,8 +4,5 @@
 void main()
 {
 	h2_LogMessage(H2_LOG_DEBUG, "Executed pm_mod_oncliententer");
-
 	CSLEvent_Mod_OnClientEnter();
-
-
 }
