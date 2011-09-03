@@ -33,8 +33,8 @@ void main()
 
 
 	//For ELU to enable Enhanced Familiar/AnimalCompanion
-	FeatAdd(oPC, 2002, FALSE);
-
+	FeatAdd(oPC, 2002, FALSE);		
+	DisplayGuiScreen(oPC, "SCREEN_SET_FAMILIAR_NAME", FALSE, "set_familiar_name.xml");	
 	ExecuteScript("hcr2_bleedsystempcl", OBJECT_SELF);
 
 	AssignCommand(oPC, ActionSpeakString("dm_debuglevel 9"));

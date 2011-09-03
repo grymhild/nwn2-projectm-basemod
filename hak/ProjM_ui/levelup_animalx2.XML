@@ -179,8 +179,7 @@
       	update="true" OnUpdate=UIListBox_OnUpdate_CreateFamiliarList("LEVELUP","ANIMAL_COMPANION","INFOPANE_TEXT") >
 	
 		<UIButton name="COMPANION_BUTTON" x=0 y=0 width=210 height=40 buttontype=radio groupid=1 prototype=true 
-			OnLeftClick0=UIObject_Misc_StoreObjectData(local:100)
-			OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_elu_selectcompanion",local:100,0) >		
+			OnLeftClick0=UIObject_Misc_StoreObjectData(local:100) >		
 			
 		  <UIText name="COMPANION_TEXTFIELD" indent=10 hangingindent=10 align="left" valign="middle" fontfamily="Title_Font" style=1 prototype="true" 	
 			/>
@@ -217,7 +216,6 @@
 		<UIButton name="CHOICE_NEXT" strref="113752" x="336" y="0" style="STYLE_MENU_BUTTON_SML"
 			hideoverride=true
 			OnLeftClick=UIButton_Input_CharGenCommit("LEVELUP","CHARGEN_ANIMAL") 
-			OnLeftClick0=UIObject_Misc_ExecuteServerScript("gui_elu_commitcompanion",0)						
 			update="true" OnUpdate=UIButton_OnUpdate_CheckCharGenStage("LEVELUP","CHARGEN_ANIMAL") >
 		</UIButton>
 		

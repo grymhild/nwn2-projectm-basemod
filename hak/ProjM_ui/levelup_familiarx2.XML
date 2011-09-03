@@ -45,7 +45,7 @@
 		<UIText name="INFOPANE_HELPTEXT" strref="183354" width="PARENT_WIDTH" height="DYNAMIC" align="left" valign="top" fontfamily="NWN1_Dialog" multiline="true" />
 		<UIText name="INFOPANE_TEXT" width="PARENT_WIDTH" height="DYNAMIC" align="left" valign="top" fontfamily="NWN1_Dialog" multiline="true" />
         <UIScrollBar name="SB" style="STYLE_SB_THIN"></UIScrollBar>
-      </UIListBox>                                    
+      </UIListBox>
     </UIPane>
 
     <!-- Stats Pane -->
@@ -187,7 +187,7 @@
 		</UIButton>
 
       <UIScrollBar name="SB" style="STYLE_SB_THIN"></UIScrollBar>
-    </UIListbox>   
+    </UIListbox>
 
     <UIFrame x="0" y="9" width="PARENT_WIDTH" height="647" topleft="frame_main_TL.tga" topright="frame_main_TR.tga" 
          bottomleft="frame_main_d_BL.tga" bottomright="frame_main_BR.tga" top="frame_main_T.tga" bottom="frame_main_b.tga"
@@ -205,11 +205,10 @@
 	<UIPane name="CHARGEN_BUTTONS" x=ALIGN_RIGHT y=723 width=520 height=45 >
 		<UIButton name="CHOICE_RECOMMEND" strref="113764" x="168" y="0" style="STYLE_MENU_BUTTON_SML" disabled="true" />
 		<UIButton name="CHOICE_NEXT" strref="113752" x="336" y="0" style="STYLE_MENU_BUTTON_SML"  
-			OnLeftClick=UIButton_Input_CharGenCommit("LEVELUP","CHARGEN_FAMILIAR") 		
-			update="true" OnUpdate=UIButton_OnUpdate_CheckCharGenStage("LEVELUP","CHARGEN_FAMILIAR") >
-		</UIButton>						
+		OnLeftClick=UIButton_Input_CharGenCommit("LEVELUP","CHARGEN_FAMILIAR") 
+		update="true" OnUpdate=UIButton_OnUpdate_CheckCharGenStage("LEVELUP","CHARGEN_FAMILIAR") ></UIButton>
 	</UIPane>
-
+ 
 	<UIPane name="CAMERA_CONTAINER" x="22" y="612" width="76" height="70" usescalar=true >
 		<!-- Model Zoom Buttons -->
 		<UIButton name="CAMERA_ZOOM_OUT" x="0" y="0" width="35" height="34" buttontype="radio" groupid="2" groupmemberid="1" DefaultToolTip="181294"

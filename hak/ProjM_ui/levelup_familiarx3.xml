@@ -33,13 +33,14 @@
     			
     			<UIText name="FAMILIAR_NAME_FIELD" x=ALIGN_CENTER y=25 align=left valign=middle width=188 height=28 editable=true filter="alphanumeric"
     			selectable="true" multiline="false" maxlength=16 fontfamily="NWN1_Dialog"
-    			OnLostFocus=UIText_Misc_SetCharGenData("LEVELUP","FAMILIAR_COMPANION_NAME") 
-    			update=true OnUpdate=UIText_Misc_SetCharGenData("LEVELUP","FAMILIAR_COMPANION_NAME") />	
+    			OnLostFocus=UIText_Misc_SetCharGenData("LEVELUP","FAMILIAR_COMPANION_NAME") update=true  
+    			OnUpdate0=UIText_Misc_SetCharGenData("LEVELUP","FAMILIAR_COMPANION_NAME") 
+				OnUpdate1=UIObject_Misc_SetLocalVarString(local:3)/>	
     			
     			<UIIcon name="FAMILIAR_NAME_BG" x=ALIGN_CENTER y=21 img="b_g_lg01_normal.tga" width=194 height=28 ignoreevents=true />
     			
     			<UIButton name="RANDOM_NAME" strref=113761 x=ALIGN_CENTER y=55 width=194 style="STYLE_LARGE_BUTTON"
-    			OnLeftClick=UIButton_Input_GenerateRandomName("FAMILIAR_COMPANION_NAME","FAMILIAR_NAME_FIELD") ></UIButton>
+					OnLeftClick=UIButton_Input_GenerateRandomName("FAMILIAR_COMPANION_NAME","FAMILIAR_NAME_FIELD") ></UIButton>
     		</UIPane>
     		
     		<UIText name="INFOPANE_HELPTEXT" strref="183354" width="PARENT_WIDTH" height="DYNAMIC" align="left" valign="top" fontfamily="NWN1_Dialog" multiline="true" />
@@ -180,7 +181,7 @@
 
 	<UIButton name="COMPANION_BUTTON" x=0 y=0 width=210 height=40 buttontype=radio groupid=1 prototype=true 
 		OnLeftClick0=UIObject_Misc_StoreObjectData(local:100)
-		OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_elu_selectcompanion",local:100,1) >
+		OnLeftClick1=UIObject_Misc_ExecuteServerScript("gui_elu_selectfamiliar",local:100) >
           <UIText name="COMPANION_TEXTFIELD" indent=10 hangingindent=10 align="left" valign="middle" fontfamily="Title_Font" style=1 prototype="true" />
           <UIFrame state="up"		fill="b_g_lg01_normal.tga" />
           <UIFrame state="down"		fill="b_g_lg01_pressed.tga" />
@@ -211,8 +212,8 @@
 		<UIButton name="CHOICE_RECOMMEND" strref="113764" x="168" y="0" style="STYLE_MENU_BUTTON_SML" disabled="true"  />
 						
 		<UIButton name="CHOICE_NEXT" strref="113752" x="336" y="0" style="STYLE_MENU_BUTTON_SML"  
-			OnLeftClick0=UIObject_Misc_ExecuteServerScript("gui_elu_commitcompanion",1)			
-			update="true" OnUpdate=UIButton_OnUpdate_CheckCharGenStage("LEVELUP","CHARGEN_ANIMAL") >
+			OnLeftClick0=UIObject_Misc_ExecuteServerScript("gui_elu_commitfamiliar",local:100,local:3) update="true" 
+			OnUpdate0=UIButton_OnUpdate_CheckCharGenStage("LEVELUP","CHARGEN_ANIMAL") >
 		</UIButton>
 		
 	</UIPane>
