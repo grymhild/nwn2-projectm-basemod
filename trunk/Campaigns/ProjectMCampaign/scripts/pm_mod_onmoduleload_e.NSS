@@ -15,6 +15,8 @@ void main()
 	LoadSkill2DAData();
 	LoadClassFeatData();
 
+	SetMaxHenchmen(10);
+	
 	ExecuteScript("x2_mod_def_load", OBJECT_SELF);
 
 	SetGlobalInt("bNX2_TRANSITIONS", TRUE);
