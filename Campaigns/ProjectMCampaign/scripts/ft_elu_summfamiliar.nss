@@ -28,10 +28,8 @@ void main()
 	//--------------------------------------------------------------------------
 	//Run Precast Code
 	//--------------------------------------------------------------------------
-	if (!HkPreCastHook( oCaster, iSpellId, SCMETA_DESCRIPTOR_NONE, iClass, iSpellLevel, SPELL_SCHOOL_GENERAL, SPELL_SUBSCHOOL_NONE, iAttributes ) )
-	{
-		return;
-	}
+	if (!HkPreCastHook( oCaster, iSpellId, SCMETA_DESCRIPTOR_NONE, iClass, iSpellLevel, SPELL_SCHOOL_GENERAL, SPELL_SUBSCHOOL_NONE, iAttributes ) )	
+		return;	
 
 	//--------------------------------------------------------------------------
 	//Declare major variables
@@ -44,15 +42,12 @@ void main()
 		return;
 	}
 	
-	
 	string sOverrideFamiliarResRef = GetFamiliarOverrideResRef(oCaster);
 	if (sOverrideFamiliarResRef == "")
 		//Yep thats it
 		SummonFamiliar();
-	else
-	{
-		SummonFamiliar(oCaster, sOverrideFamiliarResRef);
-	}
+	else	
+		SummonFamiliar(oCaster, sOverrideFamiliarResRef);	
 
 	HkPostCast(oCaster);
 }
