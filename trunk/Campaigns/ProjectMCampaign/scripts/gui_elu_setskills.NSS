@@ -34,6 +34,11 @@ void main()
 		string sTextFields;
 		string sHideUnhide;
 		string cs = "0";
+		if (HasSkillKnowledgeFeat(oControlledChar, sSkillID))
+		{
+			n = 0;
+			WriteTimestampedLogEntry("Has Skill Knowledge  Feat: " + sSkillName);
+		}
 		if (n == -1)
 		{
 			sTextFields = "SKILL_TEXT_CC=" + sSkillName + ";SKILL_RANK=" + sSkillRank;
@@ -44,7 +49,7 @@ void main()
 			cs = "1";
 			sTextFields = "SKILL_TEXT_CS=" + sSkillName + ";SKILL_RANK=" + sSkillRank;
 			sHideUnhide ="SKILL_TEXT_CS=unhide;SKILL_TEXT_CC=hide;SKILL_TEXT_NA=hide";
-		}
+		}				
 		string sVariables = "0=" + sSkillID + ";1=" + cs + ";2=" + sSkillName;
 		string sTextures = "SKILL_IMAGE=" + sImage;
 		DeleteLocalInt(oControlledChar,SKILL_LEVELS_BOUGHT + sSkillID);
