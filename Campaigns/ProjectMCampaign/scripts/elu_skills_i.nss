@@ -36,12 +36,53 @@ void AdjustGUISkillRank(object oChar, int nSkillID, int nCurSkillLevelsBought, i
 	ModifyListBoxRow(oChar, "SCREEN_LEVELUP_SKILLS", "CUSTOM_SKILLPANE_LIST",IntToString(nSkillID),sTextFields, "", "", "");
 }
 
+int HasSkillKnowledgeFeat(object oChar, string sSkillID)
+{
+	int nSkillID = StringToInt(sSkillID);
+	switch (nSkillID)
+	{
+		case 1: return GetHasFeat(1254, oChar);
+		case 2: return GetHasFeat(1255, oChar);
+		case 3: return GetHasFeat(1256, oChar);
+		case 4: return GetHasFeat(1257, oChar);
+		case 5: return GetHasFeat(1258, oChar);
+		case 6: return GetHasFeat(1259, oChar);
+		case 7: return GetHasFeat(1260, oChar);
+		case 8: return GetHasFeat(1261, oChar);
+		case 9: return GetHasFeat(1262, oChar);
+		case 10: return GetHasFeat(1263, oChar);
+		case 11: return GetHasFeat(1264, oChar);
+		case 12: return GetHasFeat(1265, oChar);
+		case 13: return GetHasFeat(1266, oChar);
+		case 14: return GetHasFeat(1267, oChar);
+		case 15: return GetHasFeat(1268, oChar);
+		case 16: return GetHasFeat(1269, oChar);
+		case 17: return GetHasFeat(1270, oChar);
+		case 18: return GetHasFeat(1271, oChar);
+		case 19: return GetHasFeat(1272, oChar);
+		case 20: return GetHasFeat(1273, oChar);
+		case 21: return GetHasFeat(1274, oChar);
+		case 22: return GetHasFeat(1275, oChar);
+		case 23: return GetHasFeat(1276, oChar);
+		case 24: return GetHasFeat(1277, oChar);
+		case 25: return GetHasFeat(1278, oChar);
+		case 26: return GetHasFeat(1279, oChar);
+		case 27: return GetHasFeat(1280, oChar);
+		case 28: return GetHasFeat(1281, oChar);
+		case 29: return GetHasFeat(1282, oChar);
+	}
+	return FALSE;
+}
+
 int SpendSkillPoints(int nPointsRemaining, object oChar, string sClassSkill, string sSkillID)
 {
 	int nSkillLevelsBought = GetLocalInt(oChar, SKILL_LEVELS_BOUGHT + sSkillID);
 	int nRank = GetSkillRank(StringToInt(sSkillID), oChar, TRUE);
 	int nLevel = GetHitDice(oChar) + 1;
 	int nSpentPoints = GetLocalInt(oChar, SPENT_SKILL_POINTS);
+	//check for Skill Knowledge feats
+	if (sClassSkill == "0" && HasSkillKnowledgeFeat(sSkillID))
+		sClassSkill = "1";
 	if (sClassSkill == "1")
 	{
 		if (nRank + nSkillLevelsBought < nLevel + 3)
