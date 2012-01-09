@@ -10,6 +10,4 @@ void main(string sRowName, int nLaunchMode)
 
 	if (nLaunchMode == 1)
 		SetLocalString(oChar, FAMILIAR_LAST_SELECTED, sRowName);
-	//else
-	//	SetLocalString(oChar, ANIMAL_COMPANION_LAST_SELECTED, sRowName);
 }
