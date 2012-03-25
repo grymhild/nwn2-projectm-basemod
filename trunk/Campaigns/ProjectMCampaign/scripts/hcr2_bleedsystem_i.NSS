@@ -258,9 +258,9 @@ void h2_UseHealSkillOnTarget(object oTarget, object oUser, object oItemUsed)
 void h2_SignalAttackerTargetIsDown(object oBleeder)
 {
 	object oAttacker = GetLastDamager(oBleeder);
-	if (GetIsPC(oAttacker))
+	if (GetIsPC(oAttacker) || !GetIsObjectValid(oAttacker) || GetObjectTYpe(oAttacker) != OBJECT_TYPE_CREATURE)
 		return;
-	if (H2_CEASE_NPC_ATTACKS_ON_DYING && GetIsObjectValid(oAttacker))
+	if (H2_CEASE_NPC_ATTACKS_ON_DYING)
 	{
 		AssignCommand(oAttacker, ClearAllActions());
 		AssignCommand(oAttacker, CSLDetermineCombatRound());
