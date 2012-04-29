@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7A10A397-09D9-40E4-B6C0-6777A3AC768B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NWN2CC</RootNamespace>
+    <AssemblyName>NWN2CC</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.DirectX, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Microsoft.DirectX.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.AudioVideoPlayback, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Microsoft.DirectX.AudioVideoPlayback.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.Direct3D, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Microsoft.DirectX.Direct3D.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.Direct3DX, Version=1.0.2910.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\Microsoft.DirectX.Direct3DX.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssetManager.cs" />
+    <Compile Include="BaseScreen.cs" />
+    <Compile Include="CampaignData.cs" />
+    <Compile Include="LeftPaneList.cs" />
+    <Compile Include="ModuleLoadScreen.cs" />
+    <Compile Include="Movies.cs" />
+    <Compile Include="MainMenu.cs" />
+    <Compile Include="MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewCampaignScreen.cs" />
+    <Compile Include="NewGameMenu.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="NWN2Paths.cs" />
+    <Compile Include="NWNXServer.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources.cs" />
+    <EmbeddedResource Include="MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <EmbeddedResource Include="Assets\NWN2_TitleB.ttf" />
+    <EmbeddedResource Include="Assets\Aztlan.ttf" />
+    <EmbeddedResource Include="Assets\NWN2_Main.ttf" />
+    <EmbeddedResource Include="Assets\b_g_lg04_normal.tga" />
+    <EmbeddedResource Include="Assets\b_g_lg04_pressed.tga" />
+    <EmbeddedResource Include="Assets\b_main_hover.tga" />
+    <EmbeddedResource Include="Assets\b_main_hover_pressed.tga" />
+    <EmbeddedResource Include="Assets\b_main_normal.tga" />
+    <EmbeddedResource Include="Assets\b_main_sm_hover.tga" />
+    <EmbeddedResource Include="Assets\b_main_sm_hover_pressed.tga" />
+    <EmbeddedResource Include="Assets\b_main_sm_normal.tga" />
+    <EmbeddedResource Include="Assets\b_sm_hover.tga" />
+    <EmbeddedResource Include="Assets\b_sm_hover_pressed.tga" />
+    <EmbeddedResource Include="Assets\b_sm_normal.tga" />
+    <EmbeddedResource Include="Assets\main_background_nx3.tga" />
+    <EmbeddedResource Include="Assets\main_module_image_nx3.tga" />
+    <EmbeddedResource Include="Assets\main_sub_bg_nx3.tga" />
+    <EmbeddedResource Include="Assets\main_sub_titles.tga" />
+    <EmbeddedResource Include="Assets\module_desc.tga" />
+    <EmbeddedResource Include="Assets\module_list.tga" />
+    <EmbeddedResource Include="Assets\newcampaignscreen.tga" />
+    <EmbeddedResource Include="Assets\newmodulescreen.tga" />
+    <EmbeddedResource Include="Assets\quitwindow.tga" />
+    <EmbeddedResource Include="Assets\sb_d_hover.tga" />
+    <EmbeddedResource Include="Assets\sb_d_hover_pressed.tga" />
+    <EmbeddedResource Include="Assets\sb_d_normal.tga" />
+    <EmbeddedResource Include="Assets\sb_handle.tga" />
+    <EmbeddedResource Include="Assets\sb_u_hover.tga" />
+    <EmbeddedResource Include="Assets\sb_u_hover_pressed.tga" />
+    <EmbeddedResource Include="Assets\sb_u_normal.tga" />
+    <EmbeddedResource Include="Assets\title_large02.tga" />
+    <EmbeddedResource Include="Assets\title_medium03.tga" />
+    <EmbeddedResource Include="Assets\generic_base.tga" />
+    <EmbeddedResource Include="Assets\loading_bar_fill.tga" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DXUIControls\DXUIControls.csproj">
+      <Project>{FE6F297C-D256-49F9-B6CE-57C0E301D930}</Project>
+      <Name>DXUIControls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\gui_button.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\nwn2main_1.cur" />
+    <EmbeddedResource Include="Assets\nwn2main_131.cur" />
+    <EmbeddedResource Include="Assets\nwn2main_2.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NWN2Paths.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

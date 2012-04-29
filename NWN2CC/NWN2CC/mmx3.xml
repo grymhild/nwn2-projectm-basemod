@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Neverwinter Nights 2 -->
+<!-- Copyright (c) 2006 Obsidian Entertainment, Inc. -->
+
+<!-- Main Menu definition -->
+
+	<UIScene name="SCREEN_MAINMENU" 
+		OnAdd0=UIScene_OnAdd_SetupMainMenu() 
+		OnAdd1=UIButton_Input_StartMultiplayer("SCREEN_DC")
+		idleexpiretime="60.0" fadeout="0.3" fadein="0.3" priority="SCENE_FE_FULLSCREEN" fullscreen=true 				
+		/>
+	

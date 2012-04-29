@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FE6F297C-D256-49F9-B6CE-57C0E301D930}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DXUIControls</RootNamespace>
+    <AssemblyName>DXUIControls</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.DirectX, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Microsoft.DirectX.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.Direct3D, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Microsoft.DirectX.Direct3D.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.Direct3DX, Version=1.0.2910.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\Microsoft.DirectX.Direct3DX.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ColorArray.cs" />
+    <Compile Include="Controls\BaseControl.cs" />
+    <Compile Include="Controls\Button.cs" />
+    <Compile Include="Controls\CaptionBar.cs" />
+    <Compile Include="Controls\Cell.cs" />
+    <Compile Include="Controls\CheckBox.cs" />
+    <Compile Include="Controls\ContainerControl.cs" />
+    <Compile Include="Controls\ControlCollection.cs" />
+    <Compile Include="Controls\CustomCursor.cs" />
+    <Compile Include="Controls\DefaultShapeControl.cs" />
+    <Compile Include="Controls\DialogBox.cs" />
+    <Compile Include="Controls\DropDownList.cs" />
+    <Compile Include="Controls\GroupBox.cs" />
+    <Compile Include="Controls\HUD.cs" />
+    <Compile Include="Controls\IActivableControl.cs" />
+    <Compile Include="Controls\ICircularControl.cs" />
+    <Compile Include="Controls\IContainer.cs" />
+    <Compile Include="Controls\IControl.cs" />
+    <Compile Include="Controls\IRenderableControl.cs" />
+    <Compile Include="Controls\ISpriteControl.cs" />
+    <Compile Include="Controls\Label.cs" />
+    <Compile Include="Controls\OptionButton.cs" />
+    <Compile Include="Controls\OptionGroup.cs" />
+    <Compile Include="Controls\Panel.cs" />
+    <Compile Include="Controls\PictureBox.cs" />
+    <Compile Include="Controls\ProgressBar.cs" />
+    <Compile Include="Controls\RenderableControl.cs" />
+    <Compile Include="Controls\RichTextArea.cs" />
+    <Compile Include="Controls\Table.cs" />
+    <Compile Include="Controls\TableCellStyles.cs" />
+    <Compile Include="Controls\TabPanel.cs" />
+    <Compile Include="Controls\TextBox.cs" />
+    <Compile Include="Controls\TrackBar.cs" />
+    <Compile Include="Controls\Window.cs" />
+    <Compile Include="FontManager.cs" />
+    <Compile Include="Graphics.cs" />
+    <Compile Include="Helpers\DebugManager.cs" />
+    <Compile Include="Helpers\Timer.cs" />
+    <Compile Include="Intersection.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShapeDescriptor.cs" />
+    <Compile Include="Style\ColorArray.cs" />
+    <Compile Include="Style\LabelFormatter.cs" />
+    <Compile Include="Style\LabelPage.cs" />
+    <Compile Include="Style\Shapes.cs" />
+    <Compile Include="Style\StyleManager.cs" />
+    <Compile Include="Style\TextStyle.cs" />
+    <Compile Include="Style\UIParser.cs" />
+    <Compile Include="TextManager.cs" />
+    <Compile Include="UI.cs" />
+    <Compile Include="UICommon.cs" />
+    <Compile Include="UIParser.cs" />
+    <Compile Include="WindowManager.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
