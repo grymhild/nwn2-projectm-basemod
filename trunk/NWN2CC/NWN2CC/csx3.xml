@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Neverwinter Nights 2                          -->
+<!-- Copyright © 2006 Obsidian Entertainment, Inc. -->
+
+<UIScene name="SCREEN_CONNECTSTATUS" idleexpiretime="30.0" x=0 y=0 width=1024 height=768 priority="SCENE_GLOBAL" fullscreen=true
+		OnAdd=UIScene_OnAdd_RegisterStatusUpdateObject("statuslistbox") modal=true
+		OnRemove=UIScene_OnAdd_RegisterStatusUpdateObject("") />
+
+	<!--
+	<UIText name="IPAddress" x=ALIGN_CENTER y=10 height=32 width=380 
+			update=true OnUpdate=UIText_OnUpdate_DisplayClientConnectingIP() />
+	<UIText name="Status" x=ALIGN_CENTER y=52 width=380 height=32
+			update=true OnUpdate=UIText_OnUpdate_DisplayClientConnectionStatus() />
+	-->
+
+	<UIPane name="CONTENTS_PANE" x=ALIGN_CENTER y=ALIGN_CENTER width=388 height=200 usescalar=true hideoverride=true>
+		<UIListBox name="statuslistbox" x=ALIGN_CENTER y=40 width=360 height=100 xPadding=5 yPadding=2 showpartialchild=true 
+		    OnResize=UIListBox_OnResize_ScrollToBottom() scrollbaronright=true unequalcontrols=true 
+	        scrollsegmentsize=17 hidescrollbarwhennotneeded=false snaptobottom=true >
+
+			<UIText name=repliestext width=PARENT_WIDTH height=DYNAMIC sizetofit=true align=left prototype=true fontfamily="Default" />
+			
+			<UIScrollBar name="SB" style="STYLE_SB_THIN" />
+		</UIListBox>
+
+		<!-- statuslistbox frame-->
+		<UIFrame x=ALIGN_CENTER y=39 width=364 height=102 topleft="tp_frame_tl.tga" topright="tp_frame_tr.tga" bottomleft="tp_frame_bl.tga"
+			bottomright="tp_frame_BR.tga" top="tp_frame_t.tga" bottom="tp_frame_b.tga" left="tp_frame_l.tga" right="tp_frame_r.tga" 
+			fillstyle="stretch" fill="tp_frame_bg.tga"	border=5 />
+
+		<UIButton name="ConnectionStatusOK" strref="67" x=ALIGN_CENTER y=150 style="STYLE_SMALL_BUTTON"
+			OnLeftClick=UIButton_Input_ConnectionStatusCancel()
+			update=true OnUpdate=UIButton_OnUpdate_ConnectionStatusCancel("Cancel","OK","true") />
+
+		<!-- Top Detail -->
+		<UIText name="TITLE" strref="182892" x=20 y=7 width="358" height="24" align=left valign=middle fontfamily="Title_Font" style="2"/>
+		<UIIcon name="DETAIL_TOP" img="title_medium03.tga" x=9 y=7 width=370 height=31 ignoreevents="true" />
+
+		<!-- Main Window -->
+		<UIFrame width=PARENT_WIDTH height=PARENT_HEIGHT topleft="frame1_tl.tga" topright="frame1_tr.tga" bottomleft="frame1_bl.tga"
+			bottomright="frame1_BR.tga" top="frame1_t.tga" bottom="frame1_b.tga"
+			left="frame1_l.tga" right="frame1_r.tga" border=32 />	
+		
+		<UIFrame x=7 y=8 width=374 height=184 fillstyle="tile" fill="cloth_bg.tga"/>		
+	</UIPane>
+
+	<UIIcon name="BG" img="frame_main_bg.tga" x=0 y=0 width=PARENT_WIDTH height=PARENT_HEIGHT ignoreevents="true" scalewithscene="true" />
+	

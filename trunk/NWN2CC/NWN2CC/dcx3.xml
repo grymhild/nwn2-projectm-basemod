@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Neverwinter Nights 2                          -->
+<!-- Copyright © 2006 Obsidian Entertainment, Inc. -->
+
+<UIScene name="SCREEN_DIRECTCONNECT" fadeout="0.3" fadein="0.3" fullscreen=true      
+	 OnAdd0=UIScene_OnAdd_InitDirectConnect("IPAddress",local:0,"ServerPassword",local:1) 	 
+	 priority="SCENE_FE_FULLSCREEN"/>
+	
+	<UIPane name="CONTENTS_PANE" x=0 y=0 width=PARENT_WIDTH height=PARENT_HEIGHT usescalar=true hideoverride=true >			
+		<UIText name="IPAddress" x=329 y=370 width="398" height=23 valign="middle" editable=true maxlength=32 prevcontrol="ServerPassword" nextcontrol="ServerPassword" hideoverride=true
+			update=true selectable=true OnUpdate=UIObject_Misc_SetLocalVarString(local:0) multiline=false />
+		<UIText name="ServerPassword" x=329 y=425 width="398" height=23 valign="middle" editable=true maxlength=32 prevcontrol="IPAddress" nextcontrol="IPAddress" hideoverride=true
+			update=true selectable=true OnUpdate=UIObject_Misc_SetLocalVarString(local:1) password="true" multiline=false />				
+		<UIButton name="DirectConnect" strref="66" x=396 y=465 style="STYLE_SMALL_BUTTON" hideoverride=true
+			update=true OnUpdate=UIButton_Input_MultiplayerDirectConnect(local:0,local:1) />
+	</UIPane>
+
