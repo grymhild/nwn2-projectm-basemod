@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="NWN2UI">
+
+<UIScene name="SCREEN_CONFIRMCHAR" idleexpiretime="30.0" x=ALIGN_CENTER y=ALIGN_CENTER modal=true width=388 height=422
+	OnAdd0=UIButton_Input_ConfirmCharacterLogin("false")  priority="SCENE_GLOBAL"/>
+	
