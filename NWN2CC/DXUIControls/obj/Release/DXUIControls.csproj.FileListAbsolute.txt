@@ -1,5 +1,0 @@
-C:\Users\0100010\Documents\Visual Studio 2010\Projects\NWN2CC\DXUIControls\obj\Release\ResolveAssemblyReference.cache
-C:\Users\0100010\Documents\Visual Studio 2010\Projects\NWN2CC\DXUIControls\bin\Release\DXUIControls.dll
-C:\Users\0100010\Documents\Visual Studio 2010\Projects\NWN2CC\DXUIControls\bin\Release\DXUIControls.pdb
-C:\Users\0100010\Documents\Visual Studio 2010\Projects\NWN2CC\DXUIControls\obj\Release\DXUIControls.dll
-C:\Users\0100010\Documents\Visual Studio 2010\Projects\NWN2CC\DXUIControls\obj\Release\DXUIControls.pdb
