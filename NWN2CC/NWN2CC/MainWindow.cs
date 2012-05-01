@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
+using System.IO;
 using System.Text;
 using Microsoft.DirectX;
 using Microsoft.DirectX.Direct3D;
@@ -34,9 +34,7 @@ namespace NWN2CC
         const int SCREEN_WIDTH = 1024;
         const int SCREEN_HEIGHT = 768;
         private PictureBox pbMain;
-
-        System.Timers.Timer pollTimer;
-
+        
         public bool closing = false;        
 
         public MainWindow()
@@ -190,38 +188,11 @@ namespace NWN2CC
         }        
 
         private void LaunchModule(string startModule, int savedGameSlot)
-        {
-            //TODO:  open fake module loading screen w/ progress bar
-
-
+        {           
             NWNXServer.LaunchNWNX(startModule, savedGameSlot);
+                                                     
             
-            pollTimer = new System.Timers.Timer(1000);
-            pollTimer.Elapsed += new System.Timers.ElapsedEventHandler(timer_Elapsed);
-            pollTimer.Start();                                
-            //TODO: timeout if wait time is excessive
-
-            string ipAddress = NWNXServer.GetLocalIPAddress();
-            //TODO: set the Direct Connect IP = ipAddress, set Direct Connect Password to empty string
-
-            //TODO: save pregamegui.ini backup and replace with provided pregamegui.ini
-            //Copy needed UI xml files into override or UI\defaults directory
-            
-            //Launch nwn2main process,            
-            //capture process exit or quit
-            //hide NWN2CC window
-
-            //restore NWN2CC window to main menu screen when nwn2main exits, and shutdown NWNX
-        }
-
-        private void timer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
-        {
-            if (NWNXServer.IsServerModuleLoaded())
-            {
-                pollTimer.Stop();
-                Console.WriteLine("NWNXServer reports module is loaded");
-            }
-        }        
+        }                   
 
         private void creditsMovie_Ending(object sender, EventArgs e)
         {

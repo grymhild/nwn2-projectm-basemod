@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 
-
 namespace NWN2CC
 {
     static class Program
@@ -17,10 +16,11 @@ namespace NWN2CC
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             using (MainWindow mainwindow = new MainWindow())
-            {                                
+            {
                 Application.Run(mainwindow);
-            }
+            }           
         }
+        
 
     }
 }

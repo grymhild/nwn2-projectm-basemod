@@ -6,6 +6,7 @@ using Microsoft.DirectX.Direct3D;
 using AvengersUTD.Odyssey.UserInterface.RenderableControls;
 using AvengersUTD.Odyssey.UserInterface;
 using Font = Microsoft.DirectX.Direct3D.Font;
+using System.IO;
 
 namespace NWN2CC
 {
@@ -15,14 +16,14 @@ namespace NWN2CC
         Label lbl1, lbl2, lbl3;
         Font titleFont, labelFont;
         ProgressBar pb;
-
+        
         public ModuleLoadScreen(ContainerControl owner) : base(owner)       
         {
             titleFont = FontManager.GetFont("TitleB 18");
             labelFont = FontManager.GetFont("Main 10");
             bkgrdTexture = AssetManager.GetTexture("generic_base");
             fillTexture = AssetManager.GetTexture("loading_bar_fill");
-            NWNXServer.Update += AppendInfoString;
+            NWNXServer.Update += AppendInfoString;           
         }
 
         public override void Show()
@@ -59,7 +60,7 @@ namespace NWN2CC
             myWindow.Add(pb);
 
             myWindow.BringToFront();
-            UI.CurrentHud.EndDesign();
+            UI.CurrentHud.EndDesign();            
         }
 
         public void AppendInfoString(string infostr, float percent)
@@ -69,6 +70,8 @@ namespace NWN2CC
             lbl3.Text = infostr;
             pb.ReportProgress(percent);
         }
+
+        
     }
 
 }
