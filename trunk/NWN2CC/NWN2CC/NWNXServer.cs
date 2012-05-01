@@ -16,6 +16,7 @@ namespace NWN2CC
         private static Process nwn2server, nwnx_controller;
         private static IntPtr nwn2ServerWnd = IntPtr.Zero;
         private static bool isModuleLoaded = false;
+        private static bool isLoginReady = false;
         private static string localIP = GetLocalIPAddress();
         private static System.Net.Sockets.TcpClient tcpClient = new System.Net.Sockets.TcpClient();
 
@@ -55,6 +56,11 @@ namespace NWN2CC
         public static bool IsServerModuleLoaded()
         {
             return isModuleLoaded;
+        }
+
+        public static bool IsLoginReady()
+        { 
+            return isLoginReady; 
         }
 
         public static void WriteUpdate(string str, float percent)
@@ -104,22 +110,7 @@ namespace NWN2CC
             sw.Flush();
             sw.Close();
 
-            WriteUpdate("Starting NWNXServer", .05f); 
-            StartNWNX();
-        }
-
-        private static void StartNWNX()
-        {
-            StopNWNX(); //if it was already started we want a clean instance so kill the old one.
-
-            nwnx_controller = new Process();
-            nwnx_controller.StartInfo.FileName = Path.Combine(Directory.GetCurrentDirectory(), "NWNX\\NWNX4_Controller.exe");
-            nwnx_controller.StartInfo.CreateNoWindow = true;
-            nwnx_controller.StartInfo.Arguments = "-interactive -hidden";
-            nwnx_controller.StartInfo.UseShellExecute = false;
-            nwnx_controller.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
-            nwnx_controller.StartInfo.RedirectStandardInput = true;
-            nwnx_controller.Start();                       
+            WriteUpdate("Starting NWNXServer...", .05f);
 
             BackgroundWorker bw = new BackgroundWorker();
             bw.WorkerSupportsCancellation = true;
@@ -129,9 +120,79 @@ namespace NWN2CC
             bw.RunWorkerAsync();
         }
 
+        private static void StartNWNX()
+        {            
+            StopNWNX(); //if it was already started we want a clean instance so kill the old one.
+            nwnx_controller = new Process();
+            nwnx_controller.StartInfo.FileName = Path.Combine(Directory.GetCurrentDirectory(), "NWNX\\NWNX4_Controller.exe");
+            nwnx_controller.StartInfo.CreateNoWindow = true;
+            nwnx_controller.StartInfo.Arguments = "-interactive -hidden";
+            nwnx_controller.StartInfo.UseShellExecute = false;
+            nwnx_controller.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            nwnx_controller.StartInfo.RedirectStandardInput = true;
+            nwnx_controller.Start();                                   
+        }
+
+        private static void LaunchNWN2Main()
+        {
+            //TODO: launch nwn2main
+            string ipAddress = NWNXServer.GetLocalIPAddress();
+            //TODO: set the Direct Connect IP = ipAddress, set Direct Connect Password to empty string
+            //TODO: save pregamegui.ini backup and replace with provided pregamegui.ini
+            
+
+            Process nwn2main = new Process();
+            nwn2main.StartInfo.FileName = NWN2Paths.NWN2MainPath + "\\nwlauncher.exe";
+            nwn2main.StartInfo.UseShellExecute = false;
+            nwn2main.EnableRaisingEvents = true;
+            nwn2main.Exited += new EventHandler(nwn2main_Exited);
+            nwn2main.Start();
+
+            //TODO: trigger event to main window so as to hide NWN2CC window
+        }
+
         private static void bw_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
-                       
+            
+        }
+
+        private static void nwn2main_Exited(object sender, EventArgs e)
+        {
+            //StopNWNX();
+
+            //TODO: trigger event to MainWindow to 
+            //restore NWN2CC window to main menu screen when nwn2main exits
+        } 
+
+        private static void WriteStreamToFile(Stream inputStream, string outPutFile)
+        {
+            byte[] bytes = new byte[inputStream.Length];
+            inputStream.Read(bytes, 0, (int)inputStream.Length);
+            FileStream fs = new FileStream(outPutFile, FileMode.Create);
+            fs.Write(bytes, 0, bytes.Length);
+            fs.Flush();
+            fs.Close();
+        }
+
+        private static void CreateGUIFiles()
+        {
+            DirectoryInfo di = new DirectoryInfo(NWN2Paths.NWN2DocumentsPath + "\\ui");
+            if (!di.Exists) di.Create();
+            string filepath = NWN2Paths.NWN2DocumentsPath + "\\ui\\default";
+            di = new DirectoryInfo(filepath);
+            if (!di.Exists) di.Create();
+
+            //Write the needed UI files.
+            Stream fs = Resources.GetEmbeddedResource("NWN2CC.Assets.pregameguix2.ini");
+            WriteStreamToFile(fs, filepath + "\\pregameguix2.ini");
+            fs = Resources.GetEmbeddedResource("NWN2CC.Assets.cc.xml");
+            WriteStreamToFile(fs, filepath + "\\cc.xml");
+            fs = Resources.GetEmbeddedResource("NWN2CC.Assets.csx3.xml");
+            WriteStreamToFile(fs, filepath + "\\csx3.xml");
+            fs = Resources.GetEmbeddedResource("NWN2CC.Assets.dcx3.xml");
+            WriteStreamToFile(fs, filepath + "\\dcx3.xml");
+            fs = Resources.GetEmbeddedResource("NWN2CC.Assets.mmx3.xml");
+            WriteStreamToFile(fs, filepath + "\\mmx3.xml");
         }
 
         private static void bw_DoWork(object sender, DoWorkEventArgs e)
@@ -139,9 +200,10 @@ namespace NWN2CC
             DateTime stageTime = DateTime.Now;
             int tick = 0;
             PerformanceCounter pf = null;
+            StartNWNX();
             while (true)
             {
-                System.Threading.Thread.Sleep(50);
+                System.Threading.Thread.Sleep(100);                
                 if (nwn2server == null)
                 {
                     Process[] processes = Process.GetProcessesByName("nwn2server");
@@ -152,7 +214,7 @@ namespace NWN2CC
                         nwnx_controller.StandardInput.WriteLine(" ");
                         nwnx_controller.WaitForExit();
                         stageTime = DateTime.Now;
-                        pf = new PerformanceCounter("Process", "% Processor Time", nwn2server.ProcessName);
+                        pf = new PerformanceCounter("Process", "% Processor Time", nwn2server.ProcessName);                        
                     }
                     else
                         continue;
@@ -173,7 +235,6 @@ namespace NWN2CC
                         {
                             Console.WriteLine("Failed to find window handle. Restarting NWNXServer.");
                             StartNWNX();
-                            break;
                         }
                         continue;
                     }
@@ -185,7 +246,8 @@ namespace NWN2CC
                     if (IsWindowEnabled(saveBtn))
                     {
                         isModuleLoaded = true;
-                        WriteUpdate("Module loaded. OnModuleLoad running...", 0.5f);                        
+                        WriteUpdate("Module loaded. OnModuleLoad running...", 0.5f);
+                        CreateGUIFiles();
                     }
                     else
                         continue;
@@ -199,7 +261,8 @@ namespace NWN2CC
                 if (cpuload < 20.0 && tick > 10)
                 {
                     WriteUpdate("Server is Idle, Ready for login...", 0.9f);
-                    //TODO: launch nwn2main.
+                    isLoginReady = true;
+                    LaunchNWN2Main();
                     break;
                 }
                 else
@@ -223,7 +286,19 @@ namespace NWN2CC
         }
 
         public static void StopNWNX()
-        {            
+        {       
+            string filepath = NWN2Paths.NWN2DocumentsPath+  "\\ui\\default\\";
+            FileInfo fi = new FileInfo(filepath + "pregameguix2.ini");
+            if (fi.Exists) fi.Delete();
+            fi = new FileInfo(filepath + "cc.xml");
+            if (fi.Exists) fi.Delete();
+            fi = new FileInfo(filepath + "csx3.xml");
+            if (fi.Exists) fi.Delete();
+            fi = new FileInfo(filepath + "dcx3.xml");
+            if (fi.Exists) fi.Delete();
+            fi = new FileInfo(filepath + "mmx3.xml");
+            if (fi.Exists) fi.Delete();
+
             Process[] processes = Process.GetProcessesByName("nwn2server");
             foreach (Process s in processes)
             {
@@ -232,7 +307,8 @@ namespace NWN2CC
             }
 
             nwn2server = null;
-            isModuleLoaded = false;            
+            isModuleLoaded = false;
+            isLoginReady = false;
         }
     }
 }

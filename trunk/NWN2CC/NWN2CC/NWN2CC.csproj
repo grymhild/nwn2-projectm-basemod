@@ -76,9 +76,7 @@
       <DependentUpon>MainWindow.cs</DependentUpon>
     </Compile>
     <Compile Include="NewCampaignScreen.cs" />
-    <Compile Include="NewGameMenu.cs">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Compile>
+    <Compile Include="NewGameMenu.cs" />
     <Compile Include="NWN2Paths.cs" />
     <Compile Include="NWNXServer.cs" />
     <Compile Include="Program.cs" />
@@ -132,6 +130,7 @@
     <EmbeddedResource Include="Assets\title_medium03.tga" />
     <EmbeddedResource Include="Assets\generic_base.tga" />
     <EmbeddedResource Include="Assets\loading_bar_fill.tga" />
+    <EmbeddedResource Include="Assets\pregameguix2.ini" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -157,6 +156,10 @@
     <EmbeddedResource Include="Assets\nwn2main_2.cur" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Assets\cc.xml" />
+    <EmbeddedResource Include="Assets\csx3.xml" />
+    <EmbeddedResource Include="Assets\dcx3.xml" />
+    <EmbeddedResource Include="Assets\mmx3.xml" />
     <Content Include="NWN2Paths.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
