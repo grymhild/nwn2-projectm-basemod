@@ -14,6 +14,11 @@ namespace NWN2CC
         private static Dictionary<string, Texture> textureAssets = new Dictionary<string,Texture>();
         public static Device Device;
 
+        public static void ClearAll()
+        {
+            textureAssets.Clear();
+        }
+
         public static void LoadTextureFromFile(string ID, string filename)
         {
             if (Device == null)

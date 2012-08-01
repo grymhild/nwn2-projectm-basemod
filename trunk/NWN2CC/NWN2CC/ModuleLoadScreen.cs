@@ -71,7 +71,6 @@ namespace NWN2CC
             pb.ReportProgress(percent);
         }
 
-        
     }
 
 }

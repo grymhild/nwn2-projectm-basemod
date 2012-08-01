@@ -86,7 +86,7 @@ namespace AvengersUTD.Odyssey.UserInterface.RenderableControls
 
         public void ReportProgress(float newProgressValue)
         {
-            backgroundWorker.ReportProgress((int) (newProgressValue*100));
+            backgroundWorker.ReportProgress((int)(newProgressValue * 100));                               
         }
 
         #region Overriden inherited events
