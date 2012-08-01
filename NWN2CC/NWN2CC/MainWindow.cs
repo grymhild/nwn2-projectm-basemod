@@ -34,7 +34,8 @@ namespace NWN2CC
         const int SCREEN_WIDTH = 1024;
         const int SCREEN_HEIGHT = 768;
         private PictureBox pbMain;
-        
+        Point clientScreenCoords;
+
         public bool closing = false;        
 
         public MainWindow()
@@ -50,17 +51,55 @@ namespace NWN2CC
             UI.SetupHooks(this);
             
             InitializeDevice();
-            creditsMovies = new Movies(device, this.ClientSize.Width, this.ClientSize.Height, @"C:\Users\0100010\Documents\Visual Studio 2010\Projects\NWN2CC\NWN2CC\Assets\Credits_NX2.avi");
-            creditsMovies.Stopped += new Movies.StoppedEventHandler(creditsMovies_Stopped);
+            
+            NWNXServer.NWN2Exit += new NWNXServer.NWN2HasExited(NWNXServer_NWN2Exit);
+            NWNXServer.NWN2Loaded += new NWNXServer.NWN2HasLoaded(NWNXServer_NWN2Loaded);
         }
 
-        void creditsMovies_Stopped()
+        private void NWNXServer_NWN2Loaded()
+        {
+            if (this.InvokeRequired)
+            {
+                // Reinvoke the same method if necessary        
+                BeginInvoke(new System.Windows.Forms.MethodInvoker(delegate() { NWNXServer_NWN2Loaded(); }));
+            }
+            else
+            {
+                if (moduleLoadScreen != null)
+                    moduleLoadScreen.Close();
+                this.Hide();
+            }
+        }
+
+        private void NWNXServer_NWN2Exit()
+        {            
+            if (this.InvokeRequired)    
+            {        
+                // Reinvoke the same method if necessary        
+                BeginInvoke(new System.Windows.Forms.MethodInvoker(delegate() { NWNXServer_NWN2Exit(); } ));
+            } 
+            else 
+            {
+                InitializeDevice();
+                Cursor = CustomCursor.GetCursor("defaultCursor");
+                if (moduleLoadScreen != null)
+                    moduleLoadScreen.Close();
+                if (mainMenu != null)
+                    mainMenu.Show();
+                this.Show();
+                this.BringToFront();
+            }                       
+        }
+
+        private void creditsMovies_Stopped()
         {
             this.Invalidate();
         }
 
         private void LoadAssets()
         {
+            AssetManager.ClearAll();
+            FontManager.ClearCache();
             buttonFont = FontManager.FontFromStream("TitleB 10", Resources.GetEmbeddedResource("NWN2CC.Assets.NWN2_TitleB.ttf"), 10f, FontStyle.Bold);
             FontManager.FontFromStream("TitleB 18", Resources.GetEmbeddedResource("NWN2CC.Assets.NWN2_TitleB.ttf"), 18f, FontStyle.Bold);
             textFont = FontManager.FontFromStream("Main 10", Resources.GetEmbeddedResource("NWN2CC.Assets.NWN2_Main.ttf"), 10f, FontStyle.Bold);
@@ -142,7 +181,11 @@ namespace NWN2CC
             
             hud.BeginDesign();                                                
             hud.Add(pbMain);            
-            hud.EndDesign();            
+            hud.EndDesign();
+
+            creditsMovies = new Movies(device, this.ClientSize.Width, this.ClientSize.Height, @"C:\Users\0100010\Documents\Visual Studio 2010\Projects\NWN2CC\NWN2CC\Assets\Credits_NX2.avi");
+            creditsMovies.Stopped += new Movies.StoppedEventHandler(creditsMovies_Stopped);
+
         }
 
         void mainMenu_ButtonPress(string buttonID)
@@ -188,7 +231,9 @@ namespace NWN2CC
         }        
 
         private void LaunchModule(string startModule, int savedGameSlot)
-        {           
+        {
+            NWNXServer.nwn2CC = this;
+            NWNXServer.nwn2CCWnd = this.Handle;
             NWNXServer.LaunchNWNX(startModule, savedGameSlot);
                                                      
             
@@ -246,7 +291,9 @@ namespace NWN2CC
 
         private void OnDeviceReset(object sender, EventArgs e)
         {
-            //buttontexture = TextureLoader.FromFile(device, "b_main_normal.tga");
+            int t = 0;
+
+          
         }
 
         private void MainWindow_FormClosing(object sender, System.Windows.Forms.FormClosingEventArgs e)

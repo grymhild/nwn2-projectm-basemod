@@ -22,6 +22,12 @@ namespace AvengersUTD.Odyssey.UserInterface
         // future use;
         static PrivateFontCollection fontCollection = new PrivateFontCollection();
 
+        public static void ClearCache()
+        {
+            fontCache.Clear();
+            fontCollection = new PrivateFontCollection();
+        }
+
         #region Properties
 
         public static Font DefaultFont
